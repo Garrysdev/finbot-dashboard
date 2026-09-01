@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-01 21:00:08",
+  "updated_at": "2026-09-01 22:00:17",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 101496.11,
-      "equity": 101373.17,
+      "equity": 101250.29,
       "closed_pl": 1496.1100000000006,
-      "total_pl": 1373.1699999999983,
-      "roi_pct": 1.3731699999999982,
-      "floating_pl": -122.94,
+      "total_pl": 1250.2899999999936,
+      "roi_pct": 1.2502899999999937,
+      "floating_pl": -245.82,
       "open_count": 1,
       "trades": [
         {
@@ -55,8 +55,8 @@
           "price_close": null,
           "sl": 1.15978,
           "tp": null,
-          "profit": -122.94,
-          "profit_str": "-122.94 EUR",
+          "profit": -245.82,
+          "profit_str": "-245.82 EUR",
           "status": "ABERTA",
           "ticket": "152568698946",
           "magic": 888250
@@ -816,11 +816,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 902.88,
-      "equity": 906.31,
+      "equity": 904.73,
       "closed_pl": -97.11999999999999,
-      "total_pl": -93.69000000000005,
-      "roi_pct": -9.369000000000005,
-      "floating_pl": 3.43,
+      "total_pl": -95.26999999999998,
+      "roi_pct": -9.526999999999997,
+      "floating_pl": 1.85,
       "open_count": 2,
       "trades": [
         {
@@ -865,8 +865,8 @@
           "price_close": null,
           "sl": 1.16019,
           "tp": 1.15741,
-          "profit": 0.82,
-          "profit_str": "+0.82 EUR",
+          "profit": -0.3,
+          "profit_str": "-0.30 EUR",
           "status": "ABERTA",
           "ticket": "58256926201",
           "magic": 888151
@@ -897,8 +897,8 @@
           "price_close": null,
           "sl": 1.16237,
           "tp": 1.15727,
-          "profit": 2.61,
-          "profit_str": "+2.61 EUR",
+          "profit": 2.15,
+          "profit_str": "+2.15 EUR",
           "status": "ABERTA",
           "ticket": "58244799383",
           "magic": 888123
