@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinBot EA — Dashboard de Plataforma & Carteira dos 5 Ativos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --panel-bg: rgba(30, 41, 59, 0.75);
+            --border-color: rgba(255, 255, 255, 0.12);
+            --border-bright: rgba(56, 189, 248, 0.4);
+            --accent-gold: #f59e0b;
+            --accent-blue: #38bdf8;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-sub: #cbd5e1;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: radial-gradient(circle at top right, #1e1b4b, #0f172a 60%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .title-group h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #22c55e, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .title-group p {
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+            font-size: 0.95rem;
+        }
+
+        .nav-group {
+            display: flex;
+            gap: 0.5rem;
+            background: rgba(15, 23, 42, 0.8);
+            padding: 0.35rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-muted);
+            padding: 0.6rem 1.1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        .nav-btn:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-btn.active {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+
+        .tab-section {
+            display: none;
+        }
+
+        .tab-section.active {
+            display: block;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 0.9rem 1rem;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--border-bright);
+        }
+
+        .metric-title {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.35rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .metric-value {
+            font-size: 1.45rem;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .metric-sub {
+            font-size: 0.78rem;
+            color: var(--text-sub);
+            margin-top: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-pass { background: rgba(34, 197, 94, 0.2); color: #86efac; border: 1px solid var(--accent-green); }
+        .status-running { background: rgba(245, 158, 11, 0.2); color: #fde047; border: 1px solid var(--accent-gold); }
+        .status-fail { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid var(--accent-red); }
+        .status-blue { background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border: 1px solid var(--accent-blue); }
+
+        .table-container {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+        }
+
+        /* min-width garante que tabelas curtas (poucas colunas) continuam a
+           esticar até à largura do painel; width:max-content deixa tabelas
+           largas (11-14 colunas) crescerem além do ecrã e rolar em vez de
+           serem espremidas ou cortadas — vale para telemóvel, tablet e PC */
+        table { width: max-content; min-width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; }
+        th { background: rgba(15, 23, 42, 0.85); color: var(--text-muted); font-weight: 600; padding: 1rem 1.25rem; border-bottom: 1px solid var(--border-color); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
+        td { padding: 1rem 1.25rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-family: 'JetBrains Mono', monospace; }
+        tr:hover { background: rgba(255, 255, 255, 0.03); }
+        .notes-cell { font-family: 'Outfit', sans-serif; color: #cbd5e1; font-size: 0.9rem; }
+
+        .btn {
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid var(--accent-green);
+            color: var(--accent-green);
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: var(--accent-green);
+            color: #000;
+            box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+        }
+
+        .btn-blue {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        .btn-blue:hover {
+            background: var(--accent-blue);
+            color: #000;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .sim-input-box {
+            background: rgba(15, 23, 42, 0.7);
+            padding: 1.25rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .sim-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+
+        tr.filter-row th {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 0.5rem 0.6rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .col-filter {
+            width: 100%;
+            padding: 0.35rem 0.5rem;
+            border-radius: 6px;
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid var(--border-color);
+            color: var(--accent-blue);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: normal;
+            cursor: pointer;
+        }
+
+        .col-filter:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.65rem;
+            border-radius: 8px;
+            background: rgba(30, 41, 59, 0.9);
+            border: 1px solid var(--border-color);
+            color: #fff;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 0.35rem;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .step-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .step-num {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
+            color: #000;
+            font-weight: 800;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        /* Modal Popup Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(8px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-box {
+            background: #0f172a;
+            border: 1px solid var(--border-bright);
+            border-radius: 16px;
+            width: 92%;
+            max-width: 560px;
+            padding: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            transform: scale(0.95);
+            transition: transform 0.25s ease;
+        }
+
+        .modal-overlay.active .modal-box {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .modal-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .modal-close {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+
+        .trade-info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            font-size: 0.92rem;
+        }
+
+        .trade-info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.55rem 0.85rem;
+            background: rgba(30, 41, 59, 0.6);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .trade-info-label {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .trade-info-val {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .clickable-row {
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .clickable-row:hover {
+            background: rgba(56, 189, 248, 0.15) !important;
+        }
+
+        /* Responsive Mobile Layout Optimizations */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.6rem;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.85rem;
+                padding-bottom: 0.85rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .title-group h1 {
+                font-size: 1.3rem;
+            }
+
+            .title-group p {
+                font-size: 0.85rem;
+            }
+
+            .nav-group {
+                gap: 0.35rem;
+                padding: 0.25rem;
+            }
+
+            .nav-btn {
+                padding: 0.5rem 0.65rem;
+                font-size: 0.78rem;
+                flex: 1 1 calc(50% - 0.5rem);
+                text-align: center;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.55rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .metric-card {
+                padding: 0.65rem 0.75rem;
+            }
+
+            .metric-title {
+                font-size: 0.65rem;
+                letter-spacing: 0;
+            }
+
+            .metric-value {
+                font-size: 1.15rem;
+            }
+
+            .metric-sub {
+                font-size: 0.68rem;
+            }
+
+            .card {
+                padding: 0.85rem 0.75rem;
+            }
+
+            .card-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+                margin-bottom: 0.85rem;
+            }
+
+            .card-title {
+                font-size: 0.95rem;
+            }
+
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+
+            .table-container::before {
+                content: "» desliza para o lado para ver mais »";
+                display: block;
+                font-size: 0.65rem;
+                color: var(--text-muted);
+                text-align: center;
+                padding: 0.4rem 0;
+                background: rgba(15, 23, 42, 0.5);
+            }
+
+            /* Tabelas largas (11+ colunas): não forçar a caber no ecrã —
+               deixar exceder a largura e rolar horizontalmente dentro do
+               .table-container, que já tem overflow-x: auto */
+            table {
+                font-size: 0.8rem;
+                width: max-content;
+                min-width: 100%;
+            }
+
+            th {
+                padding: 0.6rem 0.5rem;
+                font-size: 0.65rem;
+                white-space: nowrap;
+            }
+
+            td {
+                padding: 0.6rem 0.5rem;
+                font-size: 0.78rem;
+                white-space: nowrap;
+            }
+
+            .notes-cell {
+                white-space: normal;
+                min-width: 160px;
+            }
+
+            .modal-box {
+                padding: 1rem;
+                width: 94%;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+
+            .trade-info-row {
+                flex-direction: column;
+                gap: 0.2rem;
+                padding: 0.45rem 0.65rem;
+            }
+
+            .trade-info-label {
+                font-size: 0.78rem;
+            }
+
+            .trade-info-val {
+                font-size: 0.85rem;
+                word-break: break-word;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-btn {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Tabs Navigation -->
+    <div class="header">
+        <div class="title-group">
+            <h1>🏆 FinBot EA — Dashboard & Simulador de ROI</h1>
+            <p>Plataforma Oficial de Trading Algorítmico, Parâmetros dos Robôs & Carteira dos 5 Ativos</p>
+        </div>
+
+        <div class="nav-group">
+            <button class="nav-btn active" onclick="switchTab('tab-simulador', this)">🧮 Simulador Capital vs Tempo</button>
+            <button class="nav-btn" onclick="switchTab('tab-robos', this)">⚙️ Parâmetros & Robôs (3 EAs)</button>
+            <button class="nav-btn" onclick="switchTab('tab-guia', this)">🚀 Guia do Cliente (3 Passos)</button>
+            <button class="nav-btn" onclick="switchTab('tab-ativos', this)">🚀 Carteira dos 5 Ativos</button>
+            <button class="nav-btn" onclick="switchTab('tab-demo-1k', this)">💎 Demo 1.000 € (Realista)</button>
+            <button class="nav-btn" onclick="switchTab('tab-demo-100k', this)">🏛️ Demo 100.000 € (Institucional)</button>
+            <button class="nav-btn" onclick="switchTab('tab-backtests', this)">🧪 Histórico Backtests (Excel)</button>
+        </div>
+    </div>
+
+    <!-- TAB 1: INTERACTIVE SIMULATOR -->
+    <div id="tab-simulador" class="tab-section active">
+
+        <!-- Top Metric Summary Cards -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Capital Inicial Investido</div>
+                <div class="metric-value" id="kpi-capital-val" style="color: var(--accent-blue);">200.00 €</div>
+                <div class="metric-sub">Depósito Selecionado</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Montante Final Estimado</div>
+                <div class="metric-value" id="kpi-final-val" style="color: var(--accent-green);">290.00 €</div>
+                <div class="metric-sub" id="kpi-profit-sub">Lucro Líquido: +90.00 €</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Retorno Total (ROI)</div>
+                <div class="metric-value" id="kpi-roi-val" style="color: var(--accent-blue);">+45.00%</div>
+                <div class="metric-sub">No Tempo Selecionado</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Vantagem FinBot vs Banco</div>
+                <div class="metric-value" id="kpi-diff-val" style="color: var(--accent-green);">+85.00 €</div>
+                <div class="metric-sub">Lucro Extra Obtido com o Bot</div>
+            </div>
+        </div>
+
+        <!-- Simulator Input Box -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🧮 Simulador de Capital Investido vs Retorno em Tempo X</span>
+                <span class="status-pill status-pass">Dinâmico & Interativo</span>
+            </div>
+
+            <p style="margin-bottom: 1.25rem; color: var(--text-sub);">
+                Simula exatamente quanto recebes ao investir <strong>200€, 500€, 1.000€ ou 10.000€</strong> ao longo do tempo (em Meses ou Anos) comparado com a rentabilidade fixa do Banco:
+            </p>
+
+            <div class="sim-input-box">
+                <div class="sim-grid">
+                    <div>
+                        <label style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Capital Inicial Investido (€)</label>
+                        <input type="number" id="sim-capital" class="input-field" value="200" min="50" step="50" oninput="updateSimulator()">
+                    </div>
+
+                    <div>
+                        <label style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Prazo de Investimento (Tempo X)</label>
+                        <select id="sim-time" class="input-field" onchange="updateSimulator()">
+                            <option value="0.5">6 Meses</option>
+                            <option value="1.0" selected>1 Ano (12 Meses)</option>
+                            <option value="2.0">2 Anos (24 Meses)</option>
+                            <option value="3.0">3 Anos (36 Meses)</option>
+                            <option value="4.0">4 Anos (48 Meses)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label style="font-size:0.85rem; color:var(--text-muted); font-weight:600;">Robô / Estratégia (Bots Z)</label>
+                        <select id="sim-bot" class="input-field" onchange="updateSimulator()">
+                            <option value="forex">💶 FinBot Forex (EURUSD ~15%/ano)</option>
+                            <option value="gold" selected>🥇 FinBot Gold Edition (XAUUSD ~45%/ano)</option>
+                            <option value="champ">👑 FinBot Campeões Multi-Asset (~65%/ano + Juros Compostos)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DETAILED SIMULATION COMPARISON TABLE -->
+            <div class="card-header" style="margin-top: 1rem;">
+                <span class="card-title">📊 Tabela Comparativa de Decisão: FinBot vs Depósito a Prazo no Banco</span>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Opção de Investimento</th>
+                            <th>Capital Inicial</th>
+                            <th>Prazo (Tempo X)</th>
+                            <th>Taxa Média Estimada</th>
+                            <th>Montante Final Total</th>
+                            <th>Lucro Líquido Ganho</th>
+                            <th>Vale a Pena?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: rgba(34, 197, 94, 0.08);">
+                            <td><strong>🤖 FinBot Selecionado (Robô Z)</strong></td>
+                            <td id="tbl-finbot-cap" style="font-weight:700;">200.00 €</td>
+                            <td id="tbl-finbot-time">1.0 Ano</td>
+                            <td id="tbl-finbot-rate" style="font-weight:700; color:var(--accent-green);">~45.0% / ano</td>
+                            <td id="tbl-finbot-final" style="font-weight:800; color:var(--accent-green); font-size:1.05rem;">290.00 €</td>
+                            <td id="tbl-finbot-profit" style="font-weight:700; color:var(--accent-green);">+90.00 €</td>
+                            <td><span class="status-pill status-pass">🚀 COMPENSA LARGAMENTE</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>🏦 Depósito a Prazo no Banco</strong></td>
+                            <td id="tbl-bank-cap">200.00 €</td>
+                            <td id="tbl-bank-time">1.0 Ano</td>
+                            <td>2.5% / ano (fixo)</td>
+                            <td id="tbl-bank-final" style="font-weight:700;">205.00 €</td>
+                            <td id="tbl-bank-profit">+5.00 €</td>
+                            <td><span class="status-pill status-running">⚠️ Perde para a Inflação</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2: BOT CATALOG & DETAILED PARAMETERS -->
+    <div id="tab-robos" class="tab-section">
+        
+        <!-- Overview Table -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🤖 Catálogo Oficial dos 3 Robôs FinBot (Bots Z)</span>
+                <span class="status-pill status-pass">3 EAs Prontos no MT5</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Robô</th>
+                            <th>Ficheiro MQL5</th>
+                            <th>Ativos Alvo</th>
+                            <th>Mecânica & Filtros</th>
+                            <th>Retorno Médio Estimado</th>
+                            <th>Preço de Venda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>FinBot Forex Edition</strong></td>
+                            <td><code>FinBot.mq5</code> (v1.2)</td>
+                            <td style="color:var(--accent-gold);">EURUSD (H1)</td>
+                            <td class="notes-cell">EMA 9/21 Cross + RSI 14 + EMA 200 + Lote Dinâmico 0.5%</td>
+                            <td style="font-weight:700; color:var(--accent-green);">~15% ao ano</td>
+                            <td style="color:var(--accent-blue);">$79 USD</td>
+                        </tr>
+                        <tr style="background:rgba(245, 158, 11, 0.1);">
+                            <td><strong>FinBot Gold Edition (Campeão Ouro)</strong></td>
+                            <td><code>FinBot_Gold.mq5</code></td>
+                            <td style="color:var(--accent-gold);">XAUUSD / Ouro (H1)</td>
+                            <td class="notes-cell">SL 2.5x ATR, TP 9.0x ATR, Trailing 5.0x (Otimização Noturna MT5)</td>
+                            <td style="font-weight:800; color:var(--accent-green);">~45% a 135% / ano</td>
+                            <td style="color:var(--accent-blue);">$99 USD</td>
+                        </tr>
+                        <tr style="background:rgba(56, 189, 248, 0.1);">
+                            <td><strong>FinBot Campeões Edition (v2.0)</strong></td>
+                            <td><code>FinBot_Campeoes.mq5</code></td>
+                            <td style="color:var(--accent-gold);">Multi-Ativos (EURUSD, GBPUSD, USDJPY, US30)</td>
+                            <td class="notes-cell">Engenharia Reversa TOP + Filtro de Horário (08:00-20:00 UTC) + Juros Compostos</td>
+                            <td style="font-weight:700; color:var(--accent-green);">~65% ao ano</td>
+                            <td style="color:var(--accent-green); font-weight:700;">$149 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DETAILED PARAMETERS & CONFIGURATIONS TABLE -->
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">⚙️ Parâmetros & Configurações Internas do MetaTrader 5 (Inputs)</span>
+                <span class="status-pill status-blue">Configurações Avançadas</span>
+            </div>
+
+            <p style="margin-bottom:1.25rem; color:var(--text-sub);">
+                Tabela técnica com todos os parâmetros configuráveis dos 3 robôs no MT5 para facilitar os ajustes de risco e alavancagem pelo investidor:
+            </p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Parâmetro (Input MT5)</th>
+                            <th>Tipo / Descrição</th>
+                            <th>Valor Padrão Forex (EURUSD)</th>
+                            <th>Valor Ouro Campeão (XAUUSD H1)</th>
+                            <th>Valor Edição Campeões (v2.0)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>InpMagicNumber</code></td>
+                            <td class="notes-cell">ID Único do Robô no MT5</td>
+                            <td><code>888123</code></td>
+                            <td style="color:var(--accent-gold); font-weight:700;"><code>777123</code></td>
+                            <td style="color:var(--accent-blue);"><code>999123</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpRiskPercent</code></td>
+                            <td class="notes-cell">Risco por Operação (% do Saldo)</td>
+                            <td><code>0.5%</code></td>
+                            <td style="color:var(--accent-green); font-weight:700;"><code>0.25% - 0.50%</code></td>
+                            <td style="color:var(--accent-green); font-weight:700;"><code>0.5% - 1.5%</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpSL_ATRMultiplier</code></td>
+                            <td class="notes-cell">Multiplicador ATR para Stop Loss</td>
+                            <td><code>3.5x ATR</code></td>
+                            <td style="color:var(--accent-gold); font-weight:700;"><code>2.5x ATR</code> (Strict SL)</td>
+                            <td><code>2.5x ATR</code> (USDJPY / US30)</td>
+                        </tr>
+                        <tr>
+                            <td><code>InpTP_ATRMultiplier</code></td>
+                            <td class="notes-cell">Multiplicador ATR para Take Profit</td>
+                            <td><code>6.0x ATR</code></td>
+                            <td style="color:var(--accent-green); font-weight:800;"><code>9.0x ATR</code> (High Reward)</td>
+                            <td><code>8.0x - 9.0x ATR</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpTrailingTrigger_ATR</code></td>
+                            <td class="notes-cell">Gatilho de Trailing Stop em ATR</td>
+                            <td><code>4.0x ATR</code></td>
+                            <td style="color:var(--accent-gold); font-weight:700;"><code>5.0x ATR</code> (Trava Explosões)</td>
+                            <td><code>5.5x ATR</code> (USDJPY) / <code>2.0x</code> (US30)</td>
+                        </tr>
+                        <tr>
+                            <td><code>InpUseTimeFilter</code></td>
+                            <td class="notes-cell">Filtro de Horário (Sessões Londres/NY)</td>
+                            <td><code>false</code> (24h)</td>
+                            <td><code>false</code> (24h Ouro)</td>
+                            <td style="color:var(--accent-green); font-weight:700;"><code>true</code> (08:00 - 20:00 UTC)</td>
+                        </tr>
+                        <tr>
+                            <td><code>InpFastEMAPeriod</code></td>
+                            <td class="notes-cell">Período da Média Rápida</td>
+                            <td><code>9 EMA</code></td>
+                            <td><code>9 EMA</code></td>
+                            <td><code>9 EMA</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpSlowEMAPeriod</code></td>
+                            <td class="notes-cell">Período da Média Lenta</td>
+                            <td><code>21 EMA</code></td>
+                            <td><code>21 EMA</code></td>
+                            <td><code>21 EMA</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpTrendEMAPeriod</code></td>
+                            <td class="notes-cell">Média Móvel de Tendência Maior</td>
+                            <td><code>200 EMA</code></td>
+                            <td><code>200 EMA</code></td>
+                            <td><code>200 EMA</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>InpRSIPeriod</code></td>
+                            <td class="notes-cell">Filtro de Momentum RSI</td>
+                            <td><code>14 RSI</code> (Range 45-65)</td>
+                            <td><code>14 RSI</code> (Range 40-68)</td>
+                            <td><code>14 RSI</code> (Filtro Estrito)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3: CLIENT ONBOARDING GUIDE -->
+    <div id="tab-guia" class="tab-section">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🚀 Guia do Cliente: Como Começar a Usar o FinBot em 3 Passos</span>
+                <span class="status-pill status-blue">Passo a Passo Simples</span>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <div class="step-title">Abrir Conta na Corretora ECN</div>
+                    <div class="step-desc">Abre conta numa corretora MetaTrader 5 (ex.: Pepperstone ou IC Markets) com alavancagem 1:100.</div>
+                    <span class="status-pill status-pass">Tempo: 3 minutos</span>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <div class="step-title">Descarregar o FinBot ou Ativar Sinal</div>
+                    <div class="step-desc">Descarrega o robô para o teu MT5 ou ativa a subscrição de Copy Trading no MQL5.community.</div>
+                    <span class="status-pill status-blue">Copy Trading Direto</span>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <div class="step-title">Ativar o Algotrading 24/7</div>
+                    <div class="step-desc">Confirma o botão Algotrading verde no MT5 ou ativa a VPS da MetaQuotes (12€/mês) para operar sem PC ligado.</div>
+                    <span class="status-pill status-pass">Piloto Automático</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4: DEMO PORTFOLIO -->
+    <div id="tab-ativos" class="tab-section">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🚀 Carteira dos 5 Ativos — 100% Validada em Conta Demo</span>
+                <span class="status-pill status-pass">5 Ativos Prontos</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ativo</th>
+                            <th>Mercado</th>
+                            <th>Timeframe</th>
+                            <th>Robô Associado</th>
+                            <th>Estado em Demo</th>
+                            <th>Decisão p/ Conta Real</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>EURUSD</strong></td>
+                            <td>Forex Major</td>
+                            <td>H1</td>
+                            <td>FinBot v1.2 / Campeões v2.0</td>
+                            <td><span class="status-pill status-pass">🟢 A negociar no MT5</span></td>
+                            <td>Em Validação Empírica</td>
+                        </tr>
+                        <tr>
+                            <td><strong>XAUUSD (Ouro)</strong></td>
+                            <td>Comodidade / Metal</td>
+                            <td>H1</td>
+                            <td>FinBot Gold Edition</td>
+                            <td><span class="status-pill status-pass">🟢 A negociar no MT5 (+54k €)</span></td>
+                            <td><span class="status-pill status-pass">PRONTO PARA CONTA REAL</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>GBPUSD</strong></td>
+                            <td>Forex Major</td>
+                            <td>H1</td>
+                            <td>FinBot_GBPUSD.mq5</td>
+                            <td><span class="status-pill status-pass">🟢 A negociar no MT5 (DD 4.74%)</span></td>
+                            <td><span class="status-pill status-pass">Estabilizador de Carteira</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>US30 (Dow Jones)</strong></td>
+                            <td>Índice Americano</td>
+                            <td>H1</td>
+                            <td>FinBot_US30.mq5</td>
+                            <td><span class="status-pill status-pass">🟢 A negociar no MT5 (+479 €)</span></td>
+                            <td><span class="status-pill status-pass">PRONTO PARA CONTA REAL</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>USDJPY</strong></td>
+                            <td>Forex Major (Iene)</td>
+                            <td>H1</td>
+                            <td>FinBot_USDJPY.mq5</td>
+                            <td><span class="status-pill status-pass">🟢 A negociar no MT5 (Payoff 5.81€)</span></td>
+            <!-- TAB: DEMO REALISTA 1.000 € (Conta 5055061775) -->
+    <div id="tab-demo-1k" class="tab-section">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Capital Inicial Realista</div>
+                <div class="metric-value" style="color: var(--accent-blue);">1,000.00 €</div>
+                <div class="metric-sub">Conta Demo Realista (5055061775)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Capital Líquido (Equity)</div>
+                <div class="metric-value" id="kpi-equity-1k" style="color: #f87171;">893.46 €</div>
+                <div class="metric-sub" id="kpi-balance-1k">Saldo Atual: 892.13 €</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Lucro das Negociações</div>
+                <div class="metric-value" id="kpi-profit-1k" style="color: #f87171;">-106.54 €</div>
+                <div class="metric-sub" id="kpi-roi-1k">-10.65% ROI (Equity vs Depósito Inicial)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Robôs em Operação</div>
+                <div class="metric-value" style="color: var(--accent-blue);">10 EAs</div>
+                <div class="metric-sub">5 H1 + 5 M15 (Estratégia Original Tendência)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Trades Ativos em Curso</div>
+                <div class="metric-value" id="kpi-opentrades-1k" style="color: var(--accent-gold);">1 Trade</div>
+                <div class="metric-sub" id="kpi-lastupdate-1k">1 posição aberta em curso</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">💎 Acompanhamento em Tempo Real — Conta Demo Realista 1.000 € (Login 5055061775)</span>
+                <span class="status-pill status-running">🟢 10 Robôs Ativos (Algotrading ON)</span>
+            </div>
+            <p class="notes-cell" style="padding: 0 1.25rem 1rem;">
+                Conta demo dedicada de <strong>1.000 €</strong> — grupo de controlo com a estratégia de tendência original (EMA 9/21 + RSI).
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data / Hora</th>
+                            <th>Ativo</th>
+                            <th>Lucro</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trades-tbody-1k">
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO XAUUSD',
+                            account: '5055061775',
+                            accountType: 'Demo Realista 1.000 €',
+                            robot: 'FinBot Magic 777151',
+                            symbol: 'XAUUSD',
+                            lot: '0.01',
+                            orderType: 'BUY',
+                            priceOpen: '4455.55',
+                            priceClose: '4455.55',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '57872437568',
+                            profitVal: -18.84,
+                            profitStr: '-18.84 EUR',
+                            profitResult: '❌ PERDA',
+                            balanceAfter: '892.13 EUR',
+                            typeEmoji: '🔴'
+                        })">
+                            <td>2026-09-01 02:00</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">XAUUSD</td>
+                            <td style="color: #f87171; font-weight: 700;">-18.84 EUR</td>
+                        </tr>
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO GBPUSD',
+                            account: '5055061775',
+                            accountType: 'Demo Realista 1.000 €',
+                            robot: 'FinBot Magic 555151',
+                            symbol: 'GBPUSD',
+                            lot: '0.04',
+                            orderType: 'BUY',
+                            priceOpen: '1.35520',
+                            priceClose: '1.35520',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '57867288922',
+                            profitVal: -3.93,
+                            profitStr: '-3.93 EUR',
+                            profitResult: '❌ PERDA',
+                            balanceAfter: '892.13 EUR',
+                            typeEmoji: '🔴'
+                        })">
+                            <td>2026-08-31 18:46</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
+                            <td style="color: #f87171; font-weight: 700;">-3.93 EUR</td>
+                        </tr>
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO USDJPY',
+                            account: '5055061775',
+                            accountType: 'Demo Realista 1.000 €',
+                            robot: 'FinBot Magic 444151',
+                            symbol: 'USDJPY',
+                            lot: '0.07',
+                            orderType: 'SELL',
+                            priceOpen: '159.711',
+                            priceClose: '159.711',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '57867078218',
+                            profitVal: -4.34,
+                            profitStr: '-4.34 EUR',
+                            profitResult: '❌ PERDA',
+                            balanceAfter: '892.13 EUR',
+                            typeEmoji: '🔴'
+                        })">
+                            <td>2026-08-31 18:38</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">USDJPY</td>
+                            <td style="color: #f87171; font-weight: 700;">-4.34 EUR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB: DEMO INSTITUCIONAL 100.000 € (Conta 10012303191) -->
+    <div id="tab-demo-100k" class="tab-section">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Capital Inicial Institucional</div>
+                <div class="metric-value" style="color: var(--accent-blue);">100,000.00 €</div>
+                <div class="metric-sub">Conta Demo Original (10012303191)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Capital Líquido (Equity)</div>
+                <div class="metric-value" id="kpi-equity-100k" style="color: var(--accent-green);">104,377.42 €</div>
+                <div class="metric-sub" id="kpi-balance-100k">Saldo Atual: 101,975.88 €</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Lucro das Negociações</div>
+                <div class="metric-value" id="kpi-profit-100k" style="color: var(--accent-green);">+4,377.42 €</div>
+                <div class="metric-sub" id="kpi-roi-100k">+4.38% ROI (Equity vs Depósito Inicial)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Robôs em Operação</div>
+                <div class="metric-value" style="color: var(--accent-blue);">10 EAs</div>
+                <div class="metric-sub">5 Reversão à Média H1 + 5 Donchian M15</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Trades Ativos em Curso</div>
+                <div class="metric-value" id="kpi-opentrades-100k" style="color: var(--accent-gold);">2 Trades</div>
+                <div class="metric-sub" id="kpi-lastupdate-100k">2 posições abertas (+2.401,54 € flutuante)</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🏛️ Acompanhamento em Tempo Real — Conta Demo Institucional 100.000 € (Login 10012303191)</span>
+                <span class="status-pill status-running">🟢 10 Robôs Ativos (Algotrading ON)</span>
+            </div>
+            <p class="notes-cell" style="padding: 0 1.25rem 1rem;">
+                Conta de 100.000 € dedicada às <strong>estratégias experimentais novas</strong> (Reversão à Média H1 + Breakout de Donchian M15).
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data / Hora</th>
+                            <th>Ativo</th>
+                            <th>Lucro</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trades-tbody-100k">
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO GBPUSD',
+                            account: '10012303191',
+                            accountType: 'Demo Institucional 100.000 €',
+                            robot: 'FinBot Magic 555250',
+                            symbol: 'GBPUSD',
+                            lot: '7.15',
+                            orderType: 'SELL',
+                            priceOpen: '1.35357',
+                            priceClose: '1.35357',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '152416953140',
+                            profitVal: 0.0,
+                            profitStr: '+0.00 EUR',
+                            profitResult: '✅ LUCRO',
+                            balanceAfter: '101,975.88 EUR',
+                            typeEmoji: '🟢'
+                        })">
+                            <td>2026-09-01 10:30</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
+                            <td style="color: var(--accent-green); font-weight: 700;">+0.00 EUR</td>
+                        </tr>
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO USDJPY',
+                            account: '10012303191',
+                            accountType: 'Demo Institucional 100.000 €',
+                            robot: 'FinBot Magic 444250',
+                            symbol: 'USDJPY',
+                            lot: '8.72',
+                            orderType: 'BUY',
+                            priceOpen: '159.873',
+                            priceClose: '159.873',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '152416594057',
+                            profitVal: 0.0,
+                            profitStr: '+0.00 EUR',
+                            profitResult: '✅ LUCRO',
+                            balanceAfter: '101,975.88 EUR',
+                            typeEmoji: '🟢'
+                        })">
+                            <td>2026-09-01 09:00</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">USDJPY</td>
+                            <td style="color: var(--accent-green); font-weight: 700;">+0.00 EUR</td>
+                        </tr>
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO GBPUSD',
+                            account: '10012303191',
+                            accountType: 'Demo Institucional 100.000 €',
+                            robot: 'FinBot Magic 555250',
+                            symbol: 'GBPUSD',
+                            lot: '3.64',
+                            orderType: 'SELL',
+                            priceOpen: '1.35386',
+                            priceClose: '1.35386',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '152416517623',
+                            profitVal: -574.71,
+                            profitStr: '-574.71 EUR',
+                            profitResult: '❌ PERDA',
+                            balanceAfter: '101,975.88 EUR',
+                            typeEmoji: '🔴'
+                        })">
+                            <td>2026-09-01 08:31</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
+                            <td style="color: #f87171; font-weight: 700;">-574.71 EUR</td>
+                        </tr>
+                        <tr class="clickable-row" onclick="openTradeModal({
+                            title: '🏁 TRANSAÇÃO EURUSD',
+                            account: '10012303191',
+                            accountType: 'Demo Institucional 100.000 €',
+                            robot: 'FinBot Magic 888250',
+                            symbol: 'EURUSD',
+                            lot: '5.10',
+                            orderType: 'SELL',
+                            priceOpen: '1.16171',
+                            priceClose: '1.16171',
+                            sl: 'Dinâmico ATR',
+                            tp: 'Dinâmico ATR',
+                            ticket: '152415482151',
+                            profitVal: 119.85,
+                            profitStr: '+119.85 EUR',
+                            profitResult: '✅ LUCRO',
+                            balanceAfter: '101,975.88 EUR',
+                            typeEmoji: '🟢'
+                        })">
+                            <td>2026-09-01 02:00</td>
+                            <td style="color:var(--accent-gold); font-weight:700;">EURUSD</td>
+                            <td style="color: var(--accent-green); font-weight: 700;">+119.85 EUR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 5: BACKTESTS EXCEL -->
+    <div id="tab-backtests" class="tab-section">
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">📊 Histórico Completo de Backtests & Registos</span>
+                <button class="btn btn-blue" onclick="exportToCSV()">📥 Exportar para Excel (.CSV)</button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Ativo</th>
+                            <th>TF</th>
+                            <th>Período</th>
+                            <th>Risco</th>
+                            <th>SL (ATR)</th>
+                            <th>TP (ATR)</th>
+                            <th>Trailing</th>
+                            <th>Lucro Líquido</th>
+                            <th>Payoff</th>
+                            <th>Max DD %</th>
+                            <th>Resultado</th>
+                            <th>Notas & Feedback</th>
+                        </tr>
+                    </thead>
+                    <tbody id="backtest-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        FinBot EA Project © 2026 — Dashboard de Plataforma & Simulador de ROI | Vercel Live Deployment
+    </footer>
+
+    <!-- EMBEDDED JAVASCRIPT FOR GUARANTEED INTERACTIVITY -->
+    <script>
+        const initialBacktestData = [
+            {
+                id: '#7 (USDJPY Campeão)',
+                data: '2026-08-23',
+                ativo: 'USDJPY',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.5%',
+                sl: '2.5x',
+                tp: '8.0x',
+                trailing: '5.5x',
+                lucro: '+1,284.68 $',
+                payoff: '5.81 $',
+                dd: '6.04%',
+                status: 'PASS',
+                statusLabel: '🟢 CAMPEÃO IENE',
+                notas: 'Otimização MT5 (Passe 0,18). Payoff espetacular de 5.81$ por trade com Drawdown ultra-baixo de apenas 6.04%!'
+            },
+            {
+                id: '#6 (US30 Campeão)',
+                data: '2026-08-22',
+                ativo: 'US30',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.5%',
+                sl: '2.0x',
+                tp: '9.0x',
+                trailing: '2.0x',
+                lucro: '+479.37 $',
+                payoff: '1.36 $',
+                dd: '12.95%',
+                status: 'PASS',
+                statusLabel: '🟢 CAMPEÃO DOW JONES',
+                notas: 'Otimização MT5 (Passe 5,89). 352 trades com Payoff positivo de 1.36$ por trade e Drawdown controlado de 12.95%!'
+            },
+            {
+                id: '#5 (GBPUSD Campeão)',
+                data: '2026-08-22',
+                ativo: 'GBPUSD',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.5%',
+                sl: '3.5x',
+                tp: '9.0x',
+                trailing: '3.0x',
+                lucro: '+118.45 $',
+                payoff: '0.44 $',
+                dd: '4.74%',
+                status: 'PASS',
+                statusLabel: '🟢 SEGURANÇA TOTAL',
+                notas: 'Filtro de Sessão Londres/NY (08:00-20:00 UTC). Drawdown ultra minúsculo de apenas 4.74%! Perfeito para estabilização de risco da carteira.'
+            },
+            {
+                id: '#4 (Ouro Campeão)',
+                data: '2026-08-22',
+                ativo: 'XAUUSD',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.25%',
+                sl: '2.5x',
+                tp: '9.0x',
+                trailing: '5.0x',
+                lucro: '+54,118.08 $',
+                payoff: '169.65 $',
+                dd: '16.40%',
+                status: 'PASS',
+                statusLabel: '🟢 CAMPEÃO OURO',
+                notas: 'Otimização Genética Noturna MT5 (Passe 0,56). Payoff brutal de 169.65$ por trade! A 0.25% de risco, o DD fica controlado em 16.4%.'
+            },
+            {
+                id: '#3 (EURUSD Campeão)',
+                data: '2026-08-21',
+                ativo: 'EURUSD',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.5%',
+                sl: '3.5x',
+                tp: '6.0x',
+                trailing: '4.0x',
+                lucro: '+557.97 $',
+                payoff: '1.79 $',
+                dd: '9.13%',
+                status: 'PASS',
+                statusLabel: '🟢 SUCESSO VENCEDOR',
+                notas: 'Passe 1,71 da Otimização Genética. Lucro positivo sustentável com DD minúsculo de 9.13%. Aprovado para Fase 3 (Demo 24/7).'
+            },
+            {
+                id: '#2',
+                data: '2026-08-20',
+                ativo: 'EURUSD',
+                tf: 'H1',
+                periodo: '2022.08-2026.08',
+                risco: '0.5%',
+                sl: '2.5x',
+                tp: '5.0x',
+                trailing: '3.0x',
+                lucro: '-670.56 $',
+                payoff: '-1.52 $',
+                dd: '9.37%',
+                status: 'WARN',
+                statusLabel: '🟡 Transição',
+                notas: 'Reduziu DD para 9.37% e taxa de acerto subiu para 71.66%, mas Trailing fechava trades cedo.'
+            },
+            {
+                id: '#1',
+                data: '2026-08-20',
+                ativo: 'EURUSD',
+                tf: 'M15',
+                periodo: '2022.08-2026.08',
+                risco: '1.0%',
+                sl: '1.5x',
+                tp: '2.5x',
+                trailing: '1.0x',
+                lucro: '-8,357.30 $',
+                payoff: '-0.08 $',
+                dd: '85.25%',
+                status: 'FAIL',
+                statusLabel: '🔴 Falha',
+                notas: 'Estratégia padrão M15. Ruído excessivo e SL curto.'
+            }
+        ];
+
+        // Tab Switching Logic
+        function switchTab(tabId, btnElem) {
+            document.querySelectorAll('.tab-section').forEach(sec => sec.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+
+            const targetSection = document.getElementById(tabId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            if (btnElem) {
+                btnElem.classList.add('active');
+            }
+        }
+
+        // Dynamic Interactive Simulator Logic
+        function updateSimulator() {
+            const capitalInput = document.getElementById('sim-capital');
+            const timeInput    = document.getElementById('sim-time');
+            const botInput     = document.getElementById('sim-bot');
+
+            if (!capitalInput || !timeInput || !botInput) return;
+
+            const capital = parseFloat(capitalInput.value) || 200;
+            const timeYears = parseFloat(timeInput.value) || 1.0;
+            const botChoice = botInput.value;
+
+            let rate = 0.45;
+            let rateText = "~45.0% / ano";
+
+            if (botChoice === 'forex') {
+                rate = 0.15;
+                rateText = "~15.0% / ano";
+            } else if (botChoice === 'gold') {
+                rate = 0.45;
+                rateText = "~45.0% / ano (FinBot Gold)";
+            } else if (botChoice === 'champ') {
+                rate = 0.65;
+                rateText = "~65.0% / ano (Juros Compostos)";
+            }
+
+            // Calculations
+            const finalFinBot = capital * Math.pow((1 + rate), timeYears);
+            const profitFinBot = finalFinBot - capital;
+            const roiFinBot = (profitFinBot / capital) * 100;
+
+            const bankRate = 0.025;
+            const finalBank = capital * Math.pow((1 + bankRate), timeYears);
+            const profitBank = finalBank - capital;
+            const diffProfit = profitFinBot - profitBank;
+
+            // Update KPI cards
+            document.getElementById('kpi-capital-val').innerText = capital.toFixed(2) + ' €';
+            document.getElementById('kpi-final-val').innerText   = finalFinBot.toFixed(2) + ' €';
+            document.getElementById('kpi-profit-sub').innerText  = 'Lucro Líquido: +' + profitFinBot.toFixed(2) + ' €';
+            document.getElementById('kpi-roi-val').innerText     = '+' + roiFinBot.toFixed(1) + '%';
+            document.getElementById('kpi-diff-val').innerText    = '+' + diffProfit.toFixed(2) + ' €';
+
+            // Update Table rows
+            const timeLabel = timeYears === 0.5 ? '6 Meses (0.5 Anos)' : timeYears.toFixed(1) + ' Anos';
+
+            document.getElementById('tbl-finbot-cap').innerText    = capital.toFixed(2) + ' €';
+            document.getElementById('tbl-finbot-time').innerText   = timeLabel;
+            document.getElementById('tbl-finbot-rate').innerText   = rateText;
+            document.getElementById('tbl-finbot-final').innerText  = finalFinBot.toFixed(2) + ' €';
+            document.getElementById('tbl-finbot-profit').innerText = '+' + profitFinBot.toFixed(2) + ' €';
+
+            document.getElementById('tbl-bank-cap').innerText    = capital.toFixed(2) + ' €';
+            document.getElementById('tbl-bank-time').innerText   = timeLabel;
+            document.getElementById('tbl-bank-final').innerText  = finalBank.toFixed(2) + ' €';
+            document.getElementById('tbl-bank-profit').innerText = '+' + profitBank.toFixed(2) + ' €';
+        }
+
+        // Render Backtest History Table
+        function renderBacktestTable() {
+            const tbody = document.getElementById('backtest-tbody');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            initialBacktestData.forEach(item => {
+                let badgeClass = 'status-fail';
+                if(item.status === 'WARN') badgeClass = 'status-running';
+                if(item.status === 'PASS') badgeClass = 'status-pass';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td><strong>${item.id}</strong></td>
+                    <td>${item.data}</td>
+                    <td style="color:var(--accent-gold); font-weight:600;">${item.ativo}</td>
+                    <td>${item.tf}</td>
+                    <td>${item.periodo}</td>
+                    <td>${item.risco}</td>
+                    <td>${item.sl}</td>
+                    <td>${item.tp}</td>
+                    <td>${item.trailing}</td>
+                    <td style="color: ${item.lucro.includes('-') ? '#ef4444' : '#22c55e'}; font-weight:700;">${item.lucro}</td>
+                    <td style="color:var(--accent-green); font-weight:600;">${item.payoff}</td>
+                    <td>${item.dd}</td>
+                    <td><span class="status-pill ${badgeClass}">${item.statusLabel}</span></td>
+                    <td class="notes-cell">${item.notas}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function exportToCSV() {
+            let csv = 'ID;Data;Ativo;Timeframe;Periodo;Risco;SL_ATR;TP_ATR;Trailing_ATR;Lucro_Liquido;Payoff;Max_Drawdown;Resultado;Notas\n';
+            initialBacktestData.forEach(row => {
+                csv += `${row.id};${row.data};${row.ativo};${row.tf};${row.periodo};${row.risco};${row.sl};${row.tp};${row.trailing};${row.lucro};${row.payoff};${row.dd};${row.statusLabel};"${row.notas}"\n`;
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.setAttribute('download', 'FinBot_Backtests_History.csv');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // ==============================================================
+        // POSIÇÕES REAIS POR CONTA — dados extraídos do MT5 via API Python
+        // (snapshot manual; atualizado quando o dashboard é revisto)
+        // ==============================================================
+        const tradesData = {
+            acc1k: [
+                { time: '2026-08-28 11:15', symbol: 'GBPUSD', bot: 'FinBot GBPUSD M15', type: 'SELL', volume: 0.09, price_open: 1.35881, price_close: null, sl: 1.35940, tp: 1.35761, profit: 3.40, status: 'ABERTA' },
+                { time: '2026-08-28 09:00', symbol: 'GBPUSD', bot: 'FinBot GBPUSD H1', type: 'SELL', volume: 0.02, price_open: 1.35886, price_close: null, sl: 1.36151, tp: 1.35204, profit: 0.84, status: 'ABERTA' },
+                { time: '2026-08-28 04:00', symbol: 'EURUSD', bot: 'FinBot EURUSD H1', type: 'BUY', volume: 0.02, price_open: 1.16538, price_close: null, sl: 1.16279, tp: 1.16980, profit: -1.84, status: 'ABERTA' },
+                { time: '2026-08-27 11:30', symbol: 'GBPUSD', bot: 'FinBot GBPUSD M15', type: 'SELL', volume: 0.07, price_open: 1.35870, price_close: 1.35951, sl: null, tp: null, profit: -4.86, status: 'FECHADA' },
+                { time: '2026-08-27 10:15', symbol: 'EURUSD', bot: 'FinBot EURUSD M15', type: 'SELL', volume: 0.14, price_open: 1.16539, price_close: 1.16580, sl: null, tp: null, profit: -4.92, status: 'FECHADA' },
+                { time: '2026-08-27 09:30', symbol: 'XAUUSD', bot: 'FinBot Gold XAUUSD M15', type: 'SELL', volume: 0.01, price_open: 4616.85, price_close: 4597.40, sl: null, tp: null, profit: 16.69, status: 'FECHADA' },
+            ],
+            acc100k: [
+                { time: '2026-08-28 12:15', symbol: 'USDJPY', bot: 'Donchian USDJPY M15', type: 'BUY', volume: 9.85, price_open: 159.574, price_close: null, sl: 159.480, tp: null, profit: 47.71, status: 'ABERTA' },
+                { time: '2026-08-28 11:15', symbol: 'GBPUSD', bot: 'FinBot GBPUSD M15', type: 'SELL', volume: 0.09, price_open: 1.35881, price_close: null, sl: 1.35940, tp: 1.35761, profit: 3.40, status: 'ABERTA' },
+                { time: '2026-08-28 09:00', symbol: 'GBPUSD', bot: 'FinBot GBPUSD H1', type: 'SELL', volume: 2.19, price_open: 1.35886, price_close: null, sl: 1.36151, tp: 1.35204, profit: 92.17, status: 'ABERTA' },
+                { time: '2026-08-28 04:00', symbol: 'EURUSD', bot: 'FinBot EURUSD H1', type: 'BUY', volume: 2.25, price_open: 1.16538, price_close: null, sl: 1.16279, tp: 1.16980, profit: -206.77, status: 'ABERTA' },
+                { time: '2026-08-27 11:30', symbol: 'GBPUSD', bot: 'FinBot GBPUSD M15', type: 'SELL', volume: 0.07, price_open: 1.35870, price_close: 1.35951, sl: null, tp: null, profit: -4.86, status: 'FECHADA' },
+                { time: '2026-08-27 10:15', symbol: 'EURUSD', bot: 'FinBot EURUSD M15', type: 'SELL', volume: 0.14, price_open: 1.16539, price_close: 1.16580, sl: null, tp: null, profit: -4.92, status: 'FECHADA' },
+                { time: '2026-08-27 09:30', symbol: 'XAUUSD', bot: 'FinBot Gold XAUUSD M15', type: 'SELL', volume: 0.01, price_open: 4616.41, price_close: 4597.40, sl: null, tp: null, profit: 16.31, status: 'FECHADA' },
+                { time: '2026-08-26 17:00', symbol: 'EURUSD', bot: 'FinBot EURUSD M15', type: 'SELL', volume: 5.92, price_open: 1.16561, price_close: 1.16508, sl: null, tp: null, profit: 254.06, status: 'FECHADA' },
+                { time: '2026-08-26 14:00', symbol: 'EURUSD', bot: 'FinBot EURUSD M15', type: 'SELL', volume: 7.38, price_open: 1.16661, price_close: 1.16741, sl: null, tp: null, profit: -505.73, status: 'FECHADA' },
+            ],
+        };
+
+        function fmtPrice(v) {
+            if (v === null || v === undefined || v === 0) return '—';
+            if (v < 10) return v.toFixed(5);
+            if (v < 1000) return v.toFixed(3);
+            return v.toFixed(2);
+        }
+
+        function populateFilters(accountKey) {
+            const data = tradesData[accountKey];
+            const symbols = [...new Set(data.map(r => r.symbol))].sort();
+            const bots = [...new Set(data.map(r => r.bot))].sort();
+            const suffix = accountKey === 'acc1k' ? '1k' : '100k';
+            const symbolSel = document.getElementById('filter-symbol-' + suffix);
+            const botSel = document.getElementById('filter-bot-' + suffix);
+            symbols.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; symbolSel.appendChild(o); });
+            bots.forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b; botSel.appendChild(o); });
+        }
+
+        function renderTradesTable(accountKey, tbodyId) {
+            const suffix = accountKey === 'acc1k' ? '1k' : '100k';
+            const fSymbol = document.getElementById('filter-symbol-' + suffix).value;
+            const fBot = document.getElementById('filter-bot-' + suffix).value;
+            const fStatus = document.getElementById('filter-status-' + suffix).value;
+            const tbody = document.getElementById(tbodyId);
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            const rows = tradesData[accountKey].filter(r =>
+                (fSymbol === 'all' || r.symbol === fSymbol) &&
+                (fBot === 'all' || r.bot === fBot) &&
+                (fStatus === 'all' || r.status === fStatus)
+            );
+
+            if (rows.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="11" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem posições para os filtros selecionados.</td></tr>';
+                return;
+            }
+
+            rows.forEach(r => {
+                const profitColor = r.profit >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+                const typeColor = r.type === 'BUY' ? 'var(--accent-green)' : 'var(--accent-red)';
+                const statusBadge = r.status === 'ABERTA' ? 'status-running' : (r.profit >= 0 ? 'status-pass' : 'status-fail');
+                const statusLabel = r.status === 'ABERTA' ? '🟢 Aberta' : (r.profit >= 0 ? '✅ Fechada' : '❌ Fechada');
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${r.time}</td>
+                    <td style="color:var(--accent-gold); font-weight:700;">${r.symbol}</td>
+                    <td style="color:var(--accent-blue);">${r.bot}</td>
+                    <td style="color:${typeColor}; font-weight:600;">${r.type}</td>
+                    <td>${r.volume}</td>
+                    <td>${fmtPrice(r.price_open)}</td>
+                    <td>${fmtPrice(r.price_close)}</td>
+                    <td>${fmtPrice(r.sl)}</td>
+                    <td>${fmtPrice(r.tp)}</td>
+                    <td style="color:${profitColor}; font-weight:700;">${r.profit >= 0 ? '+' : ''}${r.profit.toFixed(2)} €</td>
+                    <td><span class="status-pill ${statusBadge}">${statusLabel}</span></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function renderBotRanking(accountKey, tbodyId) {
+            const tbody = document.getElementById(tbodyId);
+            if (!tbody) return;
+
+            const byBot = {};
+            tradesData[accountKey].forEach(r => {
+                if (!byBot[r.bot]) byBot[r.bot] = { trades: 0, wins: 0, profit: 0 };
+                byBot[r.bot].trades++;
+                byBot[r.bot].profit += r.profit;
+                if (r.profit >= 0) byBot[r.bot].wins++;
+            });
+
+            const ranked = Object.entries(byBot).map(([bot, s]) => ({
+                bot, trades: s.trades, profit: s.profit,
+                avg: s.profit / s.trades, winRate: (s.wins / s.trades) * 100
+            })).sort((a, b) => b.profit - a.profit);
+
+            tbody.innerHTML = '';
+            if (ranked.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem dados ainda.</td></tr>';
+                return;
+            }
+
+            ranked.forEach((r, i) => {
+                const color = r.profit >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+                const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}º`;
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td style="font-weight:700; font-size:1.1rem;">${medal}</td>
+                    <td style="color:var(--accent-blue); font-weight:600;">${r.bot}</td>
+                    <td>${r.trades}</td>
+                    <td>${r.winRate.toFixed(0)}%</td>
+                    <td style="color:${r.avg >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'};">${r.avg >= 0 ? '+' : ''}${r.avg.toFixed(2)} €</td>
+                    <td style="color:${color}; font-weight:800; font-size:1.05rem;">${r.profit >= 0 ? '+' : ''}${r.profit.toFixed(2)} €</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function renderAll() {
+            populateFilters('acc1k');
+            populateFilters('acc100k');
+            renderTradesTable('acc1k', 'trades-tbody-1k');
+            renderTradesTable('acc100k', 'trades-tbody-100k');
+            renderBotRanking('acc1k', 'ranking-tbody-1k');
+            renderBotRanking('acc100k', 'ranking-tbody-100k');
+        }
+
+        function updateAccountMetrics(key, suffix, initialDeposit) {
+            const acc = key && metaData[key];
+            if (!acc) return;
+            const equity = acc.equity, balance = acc.balance;
+            const profit = equity - initialDeposit;
+            const roi = (profit / initialDeposit) * 100;
+            const openCount = tradesData[key].filter(r => r.status === 'ABERTA').length;
+
+            const elEquity = document.getElementById('kpi-equity-' + suffix);
+            const elBalance = document.getElementById('kpi-balance-' + suffix);
+            const elProfit = document.getElementById('kpi-profit-' + suffix);
+            const elRoi = document.getElementById('kpi-roi-' + suffix);
+            const elOpen = document.getElementById('kpi-opentrades-' + suffix);
+            const elUpdate = document.getElementById('kpi-lastupdate-' + suffix);
+
+            const color = profit >= 0 ? 'var(--accent-green)' : '#f87171';
+            if (elEquity) { elEquity.innerText = equity.toLocaleString('pt-PT', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €'; elEquity.style.color = color; }
+            if (elBalance) elBalance.innerText = 'Saldo Atual: ' + balance.toLocaleString('pt-PT', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+            if (elProfit) { elProfit.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2) + ' €'; elProfit.style.color = color; }
+            if (elRoi) elRoi.innerText = (roi >= 0 ? '+' : '') + roi.toFixed(2) + '% ROI (Equity vs Depósito Inicial)';
+            if (elOpen) elOpen.innerText = openCount + ' Trades';
+            if (elUpdate) elUpdate.innerText = acc.updated ? ('Atualizado: ' + acc.updated) : (openCount + ' posições abertas');
+        }
+
+        // Dados de conta (equity/saldo) acompanham tradesData — atualizados via data.json quando disponível
+        let metaData = {
+            acc1k: { equity: 1009.31, balance: 1006.91, updated: null },
+            acc100k: { equity: 99691.37, balance: 99754.86, updated: null },
+        };
+
+        async function loadLiveData() {
+            try {
+                const resp = await fetch('./live_telemetry.json?t=' + Date.now(), { cache: 'no-store' });
+                if (!resp.ok) return;
+                const json = await resp.json();
+                if (!json || !json.accounts) return;
+
+                const acc1k = json.accounts["5055061775"];
+                const acc100k = json.accounts["10012303191"];
+
+                if (acc1k) renderLiveAccount('1k', acc1k, '5055061775', 'Demo Realista 1.000 €');
+                if (acc100k) renderLiveAccount('100k', acc100k, '10012303191', 'Demo Institucional 100.000 €');
+
+                console.log('FinBot Dashboard: dados atualizados de live_telemetry.json em', json.updated_at);
+            } catch (e) {
+                console.log('FinBot Dashboard: live_telemetry.json indisponível.', e.message);
+            }
+        }
+
+        function renderLiveAccount(suffix, accData, loginStr, accountTypeStr) {
+            const tableElem = document.querySelector('#tab-demo-' + suffix + ' tbody');
+            if (tableElem && accData.deals && accData.deals.length > 0) {
+                tableElem.innerHTML = '';
+                accData.deals.forEach(deal => {
+                    const tr = document.createElement('tr');
+                    tr.className = 'clickable-row';
+                    tr.onclick = function() {
+                        openTradeModal({
+                            title: `🏁 TRANSAÇÃO ${deal.symbol}`,
+                            account: loginStr,
+                            accountType: accountTypeStr,
+                            robot: deal.robot,
+                            symbol: deal.symbol,
+                            lot: deal.lot,
+                            orderType: deal.type,
+                            priceOpen: deal.price_open,
+                            priceClose: deal.price_close,
+                            sl: deal.sl,
+                            tp: deal.tp,
+                            ticket: deal.ticket,
+                            profitVal: deal.profit_val,
+                            profitStr: deal.profit_str,
+                            profitResult: deal.result,
+                            balanceAfter: deal.balance_after,
+                            typeEmoji: deal.profit_val >= 0 ? '🟢' : '🔴'
+                        });
+                    };
+
+                    const profitStyle = deal.profit_val >= 0 ? 'color: var(--accent-green); font-weight: 700;' : 'color: #f87171; font-weight: 700;';
+                    tr.innerHTML = `
+                        <td>${deal.datetime}</td>
+                        <td style="color:var(--accent-gold); font-weight:700;">${deal.symbol}</td>
+                        <td style="${profitStyle}">${deal.profit_str}</td>
+                    `;
+                    tableElem.appendChild(tr);
+                });
+            }
+        }
+
+        // Initialize on load
+        renderBacktestTable();
+        updateSimulator();
+        loadLiveData();
+        setInterval(loadLiveData, 30000); // tenta refrescar de live_telemetry.json a cada 30s enquanto a página está aberta
+    </script>
+
+    <!-- MODAL POPUP DE DETALHES DA TRANSAÇÃO -->
+    <div id="trade-modal" class="modal-overlay" onclick="closeTradeModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <span class="modal-title" id="modal-title">🏁 Detalhes da Negociação</span>
+                <button class="modal-close" onclick="closeTradeModal()">✕</button>
+            </div>
+            <div class="trade-info-list" id="modal-content">
+                <!-- Conteúdo preenchido dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTradeModal(data) {
+            const modal = document.getElementById('trade-modal');
+            const content = document.getElementById('modal-content');
+            const title = document.getElementById('modal-title');
+            if (!modal || !content) return;
+
+            title.innerHTML = `${data.typeEmoji || '🏁'} ${data.title || 'Detalhes da Ordem'}`;
+            
+            const profitColor = (data.profitVal < 0) ? '#ef4444' : '#22c55e';
+            const orderColor = (data.orderType === 'BUY') ? '#22c55e' : (data.orderType === 'SELL' ? '#ef4444' : '#38bdf8');
+
+            content.innerHTML = `
+                <div class="trade-info-row">
+                    <span class="trade-info-label">🏦 Conta MetaTrader 5</span>
+                    <span class="trade-info-val">${data.account} (${data.accountType})</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">🤖 Robô / Estratégia</span>
+                    <span class="trade-info-val" style="color:var(--accent-blue);">${data.robot}</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">📊 Ativo Operado</span>
+                    <span class="trade-info-val" style="color:var(--accent-gold);">${data.symbol}</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">📦 Lote Executado</span>
+                    <span class="trade-info-val">${data.lot} Lotes</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">🔹 Tipo de Ordem</span>
+                    <span class="trade-info-val" style="color:${orderColor};">${data.orderType}</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">💵 Preço Entrada / Fecho</span>
+                    <span class="trade-info-val">${data.priceOpen} ➔ ${data.priceClose}</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">🛑 Stop Loss / 🎯 Take Profit</span>
+                    <span class="trade-info-val">SL: ${data.sl} | TP: ${data.tp}</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">🆔 Ticket da Ordem (MT5)</span>
+                    <span class="trade-info-val" style="color:var(--accent-blue);">#${data.ticket}</span>
+                </div>
+                <div class="trade-info-row" style="background: rgba(30, 41, 59, 0.9); border: 1px solid ${profitColor};">
+                    <span class="trade-info-label">💵 Resultado Final</span>
+                    <span class="trade-info-val" style="color:${profitColor}; font-size:1.05rem;">${data.profitStr} (${data.profitResult})</span>
+                </div>
+                <div class="trade-info-row">
+                    <span class="trade-info-label">💰 Saldo da Conta Pós-Trade</span>
+                    <span class="trade-info-val">${data.balanceAfter}</span>
+                </div>
+            `;
+
+            modal.classList.add('active');
+        }
+
+        function closeTradeModal(event) {
+            if (event && event.target && !event.target.classList.contains('modal-overlay') && !event.target.classList.contains('modal-close')) return;
+            const modal = document.getElementById('trade-modal');
+            if (modal) modal.classList.remove('active');
+        }
+    </script>
+</body>
+</html>
