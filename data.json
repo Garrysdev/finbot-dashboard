@@ -1,20 +1,20 @@
 {
-  "updated_at": "2026-09-01 16:46:36",
+  "updated_at": "2026-09-01 17:14:33",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 99808.69,
-      "equity": 100951.01,
+      "equity": 100964.26,
       "closed_pl": -191.30999999999946,
-      "total_pl": 951.0099999999948,
-      "roi_pct": 0.9510099999999948,
-      "floating_pl": 1142.32,
+      "total_pl": 964.2599999999948,
+      "roi_pct": 0.9642599999999948,
+      "floating_pl": 1155.57,
       "open_count": 1,
       "trades": [
         {
-          "time": "2026-09-01 19:22",
+          "time": "2026-09-01 16:22",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -30,7 +30,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-09-01 18:50",
+          "time": "2026-09-01 15:50",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "BUY",
@@ -46,7 +46,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-01 17:34",
+          "time": "2026-09-01 14:34",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -62,7 +62,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-01 17:32",
+          "time": "2026-09-01 14:32",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -78,7 +78,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-09-01 16:39",
+          "time": "2026-09-01 13:39",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -94,7 +94,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-09-01 16:39",
+          "time": "2026-09-01 13:39",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -110,7 +110,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-09-01 13:39",
+          "time": "2026-09-01 10:39",
           "symbol": "XAUUSD",
           "bot": "MeanRev Gold XAUUSD H1",
           "type": "BUY",
@@ -126,7 +126,7 @@
           "magic": 777200
         },
         {
-          "time": "2026-09-01 13:16",
+          "time": "2026-09-01 10:16",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -142,7 +142,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-09-01 13:08",
+          "time": "2026-09-01 10:08",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -158,7 +158,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-01 13:08",
+          "time": "2026-09-01 10:08",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -174,7 +174,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-09-01 12:40",
+          "time": "2026-09-01 09:40",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -190,7 +190,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-09-01 12:12",
+          "time": "2026-09-01 09:12",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -206,7 +206,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-09-01 11:48",
+          "time": "2026-09-01 08:48",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -222,7 +222,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-09-01 11:02",
+          "time": "2026-09-01 08:02",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -238,7 +238,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-01 10:43",
+          "time": "2026-09-01 07:43",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -254,7 +254,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-09-01 08:31",
+          "time": "2026-09-01 05:31",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "BUY",
@@ -270,7 +270,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-01 02:00",
+          "time": "2026-08-31 23:00",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -286,7 +286,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-31 23:50",
+          "time": "2026-08-31 20:50",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -302,7 +302,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-08-31 18:59",
+          "time": "2026-08-31 15:59",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -318,7 +318,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-31 18:38",
+          "time": "2026-08-31 15:38",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -334,7 +334,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-08-31 15:33",
+          "time": "2026-08-31 12:33",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -350,7 +350,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-08-31 12:07",
+          "time": "2026-08-31 09:07",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
@@ -366,7 +366,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-08-31 12:06",
+          "time": "2026-08-31 09:06",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -382,7 +382,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-28 23:01",
+          "time": "2026-08-28 20:01",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -398,7 +398,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-08-28 22:26",
+          "time": "2026-08-28 19:26",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -414,7 +414,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-28 22:05",
+          "time": "2026-08-28 19:05",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -430,7 +430,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-08-28 20:05",
+          "time": "2026-08-28 17:05",
           "symbol": "XAUUSD",
           "bot": "MeanRev Gold XAUUSD H1",
           "type": "BUY",
@@ -446,7 +446,7 @@
           "magic": 777200
         },
         {
-          "time": "2026-08-28 18:55",
+          "time": "2026-08-28 15:55",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -462,7 +462,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-08-28 18:36",
+          "time": "2026-08-28 15:36",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -478,7 +478,7 @@
           "magic": 777250
         },
         {
-          "time": "2026-08-28 18:29",
+          "time": "2026-08-28 15:29",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -494,7 +494,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-08-28 18:03",
+          "time": "2026-08-28 15:03",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "BUY",
@@ -510,7 +510,7 @@
           "magic": 888123
         },
         {
-          "time": "2026-08-28 18:00",
+          "time": "2026-08-28 15:00",
           "symbol": "GBPUSD",
           "bot": "Donchian GBPUSD M15",
           "type": "SELL",
@@ -526,7 +526,7 @@
           "magic": 555250
         },
         {
-          "time": "2026-08-28 18:00",
+          "time": "2026-08-28 15:00",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -542,7 +542,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-28 16:37",
+          "time": "2026-08-28 13:37",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -558,7 +558,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-08-28 14:58",
+          "time": "2026-08-28 11:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -574,7 +574,7 @@
           "magic": 888250
         },
         {
-          "time": "2026-08-28 14:05",
+          "time": "2026-08-28 11:05",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "BUY",
@@ -590,7 +590,7 @@
           "magic": 444250
         },
         {
-          "time": "2026-08-28 09:00",
+          "time": "2026-08-28 06:00",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -599,14 +599,14 @@
           "price_close": null,
           "sl": 1.36151,
           "tp": 1.3520400000000001,
-          "profit": 1142.32,
-          "profit_str": "+1142.32 EUR",
+          "profit": 1155.57,
+          "profit_str": "+1155.57 EUR",
           "status": "ABERTA",
           "ticket": "152550308243",
           "magic": 555123
         },
         {
-          "time": "2026-08-27 12:08",
+          "time": "2026-08-27 09:08",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -622,7 +622,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-27 12:08",
+          "time": "2026-08-27 09:08",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -638,7 +638,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-08-27 11:28",
+          "time": "2026-08-27 08:28",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -654,7 +654,7 @@
           "magic": 777151
         },
         {
-          "time": "2026-08-27 01:00",
+          "time": "2026-08-26 22:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -670,7 +670,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-26 16:19",
+          "time": "2026-08-26 13:19",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -775,15 +775,15 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 896.1,
-      "equity": 898.51,
+      "equity": 899.41,
       "closed_pl": -103.89999999999999,
-      "total_pl": -101.49000000000001,
-      "roi_pct": -10.149000000000001,
-      "floating_pl": 2.41,
+      "total_pl": -100.59000000000003,
+      "roi_pct": -10.059000000000003,
+      "floating_pl": 3.31,
       "open_count": 4,
       "trades": [
         {
-          "time": "2026-09-01 19:45",
+          "time": "2026-09-01 16:45",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -792,14 +792,14 @@
           "price_close": null,
           "sl": 1.16019,
           "tp": 1.15741,
-          "profit": 0.43,
-          "profit_str": "+0.43 EUR",
+          "profit": 0.39,
+          "profit_str": "+0.39 EUR",
           "status": "ABERTA",
           "ticket": "58256926201",
           "magic": 888151
         },
         {
-          "time": "2026-09-01 19:30",
+          "time": "2026-09-01 16:30",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -808,14 +808,14 @@
           "price_close": null,
           "sl": 1.35437,
           "tp": 1.34965,
-          "profit": 0.18,
-          "profit_str": "+0.18 EUR",
+          "profit": 0.34,
+          "profit_str": "+0.34 EUR",
           "status": "ABERTA",
           "ticket": "58256632253",
           "magic": 555151
         },
         {
-          "time": "2026-09-01 19:15",
+          "time": "2026-09-01 16:15",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -824,14 +824,14 @@
           "price_close": null,
           "sl": 159.892,
           "tp": 160.448,
-          "profit": -0.65,
-          "profit_str": "-0.65 EUR",
+          "profit": 0.15,
+          "profit_str": "+0.15 EUR",
           "status": "ABERTA",
           "ticket": "58256318296",
           "magic": 444151
         },
         {
-          "time": "2026-09-01 17:05",
+          "time": "2026-09-01 14:05",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -847,7 +847,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-09-01 11:00",
+          "time": "2026-09-01 08:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -856,14 +856,14 @@
           "price_close": null,
           "sl": 1.16237,
           "tp": 1.15727,
-          "profit": 2.45,
-          "profit_str": "+2.45 EUR",
+          "profit": 2.43,
+          "profit_str": "+2.43 EUR",
           "status": "ABERTA",
           "ticket": "58244799383",
           "magic": 888123
         },
         {
-          "time": "2026-09-01 02:00",
+          "time": "2026-08-31 23:00",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -879,7 +879,7 @@
           "magic": 777151
         },
         {
-          "time": "2026-08-31 18:46",
+          "time": "2026-08-31 15:46",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -895,7 +895,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-08-31 18:38",
+          "time": "2026-08-31 15:38",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -911,7 +911,7 @@
           "magic": 444151
         },
         {
-          "time": "2026-08-31 11:21",
+          "time": "2026-08-31 08:21",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -927,7 +927,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-28 18:05",
+          "time": "2026-08-28 15:05",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "BUY",
@@ -943,7 +943,7 @@
           "magic": 777123
         },
         {
-          "time": "2026-08-28 18:05",
+          "time": "2026-08-28 15:05",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "BUY",
@@ -959,7 +959,7 @@
           "magic": 777123
         },
         {
-          "time": "2026-08-28 18:04",
+          "time": "2026-08-28 15:04",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -975,7 +975,7 @@
           "magic": 555123
         },
         {
-          "time": "2026-08-28 18:03",
+          "time": "2026-08-28 15:03",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "BUY",
@@ -991,7 +991,7 @@
           "magic": 888123
         },
         {
-          "time": "2026-08-28 18:00",
+          "time": "2026-08-28 15:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1007,7 +1007,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-28 17:36",
+          "time": "2026-08-28 14:36",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1023,7 +1023,7 @@
           "magic": 777151
         },
         {
-          "time": "2026-08-28 16:57",
+          "time": "2026-08-28 13:57",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1039,7 +1039,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-28 16:33",
+          "time": "2026-08-28 13:33",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1055,7 +1055,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-08-27 12:08",
+          "time": "2026-08-27 09:08",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1071,7 +1071,7 @@
           "magic": 888151
         },
         {
-          "time": "2026-08-27 12:08",
+          "time": "2026-08-27 09:08",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1087,7 +1087,7 @@
           "magic": 555151
         },
         {
-          "time": "2026-08-27 11:28",
+          "time": "2026-08-27 08:28",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
