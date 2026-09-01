@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-01 17:14:33",
+  "updated_at": "2026-09-01 17:20:15",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 99808.69,
-      "equity": 100964.26,
+      "equity": 101074.46,
       "closed_pl": -191.30999999999946,
-      "total_pl": 964.2599999999948,
-      "roi_pct": 0.9642599999999948,
-      "floating_pl": 1155.57,
+      "total_pl": 1074.4600000000064,
+      "roi_pct": 1.0744600000000064,
+      "floating_pl": 1265.77,
       "open_count": 1,
       "trades": [
         {
@@ -599,8 +599,8 @@
           "price_close": null,
           "sl": 1.36151,
           "tp": 1.3520400000000001,
-          "profit": 1155.57,
-          "profit_str": "+1155.57 EUR",
+          "profit": 1265.77,
+          "profit_str": "+1265.77 EUR",
           "status": "ABERTA",
           "ticket": "152550308243",
           "magic": 555123
@@ -775,11 +775,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 896.1,
-      "equity": 899.41,
+      "equity": 905.39,
       "closed_pl": -103.89999999999999,
-      "total_pl": -100.59000000000003,
-      "roi_pct": -10.059000000000003,
-      "floating_pl": 3.31,
+      "total_pl": -94.61000000000001,
+      "roi_pct": -9.461000000000002,
+      "floating_pl": 9.29,
       "open_count": 4,
       "trades": [
         {
@@ -792,8 +792,8 @@
           "price_close": null,
           "sl": 1.16019,
           "tp": 1.15741,
-          "profit": 0.39,
-          "profit_str": "+0.39 EUR",
+          "profit": 2.72,
+          "profit_str": "+2.72 EUR",
           "status": "ABERTA",
           "ticket": "58256926201",
           "magic": 888151
@@ -808,8 +808,8 @@
           "price_close": null,
           "sl": 1.35437,
           "tp": 1.34965,
-          "profit": 0.34,
-          "profit_str": "+0.34 EUR",
+          "profit": 1.76,
+          "profit_str": "+1.76 EUR",
           "status": "ABERTA",
           "ticket": "58256632253",
           "magic": 555151
@@ -824,8 +824,8 @@
           "price_close": null,
           "sl": 159.892,
           "tp": 160.448,
-          "profit": 0.15,
-          "profit_str": "+0.15 EUR",
+          "profit": 1.44,
+          "profit_str": "+1.44 EUR",
           "status": "ABERTA",
           "ticket": "58256318296",
           "magic": 444151
@@ -856,8 +856,8 @@
           "price_close": null,
           "sl": 1.16237,
           "tp": 1.15727,
-          "profit": 2.43,
-          "profit_str": "+2.43 EUR",
+          "profit": 3.37,
+          "profit_str": "+3.37 EUR",
           "status": "ABERTA",
           "ticket": "58244799383",
           "magic": 888123
