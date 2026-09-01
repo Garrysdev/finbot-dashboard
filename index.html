@@ -967,6 +967,7 @@
                             <td>FinBot_USDJPY.mq5</td>
                             <td><span class="status-pill status-pass">🟢 A negociar no MT5 (Payoff 5.81€)</span></td>
             <!-- TAB: DEMO REALISTA 1.000 € (Conta 5055061775) -->
+    <!-- TAB: DEMO REALISTA 1.000 € (Conta 5055061775) -->
     <div id="tab-demo-1k" class="tab-section">
         <div class="metrics-grid">
             <div class="metric-card">
@@ -976,13 +977,13 @@
             </div>
             <div class="metric-card">
                 <div class="metric-title">Capital Líquido (Equity)</div>
-                <div class="metric-value" id="kpi-equity-1k" style="color: #f87171;">893.46 €</div>
+                <div class="metric-value" id="kpi-equity-1k" style="color: #f87171;">896.53 €</div>
                 <div class="metric-sub" id="kpi-balance-1k">Saldo Atual: 892.13 €</div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Lucro das Negociações</div>
-                <div class="metric-value" id="kpi-profit-1k" style="color: #f87171;">-106.54 €</div>
-                <div class="metric-sub" id="kpi-roi-1k">-10.65% ROI (Equity vs Depósito Inicial)</div>
+                <div class="metric-value" id="kpi-profit-1k" style="color: #f87171;">-103.47 €</div>
+                <div class="metric-sub" id="kpi-roi-1k">-10.35% ROI (Equity vs Depósito Inicial)</div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Robôs em Operação</div>
@@ -991,99 +992,86 @@
             </div>
             <div class="metric-card">
                 <div class="metric-title">Trades Ativos em Curso</div>
-                <div class="metric-value" id="kpi-opentrades-1k" style="color: var(--accent-gold);">1 Trade</div>
-                <div class="metric-sub" id="kpi-lastupdate-1k">1 posição aberta em curso</div>
+                <div class="metric-value" id="kpi-opentrades-1k" style="color: var(--accent-gold);">2 Trades</div>
+                <div class="metric-sub" id="kpi-lastupdate-1k">2 posições abertas (+4.40 € flutuante)</div>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <span class="card-title">💎 Acompanhamento em Tempo Real — Conta Demo Realista 1.000 € (Login 5055061775)</span>
+                <span class="card-title">💎 Acompanhamento em Tempo Real — Todas as Negociações (Conta 1.000 €)</span>
                 <span class="status-pill status-running">🟢 10 Robôs Ativos (Algotrading ON)</span>
             </div>
             <p class="notes-cell" style="padding: 0 1.25rem 1rem;">
-                Conta demo dedicada de <strong>1.000 €</strong> — grupo de controlo com a estratégia de tendência original (EMA 9/21 + RSI).
+                Registo de todas as posições abertas e fechadas na conta demo realista de 1.000 €. Clica em qualquer linha para ver os detalhes da ordem.
             </p>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Data / Hora</th>
+                            <th>Hora</th>
                             <th>Ativo</th>
+                            <th>Robô</th>
+                            <th>Tipo</th>
+                            <th>Lote</th>
+                            <th>Abertura</th>
+                            <th>Fecho</th>
+                            <th>SL</th>
+                            <th>TP</th>
                             <th>Lucro</th>
+                            <th>Estado</th>
+                        </tr>
+                        <tr class="filter-row">
+                            <th></th>
+                            <th>
+                                <select id="filter-symbol-1k" class="col-filter" onchange="renderTradesTable('acc1k','trades-tbody-1k')">
+                                    <option value="all">Todos Ativos</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select id="filter-bot-1k" class="col-filter" onchange="renderTradesTable('acc1k','trades-tbody-1k')">
+                                    <option value="all">Todos Robôs</option>
+                                </select>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>
+                                <select id="filter-status-1k" class="col-filter" onchange="renderTradesTable('acc1k','trades-tbody-1k')">
+                                    <option value="all">Todas</option>
+                                    <option value="ABERTA">Abertas</option>
+                                    <option value="FECHADA">Fechadas</option>
+                                </select>
+                            </th>
                         </tr>
                     </thead>
-                    <tbody id="trades-tbody-1k">
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO XAUUSD',
-                            account: '5055061775',
-                            accountType: 'Demo Realista 1.000 €',
-                            robot: 'FinBot Magic 777151',
-                            symbol: 'XAUUSD',
-                            lot: '0.01',
-                            orderType: 'BUY',
-                            priceOpen: '4455.55',
-                            priceClose: '4455.55',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '57872437568',
-                            profitVal: -18.84,
-                            profitStr: '-18.84 EUR',
-                            profitResult: '❌ PERDA',
-                            balanceAfter: '892.13 EUR',
-                            typeEmoji: '🔴'
-                        })">
-                            <td>2026-09-01 02:00</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">XAUUSD</td>
-                            <td style="color: #f87171; font-weight: 700;">-18.84 EUR</td>
+                    <tbody id="trades-tbody-1k"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🏆 Ranking de Rentabilidade por Robô (Acumulativo de cada Bot)</span>
+                <span class="status-pill status-blue">Maior → Menor Lucro</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Robô</th>
+                            <th>Trades</th>
+                            <th>Taxa de Acerto</th>
+                            <th>Lucro Médio/Trade</th>
+                            <th>Lucro Total</th>
                         </tr>
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO GBPUSD',
-                            account: '5055061775',
-                            accountType: 'Demo Realista 1.000 €',
-                            robot: 'FinBot Magic 555151',
-                            symbol: 'GBPUSD',
-                            lot: '0.04',
-                            orderType: 'BUY',
-                            priceOpen: '1.35520',
-                            priceClose: '1.35520',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '57867288922',
-                            profitVal: -3.93,
-                            profitStr: '-3.93 EUR',
-                            profitResult: '❌ PERDA',
-                            balanceAfter: '892.13 EUR',
-                            typeEmoji: '🔴'
-                        })">
-                            <td>2026-08-31 18:46</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
-                            <td style="color: #f87171; font-weight: 700;">-3.93 EUR</td>
-                        </tr>
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO USDJPY',
-                            account: '5055061775',
-                            accountType: 'Demo Realista 1.000 €',
-                            robot: 'FinBot Magic 444151',
-                            symbol: 'USDJPY',
-                            lot: '0.07',
-                            orderType: 'SELL',
-                            priceOpen: '159.711',
-                            priceClose: '159.711',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '57867078218',
-                            profitVal: -4.34,
-                            profitStr: '-4.34 EUR',
-                            profitResult: '❌ PERDA',
-                            balanceAfter: '892.13 EUR',
-                            typeEmoji: '🔴'
-                        })">
-                            <td>2026-08-31 18:38</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">USDJPY</td>
-                            <td style="color: #f87171; font-weight: 700;">-4.34 EUR</td>
-                        </tr>
-                    </tbody>
+                    </thead>
+                    <tbody id="ranking-tbody-1k"></tbody>
                 </table>
             </div>
         </div>
@@ -1099,13 +1087,13 @@
             </div>
             <div class="metric-card">
                 <div class="metric-title">Capital Líquido (Equity)</div>
-                <div class="metric-value" id="kpi-equity-100k" style="color: var(--accent-green);">104,377.42 €</div>
+                <div class="metric-value" id="kpi-equity-100k" style="color: var(--accent-green);">105,280.94 €</div>
                 <div class="metric-sub" id="kpi-balance-100k">Saldo Atual: 101,975.88 €</div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Lucro das Negociações</div>
-                <div class="metric-value" id="kpi-profit-100k" style="color: var(--accent-green);">+4,377.42 €</div>
-                <div class="metric-sub" id="kpi-roi-100k">+4.38% ROI (Equity vs Depósito Inicial)</div>
+                <div class="metric-value" id="kpi-profit-100k" style="color: var(--accent-green);">+5,280.94 €</div>
+                <div class="metric-sub" id="kpi-roi-100k">+5.28% ROI (Equity vs Depósito Inicial)</div>
             </div>
             <div class="metric-card">
                 <div class="metric-title">Robôs em Operação</div>
@@ -1114,122 +1102,86 @@
             </div>
             <div class="metric-card">
                 <div class="metric-title">Trades Ativos em Curso</div>
-                <div class="metric-value" id="kpi-opentrades-100k" style="color: var(--accent-gold);">2 Trades</div>
-                <div class="metric-sub" id="kpi-lastupdate-100k">2 posições abertas (+2.401,54 € flutuante)</div>
+                <div class="metric-value" id="kpi-opentrades-100k" style="color: var(--accent-gold);">3 Trades</div>
+                <div class="metric-sub" id="kpi-lastupdate-100k">3 posições abertas (+3.305,06 € flutuante)</div>
             </div>
         </div>
 
         <div class="card">
             <div class="card-header">
-                <span class="card-title">🏛️ Acompanhamento em Tempo Real — Conta Demo Institucional 100.000 € (Login 10012303191)</span>
+                <span class="card-title">🏛️ Acompanhamento em Tempo Real — Todas as Negociações (Conta 100.000 €)</span>
                 <span class="status-pill status-running">🟢 10 Robôs Ativos (Algotrading ON)</span>
             </div>
             <p class="notes-cell" style="padding: 0 1.25rem 1rem;">
-                Conta de 100.000 € dedicada às <strong>estratégias experimentais novas</strong> (Reversão à Média H1 + Breakout de Donchian M15).
+                Registo de todas as posições abertas e fechadas na conta demo institucional de 100.000 €. Clica em qualquer linha para ver os detalhes da ordem.
             </p>
             <div class="table-container">
                 <table>
                     <thead>
                         <tr>
-                            <th>Data / Hora</th>
+                            <th>Hora</th>
                             <th>Ativo</th>
+                            <th>Robô</th>
+                            <th>Tipo</th>
+                            <th>Lote</th>
+                            <th>Abertura</th>
+                            <th>Fecho</th>
+                            <th>SL</th>
+                            <th>TP</th>
                             <th>Lucro</th>
+                            <th>Estado</th>
+                        </tr>
+                        <tr class="filter-row">
+                            <th></th>
+                            <th>
+                                <select id="filter-symbol-100k" class="col-filter" onchange="renderTradesTable('acc100k','trades-tbody-100k')">
+                                    <option value="all">Todos Ativos</option>
+                                </select>
+                            </th>
+                            <th>
+                                <select id="filter-bot-100k" class="col-filter" onchange="renderTradesTable('acc100k','trades-tbody-100k')">
+                                    <option value="all">Todos Robôs</option>
+                                </select>
+                            </th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>
+                                <select id="filter-status-100k" class="col-filter" onchange="renderTradesTable('acc100k','trades-tbody-100k')">
+                                    <option value="all">Todas</option>
+                                    <option value="ABERTA">Abertas</option>
+                                    <option value="FECHADA">Fechadas</option>
+                                </select>
+                            </th>
                         </tr>
                     </thead>
-                    <tbody id="trades-tbody-100k">
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO GBPUSD',
-                            account: '10012303191',
-                            accountType: 'Demo Institucional 100.000 €',
-                            robot: 'FinBot Magic 555250',
-                            symbol: 'GBPUSD',
-                            lot: '7.15',
-                            orderType: 'SELL',
-                            priceOpen: '1.35357',
-                            priceClose: '1.35357',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '152416953140',
-                            profitVal: 0.0,
-                            profitStr: '+0.00 EUR',
-                            profitResult: '✅ LUCRO',
-                            balanceAfter: '101,975.88 EUR',
-                            typeEmoji: '🟢'
-                        })">
-                            <td>2026-09-01 10:30</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
-                            <td style="color: var(--accent-green); font-weight: 700;">+0.00 EUR</td>
+                    <tbody id="trades-tbody-100k"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-title">🏆 Ranking de Rentabilidade por Robô (Acumulativo de cada Bot)</span>
+                <span class="status-pill status-blue">Maior → Menor Lucro</span>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Robô</th>
+                            <th>Trades</th>
+                            <th>Taxa de Acerto</th>
+                            <th>Lucro Médio/Trade</th>
+                            <th>Lucro Total</th>
                         </tr>
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO USDJPY',
-                            account: '10012303191',
-                            accountType: 'Demo Institucional 100.000 €',
-                            robot: 'FinBot Magic 444250',
-                            symbol: 'USDJPY',
-                            lot: '8.72',
-                            orderType: 'BUY',
-                            priceOpen: '159.873',
-                            priceClose: '159.873',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '152416594057',
-                            profitVal: 0.0,
-                            profitStr: '+0.00 EUR',
-                            profitResult: '✅ LUCRO',
-                            balanceAfter: '101,975.88 EUR',
-                            typeEmoji: '🟢'
-                        })">
-                            <td>2026-09-01 09:00</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">USDJPY</td>
-                            <td style="color: var(--accent-green); font-weight: 700;">+0.00 EUR</td>
-                        </tr>
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO GBPUSD',
-                            account: '10012303191',
-                            accountType: 'Demo Institucional 100.000 €',
-                            robot: 'FinBot Magic 555250',
-                            symbol: 'GBPUSD',
-                            lot: '3.64',
-                            orderType: 'SELL',
-                            priceOpen: '1.35386',
-                            priceClose: '1.35386',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '152416517623',
-                            profitVal: -574.71,
-                            profitStr: '-574.71 EUR',
-                            profitResult: '❌ PERDA',
-                            balanceAfter: '101,975.88 EUR',
-                            typeEmoji: '🔴'
-                        })">
-                            <td>2026-09-01 08:31</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">GBPUSD</td>
-                            <td style="color: #f87171; font-weight: 700;">-574.71 EUR</td>
-                        </tr>
-                        <tr class="clickable-row" onclick="openTradeModal({
-                            title: '🏁 TRANSAÇÃO EURUSD',
-                            account: '10012303191',
-                            accountType: 'Demo Institucional 100.000 €',
-                            robot: 'FinBot Magic 888250',
-                            symbol: 'EURUSD',
-                            lot: '5.10',
-                            orderType: 'SELL',
-                            priceOpen: '1.16171',
-                            priceClose: '1.16171',
-                            sl: 'Dinâmico ATR',
-                            tp: 'Dinâmico ATR',
-                            ticket: '152415482151',
-                            profitVal: 119.85,
-                            profitStr: '+119.85 EUR',
-                            profitResult: '✅ LUCRO',
-                            balanceAfter: '101,975.88 EUR',
-                            typeEmoji: '🟢'
-                        })">
-                            <td>2026-09-01 02:00</td>
-                            <td style="color:var(--accent-gold); font-weight:700;">EURUSD</td>
-                            <td style="color: var(--accent-green); font-weight: 700;">+119.85 EUR</td>
-                        </tr>
-                    </tbody>
+                    </thead>
+                    <tbody id="ranking-tbody-100k"></tbody>
                 </table>
             </div>
         </div>
@@ -1560,33 +1512,93 @@
             bots.forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b; botSel.appendChild(o); });
         }
 
+        let rankingData = {
+            acc1k: [],
+            acc100k: []
+        };
+
+        function fmtPrice(v) {
+            if (v === null || v === undefined || v === 0) return '—';
+            if (v < 10) return Number(v).toFixed(5);
+            if (v < 1000) return Number(v).toFixed(3);
+            return Number(v).toFixed(2);
+        }
+
+        function populateFilters(accountKey) {
+            const data = tradesData[accountKey] || [];
+            const symbols = [...new Set(data.map(r => r.symbol))].filter(Boolean).sort();
+            const bots = [...new Set(data.map(r => r.bot))].filter(Boolean).sort();
+            const suffix = accountKey === 'acc1k' ? '1k' : '100k';
+            const symbolSel = document.getElementById('filter-symbol-' + suffix);
+            const botSel = document.getElementById('filter-bot-' + suffix);
+            if (symbolSel) {
+                const curVal = symbolSel.value;
+                symbolSel.innerHTML = '<option value="all">Todos Ativos</option>';
+                symbols.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; symbolSel.appendChild(o); });
+                symbolSel.value = curVal || 'all';
+            }
+            if (botSel) {
+                const curVal = botSel.value;
+                botSel.innerHTML = '<option value="all">Todos Robôs</option>';
+                bots.forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b; botSel.appendChild(o); });
+                botSel.value = curVal || 'all';
+            }
+        }
+
         function renderTradesTable(accountKey, tbodyId) {
             const suffix = accountKey === 'acc1k' ? '1k' : '100k';
-            const fSymbol = document.getElementById('filter-symbol-' + suffix).value;
-            const fBot = document.getElementById('filter-bot-' + suffix).value;
-            const fStatus = document.getElementById('filter-status-' + suffix).value;
+            const fSymbol = document.getElementById('filter-symbol-' + suffix) ? document.getElementById('filter-symbol-' + suffix).value : 'all';
+            const fBot = document.getElementById('filter-bot-' + suffix) ? document.getElementById('filter-bot-' + suffix).value : 'all';
+            const fStatus = document.getElementById('filter-status-' + suffix) ? document.getElementById('filter-status-' + suffix).value : 'all';
             const tbody = document.getElementById(tbodyId);
             if (!tbody) return;
             tbody.innerHTML = '';
 
-            const rows = tradesData[accountKey].filter(r =>
+            const list = tradesData[accountKey] || [];
+            const rows = list.filter(r =>
                 (fSymbol === 'all' || r.symbol === fSymbol) &&
                 (fBot === 'all' || r.bot === fBot) &&
                 (fStatus === 'all' || r.status === fStatus)
             );
 
             if (rows.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="11" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem posições para os filtros selecionados.</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="11" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem negociações para os filtros selecionados.</td></tr>';
                 return;
             }
 
+            const accLoginStr = accountKey === 'acc1k' ? '5055061775' : '10012303191';
+            const accTypeStr = accountKey === 'acc1k' ? 'Demo Realista 1.000 €' : 'Demo Institucional 100.000 €';
+
             rows.forEach(r => {
-                const profitColor = r.profit >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
-                const typeColor = r.type === 'BUY' ? 'var(--accent-green)' : 'var(--accent-red)';
+                const profitColor = r.profit >= 0 ? 'var(--accent-green)' : '#f87171';
+                const typeColor = r.type === 'BUY' ? 'var(--accent-green)' : '#f87171';
                 const statusBadge = r.status === 'ABERTA' ? 'status-running' : (r.profit >= 0 ? 'status-pass' : 'status-fail');
                 const statusLabel = r.status === 'ABERTA' ? '🟢 Aberta' : (r.profit >= 0 ? '✅ Fechada' : '❌ Fechada');
 
                 const tr = document.createElement('tr');
+                tr.className = 'clickable-row';
+                tr.onclick = function() {
+                    openTradeModal({
+                        title: `TRANSAÇÃO ${r.symbol}`,
+                        account: accLoginStr,
+                        accountType: accTypeStr,
+                        robot: r.bot,
+                        symbol: r.symbol,
+                        lot: r.volume,
+                        orderType: r.type,
+                        priceOpen: fmtPrice(r.price_open),
+                        priceClose: fmtPrice(r.price_close),
+                        sl: fmtPrice(r.sl),
+                        tp: fmtPrice(r.tp),
+                        ticket: r.ticket || 'N/A',
+                        profitVal: r.profit,
+                        profitStr: (r.profit >= 0 ? '+' : '') + Number(r.profit).toFixed(2) + ' EUR',
+                        profitResult: r.status === 'ABERTA' ? '🔄 EM CURSO' : (r.profit >= 0 ? '✅ LUCRO' : '❌ PERDA'),
+                        balanceAfter: metaData[accountKey] ? metaData[accountKey].balance.toFixed(2) + ' EUR' : '—',
+                        typeEmoji: r.profit >= 0 ? '🟢' : '🔴'
+                    });
+                };
+
                 tr.innerHTML = `
                     <td>${r.time}</td>
                     <td style="color:var(--accent-gold); font-weight:700;">${r.symbol}</td>
@@ -1597,7 +1609,7 @@
                     <td>${fmtPrice(r.price_close)}</td>
                     <td>${fmtPrice(r.sl)}</td>
                     <td>${fmtPrice(r.tp)}</td>
-                    <td style="color:${profitColor}; font-weight:700;">${r.profit >= 0 ? '+' : ''}${r.profit.toFixed(2)} €</td>
+                    <td style="color:${profitColor}; font-weight:700;">${r.profit >= 0 ? '+' : ''}${Number(r.profit).toFixed(2)} €</td>
                     <td><span class="status-pill ${statusBadge}">${statusLabel}</span></td>
                 `;
                 tbody.appendChild(tr);
@@ -1608,36 +1620,45 @@
             const tbody = document.getElementById(tbodyId);
             if (!tbody) return;
 
-            const byBot = {};
-            tradesData[accountKey].forEach(r => {
-                if (!byBot[r.bot]) byBot[r.bot] = { trades: 0, wins: 0, profit: 0 };
-                byBot[r.bot].trades++;
-                byBot[r.bot].profit += r.profit;
-                if (r.profit >= 0) byBot[r.bot].wins++;
-            });
-
-            const ranked = Object.entries(byBot).map(([bot, s]) => ({
-                bot, trades: s.trades, profit: s.profit,
-                avg: s.profit / s.trades, winRate: (s.wins / s.trades) * 100
-            })).sort((a, b) => b.profit - a.profit);
+            let ranked = rankingData[accountKey];
+            
+            // Se o ranking não vier pré-calculado no JSON, calcula dinamicamente a partir dos trades
+            if (!ranked || ranked.length === 0) {
+                const byBot = {};
+                (tradesData[accountKey] || []).forEach(r => {
+                    if (r.status === 'FECHADA') {
+                        if (!byBot[r.bot]) byBot[r.bot] = { bot: r.bot, trades: 0, wins: 0, profit: 0 };
+                        byBot[r.bot].trades++;
+                        byBot[r.bot].profit += r.profit;
+                        if (r.profit >= 0) byBot[r.bot].wins++;
+                    }
+                });
+                ranked = Object.values(byBot).map(s => ({
+                    bot: s.bot,
+                    trades: s.trades,
+                    win_rate: s.trades > 0 ? (s.wins / s.trades) * 100 : 0,
+                    avg_profit: s.trades > 0 ? s.profit / s.trades : 0,
+                    total_profit: s.profit
+                })).sort((a, b) => b.total_profit - a.total_profit);
+            }
 
             tbody.innerHTML = '';
-            if (ranked.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem dados ainda.</td></tr>';
+            if (!ranked || ranked.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-muted); padding:1.5rem;">Sem histórico de robôs finalizado ainda.</td></tr>';
                 return;
             }
 
             ranked.forEach((r, i) => {
-                const color = r.profit >= 0 ? 'var(--accent-green)' : 'var(--accent-red)';
+                const color = r.total_profit >= 0 ? 'var(--accent-green)' : '#f87171';
                 const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}º`;
                 const tr = document.createElement('tr');
                 tr.innerHTML = `
                     <td style="font-weight:700; font-size:1.1rem;">${medal}</td>
                     <td style="color:var(--accent-blue); font-weight:600;">${r.bot}</td>
                     <td>${r.trades}</td>
-                    <td>${r.winRate.toFixed(0)}%</td>
-                    <td style="color:${r.avg >= 0 ? 'var(--accent-green)' : 'var(--accent-red)'};">${r.avg >= 0 ? '+' : ''}${r.avg.toFixed(2)} €</td>
-                    <td style="color:${color}; font-weight:800; font-size:1.05rem;">${r.profit >= 0 ? '+' : ''}${r.profit.toFixed(2)} €</td>
+                    <td>${Number(r.win_rate).toFixed(1)}%</td>
+                    <td style="color:${r.avg_profit >= 0 ? 'var(--accent-green)' : '#f87171'}; font-weight:600;">${r.avg_profit >= 0 ? '+' : ''}${Number(r.avg_profit).toFixed(2)} €</td>
+                    <td style="color:${color}; font-weight:800; font-size:1.05rem;">${r.total_profit >= 0 ? '+' : ''}${Number(r.total_profit).toFixed(2)} €</td>
                 `;
                 tbody.appendChild(tr);
             });
@@ -1652,13 +1673,13 @@
             renderBotRanking('acc100k', 'ranking-tbody-100k');
         }
 
-        function updateAccountMetrics(key, suffix, initialDeposit) {
-            const acc = key && metaData[key];
-            if (!acc) return;
-            const equity = acc.equity, balance = acc.balance;
+        function updateAccountMetrics(key, suffix, initialDeposit, accData) {
+            if (!accData) return;
+            const equity = accData.equity;
+            const balance = accData.balance;
             const profit = equity - initialDeposit;
             const roi = (profit / initialDeposit) * 100;
-            const openCount = tradesData[key].filter(r => r.status === 'ABERTA').length;
+            const openCount = accData.open_count !== undefined ? accData.open_count : (tradesData[key] || []).filter(r => r.status === 'ABERTA').length;
 
             const elEquity = document.getElementById('kpi-equity-' + suffix);
             const elBalance = document.getElementById('kpi-balance-' + suffix);
@@ -1673,13 +1694,13 @@
             if (elProfit) { elProfit.innerText = (profit >= 0 ? '+' : '') + profit.toFixed(2) + ' €'; elProfit.style.color = color; }
             if (elRoi) elRoi.innerText = (roi >= 0 ? '+' : '') + roi.toFixed(2) + '% ROI (Equity vs Depósito Inicial)';
             if (elOpen) elOpen.innerText = openCount + ' Trades';
-            if (elUpdate) elUpdate.innerText = acc.updated ? ('Atualizado: ' + acc.updated) : (openCount + ' posições abertas');
+            if (elUpdate) elUpdate.innerText = `${openCount} posições abertas (${(accData.floating_pl || 0) >= 0 ? '+' : ''}${(accData.floating_pl || 0).toFixed(2)} € flutuante)`;
         }
 
         // Dados de conta (equity/saldo) acompanham tradesData — atualizados via data.json quando disponível
         let metaData = {
-            acc1k: { equity: 1009.31, balance: 1006.91, updated: null },
-            acc100k: { equity: 99691.37, balance: 99754.86, updated: null },
+            acc1k: { equity: 896.53, balance: 892.13, updated: null },
+            acc100k: { equity: 105280.94, balance: 101975.88, updated: null },
         };
 
         async function loadLiveData() {
@@ -1692,52 +1713,25 @@
                 const acc1k = json.accounts["5055061775"];
                 const acc100k = json.accounts["10012303191"];
 
-                if (acc1k) renderLiveAccount('1k', acc1k, '5055061775', 'Demo Realista 1.000 €');
-                if (acc100k) renderLiveAccount('100k', acc100k, '10012303191', 'Demo Institucional 100.000 €');
+                if (acc1k) {
+                    if (acc1k.trades && acc1k.trades.length > 0) tradesData.acc1k = acc1k.trades;
+                    if (acc1k.ranking) rankingData.acc1k = acc1k.ranking;
+                    metaData.acc1k = acc1k;
+                    updateAccountMetrics('acc1k', '1k', 1000.0, acc1k);
+                }
 
-                console.log('FinBot Dashboard: dados atualizados de live_telemetry.json em', json.updated_at);
+                if (acc100k) {
+                    if (acc100k.trades && acc100k.trades.length > 0) tradesData.acc100k = acc100k.trades;
+                    if (acc100k.ranking) rankingData.acc100k = acc100k.ranking;
+                    metaData.acc100k = acc100k;
+                    updateAccountMetrics('acc100k', '100k', 100000.0, acc100k);
+                }
+
+                renderAll();
+                console.log('FinBot Dashboard: dados em direto atualizados com sucesso de live_telemetry.json em', json.updated_at);
             } catch (e) {
-                console.log('FinBot Dashboard: live_telemetry.json indisponível.', e.message);
-            }
-        }
-
-        function renderLiveAccount(suffix, accData, loginStr, accountTypeStr) {
-            const tableElem = document.querySelector('#tab-demo-' + suffix + ' tbody');
-            if (tableElem && accData.deals && accData.deals.length > 0) {
-                tableElem.innerHTML = '';
-                accData.deals.forEach(deal => {
-                    const tr = document.createElement('tr');
-                    tr.className = 'clickable-row';
-                    tr.onclick = function() {
-                        openTradeModal({
-                            title: `🏁 TRANSAÇÃO ${deal.symbol}`,
-                            account: loginStr,
-                            accountType: accountTypeStr,
-                            robot: deal.robot,
-                            symbol: deal.symbol,
-                            lot: deal.lot,
-                            orderType: deal.type,
-                            priceOpen: deal.price_open,
-                            priceClose: deal.price_close,
-                            sl: deal.sl,
-                            tp: deal.tp,
-                            ticket: deal.ticket,
-                            profitVal: deal.profit_val,
-                            profitStr: deal.profit_str,
-                            profitResult: deal.result,
-                            balanceAfter: deal.balance_after,
-                            typeEmoji: deal.profit_val >= 0 ? '🟢' : '🔴'
-                        });
-                    };
-
-                    const profitStyle = deal.profit_val >= 0 ? 'color: var(--accent-green); font-weight: 700;' : 'color: #f87171; font-weight: 700;';
-                    tr.innerHTML = `
-                        <td>${deal.datetime}</td>
-                        <td style="color:var(--accent-gold); font-weight:700;">${deal.symbol}</td>
-                        <td style="${profitStyle}">${deal.profit_str}</td>
-                    `;
-                    tableElem.appendChild(tr);
-                });
+                console.log('FinBot Dashboard: live_telemetry.json indisponível, usando fallback local.', e.message);
+                renderAll();
             }
         }
 
