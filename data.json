@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-02 01:00:08",
+  "updated_at": "2026-09-02 02:00:24",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 101496.11,
-      "equity": 101335.36,
+      "equity": 101647.49,
       "closed_pl": 1496.1100000000006,
-      "total_pl": 1335.3600000000006,
-      "roi_pct": 1.3353600000000005,
-      "floating_pl": -160.75,
+      "total_pl": 1647.4900000000052,
+      "roi_pct": 1.6474900000000052,
+      "floating_pl": 151.38,
       "open_count": 1,
       "trades": [
         {
@@ -55,8 +55,8 @@
           "price_close": null,
           "sl": 1.15978,
           "tp": null,
-          "profit": -160.75,
-          "profit_str": "-160.75 EUR",
+          "profit": 151.38,
+          "profit_str": "+151.38 EUR",
           "status": "ABERTA",
           "ticket": "152568698946",
           "magic": 888250
@@ -815,14 +815,30 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 902.88,
-      "equity": 905.82,
-      "closed_pl": -97.11999999999999,
-      "total_pl": -94.17999999999995,
-      "roi_pct": -9.417999999999994,
-      "floating_pl": 2.94,
-      "open_count": 2,
+      "balance": 905.34,
+      "equity": 908.95,
+      "closed_pl": -94.66,
+      "total_pl": -91.04999999999995,
+      "roi_pct": -9.104999999999995,
+      "floating_pl": 3.61,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-02 01:53",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "SELL",
+          "volume": 0.05,
+          "price_open": 1.15917,
+          "price_close": 1.15859,
+          "sl": null,
+          "tp": null,
+          "profit": 2.46,
+          "profit_str": "+2.46 EUR",
+          "status": "FECHADA",
+          "ticket": "57894163227",
+          "magic": 888151
+        },
         {
           "time": "2026-09-01 19:03",
           "symbol": "GBPUSD",
@@ -856,22 +872,6 @@
           "magic": 444151
         },
         {
-          "time": "2026-09-01 16:45",
-          "symbol": "EURUSD",
-          "bot": "FinBot EURUSD M15",
-          "type": "SELL",
-          "volume": 0.05,
-          "price_open": 1.15917,
-          "price_close": null,
-          "sl": 1.16019,
-          "tp": 1.15741,
-          "profit": 0.48,
-          "profit_str": "+0.48 EUR",
-          "status": "ABERTA",
-          "ticket": "58256926201",
-          "magic": 888151
-        },
-        {
           "time": "2026-09-01 14:05",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
@@ -897,8 +897,8 @@
           "price_close": null,
           "sl": 1.16237,
           "tp": 1.15727,
-          "profit": 2.46,
-          "profit_str": "+2.46 EUR",
+          "profit": 3.61,
+          "profit_str": "+3.61 EUR",
           "status": "ABERTA",
           "ticket": "58244799383",
           "magic": 888123
@@ -1193,11 +1193,11 @@
         {
           "bot": "FinBot EURUSD M15",
           "magic": 888151,
-          "trades": 4,
-          "wins": 0,
-          "win_rate": 0.0,
-          "avg_profit": -4.69,
-          "total_profit": -18.76
+          "trades": 5,
+          "wins": 1,
+          "win_rate": 20.0,
+          "avg_profit": -3.26,
+          "total_profit": -16.3
         },
         {
           "bot": "FinBot Gold XAUUSD H1",
