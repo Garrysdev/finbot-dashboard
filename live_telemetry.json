@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-02 15:15:38",
+  "updated_at": "2026-09-02 15:17:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 110632.87,
-      "equity": 110872.24,
+      "equity": 111054.75,
       "closed_pl": 10632.87,
-      "total_pl": 10872.240000000005,
-      "roi_pct": 10.872240000000005,
-      "floating_pl": 239.37,
+      "total_pl": 11054.75,
+      "roi_pct": 11.05475,
+      "floating_pl": 421.88,
       "open_count": 3,
       "trades": [
         {
@@ -23,8 +23,8 @@
           "price_close": null,
           "sl": 4361.06,
           "tp": null,
-          "profit": 141.66,
-          "profit_str": "+141.66 EUR",
+          "profit": 411.41,
+          "profit_str": "+411.41 EUR",
           "status": "ABERTA",
           "ticket": "152574301173",
           "magic": 777250
@@ -55,8 +55,8 @@
           "price_close": null,
           "sl": 159.228,
           "tp": null,
-          "profit": 165.72,
-          "profit_str": "+165.72 EUR",
+          "profit": 99.96,
+          "profit_str": "+99.96 EUR",
           "status": "ABERTA",
           "ticket": "152573946202",
           "magic": 444250
@@ -71,8 +71,8 @@
           "price_close": null,
           "sl": 1.15815,
           "tp": null,
-          "profit": -68.01,
-          "profit_str": "-68.01 EUR",
+          "profit": -89.49,
+          "profit_str": "-89.49 EUR",
           "status": "ABERTA",
           "ticket": "152573948755",
           "magic": 888250
