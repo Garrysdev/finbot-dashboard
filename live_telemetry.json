@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-03 13:46:01",
+  "updated_at": "2026-09-03 14:07:01",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 104497.75,
-      "equity": 104317.42,
-      "closed_pl": 4497.750000000001,
-      "total_pl": 4317.419999999998,
-      "roi_pct": 4.3174199999999985,
-      "floating_pl": -180.33,
-      "open_count": 4,
+      "balance": 108746.61,
+      "equity": 108987.55,
+      "closed_pl": 8746.61,
+      "total_pl": 8987.550000000003,
+      "roi_pct": 8.987550000000002,
+      "floating_pl": 240.94,
+      "open_count": 3,
       "trades": [
+        {
+          "time": "2026-09-03 14:06",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 2.59,
+          "price_open": 4468.54,
+          "price_close": 4487.61,
+          "sl": null,
+          "tp": null,
+          "profit": 4248.86,
+          "profit_str": "+4248.86 EUR",
+          "status": "FECHADA",
+          "ticket": "152432271785",
+          "magic": 777250
+        },
         {
           "time": "2026-09-03 13:45",
           "symbol": "USDJPY",
@@ -23,8 +39,8 @@
           "price_close": null,
           "sl": 156.044,
           "tp": null,
-          "profit": -35.58,
-          "profit_str": "-35.58 EUR",
+          "profit": -134.39,
+          "profit_str": "-134.39 EUR",
           "status": "ABERTA",
           "ticket": "152579807238",
           "magic": 444250
@@ -39,8 +55,8 @@
           "price_close": null,
           "sl": 1.34911,
           "tp": null,
-          "profit": 6.27,
-          "profit_str": "+6.27 EUR",
+          "profit": 165.97,
+          "profit_str": "+165.97 EUR",
           "status": "ABERTA",
           "ticket": "152579807310",
           "magic": 555250
@@ -55,27 +71,11 @@
           "price_close": null,
           "sl": 1.16071,
           "tp": null,
-          "profit": -26.18,
-          "profit_str": "-26.18 EUR",
+          "profit": 209.36,
+          "profit_str": "+209.36 EUR",
           "status": "ABERTA",
           "ticket": "152579807366",
           "magic": 888250
-        },
-        {
-          "time": "2026-09-03 13:45",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 2.59,
-          "price_open": 4468.54,
-          "price_close": null,
-          "sl": 4448.01,
-          "tp": null,
-          "profit": -124.84,
-          "profit_str": "-124.84 EUR",
-          "status": "ABERTA",
-          "ticket": "152579807399",
-          "magic": 777250
         },
         {
           "time": "2026-09-03 13:30",
@@ -1122,11 +1122,11 @@
         {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
-          "trades": 12,
-          "wins": 7,
-          "win_rate": 58.3,
-          "avg_profit": 1082.0,
-          "total_profit": 12983.97
+          "trades": 13,
+          "wins": 8,
+          "win_rate": 61.5,
+          "avg_profit": 1325.6,
+          "total_profit": 17232.83
         },
         {
           "bot": "Donchian USDJPY M15",
@@ -1243,11 +1243,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 898.22,
-      "equity": 898.32,
+      "equity": 899.64,
       "closed_pl": -101.78,
-      "total_pl": -101.67999999999995,
-      "roi_pct": -10.167999999999996,
-      "floating_pl": 0.1,
+      "total_pl": -100.36000000000001,
+      "roi_pct": -10.036000000000001,
+      "floating_pl": 1.42,
       "open_count": 1,
       "trades": [
         {
@@ -1260,8 +1260,8 @@
           "price_close": null,
           "sl": 1.34911,
           "tp": 1.35412,
-          "profit": 0.1,
-          "profit_str": "+0.10 EUR",
+          "profit": 1.42,
+          "profit_str": "+1.42 EUR",
           "status": "ABERTA",
           "ticket": "58293604827",
           "magic": 555151
