@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-03 10:15:54",
+  "updated_at": "2026-09-03 11:46:14",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 101053.95,
-      "equity": 100795.89,
+      "equity": 100642.95,
       "closed_pl": 1053.950000000001,
-      "total_pl": 795.8899999999994,
-      "roi_pct": 0.7958899999999994,
-      "floating_pl": -258.06,
+      "total_pl": 642.9499999999971,
+      "roi_pct": 0.6429499999999971,
+      "floating_pl": -411.0,
       "open_count": 2,
       "trades": [
         {
@@ -135,8 +135,8 @@
           "price_close": null,
           "sl": 1.34805,
           "tp": 1.35089,
-          "profit": 91.21,
-          "profit_str": "+91.21 EUR",
+          "profit": -324.13,
+          "profit_str": "-324.13 EUR",
           "status": "ABERTA",
           "ticket": "152577304559",
           "magic": 555300
@@ -167,8 +167,8 @@
           "price_close": null,
           "sl": 1.35101,
           "tp": null,
-          "profit": -349.27,
-          "profit_str": "-349.27 EUR",
+          "profit": -86.87,
+          "profit_str": "-86.87 EUR",
           "status": "ABERTA",
           "ticket": "152576246461",
           "magic": 555350
@@ -1129,13 +1129,29 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 901.86,
-      "equity": 901.86,
+      "equity": 901.7,
       "closed_pl": -98.14,
-      "total_pl": -98.13999999999999,
-      "roi_pct": -9.813999999999998,
-      "floating_pl": 0.0,
-      "open_count": 0,
+      "total_pl": -98.29999999999995,
+      "roi_pct": -9.829999999999997,
+      "floating_pl": -0.16,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-03 11:45",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD M15",
+          "type": "SELL",
+          "volume": 0.03,
+          "price_open": 1.34866,
+          "price_close": null,
+          "sl": 1.35007,
+          "tp": 1.34585,
+          "profit": -0.16,
+          "profit_str": "-0.16 EUR",
+          "status": "ABERTA",
+          "ticket": "58290798522",
+          "magic": 555151
+        },
         {
           "time": "2026-09-02 13:07",
           "symbol": "USDJPY",
