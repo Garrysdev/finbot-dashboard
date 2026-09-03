@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-03 07:00:01",
+  "updated_at": "2026-09-03 07:02:01",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 106153.18,
-      "equity": 104119.59,
-      "closed_pl": 6153.18,
-      "total_pl": 4119.5899999999965,
-      "roi_pct": 4.119589999999997,
-      "floating_pl": -2033.59,
-      "open_count": 7,
+      "balance": 105615.03,
+      "equity": 103427.33,
+      "closed_pl": 5615.030000000001,
+      "total_pl": 3427.3300000000017,
+      "roi_pct": 3.427330000000002,
+      "floating_pl": -2187.7,
+      "open_count": 6,
       "trades": [
+        {
+          "time": "2026-09-03 07:01",
+          "symbol": "GBPUSD",
+          "bot": "Donchian GBPUSD M15",
+          "type": "BUY",
+          "volume": 6.64,
+          "price_open": 1.34974,
+          "price_close": 1.3488,
+          "sl": null,
+          "tp": null,
+          "profit": -538.15,
+          "profit_str": "-538.15 EUR",
+          "status": "FECHADA",
+          "ticket": "152429859661",
+          "magic": 555250
+        },
         {
           "time": "2026-09-03 07:00",
           "symbol": "USDJPY",
@@ -23,27 +39,11 @@
           "price_close": null,
           "sl": 157.736,
           "tp": null,
-          "profit": -7.4,
-          "profit_str": "-7.40 EUR",
+          "profit": -38.45,
+          "profit_str": "-38.45 EUR",
           "status": "ABERTA",
           "ticket": "152577590961",
           "magic": 444250
-        },
-        {
-          "time": "2026-09-03 05:45",
-          "symbol": "GBPUSD",
-          "bot": "Donchian GBPUSD M15",
-          "type": "BUY",
-          "volume": 6.64,
-          "price_open": 1.34974,
-          "price_close": null,
-          "sl": 1.3488,
-          "tp": null,
-          "profit": -389.27,
-          "profit_str": "-389.27 EUR",
-          "status": "ABERTA",
-          "ticket": "152577304558",
-          "magic": 555250
         },
         {
           "time": "2026-09-03 05:45",
@@ -55,8 +55,8 @@
           "price_close": null,
           "sl": 1.34805,
           "tp": 1.35089,
-          "profit": -213.98,
-          "profit_str": "-213.98 EUR",
+          "profit": -311.56,
+          "profit_str": "-311.56 EUR",
           "status": "ABERTA",
           "ticket": "152577304559",
           "magic": 555300
@@ -71,8 +71,8 @@
           "price_close": null,
           "sl": 1.15849,
           "tp": 1.16092,
-          "profit": -17.89,
-          "profit_str": "-17.89 EUR",
+          "profit": -60.83,
+          "profit_str": "-60.83 EUR",
           "status": "ABERTA",
           "ticket": "152577304621",
           "magic": 888300
@@ -87,8 +87,8 @@
           "price_close": null,
           "sl": 4418.14,
           "tp": null,
-          "profit": -1334.58,
-          "profit_str": "-1334.58 EUR",
+          "profit": -1722.68,
+          "profit_str": "-1722.68 EUR",
           "status": "ABERTA",
           "ticket": "152577259406",
           "magic": 777250
@@ -119,8 +119,8 @@
           "price_close": null,
           "sl": 1.35101,
           "tp": null,
-          "profit": -155.97,
-          "profit_str": "-155.97 EUR",
+          "profit": -96.75,
+          "profit_str": "-96.75 EUR",
           "status": "ABERTA",
           "ticket": "152576246461",
           "magic": 555350
@@ -167,8 +167,8 @@
           "price_close": null,
           "sl": 1.15815,
           "tp": null,
-          "profit": 85.5,
-          "profit_str": "+85.50 EUR",
+          "profit": 42.57,
+          "profit_str": "+42.57 EUR",
           "status": "ABERTA",
           "ticket": "152573948755",
           "magic": 888250
@@ -1066,11 +1066,11 @@
         {
           "bot": "Donchian GBPUSD M15",
           "magic": 555250,
-          "trades": 12,
+          "trades": 13,
           "wins": 2,
-          "win_rate": 16.7,
-          "avg_profit": -351.94,
-          "total_profit": -4223.23
+          "win_rate": 15.4,
+          "avg_profit": -366.26,
+          "total_profit": -4761.38
         },
         {
           "bot": "MeanRev Gold XAUUSD H1",
