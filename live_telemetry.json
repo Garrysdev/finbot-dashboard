@@ -1,49 +1,81 @@
 {
-  "updated_at": "2026-09-03 13:00:03",
+  "updated_at": "2026-09-03 13:31:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 101053.95,
-      "equity": 100404.05,
-      "closed_pl": 1053.950000000001,
-      "total_pl": 404.0500000000029,
-      "roi_pct": 0.4040500000000029,
-      "floating_pl": -649.9,
-      "open_count": 4,
+      "balance": 104497.75,
+      "equity": 104497.75,
+      "closed_pl": 4497.750000000001,
+      "total_pl": 4497.75,
+      "roi_pct": 4.49775,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
         {
-          "time": "2026-09-03 13:00",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 3.43,
-          "price_open": 4444.58,
-          "price_close": null,
-          "sl": 4429.77,
+          "time": "2026-09-03 13:30",
+          "symbol": "GBPUSD",
+          "bot": "VolSqueeze GBPUSD H1",
+          "type": "SELL",
+          "volume": 2.29,
+          "price_open": 1.34828,
+          "price_close": 1.35101,
+          "sl": null,
           "tp": null,
-          "profit": -262.89,
-          "profit_str": "-262.89 EUR",
-          "status": "ABERTA",
-          "ticket": "152579351654",
-          "magic": 777250
+          "profit": -537.91,
+          "profit_str": "-537.91 EUR",
+          "status": "FECHADA",
+          "ticket": "152431829948",
+          "magic": 555350
         },
         {
-          "time": "2026-09-03 12:15",
+          "time": "2026-09-03 13:30",
+          "symbol": "GBPUSD",
+          "bot": "ORB GBPUSD M15",
+          "type": "BUY",
+          "volume": 3.65,
+          "price_open": 1.34974,
+          "price_close": 1.35089,
+          "sl": null,
+          "tp": null,
+          "profit": 361.14,
+          "profit_str": "+361.14 EUR",
+          "status": "FECHADA",
+          "ticket": "152431827726",
+          "magic": 555300
+        },
+        {
+          "time": "2026-09-03 13:30",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
           "volume": 1.85,
           "price_open": 156.045,
-          "price_close": null,
-          "sl": 156.551,
+          "price_close": 155.739,
+          "sl": null,
           "tp": null,
-          "profit": -56.13,
-          "profit_str": "-56.13 EUR",
-          "status": "ABERTA",
-          "ticket": "152579094093",
+          "profit": 312.96,
+          "profit_str": "+312.96 EUR",
+          "status": "FECHADA",
+          "ticket": "152431843024",
           "magic": 444250
+        },
+        {
+          "time": "2026-09-03 13:30",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 3.43,
+          "price_open": 4444.58,
+          "price_close": 4455.79,
+          "sl": null,
+          "tp": null,
+          "profit": 3307.61,
+          "profit_str": "+3307.61 EUR",
+          "status": "FECHADA",
+          "ticket": "152431833392",
+          "magic": 777250
         },
         {
           "time": "2026-09-03 09:14",
@@ -158,22 +190,6 @@
           "magic": 555250
         },
         {
-          "time": "2026-09-03 05:45",
-          "symbol": "GBPUSD",
-          "bot": "ORB GBPUSD M15",
-          "type": "BUY",
-          "volume": 3.65,
-          "price_open": 1.34974,
-          "price_close": null,
-          "sl": 1.34805,
-          "tp": 1.35089,
-          "profit": -110.01,
-          "profit_str": "-110.01 EUR",
-          "status": "ABERTA",
-          "ticket": "152577304559",
-          "magic": 555300
-        },
-        {
           "time": "2026-09-03 01:54",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
@@ -188,22 +204,6 @@
           "status": "FECHADA",
           "ticket": "152428845409",
           "magic": 444250
-        },
-        {
-          "time": "2026-09-02 23:00",
-          "symbol": "GBPUSD",
-          "bot": "VolSqueeze GBPUSD H1",
-          "type": "SELL",
-          "volume": 2.29,
-          "price_open": 1.34828,
-          "price_close": null,
-          "sl": 1.35101,
-          "tp": null,
-          "profit": -220.87,
-          "profit_str": "-220.87 EUR",
-          "status": "ABERTA",
-          "ticket": "152576246461",
-          "magic": 555350
         },
         {
           "time": "2026-09-02 23:00",
@@ -1058,20 +1058,20 @@
         {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
-          "trades": 11,
-          "wins": 6,
-          "win_rate": 54.5,
-          "avg_profit": 879.67,
-          "total_profit": 9676.36
+          "trades": 12,
+          "wins": 7,
+          "win_rate": 58.3,
+          "avg_profit": 1082.0,
+          "total_profit": 12983.97
         },
         {
           "bot": "Donchian USDJPY M15",
           "magic": 444250,
-          "trades": 13,
-          "wins": 9,
-          "win_rate": 69.2,
-          "avg_profit": 214.76,
-          "total_profit": 2791.88
+          "trades": 14,
+          "wins": 10,
+          "win_rate": 71.4,
+          "avg_profit": 221.77,
+          "total_profit": 3104.84
         },
         {
           "bot": "FinBot GBPUSD H1",
@@ -1081,6 +1081,15 @@
           "win_rate": 100.0,
           "avg_profit": 1280.73,
           "total_profit": 1280.73
+        },
+        {
+          "bot": "ORB GBPUSD M15",
+          "magic": 555300,
+          "trades": 1,
+          "wins": 1,
+          "win_rate": 100.0,
+          "avg_profit": 361.14,
+          "total_profit": 361.14
         },
         {
           "bot": "ORB EURUSD M15",
@@ -1135,6 +1144,15 @@
           "win_rate": 0.0,
           "avg_profit": -501.17,
           "total_profit": -501.17
+        },
+        {
+          "bot": "VolSqueeze GBPUSD H1",
+          "magic": 555350,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -537.91,
+          "total_profit": -537.91
         },
         {
           "bot": "Donchian GBPUSD M15",
