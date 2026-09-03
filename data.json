@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-09-03 08:15:16",
+  "updated_at": "2026-09-03 08:36:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 102076.04,
-      "equity": 101830.27,
-      "closed_pl": 2076.040000000001,
-      "total_pl": 1830.270000000004,
-      "roi_pct": 1.830270000000004,
-      "floating_pl": -245.77,
-      "open_count": 4,
+      "balance": 101555.39,
+      "equity": 100925.66,
+      "closed_pl": 1555.3900000000008,
+      "total_pl": 925.6600000000035,
+      "roi_pct": 0.9256600000000035,
+      "floating_pl": -629.73,
+      "open_count": 3,
       "trades": [
         {
-          "time": "2026-09-03 08:15",
+          "time": "2026-09-03 08:35",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
           "volume": 2.25,
           "price_open": 156.767,
-          "price_close": null,
-          "sl": 157.189,
+          "price_close": 157.189,
+          "sl": null,
           "tp": null,
-          "profit": 64.32,
-          "profit_str": "+64.32 EUR",
-          "status": "ABERTA",
-          "ticket": "152577940042",
+          "profit": -520.65,
+          "profit_str": "-520.65 EUR",
+          "status": "FECHADA",
+          "ticket": "152430291064",
           "magic": 444250
         },
         {
@@ -71,8 +71,8 @@
           "price_close": null,
           "sl": 1.16,
           "tp": null,
-          "profit": 7.26,
-          "profit_str": "+7.26 EUR",
+          "profit": -283.35,
+          "profit_str": "-283.35 EUR",
           "status": "ABERTA",
           "ticket": "152577787904",
           "magic": 888250
@@ -135,8 +135,8 @@
           "price_close": null,
           "sl": 1.34805,
           "tp": 1.35089,
-          "profit": -78.62,
-          "profit_str": "-78.62 EUR",
+          "profit": -150.99,
+          "profit_str": "-150.99 EUR",
           "status": "ABERTA",
           "ticket": "152577304559",
           "magic": 555300
@@ -167,8 +167,8 @@
           "price_close": null,
           "sl": 1.35101,
           "tp": null,
-          "profit": -238.73,
-          "profit_str": "-238.73 EUR",
+          "profit": -195.39,
+          "profit_str": "-195.39 EUR",
           "status": "ABERTA",
           "ticket": "152576246461",
           "magic": 555350
@@ -1035,11 +1035,11 @@
         {
           "bot": "Donchian USDJPY M15",
           "magic": 444250,
-          "trades": 12,
+          "trades": 13,
           "wins": 9,
-          "win_rate": 75.0,
-          "avg_profit": 276.04,
-          "total_profit": 3312.53
+          "win_rate": 69.2,
+          "avg_profit": 214.76,
+          "total_profit": 2791.88
         },
         {
           "bot": "FinBot GBPUSD H1",
