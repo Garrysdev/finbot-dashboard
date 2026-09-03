@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-03 08:03:02",
+  "updated_at": "2026-09-03 08:15:16",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 102076.04,
-      "equity": 102348.96,
+      "equity": 101830.27,
       "closed_pl": 2076.040000000001,
-      "total_pl": 2348.9600000000064,
-      "roi_pct": 2.3489600000000066,
-      "floating_pl": 272.92,
-      "open_count": 3,
+      "total_pl": 1830.270000000004,
+      "roi_pct": 1.830270000000004,
+      "floating_pl": -245.77,
+      "open_count": 4,
       "trades": [
+        {
+          "time": "2026-09-03 08:15",
+          "symbol": "USDJPY",
+          "bot": "Donchian USDJPY M15",
+          "type": "SELL",
+          "volume": 2.25,
+          "price_open": 156.767,
+          "price_close": null,
+          "sl": 157.189,
+          "tp": null,
+          "profit": 64.32,
+          "profit_str": "+64.32 EUR",
+          "status": "ABERTA",
+          "ticket": "152577940042",
+          "magic": 444250
+        },
         {
           "time": "2026-09-03 08:02",
           "symbol": "EURUSD",
@@ -55,8 +71,8 @@
           "price_close": null,
           "sl": 1.16,
           "tp": null,
-          "profit": 508.1,
-          "profit_str": "+508.10 EUR",
+          "profit": 7.26,
+          "profit_str": "+7.26 EUR",
           "status": "ABERTA",
           "ticket": "152577787904",
           "magic": 888250
@@ -119,8 +135,8 @@
           "price_close": null,
           "sl": 1.34805,
           "tp": 1.35089,
-          "profit": 141.43,
-          "profit_str": "+141.43 EUR",
+          "profit": -78.62,
+          "profit_str": "-78.62 EUR",
           "status": "ABERTA",
           "ticket": "152577304559",
           "magic": 555300
@@ -151,8 +167,8 @@
           "price_close": null,
           "sl": 1.35101,
           "tp": null,
-          "profit": -376.61,
-          "profit_str": "-376.61 EUR",
+          "profit": -238.73,
+          "profit_str": "-238.73 EUR",
           "status": "ABERTA",
           "ticket": "152576246461",
           "magic": 555350
