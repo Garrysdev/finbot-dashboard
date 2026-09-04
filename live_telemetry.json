@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-04 08:52:03",
+  "updated_at": "2026-09-04 08:56:06",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 95034.31,
-      "equity": 94248.1,
-      "closed_pl": -4965.689999999999,
-      "total_pl": -5751.899999999994,
-      "roi_pct": -5.751899999999995,
-      "floating_pl": -786.21,
-      "open_count": 5,
+      "balance": 94513.36,
+      "equity": 93909.7,
+      "closed_pl": -5486.6399999999985,
+      "total_pl": -6090.300000000003,
+      "roi_pct": -6.090300000000003,
+      "floating_pl": -603.66,
+      "open_count": 4,
       "trades": [
+        {
+          "time": "2026-09-04 08:55",
+          "symbol": "GBPUSD",
+          "bot": "Donchian GBPUSD M15",
+          "type": "BUY",
+          "volume": 8.65,
+          "price_open": 1.35435,
+          "price_close": 1.35365,
+          "sl": null,
+          "tp": null,
+          "profit": -520.95,
+          "profit_str": "-520.95 EUR",
+          "status": "FECHADA",
+          "ticket": "152436354597",
+          "magic": 555250
+        },
         {
           "time": "2026-09-04 08:48",
           "symbol": "XAUUSD",
@@ -39,8 +55,8 @@
           "price_close": null,
           "sl": 4472.56,
           "tp": null,
-          "profit": -544.02,
-          "profit_str": "-544.02 EUR",
+          "profit": -752.13,
+          "profit_str": "-752.13 EUR",
           "status": "ABERTA",
           "ticket": "152584106497",
           "magic": 777250
@@ -71,27 +87,11 @@
           "price_close": null,
           "sl": 1.35233,
           "tp": 1.35523,
-          "profit": -76.91,
-          "profit_str": "-76.91 EUR",
+          "profit": -205.11,
+          "profit_str": "-205.11 EUR",
           "status": "ABERTA",
           "ticket": "152583701334",
           "magic": 555300
-        },
-        {
-          "time": "2026-09-04 07:15",
-          "symbol": "GBPUSD",
-          "bot": "Donchian GBPUSD M15",
-          "type": "BUY",
-          "volume": 8.65,
-          "price_open": 1.35435,
-          "price_close": null,
-          "sl": 1.35365,
-          "tp": null,
-          "profit": -223.23,
-          "profit_str": "-223.23 EUR",
-          "status": "ABERTA",
-          "ticket": "152583701343",
-          "magic": 555250
         },
         {
           "time": "2026-09-04 06:32",
@@ -119,8 +119,8 @@
           "price_close": null,
           "sl": 1.16323,
           "tp": 1.16158,
-          "profit": -94.18,
-          "profit_str": "-94.18 EUR",
+          "profit": -11.08,
+          "profit_str": "-11.08 EUR",
           "status": "ABERTA",
           "ticket": "152583317665",
           "magic": 888300
@@ -199,8 +199,8 @@
           "price_close": null,
           "sl": 1.3557000000000001,
           "tp": 1.34999,
-          "profit": 152.13,
-          "profit_str": "+152.13 EUR",
+          "profit": 364.66,
+          "profit_str": "+364.66 EUR",
           "status": "ABERTA",
           "ticket": "152581773672",
           "magic": 555200
@@ -1390,11 +1390,11 @@
         {
           "bot": "Donchian GBPUSD M15",
           "magic": 555250,
-          "trades": 15,
+          "trades": 16,
           "wins": 3,
-          "win_rate": 20.0,
-          "avg_profit": -302.39,
-          "total_profit": -4535.9
+          "win_rate": 18.8,
+          "avg_profit": -316.05,
+          "total_profit": -5056.85
         },
         {
           "bot": "MeanRev Gold XAUUSD H1",
@@ -1412,11 +1412,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 900.65,
-      "equity": 899.19,
+      "equity": 898.63,
       "closed_pl": -99.35,
-      "total_pl": -100.80999999999995,
-      "roi_pct": -10.080999999999994,
-      "floating_pl": -1.46,
+      "total_pl": -101.37,
+      "roi_pct": -10.137,
+      "floating_pl": -2.02,
       "open_count": 1,
       "trades": [
         {
@@ -1445,8 +1445,8 @@
           "price_close": null,
           "sl": 4469.22,
           "tp": 4519.35,
-          "profit": -1.46,
-          "profit_str": "-1.46 EUR",
+          "profit": -2.02,
+          "profit_str": "-2.02 EUR",
           "status": "ABERTA",
           "ticket": "58306832315",
           "magic": 777151
