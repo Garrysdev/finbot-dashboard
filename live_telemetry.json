@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 13:33:07",
+  "updated_at": "2026-09-04 14:00:14",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -1453,13 +1453,45 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 881.75,
-      "equity": 881.75,
+      "equity": 889.68,
       "closed_pl": -118.25,
-      "total_pl": -118.25,
-      "roi_pct": -11.825,
-      "floating_pl": 0.0,
-      "open_count": 0,
+      "total_pl": -110.32000000000005,
+      "roi_pct": -11.032000000000005,
+      "floating_pl": 7.93,
+      "open_count": 2,
       "trades": [
+        {
+          "time": "2026-09-04 14:00",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 4391.38,
+          "price_close": null,
+          "sl": 4443.34,
+          "tp": 4215.05,
+          "profit": 7.96,
+          "profit_str": "+7.96 EUR",
+          "status": "ABERTA",
+          "ticket": "58313350615",
+          "magic": 777123
+        },
+        {
+          "time": "2026-09-04 14:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 1.16013,
+          "price_close": null,
+          "sl": 1.16316,
+          "tp": 1.15504,
+          "profit": -0.03,
+          "profit_str": "-0.03 EUR",
+          "status": "ABERTA",
+          "ticket": "58313352383",
+          "magic": 888123
+        },
         {
           "time": "2026-09-04 13:30",
           "symbol": "USDJPY",
