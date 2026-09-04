@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-04 10:12:07",
+  "updated_at": "2026-09-04 10:14:20",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 90240.4,
-      "equity": 90389.34,
+      "equity": 90397.34,
       "closed_pl": -9759.599999999999,
-      "total_pl": -9610.660000000003,
-      "roi_pct": -9.610660000000003,
-      "floating_pl": 148.94,
+      "total_pl": -9602.660000000003,
+      "roi_pct": -9.602660000000004,
+      "floating_pl": 156.94,
       "open_count": 4,
       "trades": [
         {
@@ -39,8 +39,8 @@
           "price_close": null,
           "sl": 1.16258,
           "tp": null,
-          "profit": -187.79,
-          "profit_str": "-187.79 EUR",
+          "profit": -180.28,
+          "profit_str": "-180.28 EUR",
           "status": "ABERTA",
           "ticket": "152584275108",
           "magic": 888250
@@ -103,8 +103,8 @@
           "price_close": null,
           "sl": 1.35233,
           "tp": 1.35523,
-          "profit": -405.13,
-          "profit_str": "-405.13 EUR",
+          "profit": -397.44,
+          "profit_str": "-397.44 EUR",
           "status": "ABERTA",
           "ticket": "152583701334",
           "magic": 555300
@@ -135,8 +135,8 @@
           "price_close": null,
           "sl": 1.16323,
           "tp": 1.16158,
-          "profit": 49.87,
-          "profit_str": "+49.87 EUR",
+          "profit": 55.41,
+          "profit_str": "+55.41 EUR",
           "status": "ABERTA",
           "ticket": "152583317665",
           "magic": 888300
@@ -215,8 +215,8 @@
           "price_close": null,
           "sl": 1.3557000000000001,
           "tp": 1.34999,
-          "profit": 691.99,
-          "profit_str": "+691.99 EUR",
+          "profit": 679.25,
+          "profit_str": "+679.25 EUR",
           "status": "ABERTA",
           "ticket": "152581773672",
           "magic": 555200
@@ -1427,14 +1427,30 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 900.65,
-      "equity": 888.29,
-      "closed_pl": -99.35,
-      "total_pl": -111.71000000000004,
-      "roi_pct": -11.171000000000003,
-      "floating_pl": -12.36,
-      "open_count": 1,
+      "balance": 886.29,
+      "equity": 886.29,
+      "closed_pl": -113.71,
+      "total_pl": -113.71000000000004,
+      "roi_pct": -11.371000000000004,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "time": "2026-09-04 10:13",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 0.01,
+          "price_open": 4485.91,
+          "price_close": 4469.22,
+          "sl": null,
+          "tp": null,
+          "profit": -14.36,
+          "profit_str": "-14.36 EUR",
+          "status": "FECHADA",
+          "ticket": "57938231431",
+          "magic": 777151
+        },
         {
           "time": "2026-09-04 08:51",
           "symbol": "EURUSD",
@@ -1450,22 +1466,6 @@
           "status": "FECHADA",
           "ticket": "57937141341",
           "magic": 888151
-        },
-        {
-          "time": "2026-09-04 08:45",
-          "symbol": "XAUUSD",
-          "bot": "FinBot Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 0.01,
-          "price_open": 4485.91,
-          "price_close": null,
-          "sl": 4469.22,
-          "tp": 4519.35,
-          "profit": -12.36,
-          "profit_str": "-12.36 EUR",
-          "status": "ABERTA",
-          "ticket": "58306832315",
-          "magic": 777151
         },
         {
           "time": "2026-09-03 16:10",
@@ -1917,11 +1917,11 @@
         {
           "bot": "FinBot Gold XAUUSD M15",
           "magic": 777151,
-          "trades": 4,
+          "trades": 5,
           "wins": 1,
-          "win_rate": 25.0,
-          "avg_profit": -8.31,
-          "total_profit": -33.25
+          "win_rate": 20.0,
+          "avg_profit": -9.52,
+          "total_profit": -47.61
         },
         {
           "bot": "FinBot Gold XAUUSD H1",
