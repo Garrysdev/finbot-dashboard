@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-04 13:31:15",
+  "updated_at": "2026-09-04 13:33:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 91522.73,
-      "equity": 92686.77,
-      "closed_pl": -8477.269999999999,
-      "total_pl": -7313.229999999996,
-      "roi_pct": -7.3132299999999955,
-      "floating_pl": 1164.04,
-      "open_count": 1,
+      "balance": 92660.57,
+      "equity": 92660.57,
+      "closed_pl": -7339.4299999999985,
+      "total_pl": -7339.429999999993,
+      "roi_pct": -7.339429999999993,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
         {
           "time": "2026-09-04 13:30",
@@ -46,6 +46,22 @@
           "magic": 888300
         },
         {
+          "time": "2026-09-04 13:30",
+          "symbol": "GBPUSD",
+          "bot": "Donchian GBPUSD M15",
+          "type": "SELL",
+          "volume": 3.78,
+          "price_open": 1.3528,
+          "price_close": 1.34931,
+          "sl": null,
+          "tp": null,
+          "profit": 1137.84,
+          "profit_str": "+1137.84 EUR",
+          "status": "FECHADA",
+          "ticket": "152437832807",
+          "magic": 555250
+        },
+        {
           "time": "2026-09-04 13:29",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
@@ -76,22 +92,6 @@
           "status": "FECHADA",
           "ticket": "152436793049",
           "magic": 555300
-        },
-        {
-          "time": "2026-09-04 10:15",
-          "symbol": "GBPUSD",
-          "bot": "Donchian GBPUSD M15",
-          "type": "SELL",
-          "volume": 3.78,
-          "price_open": 1.3528,
-          "price_close": null,
-          "sl": 1.35155,
-          "tp": null,
-          "profit": 1164.04,
-          "profit_str": "+1164.04 EUR",
-          "status": "ABERTA",
-          "ticket": "152584523783",
-          "magic": 555250
         },
         {
           "time": "2026-09-04 10:11",
@@ -1420,6 +1420,15 @@
           "total_profit": -537.91
         },
         {
+          "bot": "Donchian GBPUSD M15",
+          "magic": 555250,
+          "trades": 17,
+          "wins": 4,
+          "win_rate": 23.5,
+          "avg_profit": -230.53,
+          "total_profit": -3919.01
+        },
+        {
           "bot": "ORB Gold XAUUSD M15",
           "magic": 777300,
           "trades": 1,
@@ -1427,15 +1436,6 @@
           "win_rate": 0.0,
           "avg_profit": -4482.57,
           "total_profit": -4482.57
-        },
-        {
-          "bot": "Donchian GBPUSD M15",
-          "magic": 555250,
-          "trades": 16,
-          "wins": 3,
-          "win_rate": 18.8,
-          "avg_profit": -316.05,
-          "total_profit": -5056.85
         },
         {
           "bot": "MeanRev Gold XAUUSD H1",
