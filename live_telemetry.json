@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-09-07 12:45:20",
+  "updated_at": "2026-09-07 14:05:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 93823.27,
-      "equity": 93827.97,
-      "closed_pl": -6176.729999999999,
-      "total_pl": -6172.029999999999,
-      "roi_pct": -6.172029999999999,
-      "floating_pl": 4.7,
-      "open_count": 1,
+      "balance": 93357.65,
+      "equity": 93357.65,
+      "closed_pl": -6642.3499999999985,
+      "total_pl": -6642.350000000006,
+      "roi_pct": -6.642350000000005,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
         {
-          "time": "2026-09-07 12:45",
+          "time": "2026-09-07 14:04",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
           "volume": 0.39,
           "price_open": 4386.61,
-          "price_close": null,
-          "sl": 4400.49,
+          "price_close": 4400.49,
+          "sl": null,
           "tp": null,
-          "profit": 4.7,
-          "profit_str": "+4.70 EUR",
-          "status": "ABERTA",
-          "ticket": "152592219015",
+          "profit": -465.62,
+          "profit_str": "-465.62 EUR",
+          "status": "FECHADA",
+          "ticket": "152444802402",
           "magic": 777250
         },
         {
@@ -1467,11 +1467,11 @@
         {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
-          "trades": 17,
+          "trades": 18,
           "wins": 8,
-          "win_rate": 47.1,
-          "avg_profit": 196.32,
-          "total_profit": 3337.51
+          "win_rate": 44.4,
+          "avg_profit": 159.55,
+          "total_profit": 2871.89
         },
         {
           "bot": "MeanRev GBPUSD H1",
@@ -1606,11 +1606,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 846.03,
-      "equity": 851.43,
+      "equity": 839.21,
       "closed_pl": -153.97,
-      "total_pl": -148.57000000000005,
-      "roi_pct": -14.857000000000006,
-      "floating_pl": 5.4,
+      "total_pl": -160.78999999999996,
+      "roi_pct": -16.078999999999997,
+      "floating_pl": -6.82,
       "open_count": 2,
       "trades": [
         {
@@ -1623,8 +1623,8 @@
           "price_close": null,
           "sl": 4414.76,
           "tp": 4357.99,
-          "profit": 7.98,
-          "profit_str": "+7.98 EUR",
+          "profit": -4.02,
+          "profit_str": "-4.02 EUR",
           "status": "ABERTA",
           "ticket": "58330814665",
           "magic": 777151
@@ -1719,8 +1719,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.58,
-          "profit_str": "-2.58 EUR",
+          "profit": -2.8,
+          "profit_str": "-2.80 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
