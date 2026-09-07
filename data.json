@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-07 10:15:54",
+  "updated_at": "2026-09-07 11:22:03",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 94287.31,
-      "equity": 94132.18,
-      "closed_pl": -5712.689999999999,
-      "total_pl": -5867.820000000007,
-      "roi_pct": -5.867820000000007,
-      "floating_pl": -155.13,
-      "open_count": 1,
+      "balance": 93823.27,
+      "equity": 93823.27,
+      "closed_pl": -6176.729999999999,
+      "total_pl": -6176.729999999996,
+      "roi_pct": -6.1767299999999965,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "time": "2026-09-07 11:21",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 0.3,
+          "price_open": 4417.51,
+          "price_close": 4399.53,
+          "sl": null,
+          "tp": null,
+          "profit": -464.04,
+          "profit_str": "-464.04 EUR",
+          "status": "FECHADA",
+          "ticket": "152443810845",
+          "magic": 777250
+        },
         {
           "time": "2026-09-07 09:50",
           "symbol": "EURUSD",
@@ -60,22 +76,6 @@
           "status": "FECHADA",
           "ticket": "152443138391",
           "magic": 888250
-        },
-        {
-          "time": "2026-09-07 09:15",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 0.3,
-          "price_open": 4417.51,
-          "price_close": null,
-          "sl": 4399.53,
-          "tp": null,
-          "profit": -155.13,
-          "profit_str": "-155.13 EUR",
-          "status": "ABERTA",
-          "ticket": "152590998597",
-          "magic": 777250
         },
         {
           "time": "2026-09-07 09:09",
@@ -1451,11 +1451,11 @@
         {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
-          "trades": 16,
+          "trades": 17,
           "wins": 8,
-          "win_rate": 50.0,
-          "avg_profit": 237.6,
-          "total_profit": 3801.55
+          "win_rate": 47.1,
+          "avg_profit": 196.32,
+          "total_profit": 3337.51
         },
         {
           "bot": "MeanRev GBPUSD H1",
@@ -1590,11 +1590,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 846.03,
-      "equity": 843.34,
+      "equity": 843.33,
       "closed_pl": -153.97,
-      "total_pl": -156.65999999999997,
-      "roi_pct": -15.665999999999997,
-      "floating_pl": -2.69,
+      "total_pl": -156.66999999999996,
+      "roi_pct": -15.666999999999994,
+      "floating_pl": -2.7,
       "open_count": 1,
       "trades": [
         {
@@ -1687,8 +1687,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.69,
-          "profit_str": "-2.69 EUR",
+          "profit": -2.7,
+          "profit_str": "-2.70 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
