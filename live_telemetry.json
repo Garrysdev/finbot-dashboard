@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07 11:22:03",
+  "updated_at": "2026-09-07 11:30:06",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -1590,13 +1590,29 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 846.03,
-      "equity": 843.33,
+      "equity": 842.5,
       "closed_pl": -153.97,
-      "total_pl": -156.66999999999996,
-      "roi_pct": -15.666999999999994,
-      "floating_pl": -2.7,
-      "open_count": 1,
+      "total_pl": -157.5,
+      "roi_pct": -15.75,
+      "floating_pl": -3.5300000000000002,
+      "open_count": 2,
       "trades": [
+        {
+          "time": "2026-09-07 11:30",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 4395.75,
+          "price_close": null,
+          "sl": 4414.76,
+          "tp": 4357.99,
+          "profit": -0.89,
+          "profit_str": "-0.89 EUR",
+          "status": "ABERTA",
+          "ticket": "58330814665",
+          "magic": 777151
+        },
         {
           "time": "2026-09-07 09:16",
           "symbol": "EURUSD",
@@ -1687,8 +1703,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.7,
-          "profit_str": "-2.70 EUR",
+          "profit": -2.64,
+          "profit_str": "-2.64 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
