@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-07 07:45:02",
+  "updated_at": "2026-09-07 09:04:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 93017.39,
-      "equity": 92877.66,
-      "closed_pl": -6982.609999999999,
-      "total_pl": -7122.3399999999965,
-      "roi_pct": -7.122339999999997,
-      "floating_pl": -139.73,
-      "open_count": 4,
+      "balance": 92551.7,
+      "equity": 93937.46,
+      "closed_pl": -7448.299999999998,
+      "total_pl": -6062.539999999994,
+      "roi_pct": -6.062539999999993,
+      "floating_pl": 1385.76,
+      "open_count": 3,
       "trades": [
+        {
+          "time": "2026-09-07 09:03",
+          "symbol": "EURUSD",
+          "bot": "VolSqueeze EURUSD H1",
+          "type": "SELL",
+          "volume": 4.04,
+          "price_open": 1.16115,
+          "price_close": 1.16249,
+          "sl": null,
+          "tp": null,
+          "profit": -465.69,
+          "profit_str": "-465.69 EUR",
+          "status": "FECHADA",
+          "ticket": "152443029963",
+          "magic": 888350
+        },
         {
           "time": "2026-09-07 07:45",
           "symbol": "EURUSD",
@@ -23,8 +39,8 @@
           "price_close": null,
           "sl": 1.16111,
           "tp": null,
-          "profit": 31.5,
-          "profit_str": "+31.50 EUR",
+          "profit": 574.62,
+          "profit_str": "+574.62 EUR",
           "status": "ABERTA",
           "ticket": "152590452628",
           "magic": 888250
@@ -39,8 +55,8 @@
           "price_close": null,
           "sl": 1.3508,
           "tp": 1.35357,
-          "profit": 71.82,
-          "profit_str": "+71.82 EUR",
+          "profit": 176.89,
+          "profit_str": "+176.89 EUR",
           "status": "ABERTA",
           "ticket": "152590384524",
           "magic": 555300
@@ -53,10 +69,10 @@
           "volume": 3.66,
           "price_open": 155.692,
           "price_close": null,
-          "sl": 155.922,
+          "sl": 155.429,
           "tp": null,
-          "profit": -34.4,
-          "profit_str": "-34.40 EUR",
+          "profit": 634.25,
+          "profit_str": "+634.25 EUR",
           "status": "ABERTA",
           "ticket": "152590384553",
           "magic": 444250
@@ -76,22 +92,6 @@
           "status": "FECHADA",
           "ticket": "152442495652",
           "magic": 444250
-        },
-        {
-          "time": "2026-09-07 05:00",
-          "symbol": "EURUSD",
-          "bot": "VolSqueeze EURUSD H1",
-          "type": "SELL",
-          "volume": 4.04,
-          "price_open": 1.16115,
-          "price_close": null,
-          "sl": 1.16249,
-          "tp": null,
-          "profit": -208.65,
-          "profit_str": "-208.65 EUR",
-          "status": "ABERTA",
-          "ticket": "152589766254",
-          "magic": 888350
         },
         {
           "time": "2026-09-04 13:30",
@@ -1482,6 +1482,15 @@
           "total_profit": -256.59
         },
         {
+          "bot": "VolSqueeze EURUSD H1",
+          "magic": 888350,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -465.69,
+          "total_profit": -465.69
+        },
+        {
           "bot": "FinBot EURUSD H1",
           "magic": 888123,
           "trades": 1,
@@ -1533,11 +1542,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 846.98,
-      "equity": 843.1,
+      "equity": 843.35,
       "closed_pl": -153.02,
-      "total_pl": -156.89999999999998,
-      "roi_pct": -15.689999999999998,
-      "floating_pl": -3.88,
+      "total_pl": -156.64999999999998,
+      "roi_pct": -15.665,
+      "floating_pl": -3.63,
       "open_count": 3,
       "trades": [
         {
@@ -1582,8 +1591,8 @@
           "price_close": null,
           "sl": 1.15984,
           "tp": 1.1657899999999999,
-          "profit": -0.46,
-          "profit_str": "-0.46 EUR",
+          "profit": 0.73,
+          "profit_str": "+0.73 EUR",
           "status": "ABERTA",
           "ticket": "58317654674",
           "magic": 888151
@@ -1614,8 +1623,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.02,
-          "profit_str": "-2.02 EUR",
+          "profit": -2.37,
+          "profit_str": "-2.37 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
@@ -1630,8 +1639,8 @@
           "price_close": null,
           "sl": 1.16316,
           "tp": 1.15504,
-          "profit": -1.4,
-          "profit_str": "-1.40 EUR",
+          "profit": -1.99,
+          "profit_str": "-1.99 EUR",
           "status": "ABERTA",
           "ticket": "58313352383",
           "magic": 888123
