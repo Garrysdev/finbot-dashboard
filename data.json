@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-07 09:05:08",
+  "updated_at": "2026-09-07 09:10:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 93084.51,
-      "equity": 93721.46,
-      "closed_pl": -6915.489999999999,
-      "total_pl": -6278.539999999994,
-      "roi_pct": -6.278539999999993,
-      "floating_pl": 636.95,
-      "open_count": 2,
+      "balance": 93333.08,
+      "equity": 94261.55,
+      "closed_pl": -6666.919999999999,
+      "total_pl": -5738.449999999997,
+      "roi_pct": -5.738449999999997,
+      "floating_pl": 928.47,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-07 09:09",
+          "symbol": "GBPUSD",
+          "bot": "ORB GBPUSD M15",
+          "type": "BUY",
+          "volume": 2.98,
+          "price_open": 1.3526,
+          "price_close": 1.35357,
+          "sl": null,
+          "tp": null,
+          "profit": 248.57,
+          "profit_str": "+248.57 EUR",
+          "status": "FECHADA",
+          "ticket": "152443074600",
+          "magic": 555300
+        },
         {
           "time": "2026-09-07 09:05",
           "symbol": "USDJPY",
@@ -53,29 +69,13 @@
           "volume": 9.15,
           "price_open": 1.1617,
           "price_close": null,
-          "sl": 1.16111,
+          "sl": 1.16269,
           "tp": null,
-          "profit": 495.94,
-          "profit_str": "+495.94 EUR",
+          "profit": 928.47,
+          "profit_str": "+928.47 EUR",
           "status": "ABERTA",
           "ticket": "152590452628",
           "magic": 888250
-        },
-        {
-          "time": "2026-09-07 07:30",
-          "symbol": "GBPUSD",
-          "bot": "ORB GBPUSD M15",
-          "type": "BUY",
-          "volume": 2.98,
-          "price_open": 1.3526,
-          "price_close": null,
-          "sl": 1.3508,
-          "tp": 1.35357,
-          "profit": 141.01,
-          "profit_str": "+141.01 EUR",
-          "status": "ABERTA",
-          "ticket": "152590384524",
-          "magic": 555300
         },
         {
           "time": "2026-09-07 07:25",
@@ -1437,6 +1437,15 @@
           "total_profit": 733.24
         },
         {
+          "bot": "ORB GBPUSD M15",
+          "magic": 555300,
+          "trades": 3,
+          "wins": 2,
+          "win_rate": 66.7,
+          "avg_profit": 30.55,
+          "total_profit": 91.65
+        },
+        {
           "bot": "FinBot Gold XAUUSD M15",
           "magic": 777151,
           "trades": 1,
@@ -1462,15 +1471,6 @@
           "win_rate": 50.0,
           "avg_profit": -3.98,
           "total_profit": -63.74
-        },
-        {
-          "bot": "ORB GBPUSD M15",
-          "magic": 555300,
-          "trades": 2,
-          "wins": 1,
-          "win_rate": 50.0,
-          "avg_profit": -78.46,
-          "total_profit": -156.92
         },
         {
           "bot": "FinBot EURUSD M15",
@@ -1542,11 +1542,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 846.98,
-      "equity": 843.38,
+      "equity": 843.49,
       "closed_pl": -153.02,
-      "total_pl": -156.62,
-      "roi_pct": -15.662,
-      "floating_pl": -3.6,
+      "total_pl": -156.51,
+      "roi_pct": -15.650999999999998,
+      "floating_pl": -3.49,
       "open_count": 3,
       "trades": [
         {
@@ -1591,8 +1591,8 @@
           "price_close": null,
           "sl": 1.15984,
           "tp": 1.1657899999999999,
-          "profit": 0.56,
-          "profit_str": "+0.56 EUR",
+          "profit": 1.5,
+          "profit_str": "+1.50 EUR",
           "status": "ABERTA",
           "ticket": "58317654674",
           "magic": 888151
@@ -1623,8 +1623,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.25,
-          "profit_str": "-2.25 EUR",
+          "profit": -2.62,
+          "profit_str": "-2.62 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
@@ -1639,8 +1639,8 @@
           "price_close": null,
           "sl": 1.16316,
           "tp": 1.15504,
-          "profit": -1.91,
-          "profit_str": "-1.91 EUR",
+          "profit": -2.37,
+          "profit_str": "-2.37 EUR",
           "status": "ABERTA",
           "ticket": "58313352383",
           "magic": 888123
