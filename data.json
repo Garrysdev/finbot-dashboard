@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 13:17:09",
+  "updated_at": "2026-09-08 13:50:26",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -1701,14 +1701,30 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 844.74,
-      "equity": 841.08,
-      "closed_pl": -155.26,
-      "total_pl": -158.91999999999996,
-      "roi_pct": -15.891999999999996,
-      "floating_pl": -3.66,
-      "open_count": 2,
+      "balance": 840.47,
+      "equity": 842.72,
+      "closed_pl": -159.53,
+      "total_pl": -157.27999999999997,
+      "roi_pct": -15.727999999999998,
+      "floating_pl": 2.25,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-08 13:49",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 1.35056,
+          "price_close": 1.35548,
+          "sl": null,
+          "tp": null,
+          "profit": -4.27,
+          "profit_str": "-4.27 EUR",
+          "status": "FECHADA",
+          "ticket": "57980507601",
+          "magic": 555123
+        },
         {
           "time": "2026-09-08 13:16",
           "symbol": "XAUUSD",
@@ -1735,8 +1751,8 @@
           "price_close": null,
           "sl": 1.3529,
           "tp": 1.35764,
-          "profit": -0.36,
-          "profit_str": "-0.36 EUR",
+          "profit": 2.25,
+          "profit_str": "+2.25 EUR",
           "status": "ABERTA",
           "ticket": "58349985748",
           "magic": 555151
@@ -1884,22 +1900,6 @@
           "status": "FECHADA",
           "ticket": "57946997592",
           "magic": 777123
-        },
-        {
-          "time": "2026-09-04 15:00",
-          "symbol": "GBPUSD",
-          "bot": "FinBot GBPUSD H1",
-          "type": "SELL",
-          "volume": 0.01,
-          "price_open": 1.35056,
-          "price_close": null,
-          "sl": 1.35548,
-          "tp": 1.33792,
-          "profit": -3.3,
-          "profit_str": "-3.30 EUR",
-          "status": "ABERTA",
-          "ticket": "58315257675",
-          "magic": 555123
         },
         {
           "time": "2026-09-04 13:30",
@@ -2361,15 +2361,6 @@
           "total_profit": 15.7
         },
         {
-          "bot": "FinBot GBPUSD H1",
-          "magic": 555123,
-          "trades": 1,
-          "wins": 1,
-          "win_rate": 100.0,
-          "avg_profit": 5.28,
-          "total_profit": 5.28
-        },
-        {
           "bot": "FinBot USDJPY M15",
           "magic": 444151,
           "trades": 5,
@@ -2377,6 +2368,15 @@
           "win_rate": 60.0,
           "avg_profit": 0.91,
           "total_profit": 4.56
+        },
+        {
+          "bot": "FinBot GBPUSD H1",
+          "magic": 555123,
+          "trades": 2,
+          "wins": 1,
+          "win_rate": 50.0,
+          "avg_profit": 0.5,
+          "total_profit": 1.01
         },
         {
           "bot": "FinBot EURUSD H1",
