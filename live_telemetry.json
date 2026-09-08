@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-08 06:15:54",
+  "updated_at": "2026-09-08 07:00:03",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 92413.09,
-      "equity": 92446.46,
+      "equity": 92573.21,
       "closed_pl": -7586.909999999999,
-      "total_pl": -7553.539999999994,
-      "roi_pct": -7.553539999999994,
-      "floating_pl": 33.37,
+      "total_pl": -7426.789999999994,
+      "roi_pct": -7.426789999999994,
+      "floating_pl": 160.12,
       "open_count": 1,
       "trades": [
         {
@@ -23,8 +23,8 @@
           "price_close": null,
           "sl": 1.35271,
           "tp": null,
-          "profit": 33.37,
-          "profit_str": "+33.37 EUR",
+          "profit": 160.12,
+          "profit_str": "+160.12 EUR",
           "status": "ABERTA",
           "ticket": "152595656124",
           "magic": 555350
@@ -1654,13 +1654,29 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 829.68,
-      "equity": 826.61,
+      "equity": 826.09,
       "closed_pl": -170.32,
-      "total_pl": -173.39,
-      "roi_pct": -17.339,
-      "floating_pl": -3.07,
-      "open_count": 1,
+      "total_pl": -173.90999999999997,
+      "roi_pct": -17.391,
+      "floating_pl": -3.59,
+      "open_count": 2,
       "trades": [
+        {
+          "time": "2026-09-08 07:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "BUY",
+          "volume": 0.08,
+          "price_open": 1.16315,
+          "price_close": null,
+          "sl": 1.16252,
+          "tp": 1.16407,
+          "profit": -0.21,
+          "profit_str": "-0.21 EUR",
+          "status": "ABERTA",
+          "ticket": "58343808806",
+          "magic": 888151
+        },
         {
           "time": "2026-09-07 15:47",
           "symbol": "XAUUSD",
@@ -1767,8 +1783,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -3.07,
-          "profit_str": "-3.07 EUR",
+          "profit": -3.38,
+          "profit_str": "-3.38 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
