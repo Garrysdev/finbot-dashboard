@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 12:20:05",
+  "updated_at": "2026-09-08 13:00:09",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -1702,13 +1702,29 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 826.23,
-      "equity": 832.35,
+      "equity": 827.46,
       "closed_pl": -173.77,
-      "total_pl": -167.64999999999998,
-      "roi_pct": -16.764999999999997,
-      "floating_pl": 6.12,
-      "open_count": 2,
+      "total_pl": -172.53999999999996,
+      "roi_pct": -17.253999999999998,
+      "floating_pl": 1.23,
+      "open_count": 3,
       "trades": [
+        {
+          "time": "2026-09-08 13:00",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD M15",
+          "type": "BUY",
+          "volume": 0.03,
+          "price_open": 1.35449,
+          "price_close": null,
+          "sl": 1.3529,
+          "tp": 1.35764,
+          "profit": -0.16,
+          "profit_str": "-0.16 EUR",
+          "status": "ABERTA",
+          "ticket": "58349985748",
+          "magic": 555151
+        },
         {
           "time": "2026-09-08 11:50",
           "symbol": "EURUSD",
@@ -1767,8 +1783,8 @@
           "price_close": null,
           "sl": 4432.5,
           "tp": 4369.65,
-          "profit": 8.32,
-          "profit_str": "+8.32 EUR",
+          "profit": 4.76,
+          "profit_str": "+4.76 EUR",
           "status": "ABERTA",
           "ticket": "58344111918",
           "magic": 777151
@@ -1879,8 +1895,8 @@
           "price_close": null,
           "sl": 1.35548,
           "tp": 1.33792,
-          "profit": -2.2,
-          "profit_str": "-2.20 EUR",
+          "profit": -3.37,
+          "profit_str": "-3.37 EUR",
           "status": "ABERTA",
           "ticket": "58315257675",
           "magic": 555123
