@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-09 15:47:57",
+  "updated_at": "2026-09-09 15:57:01",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 93250.12,
-      "equity": 93847.09,
+      "equity": 93923.04,
       "closed_pl": -6749.879999999999,
-      "total_pl": -6152.9100000000035,
-      "roi_pct": -6.152910000000004,
-      "floating_pl": 596.97,
+      "total_pl": -6076.960000000006,
+      "roi_pct": -6.076960000000006,
+      "floating_pl": 672.92,
       "open_count": 1,
       "trades": [
         {
@@ -21,10 +21,10 @@
           "volume": 4.92,
           "price_open": 1.16311,
           "price_close": null,
-          "sl": 1.16426,
+          "sl": 1.1644700000000001,
           "tp": null,
-          "profit": 596.97,
-          "profit_str": "+596.97 EUR",
+          "profit": 672.92,
+          "profit_str": "+672.92 EUR",
           "status": "ABERTA",
           "ticket": "152599297889",
           "magic": 888250
@@ -1749,14 +1749,30 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 865.62,
-      "equity": 871.42,
-      "closed_pl": -134.38,
-      "total_pl": -128.58000000000004,
-      "roi_pct": -12.858000000000002,
-      "floating_pl": 5.8,
-      "open_count": 3,
+      "balance": 869.34,
+      "equity": 871.56,
+      "closed_pl": -130.66,
+      "total_pl": -128.44000000000005,
+      "roi_pct": -12.844000000000005,
+      "floating_pl": 2.22,
+      "open_count": 2,
       "trades": [
+        {
+          "time": "2026-09-09 15:57",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD M15",
+          "type": "BUY",
+          "volume": 0.03,
+          "price_open": 1.35449,
+          "price_close": 1.35594,
+          "sl": null,
+          "tp": null,
+          "profit": 3.72,
+          "profit_str": "+3.72 EUR",
+          "status": "FECHADA",
+          "ticket": "58003277664",
+          "magic": 555151
+        },
         {
           "time": "2026-09-08 19:50",
           "symbol": "XAUUSD",
@@ -1783,8 +1799,8 @@
           "price_close": null,
           "sl": 1.15945,
           "tp": 1.1681,
-          "profit": 1.61,
-          "profit_str": "+1.61 EUR",
+          "profit": 1.77,
+          "profit_str": "+1.77 EUR",
           "status": "ABERTA",
           "ticket": "58355858969",
           "magic": 888123
@@ -1831,8 +1847,8 @@
           "price_close": null,
           "sl": 1.3512,
           "tp": 1.36631,
-          "profit": 0.44,
-          "profit_str": "+0.44 EUR",
+          "profit": 0.45,
+          "profit_str": "+0.45 EUR",
           "status": "ABERTA",
           "ticket": "58351607142",
           "magic": 555123
@@ -1868,22 +1884,6 @@
           "status": "FECHADA",
           "ticket": "57979580444",
           "magic": 777151
-        },
-        {
-          "time": "2026-09-08 13:00",
-          "symbol": "GBPUSD",
-          "bot": "FinBot GBPUSD M15",
-          "type": "BUY",
-          "volume": 0.03,
-          "price_open": 1.35449,
-          "price_close": null,
-          "sl": 1.3529,
-          "tp": 1.35764,
-          "profit": 3.75,
-          "profit_str": "+3.75 EUR",
-          "status": "ABERTA",
-          "ticket": "58349985748",
-          "magic": 555151
         },
         {
           "time": "2026-09-08 11:50",
@@ -2482,11 +2482,11 @@
         {
           "bot": "FinBot GBPUSD M15",
           "magic": 555151,
-          "trades": 10,
-          "wins": 6,
-          "win_rate": 60.0,
-          "avg_profit": 1.57,
-          "total_profit": 15.7
+          "trades": 11,
+          "wins": 7,
+          "win_rate": 63.6,
+          "avg_profit": 1.77,
+          "total_profit": 19.42
         },
         {
           "bot": "FinBot GBPUSD H1",
