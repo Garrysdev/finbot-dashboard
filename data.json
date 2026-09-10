@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-10 09:45:06",
+  "updated_at": "2026-09-10 09:46:10",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 92526.82,
-      "equity": 91734.48,
-      "closed_pl": -7473.1799999999985,
-      "total_pl": -8265.520000000004,
-      "roi_pct": -8.265520000000004,
-      "floating_pl": -792.34,
-      "open_count": 3,
+      "balance": 92061.54,
+      "equity": 91780.52,
+      "closed_pl": -7938.459999999999,
+      "total_pl": -8219.479999999996,
+      "roi_pct": -8.219479999999995,
+      "floating_pl": -281.02,
+      "open_count": 2,
       "trades": [
         {
           "time": "2026-09-10 09:45",
@@ -23,11 +23,27 @@
           "price_close": null,
           "sl": 4413.58,
           "tp": null,
-          "profit": -12.89,
-          "profit_str": "-12.89 EUR",
+          "profit": 45.37,
+          "profit_str": "+45.37 EUR",
           "status": "ABERTA",
           "ticket": "152609656632",
           "magic": 777250
+        },
+        {
+          "time": "2026-09-10 09:45",
+          "symbol": "XAUUSD",
+          "bot": "ORB Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 0.16,
+          "price_open": 4428.52,
+          "price_close": 4394.68,
+          "sl": null,
+          "tp": null,
+          "profit": -465.28,
+          "profit_str": "-465.28 EUR",
+          "status": "FECHADA",
+          "ticket": "152461327596",
+          "magic": 777300
         },
         {
           "time": "2026-09-10 09:12",
@@ -60,22 +76,6 @@
           "status": "FECHADA",
           "ticket": "152460588240",
           "magic": 777250
-        },
-        {
-          "time": "2026-09-10 06:45",
-          "symbol": "XAUUSD",
-          "bot": "ORB Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 0.16,
-          "price_open": 4428.52,
-          "price_close": null,
-          "sl": 4394.68,
-          "tp": 4446.25,
-          "profit": -444.52,
-          "profit_str": "-444.52 EUR",
-          "status": "ABERTA",
-          "ticket": "152608749936",
-          "magic": 777300
         },
         {
           "time": "2026-09-09 16:35",
@@ -119,8 +119,8 @@
           "price_close": null,
           "sl": 153.804,
           "tp": null,
-          "profit": -334.93,
-          "profit_str": "-334.93 EUR",
+          "profit": -326.39,
+          "profit_str": "-326.39 EUR",
           "status": "ABERTA",
           "ticket": "152605801059",
           "magic": 444350
@@ -1824,11 +1824,11 @@
         {
           "bot": "ORB Gold XAUUSD M15",
           "magic": 777300,
-          "trades": 1,
+          "trades": 2,
           "wins": 0,
           "win_rate": 0.0,
-          "avg_profit": -4482.57,
-          "total_profit": -4482.57
+          "avg_profit": -2473.92,
+          "total_profit": -4947.85
         },
         {
           "bot": "MeanRev Gold XAUUSD H1",
@@ -1846,11 +1846,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 865.21,
-      "equity": 865.76,
+      "equity": 865.91,
       "closed_pl": -134.79,
-      "total_pl": -134.24,
-      "roi_pct": -13.424,
-      "floating_pl": 0.55,
+      "total_pl": -134.09000000000003,
+      "roi_pct": -13.409000000000004,
+      "floating_pl": 0.7,
       "open_count": 2,
       "trades": [
         {
@@ -1911,8 +1911,8 @@
           "price_close": null,
           "sl": 1.15945,
           "tp": 1.1681,
-          "profit": 0.86,
-          "profit_str": "+0.86 EUR",
+          "profit": 0.92,
+          "profit_str": "+0.92 EUR",
           "status": "ABERTA",
           "ticket": "58355858969",
           "magic": 888123
@@ -1959,8 +1959,8 @@
           "price_close": null,
           "sl": 1.3512,
           "tp": 1.36631,
-          "profit": -0.31,
-          "profit_str": "-0.31 EUR",
+          "profit": -0.22,
+          "profit_str": "-0.22 EUR",
           "status": "ABERTA",
           "ticket": "58351607142",
           "magic": 555123
