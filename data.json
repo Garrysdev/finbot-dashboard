@@ -1,18 +1,60 @@
 {
-  "updated_at": "2026-09-10 12:41:17",
+  "updated_at": "2026-09-10 13:00:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 93042.06,
-      "equity": 92832.11,
+      "equity": 93246.42,
       "closed_pl": -6957.939999999999,
-      "total_pl": -7167.889999999999,
-      "roi_pct": -7.167889999999999,
-      "floating_pl": -209.95,
-      "open_count": 1,
+      "total_pl": -6753.580000000002,
+      "roi_pct": -6.753580000000002,
+      "floating_pl": 204.36,
+      "open_count": 3,
       "trades": [
+        {
+          "time": "2026-09-10 13:00",
+          "symbol": "GBPUSD",
+          "bot": "VolSqueeze GBPUSD M15",
+          "type": "SELL",
+          "volume": 3.09,
+          "price_open": 1.35287,
+          "price_close": null,
+          "sl": 1.35462,
+          "tp": null,
+          "profit": -23.94,
+          "profit_str": "-23.94 EUR",
+          "running_balance": 93042.06,
+          "running_equity": 93246.42,
+          "status": "ABERTA",
+          "ticket": "152610845791",
+          "magic": 555350,
+          "week_key": "2026-W37",
+          "week_label": "Semana Atual (Posição em Curso)",
+          "time_raw": 1789052400
+        },
+        {
+          "time": "2026-09-10 13:00",
+          "symbol": "EURUSD",
+          "bot": "Donchian EURUSD M15",
+          "type": "SELL",
+          "volume": 4.97,
+          "price_open": 1.16167,
+          "price_close": null,
+          "sl": 1.16279,
+          "tp": null,
+          "profit": -38.5,
+          "profit_str": "-38.50 EUR",
+          "running_balance": 93042.06,
+          "running_equity": 93246.42,
+          "status": "ABERTA",
+          "ticket": "152610845890",
+          "magic": 888250,
+          "week_key": "2026-W37",
+          "week_label": "Semana Atual (Posição em Curso)",
+          "time_raw": 1789052400
+        },
         {
           "pos_id": 152609889088,
           "time_raw": 1789048596,
@@ -31,7 +73,7 @@
           "ticket": "152462076719",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93042.06,
           "running_equity": 93042.06
@@ -54,7 +96,7 @@
           "ticket": "152462031862",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92363.94,
           "running_equity": 92363.94
@@ -69,15 +111,15 @@
           "price_close": null,
           "sl": 4398.32,
           "tp": null,
-          "profit": -209.95,
-          "profit_str": "-209.95 EUR",
+          "profit": 266.8,
+          "profit_str": "+266.80 EUR",
           "running_balance": 93042.06,
-          "running_equity": 92832.11,
+          "running_equity": 93246.42,
           "status": "ABERTA",
           "ticket": "152610339751",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição Aberta)",
+          "week_label": "Semana Atual (Posição em Curso)",
           "time_raw": 1789047900
         },
         {
@@ -98,7 +140,7 @@
           "ticket": "152461951084",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 91922.01,
           "running_equity": 91922.01
@@ -121,7 +163,7 @@
           "ticket": "152461838908",
           "magic": 444350,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 91596.34,
           "running_equity": 91596.34
@@ -144,7 +186,7 @@
           "ticket": "152461327596",
           "magic": 777300,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92061.54,
           "running_equity": 92061.54
@@ -167,7 +209,7 @@
           "ticket": "152461168213",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92526.82,
           "running_equity": 92526.82
@@ -190,7 +232,7 @@
           "ticket": "152460588240",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93001.5,
           "running_equity": 93001.5
@@ -213,7 +255,7 @@
           "ticket": "152458010131",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93467.4,
           "running_equity": 93467.4
@@ -236,7 +278,7 @@
           "ticket": "152457566145",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93948.35,
           "running_equity": 93948.35
@@ -259,7 +301,7 @@
           "ticket": "152451186415",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93250.12,
           "running_equity": 93250.12
@@ -282,7 +324,7 @@
           "ticket": "152450646631",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92911.41,
           "running_equity": 92911.41
@@ -305,7 +347,7 @@
           "ticket": "152449586276",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93365.81,
           "running_equity": 93365.81
@@ -328,7 +370,7 @@
           "ticket": "152448767136",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92728.66,
           "running_equity": 92728.66
@@ -351,7 +393,7 @@
           "ticket": "152448610638",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92373.53,
           "running_equity": 92373.53
@@ -374,7 +416,7 @@
           "ticket": "152448489322",
           "magic": 555350,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 91988.68,
           "running_equity": 91988.68
@@ -397,7 +439,7 @@
           "ticket": "152446476378",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92413.09,
           "running_equity": 92413.09
@@ -420,7 +462,7 @@
           "ticket": "152446387800",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92884.09,
           "running_equity": 92884.09
@@ -443,7 +485,7 @@
           "ticket": "152444802402",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93357.65,
           "running_equity": 93357.65
@@ -466,7 +508,7 @@
           "ticket": "152443810845",
           "magic": 777250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93823.27,
           "running_equity": 93823.27
@@ -489,7 +531,7 @@
           "ticket": "152443357638",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 94287.31,
           "running_equity": 94287.31
@@ -512,7 +554,7 @@
           "ticket": "152443273271",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 94757.81,
           "running_equity": 94757.81
@@ -535,7 +577,7 @@
           "ticket": "152443138391",
           "magic": 888250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 94261.55,
           "running_equity": 94261.55
@@ -558,7 +600,7 @@
           "ticket": "152443074600",
           "magic": 555300,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93333.08,
           "running_equity": 93333.08
@@ -581,7 +623,7 @@
           "ticket": "152443042848",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93084.51,
           "running_equity": 93084.51
@@ -604,7 +646,7 @@
           "ticket": "152443029963",
           "magic": 888350,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92551.7,
           "running_equity": 92551.7
@@ -627,7 +669,7 @@
           "ticket": "152442495652",
           "magic": 444250,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 93017.39,
           "running_equity": 93017.39
@@ -650,7 +692,7 @@
           "ticket": "152437832807",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 92660.57,
           "running_equity": 92660.57
@@ -673,7 +715,7 @@
           "ticket": "152437720125",
           "magic": 555200,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 91129.09,
           "running_equity": 91129.09
@@ -696,7 +738,7 @@
           "ticket": "152437718858",
           "magic": 888300,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 91522.73,
           "running_equity": 91522.73
@@ -719,7 +761,7 @@
           "ticket": "152437702557",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 89249.26,
           "running_equity": 89249.26
@@ -742,7 +784,7 @@
           "ticket": "152436793049",
           "magic": 555300,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 89722.34,
           "running_equity": 89722.34
@@ -765,7 +807,7 @@
           "ticket": "152436676594",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 90240.4,
           "running_equity": 90240.4
@@ -788,7 +830,7 @@
           "ticket": "152436354597",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 94513.36,
           "running_equity": 94513.36
@@ -811,7 +853,7 @@
           "ticket": "152436308553",
           "magic": 777300,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 95034.31,
           "running_equity": 95034.31
@@ -834,7 +876,7 @@
           "ticket": "152436267238",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 99516.88,
           "running_equity": 99516.88
@@ -857,7 +899,7 @@
           "ticket": "152435749023",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 104011.83,
           "running_equity": 104011.83
@@ -880,7 +922,7 @@
           "ticket": "152434789828",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 104535.33,
           "running_equity": 104535.33
@@ -903,7 +945,7 @@
           "ticket": "152434783421",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 105066.83,
           "running_equity": 105066.83
@@ -926,7 +968,7 @@
           "ticket": "152434561180",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 109730.2,
           "running_equity": 109730.2
@@ -949,7 +991,7 @@
           "ticket": "152433998063",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 110278.28,
           "running_equity": 110278.28
@@ -972,7 +1014,7 @@
           "ticket": "152433522786",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 109520.17,
           "running_equity": 109520.17
@@ -995,7 +1037,7 @@
           "ticket": "152432271785",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 108746.61,
           "running_equity": 108746.61
@@ -1018,7 +1060,7 @@
           "ticket": "152431843024",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 104497.75,
           "running_equity": 104497.75
@@ -1041,7 +1083,7 @@
           "ticket": "152431833392",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 104184.79,
           "running_equity": 104184.79
@@ -1064,7 +1106,7 @@
           "ticket": "152431829948",
           "magic": 555350,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 100877.18,
           "running_equity": 100877.18
@@ -1087,7 +1129,7 @@
           "ticket": "152431827726",
           "magic": 555300,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101415.09,
           "running_equity": 101415.09
@@ -1110,7 +1152,7 @@
           "ticket": "152430483779",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101053.95,
           "running_equity": 101053.95
@@ -1133,7 +1175,7 @@
           "ticket": "152430291064",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101555.39,
           "running_equity": 101555.39
@@ -1156,7 +1198,7 @@
           "ticket": "152430118414",
           "magic": 888300,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 102076.04,
           "running_equity": 102076.04
@@ -1179,7 +1221,7 @@
           "ticket": "152430103302",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101736.44,
           "running_equity": 101736.44
@@ -1202,7 +1244,7 @@
           "ticket": "152430015602",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101352.9,
           "running_equity": 101352.9
@@ -1225,7 +1267,7 @@
           "ticket": "152429958645",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101042.17,
           "running_equity": 101042.17
@@ -1248,7 +1290,7 @@
           "ticket": "152429859661",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 105615.03,
           "running_equity": 105615.03
@@ -1271,7 +1313,7 @@
           "ticket": "152428845409",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 106153.18,
           "running_equity": 106153.18
@@ -1294,7 +1336,7 @@
           "ticket": "152428548679",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 105893.82,
           "running_equity": 105893.82
@@ -1317,7 +1359,7 @@
           "ticket": "152426520178",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 110632.87,
           "running_equity": 110632.87
@@ -1340,7 +1382,7 @@
           "ticket": "152426227533",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 100643.03,
           "running_equity": 100643.03
@@ -1363,7 +1405,7 @@
           "ticket": "152424070372",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101146.54,
           "running_equity": 101146.54
@@ -1386,7 +1428,7 @@
           "ticket": "152424015670",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101649.17,
           "running_equity": 101649.17
@@ -1409,7 +1451,7 @@
           "ticket": "152423940654",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 102160.15,
           "running_equity": 102160.15
@@ -1432,7 +1474,7 @@
           "ticket": "152423690992",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 102681.51,
           "running_equity": 102681.51
@@ -1455,7 +1497,7 @@
           "ticket": "152423650770",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 103191.96,
           "running_equity": 103191.96
@@ -1478,7 +1520,7 @@
           "ticket": "152423425445",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 102158.38,
           "running_equity": 102158.38
@@ -1501,7 +1543,7 @@
           "ticket": "152422621327",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101680.62,
           "running_equity": 101680.62
@@ -1524,7 +1566,7 @@
           "ticket": "152421815678",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101496.11,
           "running_equity": 101496.11
@@ -1547,7 +1589,7 @@
           "ticket": "152421233465",
           "magic": 555123,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101089.42,
           "running_equity": 101089.42
@@ -1570,7 +1612,7 @@
           "ticket": "152420687503",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 99808.69,
           "running_equity": 99808.69
@@ -1593,7 +1635,7 @@
           "ticket": "152420463913",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 100289.55,
           "running_equity": 100289.55
@@ -1616,7 +1658,7 @@
           "ticket": "152419799967",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 100795.27,
           "running_equity": 100795.27
@@ -1639,7 +1681,7 @@
           "ticket": "152419776392",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101326.45,
           "running_equity": 101326.45
@@ -1662,7 +1704,7 @@
           "ticket": "152419236447",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 105266.64,
           "running_equity": 105266.64
@@ -1685,7 +1727,7 @@
           "ticket": "152419236516",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 105786.21,
           "running_equity": 105786.21
@@ -1708,7 +1750,7 @@
           "ticket": "152418096869",
           "magic": 777200,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 101975.88,
           "running_equity": 101975.88
@@ -1731,7 +1773,7 @@
           "ticket": "152417982023",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 106431.93,
           "running_equity": 106431.93
@@ -1754,7 +1796,7 @@
           "ticket": "152417933624",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 106913.76,
           "running_equity": 106913.76
@@ -1777,7 +1819,7 @@
           "ticket": "152417933316",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 107425.42,
           "running_equity": 107425.42
@@ -1800,7 +1842,7 @@
           "ticket": "152417756090",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 107900.44,
           "running_equity": 107900.44
@@ -1823,7 +1865,7 @@
           "ticket": "152417488759",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 102020.13,
           "running_equity": 102020.13
@@ -1846,7 +1888,7 @@
           "ticket": "152417295531",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 96443.5,
           "running_equity": 96443.5
@@ -1869,7 +1911,7 @@
           "ticket": "152417059865",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 95717.82,
           "running_equity": 95717.82
@@ -1892,7 +1934,7 @@
           "ticket": "152416999951",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 96198.31,
           "running_equity": 96198.31
@@ -1915,7 +1957,7 @@
           "ticket": "152416517623",
           "magic": 555250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 95827.13,
           "running_equity": 95827.13
@@ -1938,7 +1980,7 @@
           "ticket": "152415482151",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 96401.84,
           "running_equity": 96401.84
@@ -1961,7 +2003,7 @@
           "ticket": "152415350343",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 96281.99,
           "running_equity": 96281.99
@@ -1984,7 +2026,7 @@
           "ticket": "152413945713",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 100730.62,
           "running_equity": 100730.62
@@ -2007,7 +2049,7 @@
           "ticket": "152413782597",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 100353.85,
           "running_equity": 100353.85
@@ -2030,7 +2072,7 @@
           "ticket": "152412376842",
           "magic": 777250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 100858.91,
           "running_equity": 100858.91
@@ -2053,7 +2095,7 @@
           "ticket": "152411323904",
           "magic": 444250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 98427.26,
           "running_equity": 98427.26
@@ -2076,7 +2118,7 @@
           "ticket": "152411317319",
           "magic": 888250,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 97897.87,
           "running_equity": 97897.87
@@ -2099,7 +2141,7 @@
           "ticket": "152408374509",
           "magic": 777250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 97366.02,
           "running_equity": 97366.02
@@ -2122,7 +2164,7 @@
           "ticket": "152408190217",
           "magic": 888250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 92492.14,
           "running_equity": 92492.14
@@ -2145,7 +2187,7 @@
           "ticket": "152408065969",
           "magic": 444250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 91590.5,
           "running_equity": 91590.5
@@ -2168,7 +2210,7 @@
           "ticket": "152407097204",
           "magic": 777200,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 90810.46,
           "running_equity": 90810.46
@@ -2191,7 +2233,7 @@
           "ticket": "152406463963",
           "magic": 555250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 94065.35,
           "running_equity": 94065.35
@@ -2214,7 +2256,7 @@
           "ticket": "152406265007",
           "magic": 777250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 94555.39,
           "running_equity": 94555.39
@@ -2237,7 +2279,7 @@
           "ticket": "152406168914",
           "magic": 555250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 98701.8,
           "running_equity": 98701.8
@@ -2260,7 +2302,7 @@
           "ticket": "152405617812",
           "magic": 888123,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 98251.64,
           "running_equity": 98251.64
@@ -2283,7 +2325,7 @@
           "ticket": "152405533282",
           "magic": 555250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 98752.81,
           "running_equity": 98752.81
@@ -2306,7 +2348,7 @@
           "ticket": "152405532353",
           "magic": 888250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99250.79,
           "running_equity": 99250.79
@@ -2329,7 +2371,7 @@
           "ticket": "152404854025",
           "magic": 555151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99731.83,
           "running_equity": 99731.83
@@ -2352,7 +2394,7 @@
           "ticket": "152404281862",
           "magic": 888250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99722.55,
           "running_equity": 99722.55
@@ -2375,7 +2417,7 @@
           "ticket": "152404042928",
           "magic": 444250,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 100221.22,
           "running_equity": 100221.22
@@ -2398,7 +2440,7 @@
           "ticket": "152397340442",
           "magic": 555151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99754.86,
           "running_equity": 99754.86
@@ -2421,7 +2463,7 @@
           "ticket": "152397340350",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99759.72,
           "running_equity": 99759.72
@@ -2444,7 +2486,7 @@
           "ticket": "152397132014",
           "magic": 777151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99764.64,
           "running_equity": 99764.64
@@ -2467,7 +2509,7 @@
           "ticket": "152395213141",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99748.33,
           "running_equity": 99748.33
@@ -2490,7 +2532,7 @@
           "ticket": "152392129415",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 99494.27,
           "running_equity": 99494.27
@@ -2651,424 +2693,53 @@
           "total_profit": -7710.94
         }
       ],
-      "evolution": {
-        "weekly": {
-          "labels": [
-            "Semana 35 (24/Aug - 30/Aug 2026)",
-            "Semana 36 (31/Aug - 06/Sep 2026)",
-            "Semana 37 (07/Sep - 13/Sep 2026)"
+      "top_5": {
+        "week": {
+          "bots": [
+            "Donchian USDJPY M15",
+            "Donchian EURUSD M15",
+            "ORB GBPUSD M15",
+            "VolSqueeze GBPUSD M15",
+            "VolSqueeze USDJPY M15"
           ],
-          "keys": [
-            "2026-W35",
-            "2026-W36",
-            "2026-W37"
-          ],
-          "total_profit": [
-            -2633.98,
-            -4705.45,
-            381.49
-          ],
-          "trade_counts": [
-            18,
-            63,
-            26
-          ],
-          "by_bot": {
-            "Donchian EURUSD M15": [
-              -78.07,
-              14.33,
-              1373.45
-            ],
-            "Donchian GBPUSD M15": [
-              -537.86,
-              -3381.15,
-              0.0
-            ],
-            "Donchian Gold XAUUSD M15": [
-              727.47,
-              3074.08,
-              -1640.16
-            ],
-            "Donchian USDJPY M15": [
-              1246.4,
-              1326.94,
-              2220.21
-            ],
-            "FinBot EURUSD H1": [
-              -501.17,
-              0.0,
-              0.0
-            ],
-            "FinBot EURUSD M15": [
-              -256.59,
-              0.0,
-              0.0
-            ],
-            "FinBot GBPUSD H1": [
-              0.0,
-              1280.73,
-              0.0
-            ],
-            "FinBot GBPUSD M15": [
-              4.42,
-              0.0,
-              0.0
-            ],
-            "FinBot Gold XAUUSD M15": [
-              16.31,
-              0.0,
-              0.0
-            ],
-            "MeanRev GBPUSD H1": [
-              0.0,
-              1879.83,
-              0.0
-            ],
-            "MeanRev Gold XAUUSD H1": [
-              -3254.89,
-              -4456.05,
-              0.0
-            ],
-            "ORB EURUSD M15": [
-              0.0,
-              733.24,
-              0.0
-            ],
-            "ORB GBPUSD M15": [
-              0.0,
-              -156.92,
-              248.57
-            ],
-            "ORB Gold XAUUSD M15": [
-              0.0,
-              -4482.57,
-              -465.28
-            ],
-            "VolSqueeze EURUSD M15": [
-              0.0,
-              0.0,
-              -465.69
-            ],
-            "VolSqueeze GBPUSD M15": [
-              0.0,
-              -537.91,
-              -424.41
-            ],
-            "VolSqueeze USDJPY M15": [
-              0.0,
-              0.0,
-              -465.2
-            ]
-          }
+          "profits": [
+            2220.21,
+            1373.45,
+            248.57,
+            -424.41,
+            -465.2
+          ]
         },
-        "monthly": {
-          "labels": [
-            "Ago 2026",
-            "Set 2026"
+        "month": {
+          "bots": [
+            "Donchian USDJPY M15",
+            "Donchian Gold XAUUSD M15",
+            "MeanRev GBPUSD H1",
+            "FinBot GBPUSD H1",
+            "ORB EURUSD M15"
           ],
-          "keys": [
-            "2026-08",
-            "2026-09"
-          ],
-          "total_profit": [
-            -3598.16,
-            -3359.78
-          ],
-          "trade_counts": [
-            25,
-            82
-          ],
-          "by_bot": {
-            "Donchian EURUSD M15": [
-              950.4,
-              359.31
-            ],
-            "Donchian GBPUSD M15": [
-              -537.86,
-              -3381.15
-            ],
-            "Donchian Gold XAUUSD M15": [
-              -1289.51,
-              3450.9
-            ],
-            "Donchian USDJPY M15": [
-              1270.73,
-              3522.82
-            ],
-            "FinBot EURUSD H1": [
-              -501.17,
-              0.0
-            ],
-            "FinBot EURUSD M15": [
-              -256.59,
-              0.0
-            ],
-            "FinBot GBPUSD H1": [
-              0.0,
-              1280.73
-            ],
-            "FinBot GBPUSD M15": [
-              4.42,
-              0.0
-            ],
-            "FinBot Gold XAUUSD M15": [
-              16.31,
-              0.0
-            ],
-            "MeanRev GBPUSD H1": [
-              0.0,
-              1879.83
-            ],
-            "MeanRev Gold XAUUSD H1": [
-              -3254.89,
-              -4456.05
-            ],
-            "ORB EURUSD M15": [
-              0.0,
-              733.24
-            ],
-            "ORB GBPUSD M15": [
-              0.0,
-              91.65
-            ],
-            "ORB Gold XAUUSD M15": [
-              0.0,
-              -4947.85
-            ],
-            "VolSqueeze EURUSD M15": [
-              0.0,
-              -465.69
-            ],
-            "VolSqueeze GBPUSD M15": [
-              0.0,
-              -962.32
-            ],
-            "VolSqueeze USDJPY M15": [
-              0.0,
-              -465.2
-            ]
-          }
+          "profits": [
+            3522.82,
+            3450.9,
+            1879.83,
+            1280.73,
+            733.24
+          ]
         },
-        "cumulative": {
-          "labels": [
-            "Início",
-            "2026-08-26 13:19",
-            "2026-08-26 22:00",
-            "2026-08-27 08:28",
-            "2026-08-27 09:08",
-            "2026-08-27 09:08",
-            "2026-08-28 11:05",
-            "2026-08-28 11:58",
-            "2026-08-28 13:37",
-            "2026-08-28 15:00",
-            "2026-08-28 15:00",
-            "2026-08-28 15:03",
-            "2026-08-28 15:29",
-            "2026-08-28 15:36",
-            "2026-08-28 15:55",
-            "2026-08-28 17:05",
-            "2026-08-28 19:05",
-            "2026-08-28 19:26",
-            "2026-08-28 20:01",
-            "2026-08-31 09:06",
-            "2026-08-31 09:07",
-            "2026-08-31 12:33",
-            "2026-08-31 15:38",
-            "2026-08-31 15:59",
-            "2026-08-31 20:50",
-            "2026-08-31 23:00",
-            "2026-09-01 05:31",
-            "2026-09-01 07:43",
-            "2026-09-01 08:02",
-            "2026-09-01 08:48",
-            "2026-09-01 09:12",
-            "2026-09-01 09:40",
-            "2026-09-01 10:08",
-            "2026-09-01 10:08",
-            "2026-09-01 10:16",
-            "2026-09-01 10:39",
-            "2026-09-01 13:39",
-            "2026-09-01 13:39",
-            "2026-09-01 14:32",
-            "2026-09-01 14:34",
-            "2026-09-01 15:50",
-            "2026-09-01 16:22",
-            "2026-09-01 17:48",
-            "2026-09-01 19:47",
-            "2026-09-02 02:13",
-            "2026-09-02 06:15",
-            "2026-09-02 07:04",
-            "2026-09-02 07:13",
-            "2026-09-02 08:05",
-            "2026-09-02 08:18",
-            "2026-09-02 08:31",
-            "2026-09-02 14:26",
-            "2026-09-02 14:49",
-            "2026-09-02 23:00",
-            "2026-09-03 01:54",
-            "2026-09-03 07:01",
-            "2026-09-03 07:24",
-            "2026-09-03 07:37",
-            "2026-09-03 07:59",
-            "2026-09-03 08:02",
-            "2026-09-03 08:35",
-            "2026-09-03 09:14",
-            "2026-09-03 13:30",
-            "2026-09-03 13:30",
-            "2026-09-03 13:30",
-            "2026-09-03 13:30",
-            "2026-09-03 14:06",
-            "2026-09-03 16:36",
-            "2026-09-03 18:04",
-            "2026-09-03 20:28",
-            "2026-09-03 23:48",
-            "2026-09-03 23:52",
-            "2026-09-04 06:32",
-            "2026-09-04 08:43",
-            "2026-09-04 08:48",
-            "2026-09-04 08:55",
-            "2026-09-04 10:11",
-            "2026-09-04 10:33",
-            "2026-09-04 13:29",
-            "2026-09-04 13:30",
-            "2026-09-04 13:30",
-            "2026-09-04 13:30",
-            "2026-09-07 07:25",
-            "2026-09-07 09:03",
-            "2026-09-07 09:05",
-            "2026-09-07 09:09",
-            "2026-09-07 09:16",
-            "2026-09-07 09:35",
-            "2026-09-07 09:50",
-            "2026-09-07 11:21",
-            "2026-09-07 14:04",
-            "2026-09-07 20:21",
-            "2026-09-07 23:00",
-            "2026-09-08 08:42",
-            "2026-09-08 09:06",
-            "2026-09-08 09:34",
-            "2026-09-08 12:19",
-            "2026-09-08 14:42",
-            "2026-09-08 15:52",
-            "2026-09-09 16:01",
-            "2026-09-09 16:35",
-            "2026-09-10 07:15",
-            "2026-09-10 09:12",
-            "2026-09-10 09:45",
-            "2026-09-10 11:24",
-            "2026-09-10 11:37",
-            "2026-09-10 11:50",
-            "2026-09-10 11:56"
+        "all": {
+          "bots": [
+            "Donchian USDJPY M15",
+            "Donchian Gold XAUUSD M15",
+            "MeanRev GBPUSD H1",
+            "Donchian EURUSD M15",
+            "FinBot GBPUSD H1"
           ],
-          "equity_curve": [
-            100000.0,
-            99494.27,
-            99748.33,
-            99764.64,
-            99759.72,
-            99754.86,
-            100221.22,
-            99722.55,
-            99731.83,
-            99250.79,
-            98752.81,
-            98251.64,
-            98701.8,
-            94555.39,
-            94065.35,
-            90810.46,
-            91590.5,
-            92492.14,
-            97366.02,
-            97897.87,
-            98427.26,
-            100858.91,
-            100353.85,
-            100730.62,
-            96281.99,
-            96401.84,
-            95827.13,
-            96198.31,
-            95717.82,
-            96443.5,
-            102020.13,
-            107900.44,
-            107425.42,
-            106913.76,
-            106431.93,
-            101975.88,
-            105266.64,
-            105786.21,
-            101326.45,
-            100795.27,
-            100289.55,
-            99808.69,
-            101089.42,
-            101496.11,
-            101680.62,
-            102158.38,
-            103191.96,
-            102681.51,
-            102160.15,
-            101649.17,
-            101146.54,
-            100643.03,
-            110632.87,
-            105893.82,
-            106153.18,
-            105615.03,
-            101042.17,
-            101352.9,
-            101736.44,
-            102076.04,
-            101555.39,
-            101053.95,
-            101415.09,
-            100877.18,
-            104184.79,
-            104497.75,
-            108746.61,
-            109520.17,
-            110278.28,
-            109730.2,
-            105066.83,
-            104535.33,
-            104011.83,
-            99516.88,
-            95034.31,
-            94513.36,
-            90240.4,
-            89722.34,
-            89249.26,
-            91129.09,
-            91522.73,
-            92660.57,
-            93017.39,
-            92551.7,
-            93084.51,
-            93333.08,
-            94261.55,
-            94757.81,
-            94287.31,
-            93823.27,
-            93357.65,
-            92884.09,
-            92413.09,
-            91988.68,
-            92373.53,
-            92728.66,
-            93365.81,
-            92911.41,
-            93250.12,
-            93948.35,
-            93467.4,
-            93001.5,
-            92526.82,
-            92061.54,
-            91596.34,
-            91922.01,
-            92363.94,
-            93042.06
+          "profits": [
+            4793.55,
+            2161.39,
+            1879.83,
+            1309.71,
+            1280.73
           ]
         }
       }
@@ -3078,11 +2749,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 865.21,
-      "equity": 854.44,
+      "equity": 866.17,
       "closed_pl": -134.79,
-      "total_pl": -145.55999999999995,
-      "roi_pct": -14.555999999999994,
-      "floating_pl": -10.77,
+      "total_pl": -133.83000000000004,
+      "roi_pct": -13.383000000000003,
+      "floating_pl": 0.96,
       "open_count": 3,
       "trades": [
         {
@@ -3095,15 +2766,15 @@
           "price_close": null,
           "sl": 4419.05,
           "tp": 4237.22,
-          "profit": -9.03,
-          "profit_str": "-9.03 EUR",
+          "profit": 3.85,
+          "profit_str": "+3.85 EUR",
           "running_balance": 865.21,
-          "running_equity": 854.44,
+          "running_equity": 866.17,
           "status": "ABERTA",
           "ticket": "58389295507",
           "magic": 777123,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição Aberta)",
+          "week_label": "Semana Atual (Posição em Curso)",
           "time_raw": 1789048817
         },
         {
@@ -3124,7 +2795,7 @@
           "ticket": "58015188475",
           "magic": 444151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 865.21,
           "running_equity": 865.21
@@ -3147,7 +2818,7 @@
           "ticket": "58003277664",
           "magic": 555151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 869.34,
           "running_equity": 869.34
@@ -3170,7 +2841,7 @@
           "ticket": "57987735857",
           "magic": 777151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 865.62,
           "running_equity": 865.62
@@ -3185,15 +2856,15 @@
           "price_close": null,
           "sl": 1.15945,
           "tp": 1.1681,
-          "profit": -0.1,
-          "profit_str": "-0.10 EUR",
+          "profit": -0.76,
+          "profit_str": "-0.76 EUR",
           "running_balance": 865.21,
-          "running_equity": 854.44,
+          "running_equity": 866.17,
           "status": "ABERTA",
           "ticket": "58355858969",
           "magic": 888123,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição Aberta)",
+          "week_label": "Semana Atual (Posição em Curso)",
           "time_raw": 1788894000
         },
         {
@@ -3214,7 +2885,7 @@
           "ticket": "57984076274",
           "magic": 888151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 840.53,
           "running_equity": 840.53
@@ -3237,7 +2908,7 @@
           "ticket": "57982653593",
           "magic": 444151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 836.82,
           "running_equity": 836.82
@@ -3252,15 +2923,15 @@
           "price_close": null,
           "sl": 1.3512,
           "tp": 1.36631,
-          "profit": -1.64,
-          "profit_str": "-1.64 EUR",
+          "profit": -2.13,
+          "profit_str": "-2.13 EUR",
           "running_balance": 865.21,
-          "running_equity": 854.44,
+          "running_equity": 866.17,
           "status": "ABERTA",
           "ticket": "58351607142",
           "magic": 555123,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição Aberta)",
+          "week_label": "Semana Atual (Posição em Curso)",
           "time_raw": 1788883201
         },
         {
@@ -3281,7 +2952,7 @@
           "ticket": "57980507601",
           "magic": 555123,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 840.47,
           "running_equity": 840.47
@@ -3304,7 +2975,7 @@
           "ticket": "57979580444",
           "magic": 777151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 844.74,
           "running_equity": 844.74
@@ -3327,7 +2998,7 @@
           "ticket": "57977960268",
           "magic": 888151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 826.23,
           "running_equity": 826.23
@@ -3350,7 +3021,7 @@
           "ticket": "57973574249",
           "magic": 555151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 821.42,
           "running_equity": 821.42
@@ -3373,7 +3044,7 @@
           "ticket": "57973570313",
           "magic": 888151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 825.34,
           "running_equity": 825.34
@@ -3396,7 +3067,7 @@
           "ticket": "57965546222",
           "magic": 777151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 829.68,
           "running_equity": 829.68
@@ -3419,7 +3090,7 @@
           "ticket": "57958363926",
           "magic": 888151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 846.03,
           "running_equity": 846.03
@@ -3442,7 +3113,7 @@
           "ticket": "57958317815",
           "magic": 888123,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 844.37,
           "running_equity": 844.37
@@ -3465,7 +3136,7 @@
           "ticket": "57956535819",
           "magic": 555151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 846.98,
           "running_equity": 846.98
@@ -3488,7 +3159,7 @@
           "ticket": "57955908798",
           "magic": 444151,
           "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 13/Sep 2026)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 840.65,
           "running_equity": 840.65
@@ -3511,7 +3182,7 @@
           "ticket": "57946997592",
           "magic": 777123,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 837.04,
           "running_equity": 837.04
@@ -3534,7 +3205,7 @@
           "ticket": "57941460523",
           "magic": 444151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 881.75,
           "running_equity": 881.75
@@ -3557,7 +3228,7 @@
           "ticket": "57938231431",
           "magic": 777151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 886.29,
           "running_equity": 886.29
@@ -3580,7 +3251,7 @@
           "ticket": "57937141341",
           "magic": 888151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 900.65,
           "running_equity": 900.65
@@ -3603,7 +3274,7 @@
           "ticket": "57927979286",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 904.75,
           "running_equity": 904.75
@@ -3626,7 +3297,7 @@
           "ticket": "57921831578",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 898.22,
           "running_equity": 898.22
@@ -3649,7 +3320,7 @@
           "ticket": "57903594891",
           "magic": 444151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 901.86,
           "running_equity": 901.86
@@ -3672,7 +3343,7 @@
           "ticket": "57902858125",
           "magic": 777151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 895.39,
           "running_equity": 895.39
@@ -3695,7 +3366,7 @@
           "ticket": "57901651732",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 914.37,
           "running_equity": 914.37
@@ -3718,7 +3389,7 @@
           "ticket": "57896753170",
           "magic": 888123,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 910.07,
           "running_equity": 910.07
@@ -3741,7 +3412,7 @@
           "ticket": "57894163227",
           "magic": 888151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 905.34,
           "running_equity": 905.34
@@ -3764,7 +3435,7 @@
           "ticket": "57891312341",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 902.88,
           "running_equity": 902.88
@@ -3787,7 +3458,7 @@
           "ticket": "57891310021",
           "magic": 444151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 899.46,
           "running_equity": 899.46
@@ -3810,7 +3481,7 @@
           "ticket": "57884862594",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 896.1,
           "running_equity": 896.1
@@ -3833,7 +3504,7 @@
           "ticket": "57872437568",
           "magic": 777151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 892.13,
           "running_equity": 892.13
@@ -3856,7 +3527,7 @@
           "ticket": "57867288922",
           "magic": 555151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 910.97,
           "running_equity": 910.97
@@ -3879,7 +3550,7 @@
           "ticket": "57867078218",
           "magic": 444151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 914.9,
           "running_equity": 914.9
@@ -3902,7 +3573,7 @@
           "ticket": "57858525882",
           "magic": 888151,
           "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 06/Sep 2026)",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-08",
           "running_balance": 919.24,
           "running_equity": 919.24
@@ -3925,7 +3596,7 @@
           "ticket": "57841913727",
           "magic": 777123,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 958.47,
           "running_equity": 958.47
@@ -3948,7 +3619,7 @@
           "ticket": "57841914045",
           "magic": 777123,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 923.51,
           "running_equity": 923.51
@@ -3971,7 +3642,7 @@
           "ticket": "57841819144",
           "magic": 555123,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 993.55,
           "running_equity": 993.55
@@ -3994,7 +3665,7 @@
           "ticket": "57841752587",
           "magic": 888123,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 988.27,
           "running_equity": 988.27
@@ -4017,7 +3688,7 @@
           "ticket": "57841449556",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 992.72,
           "running_equity": 992.72
@@ -4040,7 +3711,7 @@
           "ticket": "57840560682",
           "magic": 777151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 997.35,
           "running_equity": 997.35
@@ -4063,7 +3734,7 @@
           "ticket": "57839628784",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1009.47,
           "running_equity": 1009.47
@@ -4086,7 +3757,7 @@
           "ticket": "57839094437",
           "magic": 555151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1014.41,
           "running_equity": 1014.41
@@ -4109,7 +3780,7 @@
           "ticket": "57816229111",
           "magic": 555151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1006.91,
           "running_equity": 1006.91
@@ -4132,7 +3803,7 @@
           "ticket": "57816228661",
           "magic": 888151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1011.77,
           "running_equity": 1011.77
@@ -4155,7 +3826,7 @@
           "ticket": "57815664765",
           "magic": 777151,
           "week_key": "2026-W35",
-          "week_label": "Semana 35 (24/Aug - 30/Aug 2026)",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1016.69,
           "running_equity": 1016.69
@@ -4226,208 +3897,53 @@
           "total_profit": -114.75
         }
       ],
-      "evolution": {
-        "weekly": {
-          "labels": [
-            "Semana 35 (24/Aug - 30/Aug 2026)",
-            "Semana 36 (31/Aug - 06/Sep 2026)",
-            "Semana 37 (07/Sep - 13/Sep 2026)"
+      "top_5": {
+        "week": {
+          "bots": [
+            "FinBot Gold XAUUSD M15",
+            "FinBot GBPUSD M15",
+            "FinBot EURUSD M15",
+            "FinBot EURUSD H1",
+            "FinBot USDJPY M15"
           ],
-          "keys": [
-            "2026-W35",
-            "2026-W36",
-            "2026-W37"
-          ],
-          "total_profit": [
-            -76.49,
-            -86.47,
-            28.17
-          ],
-          "trade_counts": [
-            11,
-            18,
-            15
-          ],
-          "by_bot": {
-            "FinBot EURUSD H1": [
-              -4.45,
-              4.73,
-              -2.61
-            ],
-            "FinBot EURUSD M15": [
-              -14.49,
-              -5.91,
-              5.84
-            ],
-            "FinBot GBPUSD H1": [
-              5.28,
-              0.0,
-              -4.27
-            ],
-            "FinBot GBPUSD M15": [
-              2.64,
-              10.65,
-              6.13
-            ],
-            "FinBot Gold XAUUSD H1": [
-              -70.04,
-              -44.71,
-              0.0
-            ],
-            "FinBot Gold XAUUSD M15": [
-              4.57,
-              -52.18,
-              27.25
-            ],
-            "FinBot USDJPY M15": [
-              0.0,
-              0.95,
-              -4.17
-            ]
-          }
+          "profits": [
+            27.25,
+            6.13,
+            5.84,
+            -2.61,
+            -4.17
+          ]
         },
-        "monthly": {
-          "labels": [
-            "Ago 2026",
-            "Set 2026"
+        "month": {
+          "bots": [
+            "FinBot GBPUSD M15",
+            "FinBot EURUSD M15",
+            "FinBot EURUSD H1",
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD H1"
           ],
-          "keys": [
-            "2026-08",
-            "2026-09"
-          ],
-          "total_profit": [
-            -107.87,
-            -26.92
-          ],
-          "trade_counts": [
-            15,
-            29
-          ],
-          "by_bot": {
-            "FinBot EURUSD H1": [
-              -4.45,
-              2.12
-            ],
-            "FinBot EURUSD M15": [
-              -18.76,
-              4.2
-            ],
-            "FinBot GBPUSD H1": [
-              5.28,
-              -4.27
-            ],
-            "FinBot GBPUSD M15": [
-              -1.29,
-              20.71
-            ],
-            "FinBot Gold XAUUSD H1": [
-              -70.04,
-              -44.71
-            ],
-            "FinBot Gold XAUUSD M15": [
-              -14.27,
-              -6.09
-            ],
-            "FinBot USDJPY M15": [
-              -4.34,
-              1.12
-            ]
-          }
+          "profits": [
+            20.71,
+            4.2,
+            2.12,
+            1.12,
+            -4.27
+          ]
         },
-        "cumulative": {
-          "labels": [
-            "Início",
-            "2026-08-27 08:28",
-            "2026-08-27 09:08",
-            "2026-08-27 09:08",
-            "2026-08-28 13:33",
-            "2026-08-28 13:57",
-            "2026-08-28 14:36",
-            "2026-08-28 15:00",
-            "2026-08-28 15:03",
-            "2026-08-28 15:04",
-            "2026-08-28 15:05",
-            "2026-08-28 15:05",
-            "2026-08-31 08:21",
-            "2026-08-31 15:38",
-            "2026-08-31 15:46",
-            "2026-08-31 23:00",
-            "2026-09-01 14:05",
-            "2026-09-01 19:02",
-            "2026-09-01 19:03",
-            "2026-09-02 01:53",
-            "2026-09-02 05:47",
-            "2026-09-02 11:25",
-            "2026-09-02 12:35",
-            "2026-09-02 13:07",
-            "2026-09-03 12:18",
-            "2026-09-03 16:10",
-            "2026-09-04 08:51",
-            "2026-09-04 10:13",
-            "2026-09-04 13:30",
-            "2026-09-04 16:14",
-            "2026-09-07 07:00",
-            "2026-09-07 07:36",
-            "2026-09-07 09:14",
-            "2026-09-07 09:16",
-            "2026-09-07 15:47",
-            "2026-09-08 07:20",
-            "2026-09-08 07:20",
-            "2026-09-08 11:50",
-            "2026-09-08 13:16",
-            "2026-09-08 13:49",
-            "2026-09-08 15:14",
-            "2026-09-08 16:14",
-            "2026-09-08 19:50",
-            "2026-09-09 15:57",
-            "2026-09-10 09:42"
+        "all": {
+          "bots": [
+            "FinBot GBPUSD M15",
+            "FinBot GBPUSD H1",
+            "FinBot EURUSD H1",
+            "FinBot USDJPY M15",
+            "FinBot EURUSD M15"
           ],
-          "equity_curve": [
-            1000.0,
-            1016.69,
-            1011.77,
-            1006.91,
-            1014.41,
-            1009.47,
-            997.35,
-            992.72,
-            988.27,
-            993.55,
-            958.47,
-            923.51,
-            919.24,
-            914.9,
-            910.97,
-            892.13,
-            896.1,
-            899.46,
-            902.88,
-            905.34,
-            910.07,
-            914.37,
-            895.39,
-            901.86,
-            898.22,
-            904.75,
-            900.65,
-            886.29,
-            881.75,
-            837.04,
-            840.65,
-            846.98,
-            844.37,
-            846.03,
-            829.68,
-            825.34,
-            821.42,
-            826.23,
-            844.74,
-            840.47,
-            836.82,
-            840.53,
-            865.62,
-            869.34,
-            865.21
+          "profits": [
+            19.42,
+            1.01,
+            -2.33,
+            -3.22,
+            -14.56
           ]
         }
       }
