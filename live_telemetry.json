@@ -1,18 +1,34 @@
 {
-  "updated_at": "2026-09-10 10:45:02",
+  "updated_at": "2026-09-10 11:25:07",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 92061.54,
-      "equity": 91719.88,
-      "closed_pl": -7938.459999999999,
-      "total_pl": -8280.119999999995,
-      "roi_pct": -8.280119999999995,
-      "floating_pl": -341.66,
-      "open_count": 4,
+      "balance": 91596.34,
+      "equity": 91752.62,
+      "closed_pl": -8403.659999999998,
+      "total_pl": -8247.380000000005,
+      "roi_pct": -8.247380000000003,
+      "floating_pl": 156.28,
+      "open_count": 3,
       "trades": [
+        {
+          "time": "2026-09-10 11:24",
+          "symbol": "USDJPY",
+          "bot": "VolSqueeze USDJPY H1",
+          "type": "SELL",
+          "volume": 1.39,
+          "price_open": 153.207,
+          "price_close": 153.804,
+          "sl": null,
+          "tp": null,
+          "profit": -465.2,
+          "profit_str": "-465.20 EUR",
+          "status": "FECHADA",
+          "ticket": "152461838908",
+          "magic": 444350
+        },
         {
           "time": "2026-09-10 10:45",
           "symbol": "EURUSD",
@@ -23,8 +39,8 @@
           "price_close": null,
           "sl": 1.16404,
           "tp": null,
-          "profit": 25.24,
-          "profit_str": "+25.24 EUR",
+          "profit": 0.0,
+          "profit_str": "+0.00 EUR",
           "status": "ABERTA",
           "ticket": "152609967714",
           "magic": 888250
@@ -39,8 +55,8 @@
           "price_close": null,
           "sl": 153.463,
           "tp": null,
-          "profit": -83.37,
-          "profit_str": "-83.37 EUR",
+          "profit": 164.79,
+          "profit_str": "+164.79 EUR",
           "status": "ABERTA",
           "ticket": "152609889088",
           "magic": 444250
@@ -55,8 +71,8 @@
           "price_close": null,
           "sl": 4413.58,
           "tp": null,
-          "profit": 77.88,
-          "profit_str": "+77.88 EUR",
+          "profit": -8.51,
+          "profit_str": "-8.51 EUR",
           "status": "ABERTA",
           "ticket": "152609656632",
           "magic": 777250
@@ -140,22 +156,6 @@
           "status": "FECHADA",
           "ticket": "152457566145",
           "magic": 888250
-        },
-        {
-          "time": "2026-09-09 16:00",
-          "symbol": "USDJPY",
-          "bot": "VolSqueeze USDJPY H1",
-          "type": "SELL",
-          "volume": 1.39,
-          "price_open": 153.207,
-          "price_close": null,
-          "sl": 153.804,
-          "tp": null,
-          "profit": -361.41,
-          "profit_str": "-361.41 EUR",
-          "status": "ABERTA",
-          "ticket": "152605801059",
-          "magic": 444350
         },
         {
           "time": "2026-09-08 15:52",
@@ -1818,6 +1818,15 @@
           "total_profit": -256.59
         },
         {
+          "bot": "VolSqueeze USDJPY H1",
+          "magic": 444350,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -465.2,
+          "total_profit": -465.2
+        },
+        {
           "bot": "VolSqueeze EURUSD H1",
           "magic": 888350,
           "trades": 1,
@@ -1943,8 +1952,8 @@
           "price_close": null,
           "sl": 1.15945,
           "tp": 1.1681,
-          "profit": 0.52,
-          "profit_str": "+0.52 EUR",
+          "profit": 0.56,
+          "profit_str": "+0.56 EUR",
           "status": "ABERTA",
           "ticket": "58355858969",
           "magic": 888123
@@ -1991,8 +2000,8 @@
           "price_close": null,
           "sl": 1.3512,
           "tp": 1.36631,
-          "profit": -0.82,
-          "profit_str": "-0.82 EUR",
+          "profit": -0.86,
+          "profit_str": "-0.86 EUR",
           "status": "ABERTA",
           "ticket": "58351607142",
           "magic": 555123
