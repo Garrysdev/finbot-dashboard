@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-10 14:46:05",
+  "updated_at": "2026-09-10 14:48:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 93699.69,
-      "equity": 93567.68,
-      "closed_pl": -6300.309999999999,
-      "total_pl": -6432.320000000007,
-      "roi_pct": -6.432320000000007,
-      "floating_pl": -132.01,
-      "open_count": 2,
+      "balance": 93234.4,
+      "equity": 93457.79,
+      "closed_pl": -6765.5999999999985,
+      "total_pl": -6542.210000000006,
+      "roi_pct": -6.542210000000007,
+      "floating_pl": 223.39,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 152611600125,
+          "time_raw": 1789058874,
+          "time": "2026-09-10 14:47",
+          "symbol": "EURUSD",
+          "bot": "Donchian EURUSD M15",
+          "type": "SELL",
+          "volume": 3.18,
+          "price_open": 1.16016,
+          "price_close": 1.16186,
+          "sl": null,
+          "tp": null,
+          "profit": -465.29,
+          "profit_str": "-465.29 EUR",
+          "status": "FECHADA",
+          "ticket": "152463908612",
+          "magic": 888250,
+          "week_key": "2026-W37",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 93234.4,
+          "running_equity": 93234.4
+        },
         {
           "pos_id": 152611599746,
           "time_raw": 1789058724,
@@ -58,27 +81,6 @@
           "month_key": "2026-09",
           "running_balance": 94181.02,
           "running_equity": 94181.02
-        },
-        {
-          "time": "2026-09-10 13:45",
-          "symbol": "EURUSD",
-          "bot": "Donchian EURUSD M15",
-          "type": "SELL",
-          "volume": 3.18,
-          "price_open": 1.16016,
-          "price_close": null,
-          "sl": 1.16186,
-          "tp": null,
-          "profit": -435.22,
-          "profit_str": "-435.22 EUR",
-          "running_balance": 93699.69,
-          "running_equity": 93567.68,
-          "status": "ABERTA",
-          "ticket": "152611600125",
-          "magic": 888250,
-          "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição em Curso)",
-          "time_raw": 1789055102
         },
         {
           "pos_id": 152610845890,
@@ -159,10 +161,10 @@
           "price_close": null,
           "sl": 1.35462,
           "tp": null,
-          "profit": 303.21,
-          "profit_str": "+303.21 EUR",
-          "running_balance": 93699.69,
-          "running_equity": 93567.68,
+          "profit": 223.39,
+          "profit_str": "+223.39 EUR",
+          "running_balance": 93234.4,
+          "running_equity": 93457.79,
           "status": "ABERTA",
           "ticket": "152610845791",
           "magic": 555350,
@@ -2652,15 +2654,6 @@
           "total_profit": 2143.97
         },
         {
-          "bot": "Donchian EURUSD M15",
-          "magic": 888250,
-          "trades": 25,
-          "wins": 14,
-          "win_rate": 56.0,
-          "avg_profit": 80.49,
-          "total_profit": 2012.35
-        },
-        {
           "bot": "MeanRev GBPUSD H1",
           "magic": 555200,
           "trades": 1,
@@ -2668,6 +2661,15 @@
           "win_rate": 100.0,
           "avg_profit": 1879.83,
           "total_profit": 1879.83
+        },
+        {
+          "bot": "Donchian EURUSD M15",
+          "magic": 888250,
+          "trades": 26,
+          "wins": 14,
+          "win_rate": 53.8,
+          "avg_profit": 59.5,
+          "total_profit": 1547.06
         },
         {
           "bot": "FinBot GBPUSD H1",
@@ -2798,7 +2800,7 @@
           ],
           "profits": [
             2192.62,
-            2076.09,
+            1610.8,
             248.57,
             -424.41,
             -465.2
@@ -2810,29 +2812,29 @@
             "Donchian Gold XAUUSD M15",
             "MeanRev GBPUSD H1",
             "FinBot GBPUSD H1",
-            "Donchian EURUSD M15"
+            "ORB EURUSD M15"
           ],
           "profits": [
             3495.23,
             3433.48,
             1879.83,
             1280.73,
-            1061.95
+            733.24
           ]
         },
         "all": {
           "bots": [
             "Donchian USDJPY M15",
             "Donchian Gold XAUUSD M15",
-            "Donchian EURUSD M15",
             "MeanRev GBPUSD H1",
+            "Donchian EURUSD M15",
             "FinBot GBPUSD H1"
           ],
           "profits": [
             4765.96,
             2143.97,
-            2012.35,
             1879.83,
+            1547.06,
             1280.73
           ]
         }
@@ -2843,11 +2845,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 858.77,
-      "equity": 869.63,
+      "equity": 863.23,
       "closed_pl": -141.23,
-      "total_pl": -130.37,
-      "roi_pct": -13.037,
-      "floating_pl": 10.86,
+      "total_pl": -136.76999999999998,
+      "roi_pct": -13.676999999999998,
+      "floating_pl": 4.46,
       "open_count": 1,
       "trades": [
         {
@@ -2906,10 +2908,10 @@
           "price_close": null,
           "sl": 4419.05,
           "tp": 4237.22,
-          "profit": 10.86,
-          "profit_str": "+10.86 EUR",
+          "profit": 4.46,
+          "profit_str": "+4.46 EUR",
           "running_balance": 858.77,
-          "running_equity": 869.63,
+          "running_equity": 863.23,
           "status": "ABERTA",
           "ticket": "58389295507",
           "magic": 777123,
