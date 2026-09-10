@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-10 15:00:47",
+  "updated_at": "2026-09-10 15:15:28",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 93234.4,
-      "equity": 93580.32,
+      "equity": 93580.11,
       "closed_pl": -6765.5999999999985,
-      "total_pl": -6419.679999999993,
-      "roi_pct": -6.4196799999999925,
-      "floating_pl": 345.92,
+      "total_pl": -6419.889999999999,
+      "roi_pct": -6.419889999999999,
+      "floating_pl": 345.71,
       "open_count": 1,
       "trades": [
         {
@@ -161,15 +161,15 @@
           "price_close": null,
           "sl": 1.35462,
           "tp": null,
-          "profit": 345.92,
-          "profit_str": "+345.92 EUR",
+          "profit": 345.71,
+          "profit_str": "+345.71 EUR",
           "running_balance": 93234.4,
-          "running_equity": 93580.32,
+          "running_equity": 93580.11,
           "status": "ABERTA",
           "ticket": "152610845791",
           "magic": 555350,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição em Curso)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "time_raw": 1789052400
         },
         {
@@ -2845,11 +2845,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 858.77,
-      "equity": 868.99,
+      "equity": 875.93,
       "closed_pl": -141.23,
-      "total_pl": -131.01,
-      "roi_pct": -13.100999999999999,
-      "floating_pl": 10.22,
+      "total_pl": -124.07000000000005,
+      "roi_pct": -12.407000000000005,
+      "floating_pl": 17.16,
       "open_count": 1,
       "trades": [
         {
@@ -2908,15 +2908,15 @@
           "price_close": null,
           "sl": 4419.05,
           "tp": 4237.22,
-          "profit": 10.22,
-          "profit_str": "+10.22 EUR",
+          "profit": 17.16,
+          "profit_str": "+17.16 EUR",
           "running_balance": 858.77,
-          "running_equity": 868.99,
+          "running_equity": 875.93,
           "status": "ABERTA",
           "ticket": "58389295507",
           "magic": 777123,
           "week_key": "2026-W37",
-          "week_label": "Semana Atual (Posição em Curso)",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "time_raw": 1789048817
         },
         {
