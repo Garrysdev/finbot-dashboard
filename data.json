@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-14 10:30:07",
+  "updated_at": "2026-09-14 11:03:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 94472.47,
-      "equity": 94194.46,
+      "equity": 94953.07,
       "closed_pl": -5527.529999999999,
-      "total_pl": -5805.539999999994,
-      "roi_pct": -5.8055399999999935,
-      "floating_pl": -278.01,
+      "total_pl": -5046.929999999993,
+      "roi_pct": -5.0469299999999935,
+      "floating_pl": 480.6,
       "open_count": 3,
       "trades": [
         {
@@ -23,10 +23,10 @@
           "price_close": null,
           "sl": 4305.97,
           "tp": null,
-          "profit": -2.51,
-          "profit_str": "-2.51 EUR",
+          "profit": 160.61,
+          "profit_str": "+160.61 EUR",
           "running_balance": 94472.47,
-          "running_equity": 94194.46,
+          "running_equity": 94953.07,
           "status": "ABERTA",
           "ticket": "152624651096",
           "magic": 777250,
@@ -67,10 +67,10 @@
           "price_close": null,
           "sl": 1.15484,
           "tp": null,
-          "profit": -286.91,
-          "profit_str": "-286.91 EUR",
+          "profit": -67.77,
+          "profit_str": "-67.77 EUR",
           "running_balance": 94472.47,
-          "running_equity": 94194.46,
+          "running_equity": 94953.07,
           "status": "ABERTA",
           "ticket": "152624125356",
           "magic": 888250,
@@ -88,10 +88,10 @@
           "price_close": null,
           "sl": 154.273,
           "tp": null,
-          "profit": 11.41,
-          "profit_str": "+11.41 EUR",
+          "profit": 387.76,
+          "profit_str": "+387.76 EUR",
           "running_balance": 94472.47,
-          "running_equity": 94194.46,
+          "running_equity": 94953.07,
           "status": "ABERTA",
           "ticket": "152624125388",
           "magic": 444250,
@@ -3213,14 +3213,37 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 872.8,
-      "equity": 949.79,
-      "closed_pl": -127.19999999999999,
-      "total_pl": -50.210000000000036,
-      "roi_pct": -5.021000000000004,
-      "floating_pl": 76.99,
-      "open_count": 2,
+      "balance": 869.48,
+      "equity": 954.75,
+      "closed_pl": -130.51999999999998,
+      "total_pl": -45.25,
+      "roi_pct": -4.5249999999999995,
+      "floating_pl": 85.27,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 58412643244,
+          "time_raw": 1789390926,
+          "time": "2026-09-14 11:02",
+          "symbol": "USDJPY",
+          "bot": "FinBot USDJPY H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 154.028,
+          "price_close": 154.62,
+          "sl": null,
+          "tp": null,
+          "profit": -3.32,
+          "profit_str": "-3.32 EUR",
+          "status": "FECHADA",
+          "ticket": "58062168563",
+          "magic": 444123,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 869.48,
+          "running_equity": 869.48
+        },
         {
           "pos_id": 58409623268,
           "time_raw": 1789140616,
@@ -3243,27 +3266,6 @@
           "month_key": "2026-09",
           "running_balance": 872.8,
           "running_equity": 872.8
-        },
-        {
-          "time": "2026-09-11 13:00",
-          "symbol": "USDJPY",
-          "bot": "FinBot USDJPY H1",
-          "type": "SELL",
-          "volume": 0.01,
-          "price_open": 154.028,
-          "price_close": null,
-          "sl": 154.62,
-          "tp": 152.139,
-          "profit": -2.58,
-          "profit_str": "-2.58 EUR",
-          "running_balance": 872.8,
-          "running_equity": 949.79,
-          "status": "ABERTA",
-          "ticket": "58412643244",
-          "magic": 444123,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
-          "time_raw": 1789138801
         },
         {
           "pos_id": 58408589965,
@@ -3365,12 +3367,12 @@
           "volume": 0.01,
           "price_open": 4379.55,
           "price_close": null,
-          "sl": 4299.72,
+          "sl": 4297.85,
           "tp": 4237.22,
-          "profit": 79.57,
-          "profit_str": "+79.57 EUR",
-          "running_balance": 872.8,
-          "running_equity": 949.79,
+          "profit": 85.27,
+          "profit_str": "+85.27 EUR",
+          "running_balance": 869.48,
+          "running_equity": 954.75,
           "status": "ABERTA",
           "ticket": "58389295507",
           "magic": 777123,
@@ -4420,6 +4422,15 @@
           "total_profit": -3.22
         },
         {
+          "bot": "FinBot USDJPY H1",
+          "magic": 444123,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -3.32,
+          "total_profit": -3.32
+        },
+        {
           "bot": "FinBot EURUSD H1",
           "magic": 888123,
           "trades": 4,
@@ -4459,18 +4470,10 @@
       "top_5": {
         "week": {
           "bots": [
-            "FinBot GBPUSD M15",
-            "FinBot GBPUSD H1",
-            "FinBot USDJPY M15",
-            "FinBot EURUSD H1",
-            "FinBot EURUSD M15"
+            "FinBot USDJPY H1"
           ],
           "profits": [
-            26.08,
-            -2.65,
-            -3.22,
-            -5.11,
-            -7.19
+            -3.32
           ]
         },
         "month": {
@@ -4479,14 +4482,14 @@
             "FinBot EURUSD M15",
             "FinBot USDJPY M15",
             "FinBot EURUSD H1",
-            "FinBot Gold XAUUSD M15"
+            "FinBot USDJPY H1"
           ],
           "profits": [
             27.37,
             11.57,
             1.12,
             -0.66,
-            -6.09
+            -3.32
           ]
         },
         "all": {
@@ -4494,15 +4497,15 @@
             "FinBot GBPUSD M15",
             "FinBot GBPUSD H1",
             "FinBot USDJPY M15",
-            "FinBot EURUSD H1",
-            "FinBot EURUSD M15"
+            "FinBot USDJPY H1",
+            "FinBot EURUSD H1"
           ],
           "profits": [
             26.08,
             -2.65,
             -3.22,
-            -5.11,
-            -7.19
+            -3.32,
+            -5.11
           ]
         }
       }
