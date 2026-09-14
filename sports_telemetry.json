@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-13 22:16:01",
+  "updated_at": "2026-09-14 02:16:06",
   "kpis": {
     "initial_bankroll": 100.0,
-    "current_balance": 83.23,
-    "total_profit": -16.77,
-    "roi_pct": -16.77,
-    "yield_pct": -43.19,
-    "win_rate": 25.0,
-    "total_bets": 47,
-    "today_bets": 3,
-    "pending_bets": 31,
-    "settled_bets": 16
+    "current_balance": 88.16,
+    "total_profit": -11.84,
+    "roi_pct": -11.84,
+    "yield_pct": -25.88,
+    "win_rate": 31.6,
+    "total_bets": 60,
+    "today_bets": 6,
+    "pending_bets": 41,
+    "settled_bets": 19
   },
   "bets": [
     {
@@ -28,11 +28,11 @@
       "model_prob": "55.7%",
       "ev_pct": "+20.4%",
       "stake": "4.39 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 83.23
+      "status": "GANHA",
+      "result": "0-1",
+      "profit": 5.09,
+      "profit_str": "+5.09 €",
+      "running_balance": 88.32
     },
     {
       "bet_id": "bet_27eaaab4498bb2984321e5f81f0ff9fd_1X2_AWAY",
@@ -49,11 +49,11 @@
       "model_prob": "26.8%",
       "ev_pct": "+21.7%",
       "stake": "1.53 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 83.23
+      "status": "PERDIDA",
+      "result": "1-0",
+      "profit": -1.53,
+      "profit_str": "-1.53 €",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_14e37b5aaf6fec05a01f7e1309025a66_1X2_AWAY",
@@ -70,11 +70,74 @@
       "model_prob": "44.4%",
       "ev_pct": "+5.1%",
       "stake": "1.00 €",
+      "status": "GANHA",
+      "result": "0-3",
+      "profit": 1.37,
+      "profit_str": "+1.37 €",
+      "running_balance": 89.69
+    },
+    {
+      "bet_id": "bet_1898724f150d16329c47b523d35ee534_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Rio Ave FC vs CF Estrela",
+      "time": "2026-09-14 18:45",
+      "is_today": true,
+      "market": "Vitória Rio Ave FC",
+      "selection": "Vitória Rio Ave FC",
+      "bookmaker": "Pinnacle",
+      "odd": 2.65,
+      "model_prob": "47.0%",
+      "ev_pct": "+24.6%",
+      "stake": "3.72 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_1898724f150d16329c47b523d35ee534_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Rio Ave FC vs CF Estrela",
+      "time": "2026-09-14 18:45",
+      "is_today": true,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.84,
+      "model_prob": "59.2%",
+      "ev_pct": "+9.0%",
+      "stake": "2.67 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_8461e66c563dbb31f9c87def0cf49c7e_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Braga vs Estoril",
+      "time": "2026-09-14 20:45",
+      "is_today": true,
+      "market": "Vitória Estoril",
+      "selection": "Vitória Estoril",
+      "bookmaker": "Pinnacle",
+      "odd": 7.17,
+      "model_prob": "15.1%",
+      "ev_pct": "+8.4%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_3dba40cdf22e962c0f6f6c940ef01850_1X2_HOME",
@@ -431,7 +494,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_b9a6e597fd597637efa24b92d51dda62_UNDER_25",
@@ -452,7 +515,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_d6474326396cdd0e300afd0193c7c93d_1X2_AWAY",
@@ -473,7 +536,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_d6474326396",
@@ -494,7 +557,49 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_4ef67376b662c2859f73bde7f7210388_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Levante vs Athletic Bilbao",
+      "time": "2026-09-16 20:30",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 2.03,
+      "model_prob": "51.9%",
+      "ev_pct": "+5.4%",
+      "stake": "1.31 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_7f644eca099054612d9a7e7e5d8787da_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Real Betis vs Getafe",
+      "time": "2026-09-17 18:00",
+      "is_today": false,
+      "market": "Vitória Getafe",
+      "selection": "Vitória Getafe",
+      "bookmaker": "Pinnacle",
+      "odd": 5.2,
+      "model_prob": "20.2%",
+      "ev_pct": "+4.9%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_c7b8233ea02650f1055ae086b169b7a1_UNDER_25",
@@ -507,15 +612,15 @@
       "market": "Menos de 2.5 Golos",
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
-      "odd": 1.83,
+      "odd": 1.85,
       "model_prob": "59.1%",
-      "ev_pct": "+8.2%",
-      "stake": "2.47 €",
+      "ev_pct": "+9.4%",
+      "stake": "2.76 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_c11148f7ed032d5e99313ee1942fd4c2_1X2_AWAY",
@@ -528,15 +633,15 @@
       "market": "Vitória Cagliari",
       "selection": "Vitória Cagliari",
       "bookmaker": "Pinnacle",
-      "odd": 3.75,
+      "odd": 3.82,
       "model_prob": "28.0%",
-      "ev_pct": "+4.8%",
+      "ev_pct": "+6.8%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_1c490e2c6acab28c33d0021b15d3c93a_1X2_HOME",
@@ -557,7 +662,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_1c490e2c6ac",
@@ -578,7 +683,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_e40d0fb4431",
@@ -599,7 +704,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_4c1106958327b544267f1040c84b4acb_1X2_HOME",
@@ -620,7 +725,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_446a7bee22ecf469e0b162fb28ebdc0f_1X2_HOME",
@@ -641,7 +746,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_b5b058d0a95f9742548f789d1c564a78_1X2_AWAY",
@@ -662,7 +767,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_UNDER_25",
@@ -683,7 +788,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_1X2_HOME",
@@ -696,15 +801,36 @@
       "market": "Vitória Everton",
       "selection": "Vitória Everton",
       "bookmaker": "Pinnacle",
-      "odd": 1.79,
+      "odd": 1.81,
       "model_prob": "61.0%",
-      "ev_pct": "+9.1%",
-      "stake": "2.88 €",
+      "ev_pct": "+10.3%",
+      "stake": "3.19 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_a995ad3266759e67c9f9b0617c184b71_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Athletic Bilbao vs Alavés",
+      "time": "2026-09-19 15:15",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.83,
+      "model_prob": "60.4%",
+      "ev_pct": "+10.5%",
+      "stake": "3.16 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_6fb54fd5b3d",
@@ -725,7 +851,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_6fb54fd5b3d",
@@ -746,28 +872,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
-    },
-    {
-      "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_1X2_AWAY",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "Serie A (Itália)",
-      "match": "Venezia vs Lazio",
-      "time": "2026-09-19 19:45",
-      "is_today": false,
-      "market": "Vitória Lazio",
-      "selection": "Vitória Lazio",
-      "bookmaker": "Pinnacle",
-      "odd": 2.09,
-      "model_prob": "51.0%",
-      "ev_pct": "+6.6%",
-      "stake": "1.50 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_UNDER_25",
@@ -788,7 +893,28 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Serie A (Itália)",
+      "match": "Venezia vs Lazio",
+      "time": "2026-09-19 19:45",
+      "is_today": false,
+      "market": "Vitória Lazio",
+      "selection": "Vitória Lazio",
+      "bookmaker": "Pinnacle",
+      "odd": 2.11,
+      "model_prob": "51.0%",
+      "ev_pct": "+7.6%",
+      "stake": "1.70 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_65acc2445541a5ed803ef0ce1a270097_1X2_HOME",
@@ -801,15 +927,15 @@
       "market": "Vitória Fiorentina",
       "selection": "Vitória Fiorentina",
       "bookmaker": "Pinnacle",
-      "odd": 3.27,
+      "odd": 3.29,
       "model_prob": "31.9%",
-      "ev_pct": "+4.2%",
+      "ev_pct": "+4.8%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_b63aef4291a066e32644e591c19a235a_1X2_AWAY",
@@ -830,49 +956,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
-    },
-    {
-      "bet_id": "bet_784f777f5181e1efdad7a6ecb2cfde15_1X2_AWAY",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "Premier League (Inglaterra)",
-      "match": "Bournemouth vs Liverpool",
-      "time": "2026-09-20 14:00",
-      "is_today": false,
-      "market": "Vitória Liverpool",
-      "selection": "Vitória Liverpool",
-      "bookmaker": "Pinnacle",
-      "odd": 2.15,
-      "model_prob": "49.9%",
-      "ev_pct": "+7.4%",
-      "stake": "1.60 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 83.23
-    },
-    {
-      "bet_id": "bet_b63aef4291a066e32644e591c19a235a_UNDER_25",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "Premier League (Inglaterra)",
-      "match": "Leeds United vs Crystal Palace",
-      "time": "2026-09-20 14:00",
-      "is_today": false,
-      "market": "Menos de 2.5 Golos",
-      "selection": "Menos de 2.5",
-      "bookmaker": "Pinnacle",
-      "odd": 1.99,
-      "model_prob": "55.2%",
-      "ev_pct": "+9.8%",
-      "stake": "2.47 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_f9e4aaa82676652e339be6c9b5ca44fb_1X2_HOME",
@@ -893,7 +977,49 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_784f777f5181e1efdad7a6ecb2cfde15_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Bournemouth vs Liverpool",
+      "time": "2026-09-20 14:00",
+      "is_today": false,
+      "market": "Vitória Liverpool",
+      "selection": "Vitória Liverpool",
+      "bookmaker": "Pinnacle",
+      "odd": 2.13,
+      "model_prob": "49.9%",
+      "ev_pct": "+6.4%",
+      "stake": "1.41 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_b63aef4291a066e32644e591c19a235a_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Leeds United vs Crystal Palace",
+      "time": "2026-09-20 14:00",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 2.01,
+      "model_prob": "55.2%",
+      "ev_pct": "+10.9%",
+      "stake": "2.69 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_a4b92030b5b48bceea0474e4d8066355_1X2_HOME",
@@ -914,7 +1040,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_1X2_HOME",
@@ -935,7 +1061,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_UNDER_25",
@@ -956,7 +1082,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     },
     {
       "bet_id": "acca_tripla_bet_68098e_bet_fd30ca_bet_446a7b",
@@ -977,7 +1103,154 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Valencia vs Real Sociedad",
+      "time": "2026-09-20 20:00",
+      "is_today": false,
+      "market": "Vitória Valencia",
+      "selection": "Vitória Valencia",
+      "bookmaker": "Pinnacle",
+      "odd": 2.81,
+      "model_prob": "39.4%",
+      "ev_pct": "+10.7%",
+      "stake": "1.48 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Valencia vs Real Sociedad",
+      "time": "2026-09-20 20:00",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.9,
+      "model_prob": "57.8%",
+      "ev_pct": "+9.8%",
+      "stake": "2.71 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_908d70dec433245627941151e5ab8ecc_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "FC Porto vs Benfica",
+      "time": "2026-09-20 20:30",
+      "is_today": false,
+      "market": "Vitória FC Porto",
+      "selection": "Vitória FC Porto",
+      "bookmaker": "Pinnacle",
+      "odd": 2.79,
+      "model_prob": "38.1%",
+      "ev_pct": "+6.3%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_02e6c0ccb11bb7ce78989ce49d67110b_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Aston Villa vs Brentford",
+      "time": "2026-10-10 15:00",
+      "is_today": false,
+      "market": "Vitória Aston Villa",
+      "selection": "Vitória Aston Villa",
+      "bookmaker": "Pinnacle",
+      "odd": 2.52,
+      "model_prob": "48.6%",
+      "ev_pct": "+22.5%",
+      "stake": "3.70 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_380b8f24ec5430fb545a7490c1017285_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Sunderland vs Brighton and Hove Albion",
+      "time": "2026-10-10 15:00",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.93,
+      "model_prob": "58.8%",
+      "ev_pct": "+13.4%",
+      "stake": "3.60 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_86effab5c6e7bfd58c8e88b1fb7c6ba9_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Crystal Palace vs Nottingham Forest",
+      "time": "2026-10-11 14:00",
+      "is_today": false,
+      "market": "Vitória Crystal Palace",
+      "selection": "Vitória Crystal Palace",
+      "bookmaker": "Pinnacle",
+      "odd": 2.67,
+      "model_prob": "39.7%",
+      "ev_pct": "+6.0%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
+    },
+    {
+      "bet_id": "bet_6dbab232dd8d2aed0cb1d6f7978fb7b1_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Liverpool vs Manchester City",
+      "time": "2026-10-11 16:30",
+      "is_today": false,
+      "market": "Vitória Liverpool",
+      "selection": "Vitória Liverpool",
+      "bookmaker": "Pinnacle",
+      "odd": 3.17,
+      "model_prob": "35.9%",
+      "ev_pct": "+13.7%",
+      "stake": "1.58 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 88.16
     },
     {
       "bet_id": "bet_2b0a946cac613732fcbf57ce931490a1_1X2_AWAY",
@@ -998,7 +1271,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 83.23
+      "running_balance": 88.16
     }
   ]
 }
