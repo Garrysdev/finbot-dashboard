@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-14 14:15:54",
+  "updated_at": "2026-09-14 14:59:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 95083.71,
-      "equity": 95315.19,
-      "closed_pl": -4916.289999999999,
-      "total_pl": -4684.809999999998,
-      "roi_pct": -4.684809999999998,
-      "floating_pl": 231.48,
-      "open_count": 2,
+      "balance": 95583.1,
+      "equity": 95976.17,
+      "closed_pl": -4416.899999999999,
+      "total_pl": -4023.8300000000017,
+      "roi_pct": -4.023830000000002,
+      "floating_pl": 393.07,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 152624968248,
+          "time_raw": 1789405126,
+          "time": "2026-09-14 14:58",
+          "symbol": "USDJPY",
+          "bot": "Donchian USDJPY M15",
+          "type": "BUY",
+          "volume": 3.86,
+          "price_open": 154.691,
+          "price_close": 154.922,
+          "sl": null,
+          "tp": null,
+          "profit": 499.39,
+          "profit_str": "+499.39 EUR",
+          "status": "FECHADA",
+          "ticket": "152478081406",
+          "magic": 444250,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 95583.1,
+          "running_equity": 95583.1
+        },
         {
           "pos_id": 152624651096,
           "time_raw": 1789402188,
@@ -46,10 +69,10 @@
           "price_close": null,
           "sl": 1.1544699999999999,
           "tp": null,
-          "profit": -92.66,
-          "profit_str": "-92.66 EUR",
-          "running_balance": 95083.71,
-          "running_equity": 95315.19,
+          "profit": 393.07,
+          "profit_str": "+393.07 EUR",
+          "running_balance": 95583.1,
+          "running_equity": 95976.17,
           "status": "ABERTA",
           "ticket": "152626048269",
           "magic": 888250,
@@ -79,27 +102,6 @@
           "month_key": "2026-09",
           "running_balance": 94422.55,
           "running_equity": 94422.55
-        },
-        {
-          "time": "2026-09-14 11:15",
-          "symbol": "USDJPY",
-          "bot": "Donchian USDJPY M15",
-          "type": "BUY",
-          "volume": 3.86,
-          "price_open": 154.691,
-          "price_close": null,
-          "sl": 154.472,
-          "tp": null,
-          "profit": 324.14,
-          "profit_str": "+324.14 EUR",
-          "running_balance": 95083.71,
-          "running_equity": 95315.19,
-          "status": "ABERTA",
-          "ticket": "152624968248",
-          "magic": 444250,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789391700
         },
         {
           "pos_id": 152624125388,
@@ -3050,11 +3052,11 @@
         {
           "bot": "Donchian USDJPY M15",
           "magic": 444250,
-          "trades": 28,
-          "wins": 20,
-          "win_rate": 71.4,
-          "avg_profit": 209.13,
-          "total_profit": 5855.54
+          "trades": 29,
+          "wins": 21,
+          "win_rate": 72.4,
+          "avg_profit": 219.14,
+          "total_profit": 6354.93
         },
         {
           "bot": "Donchian EURUSD M15",
@@ -3213,13 +3215,13 @@
       "top_5": {
         "week": {
           "bots": [
-            "Donchian Gold XAUUSD M15",
             "Donchian USDJPY M15",
+            "Donchian Gold XAUUSD M15",
             "Donchian EURUSD M15"
           ],
           "profits": [
+            1318.24,
             1009.72,
-            818.85,
             815.23
           ]
         },
@@ -3232,7 +3234,7 @@
             "Donchian EURUSD M15"
           ],
           "profits": [
-            4584.81,
+            5084.2,
             3090.82,
             1879.83,
             1280.73,
@@ -3248,7 +3250,7 @@
             "FinBot GBPUSD H1"
           ],
           "profits": [
-            5855.54,
+            6354.93,
             2198.39,
             1879.83,
             1801.31,
