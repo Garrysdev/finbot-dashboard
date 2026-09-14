@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-14 11:15:02",
+  "updated_at": "2026-09-14 12:05:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
       "balance": 94896.56,
-      "equity": 94712.85,
+      "equity": 93947.31,
       "closed_pl": -5103.439999999999,
-      "total_pl": -5287.149999999994,
-      "roi_pct": -5.287149999999994,
-      "floating_pl": -183.71,
+      "total_pl": -6052.690000000002,
+      "roi_pct": -6.052690000000002,
+      "floating_pl": -949.25,
       "open_count": 3,
       "trades": [
         {
@@ -23,10 +23,10 @@
           "price_close": null,
           "sl": 154.472,
           "tp": null,
-          "profit": -2.16,
-          "profit_str": "-2.16 EUR",
+          "profit": -402.52,
+          "profit_str": "-402.52 EUR",
           "running_balance": 94896.56,
-          "running_equity": 94712.85,
+          "running_equity": 93947.31,
           "status": "ABERTA",
           "ticket": "152624968248",
           "magic": 444250,
@@ -67,10 +67,10 @@
           "price_close": null,
           "sl": 4305.97,
           "tp": null,
-          "profit": -22.11,
-          "profit_str": "-22.11 EUR",
+          "profit": -239.91,
+          "profit_str": "-239.91 EUR",
           "running_balance": 94896.56,
-          "running_equity": 94712.85,
+          "running_equity": 93947.31,
           "status": "ABERTA",
           "ticket": "152624651096",
           "magic": 777250,
@@ -111,10 +111,10 @@
           "price_close": null,
           "sl": 1.15484,
           "tp": null,
-          "profit": -159.44,
-          "profit_str": "-159.44 EUR",
+          "profit": -306.82,
+          "profit_str": "-306.82 EUR",
           "running_balance": 94896.56,
-          "running_equity": 94712.85,
+          "running_equity": 93947.31,
           "status": "ABERTA",
           "ticket": "152624125356",
           "magic": 888250,
@@ -3236,14 +3236,37 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 869.48,
-      "equity": 948.43,
-      "closed_pl": -130.51999999999998,
-      "total_pl": -51.57000000000005,
-      "roi_pct": -5.157000000000005,
-      "floating_pl": 78.95,
-      "open_count": 1,
+      "balance": 940.8,
+      "equity": 940.8,
+      "closed_pl": -59.19999999999999,
+      "total_pl": -59.200000000000045,
+      "roi_pct": -5.920000000000004,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 58389295507,
+          "time_raw": 1789394700,
+          "time": "2026-09-14 12:05",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 4379.55,
+          "price_close": 4297.13,
+          "sl": null,
+          "tp": null,
+          "profit": 71.32,
+          "profit_str": "+71.32 EUR",
+          "status": "FECHADA",
+          "ticket": "58063327545",
+          "magic": 777123,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 940.8,
+          "running_equity": 940.8
+        },
         {
           "pos_id": 58412643244,
           "time_raw": 1789390926,
@@ -3381,27 +3404,6 @@
           "month_key": "2026-09",
           "running_balance": 861.55,
           "running_equity": 861.55
-        },
-        {
-          "time": "2026-09-10 12:00",
-          "symbol": "XAUUSD",
-          "bot": "FinBot Gold XAUUSD H1",
-          "type": "SELL",
-          "volume": 0.01,
-          "price_open": 4379.55,
-          "price_close": null,
-          "sl": 4297.13,
-          "tp": 4237.22,
-          "profit": 78.95,
-          "profit_str": "+78.95 EUR",
-          "running_balance": 869.48,
-          "running_equity": 948.43,
-          "status": "ABERTA",
-          "ticket": "58389295507",
-          "magic": 777123,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
-          "time_raw": 1789048817
         },
         {
           "pos_id": 58385535029,
@@ -4483,36 +4485,38 @@
         {
           "bot": "FinBot Gold XAUUSD H1",
           "magic": 777123,
-          "trades": 3,
-          "wins": 0,
-          "win_rate": 0.0,
-          "avg_profit": -38.25,
-          "total_profit": -114.75
+          "trades": 4,
+          "wins": 1,
+          "win_rate": 25.0,
+          "avg_profit": -10.86,
+          "total_profit": -43.43
         }
       ],
       "top_5": {
         "week": {
           "bots": [
+            "FinBot Gold XAUUSD H1",
             "FinBot USDJPY H1"
           ],
           "profits": [
+            71.32,
             -3.32
           ]
         },
         "month": {
           "bots": [
             "FinBot GBPUSD M15",
+            "FinBot Gold XAUUSD H1",
             "FinBot EURUSD M15",
             "FinBot USDJPY M15",
-            "FinBot EURUSD H1",
-            "FinBot USDJPY H1"
+            "FinBot EURUSD H1"
           ],
           "profits": [
             27.37,
+            26.61,
             11.57,
             1.12,
-            -0.66,
-            -3.32
+            -0.66
           ]
         },
         "all": {
