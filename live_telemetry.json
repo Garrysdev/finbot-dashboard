@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 11:52:02",
+  "updated_at": "2026-09-15 12:00:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -3532,13 +3532,34 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 955.38,
-      "equity": 955.38,
+      "equity": 955.33,
       "closed_pl": -44.61999999999999,
-      "total_pl": -44.620000000000005,
-      "roi_pct": -4.462000000000001,
-      "floating_pl": 0.0,
-      "open_count": 0,
+      "total_pl": -44.66999999999996,
+      "roi_pct": -4.466999999999996,
+      "floating_pl": -0.05,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-15 12:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "SELL",
+          "volume": 0.06,
+          "price_open": 1.15349,
+          "price_close": null,
+          "sl": 1.1543,
+          "tp": 1.15211,
+          "profit": -0.05,
+          "profit_str": "-0.05 EUR",
+          "running_balance": 955.38,
+          "running_equity": 955.33,
+          "status": "ABERTA",
+          "ticket": "58460368889",
+          "magic": 888151,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "time_raw": 1789480800
+        },
         {
           "pos_id": 58456644759,
           "time_raw": 1789477889,
