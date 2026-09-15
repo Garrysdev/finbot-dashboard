@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-15 11:12:02",
+  "updated_at": "2026-09-15 11:52:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 94340.35,
-      "equity": 94032.75,
-      "closed_pl": -5659.649999999999,
-      "total_pl": -5967.25,
-      "roi_pct": -5.96725,
-      "floating_pl": -307.6,
-      "open_count": 1,
+      "balance": 93874.4,
+      "equity": 93874.4,
+      "closed_pl": -6125.5999999999985,
+      "total_pl": -6125.600000000006,
+      "roi_pct": -6.125600000000006,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 152631331133,
+          "time_raw": 1789480282,
+          "time": "2026-09-15 11:51",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.3,
+          "price_open": 4262.37,
+          "price_close": 4280.29,
+          "sl": null,
+          "tp": null,
+          "profit": -465.95,
+          "profit_str": "-465.95 EUR",
+          "status": "FECHADA",
+          "ticket": "152483041314",
+          "magic": 777250,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 93874.4,
+          "running_equity": 93874.4
+        },
         {
           "pos_id": 152630843719,
           "time_raw": 1789477889,
@@ -35,27 +58,6 @@
           "month_key": "2026-09",
           "running_balance": 94340.35,
           "running_equity": 94340.35
-        },
-        {
-          "time": "2026-09-15 10:00",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "SELL",
-          "volume": 0.3,
-          "price_open": 4262.37,
-          "price_close": null,
-          "sl": 4280.29,
-          "tp": null,
-          "profit": -307.6,
-          "profit_str": "-307.60 EUR",
-          "running_balance": 94340.35,
-          "running_equity": 94032.75,
-          "status": "ABERTA",
-          "ticket": "152631331133",
-          "magic": 777250,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789473600
         },
         {
           "pos_id": 152631084527,
@@ -3314,11 +3316,11 @@
         {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
-          "trades": 32,
+          "trades": 33,
           "wins": 15,
-          "win_rate": 46.9,
-          "avg_profit": 77.69,
-          "total_profit": 2485.97
+          "win_rate": 45.5,
+          "avg_profit": 61.21,
+          "total_profit": 2020.02
         },
         {
           "bot": "MeanRev GBPUSD H1",
@@ -3484,7 +3486,7 @@
             "Donchian XAGUSD M15"
           ],
           "profits": [
-            1694.38,
+            1228.43,
             803.14,
             243.15,
             240.88,
@@ -3501,7 +3503,7 @@
           ],
           "profits": [
             4569.1,
-            3775.48,
+            3309.53,
             1879.83,
             1280.73,
             976.39
@@ -3517,7 +3519,7 @@
           ],
           "profits": [
             5839.83,
-            2485.97,
+            2020.02,
             1879.83,
             1280.73,
             976.39
