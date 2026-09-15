@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-09-15 22:16:00",
+  "updated_at": "2026-09-16 00:00:15",
   "kpis": {
     "initial_bankroll": 100.0,
-    "current_balance": 80.77,
-    "total_profit": -19.23,
-    "roi_pct": -19.23,
-    "yield_pct": -36.19,
-    "win_rate": 27.3,
-    "total_bets": 63,
-    "today_bets": 10,
-    "pending_bets": 41,
-    "settled_bets": 22
+    "current_balance": 78.12,
+    "total_profit": -21.88,
+    "roi_pct": -21.88,
+    "yield_pct": -35.06,
+    "win_rate": 26.9,
+    "total_bets": 66,
+    "today_bets": 7,
+    "pending_bets": 40,
+    "settled_bets": 26
   },
   "bets": [
     {
@@ -482,7 +482,7 @@
       "league": "Múltipla Combinada",
       "match": "Rayo Vallecano/Manchester United vs Espanyol/Manchester City",
       "time": "2026-09-15 18:00",
-      "is_today": true,
+      "is_today": false,
       "market": "Dupla de Valor: [Menos de 2.5 Golos] + [Vitória Manchester City]",
       "selection": "1. Menos de 2.5 (1.86) • 2. Vitória Manchester City (2.16)",
       "bookmaker": "Pinnacle",
@@ -490,11 +490,11 @@
       "model_prob": "37.3%",
       "ev_pct": "+50.0%",
       "stake": "1.66 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 80.77
+      "status": "PERDIDA",
+      "result": "2-1 | 0-1",
+      "profit": -1.66,
+      "profit_str": "-1.66 €",
+      "running_balance": 84.12
     },
     {
       "bet_id": "bet_b9a6e597fd597637efa24b92d51dda62_UNDER_25",
@@ -503,7 +503,7 @@
       "league": "La Liga (Espanha)",
       "match": "Rayo Vallecano vs Espanyol",
       "time": "2026-09-15 18:00",
-      "is_today": true,
+      "is_today": false,
       "market": "Menos de 2.5 Golos",
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
@@ -511,11 +511,11 @@
       "model_prob": "67.0%",
       "ev_pct": "+24.6%",
       "stake": "5.00 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 80.77
+      "status": "PERDIDA",
+      "result": "2-1",
+      "profit": -5.0,
+      "profit_str": "-5.00 €",
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_d6474326396cdd0e300afd0193c7c93d_1X2_AWAY",
@@ -524,7 +524,7 @@
       "league": "La Liga (Espanha)",
       "match": "Alavés vs Valencia",
       "time": "2026-09-15 19:00",
-      "is_today": true,
+      "is_today": false,
       "market": "Vitória Valencia",
       "selection": "Vitória Valencia",
       "bookmaker": "Pinnacle",
@@ -532,11 +532,11 @@
       "model_prob": "29.2%",
       "ev_pct": "+20.0%",
       "stake": "1.61 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 80.77
+      "status": "GANHA",
+      "result": "0-1",
+      "profit": 5.01,
+      "profit_str": "+5.01 €",
+      "running_balance": 85.78
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_d6474326396",
@@ -545,7 +545,7 @@
       "league": "Múltipla Combinada",
       "match": "Rayo Vallecano/Alavés vs Espanyol/Valencia",
       "time": "2026-09-15 19:00",
-      "is_today": true,
+      "is_today": false,
       "market": "Dupla de Valor: [Menos de 2.5 Golos] + [Vitória Valencia]",
       "selection": "1. Menos de 2.5 (1.86) • 2. Vitória Valencia (4.11)",
       "bookmaker": "Pinnacle",
@@ -553,11 +553,11 @@
       "model_prob": "19.6%",
       "ev_pct": "+49.4%",
       "stake": "1.00 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 80.77
+      "status": "PERDIDA",
+      "result": "2-1 | 0-1",
+      "profit": -1.0,
+      "profit_str": "-1.00 €",
+      "running_balance": 83.12
     },
     {
       "bet_id": "bet_4ef67376b662c2859f73bde7f7210388_UNDER_25",
@@ -566,7 +566,7 @@
       "league": "La Liga (Espanha)",
       "match": "Levante vs Athletic Bilbao",
       "time": "2026-09-16 20:30",
-      "is_today": false,
+      "is_today": true,
       "market": "Menos de 2.5 Golos",
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
@@ -578,7 +578,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_7f644eca099054612d9a7e7e5d8787da_1X2_AWAY",
@@ -599,7 +599,28 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
+    },
+    {
+      "bet_id": "bet_d02ff636f652d5b5bb65f6b24330c4fe_OVER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Tottenham Hotspur vs Aston Villa",
+      "time": "2026-09-19 12:30",
+      "is_today": false,
+      "market": "Mais de 2.5 Golos",
+      "selection": "Mais de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.84,
+      "model_prob": "64.3%",
+      "ev_pct": "+18.2%",
+      "stake": "5.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_c7b8233ea02650f1055ae086b169b7a1_UNDER_25",
@@ -620,7 +641,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_c11148f7ed032d5e99313ee1942fd4c2_1X2_AWAY",
@@ -641,7 +662,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_1c490e2c6acab28c33d0021b15d3c93a_1X2_HOME",
@@ -662,7 +683,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_1c490e2c6ac",
@@ -683,7 +704,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_e40d0fb4431",
@@ -704,7 +725,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_4c1106958327b544267f1040c84b4acb_1X2_HOME",
@@ -725,7 +746,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_446a7bee22ecf469e0b162fb28ebdc0f_1X2_HOME",
@@ -746,7 +767,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_b5b058d0a95f9742548f789d1c564a78_1X2_AWAY",
@@ -767,7 +788,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_UNDER_25",
@@ -788,7 +809,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_1X2_HOME",
@@ -809,7 +830,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_a995ad3266759e67c9f9b0617c184b71_UNDER_25",
@@ -830,7 +851,28 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
+    },
+    {
+      "bet_id": "bet_800c8ed0df8c82f1f022eeb29bb69424_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Alverca vs Rio Ave FC",
+      "time": "2026-09-19 18:00",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.83,
+      "model_prob": "57.1%",
+      "ev_pct": "+4.6%",
+      "stake": "1.38 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 78.12
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_6fb54fd5b3d",
@@ -851,7 +893,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_6fb54fd5b3d",
@@ -872,7 +914,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_UNDER_25",
@@ -893,7 +935,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_1X2_AWAY",
@@ -914,7 +956,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_65acc2445541a5ed803ef0ce1a270097_1X2_HOME",
@@ -935,7 +977,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_b63aef4291a066e32644e591c19a235a_1X2_AWAY",
@@ -956,7 +998,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_f9e4aaa82676652e339be6c9b5ca44fb_1X2_HOME",
@@ -977,7 +1019,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_b63aef4291a066e32644e591c19a235a_UNDER_25",
@@ -998,7 +1040,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_784f777f5181e1efdad7a6ecb2cfde15_1X2_AWAY",
@@ -1011,15 +1053,15 @@
       "market": "Vitória Liverpool",
       "selection": "Vitória Liverpool",
       "bookmaker": "Pinnacle",
-      "odd": 2.16,
+      "odd": 2.2,
       "model_prob": "49.9%",
-      "ev_pct": "+7.9%",
-      "stake": "1.70 €",
+      "ev_pct": "+9.9%",
+      "stake": "2.06 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_a4b92030b5b48bceea0474e4d8066355_1X2_HOME",
@@ -1040,7 +1082,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_f5c978d59b05fab4498d82a55005855f_UNDER_25",
@@ -1061,7 +1103,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_1X2_HOME",
@@ -1082,7 +1124,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_UNDER_25",
@@ -1103,7 +1145,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "acca_tripla_bet_68098e_bet_fd30ca_bet_446a7b",
@@ -1124,7 +1166,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_e5ae4558a97710adb3d9bb4bc6416ba9_1X2_AWAY",
@@ -1145,7 +1187,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_e5ae4558a97710adb3d9bb4bc6416ba9_OVER_25",
@@ -1166,7 +1208,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_1X2_HOME",
@@ -1187,7 +1229,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_UNDER_25",
@@ -1208,7 +1250,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_908d70dec433245627941151e5ab8ecc_1X2_HOME",
@@ -1221,15 +1263,36 @@
       "market": "Vitória FC Porto",
       "selection": "Vitória FC Porto",
       "bookmaker": "Pinnacle",
-      "odd": 2.76,
+      "odd": 2.73,
       "model_prob": "38.1%",
-      "ev_pct": "+5.2%",
+      "ev_pct": "+4.0%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
+    },
+    {
+      "bet_id": "bet_908d70dec433245627941151e5ab8ecc_UNDER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "FC Porto vs Benfica",
+      "time": "2026-09-20 20:30",
+      "is_today": false,
+      "market": "Menos de 2.5 Golos",
+      "selection": "Menos de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 1.95,
+      "model_prob": "59.1%",
+      "ev_pct": "+15.3%",
+      "stake": "4.02 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_02e6c0ccb11bb7ce78989ce49d67110b_1X2_HOME",
@@ -1250,7 +1313,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_380b8f24ec5430fb545a7490c1017285_UNDER_25",
@@ -1271,7 +1334,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_86effab5c6e7bfd58c8e88b1fb7c6ba9_1X2_HOME",
@@ -1292,7 +1355,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_6dbab232dd8d2aed0cb1d6f7978fb7b1_1X2_HOME",
@@ -1313,7 +1376,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     },
     {
       "bet_id": "bet_2b0a946cac613732fcbf57ce931490a1_1X2_AWAY",
@@ -1334,7 +1397,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 80.77
+      "running_balance": 78.12
     }
   ]
 }
