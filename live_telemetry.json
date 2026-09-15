@@ -1,38 +1,40 @@
 {
-  "updated_at": "2026-09-15 07:30:01",
+  "updated_at": "2026-09-15 08:01:05",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 95283.26,
-      "equity": 95258.38,
-      "closed_pl": -4716.739999999999,
-      "total_pl": -4741.619999999995,
-      "roi_pct": -4.741619999999995,
-      "floating_pl": -24.88,
-      "open_count": 1,
+      "balance": 94810.84,
+      "equity": 94810.84,
+      "closed_pl": -5189.159999999999,
+      "total_pl": -5189.1600000000035,
+      "roi_pct": -5.189160000000004,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
         {
-          "time": "2026-09-15 07:30",
+          "pos_id": 152630489570,
+          "time_raw": 1789466437,
+          "time": "2026-09-15 08:00",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
           "volume": 9.56,
           "price_open": 1.1529,
-          "price_close": null,
-          "sl": 1.15347,
+          "price_close": 1.15347,
+          "sl": null,
           "tp": null,
-          "profit": -24.88,
-          "profit_str": "-24.88 EUR",
-          "running_balance": 95283.26,
-          "running_equity": 95258.38,
-          "status": "ABERTA",
-          "ticket": "152630489570",
+          "profit": -472.42,
+          "profit_str": "-472.42 EUR",
+          "status": "FECHADA",
+          "ticket": "152481800238",
           "magic": 888250,
           "week_key": "2026-W38",
           "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789464600
+          "month_key": "2026-09",
+          "running_balance": 94810.84,
+          "running_equity": 94810.84
         },
         {
           "pos_id": 152630347067,
@@ -3247,15 +3249,6 @@
           "total_profit": 1280.73
         },
         {
-          "bot": "Donchian EURUSD M15",
-          "magic": 888250,
-          "trades": 33,
-          "wins": 17,
-          "win_rate": 51.5,
-          "avg_profit": 37.49,
-          "total_profit": 1237.24
-        },
-        {
           "bot": "ORB EURUSD M15",
           "magic": 888300,
           "trades": 3,
@@ -3263,6 +3256,15 @@
           "win_rate": 100.0,
           "avg_profit": 325.46,
           "total_profit": 976.39
+        },
+        {
+          "bot": "Donchian EURUSD M15",
+          "magic": 888250,
+          "trades": 34,
+          "wins": 17,
+          "win_rate": 50.0,
+          "avg_profit": 22.49,
+          "total_profit": 764.82
         },
         {
           "bot": "ORB USDJPY M15",
@@ -3387,7 +3389,7 @@
             1217.48,
             243.15,
             240.88,
-            -145.92
+            -618.34
           ]
         },
         "month": {
@@ -3412,14 +3414,14 @@
             "Donchian Gold XAUUSD M15",
             "MeanRev GBPUSD H1",
             "FinBot GBPUSD H1",
-            "Donchian EURUSD M15"
+            "ORB EURUSD M15"
           ],
           "profits": [
             6324.45,
             2009.07,
             1879.83,
             1280.73,
-            1237.24
+            976.39
           ]
         }
       }
@@ -3429,11 +3431,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 943.06,
-      "equity": 948.65,
+      "equity": 944.55,
       "closed_pl": -56.93999999999999,
-      "total_pl": -51.35000000000002,
-      "roi_pct": -5.1350000000000025,
-      "floating_pl": 5.59,
+      "total_pl": -55.450000000000045,
+      "roi_pct": -5.545000000000004,
+      "floating_pl": 1.49,
       "open_count": 1,
       "trades": [
         {
@@ -3469,10 +3471,10 @@
           "price_close": null,
           "sl": 4312.03,
           "tp": 4264.25,
-          "profit": 5.59,
-          "profit_str": "+5.59 EUR",
+          "profit": 1.49,
+          "profit_str": "+1.49 EUR",
           "running_balance": 943.06,
-          "running_equity": 948.65,
+          "running_equity": 944.55,
           "status": "ABERTA",
           "ticket": "58454756975",
           "magic": 777151,
