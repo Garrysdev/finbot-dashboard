@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15 06:15:54",
+  "updated_at": "2026-09-15 06:45:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -3358,13 +3358,34 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 940.8,
-      "equity": 940.8,
+      "equity": 940.61,
       "closed_pl": -59.19999999999999,
-      "total_pl": -59.200000000000045,
-      "roi_pct": -5.920000000000004,
-      "floating_pl": 0.0,
-      "open_count": 0,
+      "total_pl": -59.389999999999986,
+      "roi_pct": -5.938999999999998,
+      "floating_pl": -0.19,
+      "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-15 06:45",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 4296.26,
+          "price_close": null,
+          "sl": 4312.03,
+          "tp": 4264.25,
+          "profit": -0.19,
+          "profit_str": "-0.19 EUR",
+          "running_balance": 940.8,
+          "running_equity": 940.61,
+          "status": "ABERTA",
+          "ticket": "58454756975",
+          "magic": 777151,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "time_raw": 1789461900
+        },
         {
           "pos_id": 58389295507,
           "time_raw": 1789394700,
