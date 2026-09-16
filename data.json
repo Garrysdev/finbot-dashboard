@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-16 07:23:17",
+  "updated_at": "2026-09-16 07:49:02",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 95133.96,
-      "equity": 94980.72,
-      "closed_pl": -4866.039999999999,
-      "total_pl": -5019.279999999999,
-      "roi_pct": -5.019279999999999,
-      "floating_pl": -153.24,
-      "open_count": 1,
+      "balance": 94574.88,
+      "equity": 94574.88,
+      "closed_pl": -5425.119999999999,
+      "total_pl": -5425.119999999995,
+      "roi_pct": -5.425119999999995,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 152636614142,
+          "time_raw": 1789552081,
+          "time": "2026-09-16 07:48",
+          "symbol": "EURUSD",
+          "bot": "Donchian EURUSD M15",
+          "type": "BUY",
+          "volume": 10.41,
+          "price_open": 1.15506,
+          "price_close": 1.15444,
+          "sl": null,
+          "tp": null,
+          "profit": -559.08,
+          "profit_str": "-559.08 EUR",
+          "status": "FECHADA",
+          "ticket": "152487842261",
+          "magic": 888250,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 94574.88,
+          "running_equity": 94574.88
+        },
         {
           "pos_id": 152636614004,
           "time_raw": 1789550522,
@@ -35,27 +58,6 @@
           "month_key": "2026-09",
           "running_balance": 95133.96,
           "running_equity": 95133.96
-        },
-        {
-          "time": "2026-09-16 07:00",
-          "symbol": "EURUSD",
-          "bot": "Donchian EURUSD M15",
-          "type": "BUY",
-          "volume": 10.41,
-          "price_open": 1.15506,
-          "price_close": null,
-          "sl": 1.15444,
-          "tp": null,
-          "profit": -153.24,
-          "profit_str": "-153.24 EUR",
-          "running_balance": 95133.96,
-          "running_equity": 94980.72,
-          "status": "ABERTA",
-          "ticket": "152636614142",
-          "magic": 888250,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789549200
         },
         {
           "pos_id": 152636323105,
@@ -3551,15 +3553,6 @@
           "total_profit": 1879.83
         },
         {
-          "bot": "Donchian EURUSD M15",
-          "magic": 888250,
-          "trades": 36,
-          "wins": 19,
-          "win_rate": 52.8,
-          "avg_profit": 44.08,
-          "total_profit": 1586.94
-        },
-        {
           "bot": "Donchian Gold XAUUSD M15",
           "magic": 777250,
           "trades": 34,
@@ -3585,6 +3578,15 @@
           "win_rate": 100.0,
           "avg_profit": 313.5,
           "total_profit": 1253.99
+        },
+        {
+          "bot": "Donchian EURUSD M15",
+          "magic": 888250,
+          "trades": 37,
+          "wins": 19,
+          "win_rate": 51.4,
+          "avg_profit": 27.78,
+          "total_profit": 1027.86
         },
         {
           "bot": "ORB GBPUSD M15",
@@ -3720,14 +3722,14 @@
             "Donchian Gold XAUUSD M15",
             "ORB GBPUSD M15",
             "ORB EURUSD M15",
-            "Donchian EURUSD M15"
+            "Donchian XAGUSD M15"
           ],
           "profits": [
             1181.86,
             785.89,
             522.79,
             520.75,
-            203.78
+            -43.46
           ]
         },
         "month": {
@@ -3750,16 +3752,16 @@
           "bots": [
             "Donchian USDJPY M15",
             "MeanRev GBPUSD H1",
-            "Donchian EURUSD M15",
             "Donchian Gold XAUUSD M15",
-            "FinBot GBPUSD H1"
+            "FinBot GBPUSD H1",
+            "ORB EURUSD M15"
           ],
           "profits": [
             6218.55,
             1879.83,
-            1586.94,
             1577.48,
-            1280.73
+            1280.73,
+            1253.99
           ]
         }
       }
