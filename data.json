@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-16 06:53:16",
+  "updated_at": "2026-09-16 06:56:04",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
       "currency": "EUR",
       "initial_deposit": 100000.0,
-      "balance": 93969.02,
-      "equity": 94464.6,
-      "closed_pl": -6030.979999999999,
-      "total_pl": -5535.399999999994,
-      "roi_pct": -5.535399999999995,
-      "floating_pl": 495.58,
-      "open_count": 2,
+      "balance": 94246.62,
+      "equity": 94882.32,
+      "closed_pl": -5753.379999999999,
+      "total_pl": -5117.679999999993,
+      "roi_pct": -5.117679999999993,
+      "floating_pl": 635.7,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 152636443136,
+          "time_raw": 1789548928,
+          "time": "2026-09-16 06:55",
+          "symbol": "EURUSD",
+          "bot": "ORB EURUSD M15",
+          "type": "BUY",
+          "volume": 5.09,
+          "price_open": 1.15451,
+          "price_close": 1.15514,
+          "sl": null,
+          "tp": null,
+          "profit": 277.6,
+          "profit_str": "+277.60 EUR",
+          "status": "FECHADA",
+          "ticket": "152487653797",
+          "magic": 888300,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 94246.62,
+          "running_equity": 94246.62
+        },
         {
           "pos_id": 152636323104,
           "time_raw": 1789548736,
@@ -37,27 +60,6 @@
           "running_equity": 93969.02
         },
         {
-          "time": "2026-09-16 06:15",
-          "symbol": "EURUSD",
-          "bot": "ORB EURUSD M15",
-          "type": "BUY",
-          "volume": 5.09,
-          "price_open": 1.15451,
-          "price_close": null,
-          "sl": 1.15345,
-          "tp": 1.15514,
-          "profit": 132.23,
-          "profit_str": "+132.23 EUR",
-          "running_balance": 93969.02,
-          "running_equity": 94464.6,
-          "status": "ABERTA",
-          "ticket": "152636443136",
-          "magic": 888300,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789546501
-        },
-        {
           "time": "2026-09-16 05:30",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
@@ -65,12 +67,12 @@
           "volume": 10.49,
           "price_open": 1.15441,
           "price_close": null,
-          "sl": 1.15389,
+          "sl": 1.15497,
           "tp": null,
-          "profit": 363.35,
-          "profit_str": "+363.35 EUR",
-          "running_balance": 93969.02,
-          "running_equity": 94464.6,
+          "profit": 635.7,
+          "profit_str": "+635.70 EUR",
+          "running_balance": 94246.62,
+          "running_equity": 94882.32,
           "status": "ABERTA",
           "ticket": "152636323105",
           "magic": 888250,
@@ -3521,6 +3523,15 @@
           "total_profit": 1280.73
         },
         {
+          "bot": "ORB EURUSD M15",
+          "magic": 888300,
+          "trades": 4,
+          "wins": 4,
+          "win_rate": 100.0,
+          "avg_profit": 313.5,
+          "total_profit": 1253.99
+        },
+        {
           "bot": "Donchian EURUSD M15",
           "magic": 888250,
           "trades": 35,
@@ -3528,15 +3539,6 @@
           "win_rate": 51.4,
           "avg_profit": 30.81,
           "total_profit": 1078.32
-        },
-        {
-          "bot": "ORB EURUSD M15",
-          "magic": 888300,
-          "trades": 3,
-          "wins": 3,
-          "win_rate": 100.0,
-          "avg_profit": 325.46,
-          "total_profit": 976.39
         },
         {
           "bot": "ORB GBPUSD M15",
@@ -3678,7 +3680,7 @@
             803.14,
             785.89,
             522.79,
-            243.15,
+            520.75,
             -43.46
           ]
         },
@@ -3695,7 +3697,7 @@
             2866.99,
             1879.83,
             1280.73,
-            976.39
+            1253.99
           ]
         },
         "all": {
@@ -3704,14 +3706,14 @@
             "MeanRev GBPUSD H1",
             "Donchian Gold XAUUSD M15",
             "FinBot GBPUSD H1",
-            "Donchian EURUSD M15"
+            "ORB EURUSD M15"
           ],
           "profits": [
             5839.83,
             1879.83,
             1577.48,
             1280.73,
-            1078.32
+            1253.99
           ]
         }
       }
