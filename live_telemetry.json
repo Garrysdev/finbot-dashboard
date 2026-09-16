@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16 00:00:02",
+  "updated_at": "2026-09-16 01:12:01",
   "accounts": {
     "10012303191": {
       "login": 10012303191,
@@ -3655,14 +3655,37 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 941.5,
-      "equity": 941.87,
-      "closed_pl": -58.499999999999986,
-      "total_pl": -58.129999999999995,
-      "roi_pct": -5.813,
-      "floating_pl": 0.37,
-      "open_count": 3,
+      "balance": 943.73,
+      "equity": 950.47,
+      "closed_pl": -56.26999999999999,
+      "total_pl": -49.52999999999997,
+      "roi_pct": -4.952999999999997,
+      "floating_pl": 6.74,
+      "open_count": 2,
       "trades": [
+        {
+          "pos_id": 58467726829,
+          "time_raw": 1789528312,
+          "time": "2026-09-16 01:11",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD M15",
+          "type": "SELL",
+          "volume": 0.03,
+          "price_open": 1.34772,
+          "price_close": 1.34684,
+          "sl": null,
+          "tp": null,
+          "profit": 2.23,
+          "profit_str": "+2.23 EUR",
+          "status": "FECHADA",
+          "ticket": "58095418846",
+          "magic": 555151,
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 943.73,
+          "running_equity": 943.73
+        },
         {
           "time": "2026-09-16 00:00",
           "symbol": "XAUUSD",
@@ -3673,10 +3696,10 @@
           "price_close": null,
           "sl": 4331.98,
           "tp": 4133.17,
-          "profit": -0.4,
-          "profit_str": "-0.40 EUR",
-          "running_balance": 941.5,
-          "running_equity": 941.87,
+          "profit": 5.87,
+          "profit_str": "+5.87 EUR",
+          "running_balance": 943.73,
+          "running_equity": 950.47,
           "status": "ABERTA",
           "ticket": "58472541418",
           "magic": 777123,
@@ -3740,37 +3763,16 @@
           "price_close": null,
           "sl": 1.15507,
           "tp": 1.15216,
-          "profit": 0.39,
-          "profit_str": "+0.39 EUR",
-          "running_balance": 941.5,
-          "running_equity": 941.87,
+          "profit": 0.87,
+          "profit_str": "+0.87 EUR",
+          "running_balance": 943.73,
+          "running_equity": 950.47,
           "status": "ABERTA",
           "ticket": "58468372617",
           "magic": 888151,
           "week_key": "2026-W38",
           "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "time_raw": 1789500600
-        },
-        {
-          "time": "2026-09-15 17:00",
-          "symbol": "GBPUSD",
-          "bot": "FinBot GBPUSD M15",
-          "type": "SELL",
-          "volume": 0.03,
-          "price_open": 1.34772,
-          "price_close": null,
-          "sl": 1.34912,
-          "tp": 1.34493,
-          "profit": 0.38,
-          "profit_str": "+0.38 EUR",
-          "running_balance": 941.5,
-          "running_equity": 941.87,
-          "status": "ABERTA",
-          "ticket": "58467726829",
-          "magic": 555151,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789498800
         },
         {
           "pos_id": 58463037157,
@@ -5088,11 +5090,11 @@
         {
           "bot": "FinBot GBPUSD M15",
           "magic": 555151,
-          "trades": 13,
-          "wins": 9,
-          "win_rate": 69.2,
-          "avg_profit": 2.01,
-          "total_profit": 26.08
+          "trades": 14,
+          "wins": 10,
+          "win_rate": 71.4,
+          "avg_profit": 2.02,
+          "total_profit": 28.31
         },
         {
           "bot": "FinBot Gold XAUUSD M15",
@@ -5192,14 +5194,14 @@
             "FinBot Gold XAUUSD M15",
             "FinBot USDJPY M15",
             "ORB GBPUSD M15",
-            "FinBot USDJPY H1"
+            "FinBot GBPUSD M15"
           ],
           "profits": [
             71.32,
             27.75,
             3.38,
             2.26,
-            -3.32
+            2.23
           ]
         },
         "month": {
@@ -5211,7 +5213,7 @@
             "FinBot USDJPY M15"
           ],
           "profits": [
-            27.37,
+            29.6,
             26.61,
             21.66,
             7.36,
@@ -5227,7 +5229,7 @@
             "FinBot GBPUSD H1"
           ],
           "profits": [
-            26.08,
+            28.31,
             7.39,
             2.26,
             0.16,
