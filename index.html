@@ -1133,6 +1133,49 @@
             </div>
         </div>
 
+        <div class="chart-row" style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+            <div class="card" style="flex: 1 1 320px; margin-top: 0;">
+                <div class="card-header">
+                    <div>
+                        <span class="card-title">✅❌ Ganhas vs Perdidas</span>
+                        <span class="status-pill status-blue">📊 Apostas Resolvidas</span>
+                    </div>
+                </div>
+                <div style="padding: 1rem; height: 280px; position: relative;">
+                    <canvas id="chart-sports-winloss"></canvas>
+                </div>
+            </div>
+
+            <div class="card" style="flex: 2 1 480px; margin-top: 0;">
+                <div class="card-header">
+                    <div>
+                        <span class="card-title">🧠 Resultado por Mercado / Estratégia</span>
+                        <span class="status-pill status-blue">📊 Lucro Acumulado por Tipo de Aposta</span>
+                    </div>
+                </div>
+                <div style="padding: 1rem; height: 280px; position: relative;">
+                    <canvas id="chart-sports-strategy"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="margin-top: 0; margin-bottom: 1.5rem;">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">📈 Evolução da Banca (Apostas Resolvidas)</span>
+                    <span class="status-pill status-blue">📊 Saldo Realizado</span>
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                    <button class="btn btn-blue" id="btn-sports-period-week" onclick="switchSportsBalancePeriod('week')">📅 Semanal</button>
+                    <button class="btn" id="btn-sports-period-month" onclick="switchSportsBalancePeriod('month')">🗓️ Mensal</button>
+                    <button class="btn" id="btn-sports-period-all" onclick="switchSportsBalancePeriod('all')">🏁 Desde o Início</button>
+                </div>
+            </div>
+            <div style="padding: 1rem; height: 320px; position: relative;">
+                <canvas id="chart-sports-balance"></canvas>
+            </div>
+        </div>
+
         <div class="card">
             <div class="card-header">
                 <div>
@@ -1294,6 +1337,9 @@
             acc100k: 'week'
         };
 
+        let sportsChartInstances = { winloss: null, strategy: null, balance: null };
+        let sportsBalancePeriod = 'week';
+
         const initialBacktestData = [
             { id: '#7 (USDJPY Campeão)', data: '2026-08-23', ativo: 'USDJPY', tf: 'H1', periodo: '2022.08-2026.08', risco: '0.5%', sl: '2.5x', tp: '8.0x', trailing: '5.5x', lucro: '+1,284.68 $', payoff: '5.81 $', dd: '6.04%', status: 'PASS', statusLabel: '🟢 CAMPEÃO IENE', notas: 'Otimização MT5 (Passe 0,18). Payoff espetacular de 5.81$ por trade com Drawdown ultra-baixo de apenas 6.04%!' },
             { id: '#6 (US30 Campeão)', data: '2026-08-22', ativo: 'US30', tf: 'H1', periodo: '2022.08-2026.08', risco: '0.5%', sl: '2.0x', tp: '9.0x', trailing: '2.0x', lucro: '+479.37 $', payoff: '1.36 $', dd: '12.95%', status: 'PASS', statusLabel: '🟢 CAMPEÃO DOW JONES', notas: 'Filtro de Sessão NY (13:30-17:00 UTC). Excelente estabilidade para diversificação de índices.' },
@@ -1330,6 +1376,8 @@
             } else if (tabId === 'tab-demo-100k') {
                 setTimeout(() => renderTop5Chart('acc100k'), 60);
                 setTimeout(() => renderWeeklyChart('acc100k'), 60);
+            } else if (tabId === 'tab-sports') {
+                setTimeout(() => renderSportsCharts(), 60);
             }
         }
 
@@ -1877,7 +1925,9 @@
             const fBookmaker = document.getElementById('filter-bookmaker-sports') ? document.getElementById('filter-bookmaker-sports').value : 'all';
             const fStatus = document.getElementById('filter-status-sports') ? document.getElementById('filter-status-sports').value : 'all';
 
-            const list = (sportsData && sportsData.bets) ? sportsData.bets : [];
+            const list = ((sportsData && sportsData.bets) ? sportsData.bets : [])
+                .slice()
+                .sort((a, b) => (b.time || '').localeCompare(a.time || ''));
 
             const rows = list.filter(b => {
                 if (fSport !== 'all' && (!b.sport || !b.sport.toLowerCase().includes(fSport.toLowerCase()))) return false;
@@ -1974,6 +2024,306 @@
             });
         }
 
+        // Categoriza uma aposta pelo texto do mercado/seleção (não existe campo
+        // de "estratégia" nos dados — o mercado é o proxy mais próximo).
+        function sportsMarketCategory(b) {
+            const m = ((b.market || '') + ' ' + (b.selection || ''));
+            if (/Dupla de Valor|Combinada/i.test(m)) return '🎲 Combinadas (Dupla)';
+            if (/Ambas Marcam|BTTS/i.test(m)) return '⚽ Ambas Marcam (BTTS)';
+            if (/Golos|Pontos|Mais de|Menos de|Over|Under/i.test(m)) return '📈 Over/Under Golos';
+            if (/Handicap/i.test(m)) return '⚖️ Handicap';
+            if (/Vitória|Vencedor/i.test(m)) return '🏆 1X2 / Vencedor';
+            return '❔ Outro';
+        }
+
+        function getSettledSportsBets() {
+            const list = (sportsData && sportsData.bets) ? sportsData.bets : [];
+            return list
+                .filter(b => b.status === 'GANHA' || b.status === 'PERDIDA')
+                .slice()
+                .sort((a, b) => (a.time || '').localeCompare(b.time || ''));
+        }
+
+        function renderSportsWinLossChart() {
+            const canvas = document.getElementById('chart-sports-winloss');
+            if (!canvas || typeof Chart === 'undefined') return;
+            const ctx = canvas.getContext('2d');
+
+            if (sportsChartInstances.winloss) {
+                sportsChartInstances.winloss.destroy();
+                sportsChartInstances.winloss = null;
+            }
+
+            const settled = getSettledSportsBets();
+            const wins = settled.filter(b => b.status === 'GANHA').length;
+            const losses = settled.filter(b => b.status === 'PERDIDA').length;
+            if (wins + losses === 0) return;
+
+            sportsChartInstances.winloss = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [`✅ Ganhas (${wins})`, `❌ Perdidas (${losses})`],
+                    datasets: [{
+                        data: [wins, losses],
+                        backgroundColor: ['rgba(34, 197, 94, 0.85)', 'rgba(239, 68, 68, 0.85)'],
+                        borderColor: ['#22c55e', '#ef4444'],
+                        borderWidth: 1.5
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '62%',
+                    plugins: {
+                        legend: { position: 'bottom', labels: { color: '#f8fafc', font: { weight: 'bold' } } },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const total = wins + losses;
+                                    const pct = total ? ((context.raw / total) * 100).toFixed(1) : '0.0';
+                                    return `${context.label} — ${pct}%`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderSportsStrategyChart() {
+            const canvas = document.getElementById('chart-sports-strategy');
+            if (!canvas || typeof Chart === 'undefined') return;
+            const ctx = canvas.getContext('2d');
+
+            if (sportsChartInstances.strategy) {
+                sportsChartInstances.strategy.destroy();
+                sportsChartInstances.strategy = null;
+            }
+
+            const settled = getSettledSportsBets();
+            if (settled.length === 0) return;
+
+            const byCat = {};
+            settled.forEach(b => {
+                const cat = sportsMarketCategory(b);
+                if (!byCat[cat]) byCat[cat] = { profit: 0, wins: 0, total: 0 };
+                byCat[cat].profit += Number(b.profit || 0);
+                byCat[cat].total += 1;
+                if (b.status === 'GANHA') byCat[cat].wins += 1;
+            });
+
+            const cats = Object.keys(byCat).sort((a, b) => byCat[b].profit - byCat[a].profit);
+            const profits = cats.map(c => Math.round(byCat[c].profit * 100) / 100);
+            const backgroundColors = profits.map(v => v >= 0 ? 'rgba(34, 197, 94, 0.85)' : 'rgba(239, 68, 68, 0.85)');
+            const borderColors = profits.map(v => v >= 0 ? '#22c55e' : '#ef4444');
+
+            sportsChartInstances.strategy = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: cats,
+                    datasets: [{
+                        label: 'Lucro Acumulado (€)',
+                        data: profits,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const cat = cats[context.dataIndex];
+                                    const info = byCat[cat];
+                                    const val = context.raw || 0;
+                                    const wr = info.total ? ((info.wins / info.total) * 100).toFixed(1) : '0.0';
+                                    return [`${(val >= 0 ? '+' : '') + val.toFixed(2)} €`, `${info.total} apostas · ${wr}% acerto`];
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.08)' },
+                            ticks: { color: '#94a3b8', callback: function(val) { return val + ' €'; } }
+                        },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: '#f8fafc', font: { weight: 'bold' } }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Semana ISO (segunda a domingo) a partir de "AAAA-MM-DD HH:MM".
+        function sportsIsoWeekInfo(timeStr) {
+            const d = new Date((timeStr || '').replace(' ', 'T'));
+            const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+            const dayNum = (date.getUTCDay() + 6) % 7;
+            date.setUTCDate(date.getUTCDate() - dayNum + 3);
+            const firstThursday = new Date(Date.UTC(date.getUTCFullYear(), 0, 4));
+            const fDayNum = (firstThursday.getUTCDay() + 6) % 7;
+            const week = 1 + Math.round(((date - firstThursday) / 86400000 - 3 + fDayNum) / 7);
+            const monday = new Date(date);
+            monday.setUTCDate(date.getUTCDate() - 3);
+            const label = monday.toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit' }) + ' - ' +
+                new Date(monday.getTime() + 6 * 86400000).toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit' });
+            return { key: date.getUTCFullYear() + '-W' + String(week).padStart(2, '0'), shortLabel: 'Sem ' + week, fullLabel: label };
+        }
+
+        function switchSportsBalancePeriod(period) {
+            sportsBalancePeriod = period;
+            ['week', 'month', 'all'].forEach(p => {
+                const btn = document.getElementById('btn-sports-period-' + p);
+                if (btn) {
+                    btn.className = p === period ? 'btn btn-blue' : 'btn';
+                    btn.style.background = p === period ? '' : 'rgba(255,255,255,0.08)';
+                }
+            });
+            renderSportsBalanceChart();
+        }
+
+        function renderSportsBalanceChart() {
+            const canvas = document.getElementById('chart-sports-balance');
+            if (!canvas || typeof Chart === 'undefined') return;
+            const ctx = canvas.getContext('2d');
+
+            if (sportsChartInstances.balance) {
+                sportsChartInstances.balance.destroy();
+                sportsChartInstances.balance = null;
+            }
+
+            const settled = getSettledSportsBets();
+            if (settled.length === 0) return;
+
+            if (sportsBalancePeriod === 'all') {
+                const initial = Number((sportsData.kpis && sportsData.kpis.initial_bankroll) || 100);
+                const labels = ['Início'].concat(settled.map(b => b.time));
+                const values = [initial].concat(settled.map(b => Number(b.running_balance)));
+
+                sportsChartInstances.balance = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Saldo (€)',
+                            data: values,
+                            borderColor: '#38bdf8',
+                            backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                            fill: true,
+                            tension: 0.25,
+                            pointRadius: 2,
+                            pointBackgroundColor: '#38bdf8'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return Number(context.raw).toLocaleString('pt-PT', { minimumFractionDigits: 2 }) + ' €';
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#94a3b8', font: { size: 9 }, maxRotation: 60, minRotation: 0, autoSkip: true, maxTicksLimit: 14 }
+                            },
+                            y: {
+                                grid: { color: 'rgba(255, 255, 255, 0.08)' },
+                                ticks: { color: '#94a3b8', callback: function(val) { return val + ' €'; } }
+                            }
+                        }
+                    }
+                });
+                return;
+            }
+
+            const byBucket = {};
+            settled.forEach(b => {
+                let key, shortLabel, fullLabel;
+                if (sportsBalancePeriod === 'month') {
+                    key = (b.time || '').substring(0, 7);
+                    const d = new Date((b.time || '').replace(' ', 'T'));
+                    fullLabel = d.toLocaleDateString('pt-PT', { month: 'long', year: 'numeric' });
+                    shortLabel = d.toLocaleDateString('pt-PT', { month: 'short' });
+                } else {
+                    const info = sportsIsoWeekInfo(b.time);
+                    key = info.key;
+                    shortLabel = info.shortLabel;
+                    fullLabel = info.fullLabel;
+                }
+                if (!byBucket[key]) byBucket[key] = { shortLabel, fullLabel, total: 0 };
+                byBucket[key].total += Number(b.profit || 0);
+            });
+
+            const keys = Object.keys(byBucket).sort();
+            const shortLabels = keys.map(k => byBucket[k].shortLabel);
+            const fullLabels = keys.map(k => byBucket[k].fullLabel);
+            const values = keys.map(k => Math.round(byBucket[k].total * 100) / 100);
+            const backgroundColors = values.map(v => v >= 0 ? 'rgba(34, 197, 94, 0.85)' : 'rgba(239, 68, 68, 0.85)');
+            const borderColors = values.map(v => v >= 0 ? '#22c55e' : '#ef4444');
+
+            sportsChartInstances.balance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: shortLabels,
+                    datasets: [{
+                        label: sportsBalancePeriod === 'month' ? 'P/L do Mês (€)' : 'P/L da Semana (€)',
+                        data: values,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 1.5,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                title: function(items) { return fullLabels[items[0].dataIndex]; },
+                                label: function(context) {
+                                    const val = context.raw || 0;
+                                    return (val >= 0 ? '+' : '') + Number(val).toFixed(2) + ' €';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: { color: '#94a3b8', font: { size: 10 } }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255, 255, 255, 0.08)' },
+                            ticks: { color: '#94a3b8', callback: function(val) { return val + ' €'; } }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderSportsCharts() {
+            renderSportsWinLossChart();
+            renderSportsStrategyChart();
+            renderSportsBalanceChart();
+        }
+
         function renderBacktestTable() {
             const tbody = document.getElementById('backtest-tbody');
             if (!tbody) return;
@@ -2054,6 +2404,7 @@
             updateAccountMetrics('acc100k', '100k', 100000.0, metaData.acc100k);
             updateSportsMetrics();
             renderSportsTable();
+            renderSportsCharts();
             renderBacktestTable();
         }
 
