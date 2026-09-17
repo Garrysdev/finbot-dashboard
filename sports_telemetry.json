@@ -1,5 +1,19 @@
 {
-  "updated_at": "2026-09-17 11:19:12",
+  "updated_at": "2026-09-17 12:09:17",
+  "checkpoint": {
+    "current_version": "v2_mle_pinnacle_2026-09-17",
+    "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
+    "by_version": {
+      "v1_moments_pinnacle": {
+        "settled_bets": 26,
+        "wins": 7,
+        "losses": 19,
+        "win_rate": 26.9,
+        "total_profit": -21.88,
+        "yield_pct": -35.06
+      }
+    }
+  },
   "kpis": {
     "initial_bankroll": 100.0,
     "current_balance": 78.12,
@@ -32,7 +46,8 @@
       "result": "0-1",
       "profit": 5.09,
       "profit_str": "+5.09 €",
-      "running_balance": 88.32
+      "running_balance": 88.32,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_27eaaab4498bb2984321e5f81f0ff9fd_1X2_AWAY",
@@ -53,7 +68,8 @@
       "result": "1-0",
       "profit": -1.53,
       "profit_str": "-1.53 €",
-      "running_balance": 88.16
+      "running_balance": 88.16,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_14e37b5aaf6fec05a01f7e1309025a66_1X2_AWAY",
@@ -74,7 +90,8 @@
       "result": "0-3",
       "profit": 1.37,
       "profit_str": "+1.37 €",
-      "running_balance": 89.69
+      "running_balance": 89.69,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_1898724f150d16329c47b523d35ee534_1X2_HOME",
@@ -95,7 +112,8 @@
       "result": "3-3",
       "profit": -3.72,
       "profit_str": "-3.72 €",
-      "running_balance": 84.44
+      "running_balance": 84.44,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_1898724f150d16329c47b523d35ee534_UNDER_25",
@@ -116,7 +134,8 @@
       "result": "3-3",
       "profit": -2.67,
       "profit_str": "-2.67 €",
-      "running_balance": 81.77
+      "running_balance": 81.77,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_8461e66c563dbb31f9c87def0cf49c7e_1X2_AWAY",
@@ -137,7 +156,8 @@
       "result": "1-0",
       "profit": -1.0,
       "profit_str": "-1.00 €",
-      "running_balance": 80.77
+      "running_balance": 80.77,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_3dba40cdf22e962c0f6f6c940ef01850_1X2_HOME",
@@ -158,7 +178,8 @@
       "result": "1-1",
       "profit": -1.82,
       "profit_str": "-1.82 €",
-      "running_balance": 91.85
+      "running_balance": 91.85,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_98133182ffe74da0bd09dd9483a05dbb_1X2_AWAY",
@@ -179,7 +200,8 @@
       "result": "2-2",
       "profit": -5.0,
       "profit_str": "-5.00 €",
-      "running_balance": 85.16
+      "running_balance": 85.16,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d09677edcf1fb82ad75a8df58bb26eab_1X2_HOME",
@@ -200,7 +222,8 @@
       "result": "1-2",
       "profit": -2.48,
       "profit_str": "-2.48 €",
-      "running_balance": 92.24
+      "running_balance": 92.24,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d09677edcf1fb82ad75a8df58bb26eab_OVER_25",
@@ -221,7 +244,8 @@
       "result": "1-2",
       "profit": 3.07,
       "profit_str": "+3.07 €",
-      "running_balance": 95.31
+      "running_balance": 95.31,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d856d4353db0b4cca2a49b96dfd19c92_1X2_HOME",
@@ -242,7 +266,8 @@
       "result": "2-2",
       "profit": -1.64,
       "profit_str": "-1.64 €",
-      "running_balance": 93.67
+      "running_balance": 93.67,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_361a0ad126abc0eca923c483a51aad53_1X2_HOME",
@@ -263,7 +288,8 @@
       "result": "1-3",
       "profit": -1.66,
       "profit_str": "-1.66 €",
-      "running_balance": 98.34
+      "running_balance": 98.34,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_361a0ad126abc0eca923c483a51aad53_UNDER_25",
@@ -284,7 +310,8 @@
       "result": "1-3",
       "profit": -3.62,
       "profit_str": "-3.62 €",
-      "running_balance": 94.72
+      "running_balance": 94.72,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_f8bbf7144d65713cf1bfc5b1940d310c_1X2_HOME",
@@ -305,7 +332,8 @@
       "result": "1-1",
       "profit": -1.19,
       "profit_str": "-1.19 €",
-      "running_balance": 83.97
+      "running_balance": 83.97,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_b412817739a87e18bf391bf6ccff6560_1X2_HOME",
@@ -326,7 +354,8 @@
       "result": "2-2",
       "profit": -1.0,
       "profit_str": "-1.00 €",
-      "running_balance": 90.85
+      "running_balance": 90.85,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_262dd70bd54774e83c322ca73e589d46_1X2_HOME",
@@ -347,7 +376,8 @@
       "result": "1-1",
       "profit": -1.4,
       "profit_str": "-1.40 €",
-      "running_balance": 83.23
+      "running_balance": 83.23,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_fd30ca2b96bfa088e51bffddeb3b6e56_1X2_HOME",
@@ -368,7 +398,8 @@
       "result": "1-2",
       "profit": -5.0,
       "profit_str": "-5.00 €",
-      "running_balance": 85.85
+      "running_balance": 85.85,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_fd30ca2b96bfa088e51bffddeb3b6e56_OVER_25",
@@ -389,7 +420,8 @@
       "result": "1-2",
       "profit": 4.31,
       "profit_str": "+4.31 €",
-      "running_balance": 90.16
+      "running_balance": 90.16,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_8ba070d5337fc9b99fc69f3c9cf0b66a_1X2_HOME",
@@ -410,7 +442,8 @@
       "result": "0-0",
       "profit": -1.43,
       "profit_str": "-1.43 €",
-      "running_balance": 82.54
+      "running_balance": 82.54,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_230c25d5109625074f28d7216f25c518_UNDER_25",
@@ -431,7 +464,8 @@
       "result": "1-0",
       "profit": 2.01,
       "profit_str": "+2.01 €",
-      "running_balance": 84.55
+      "running_balance": 84.55,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_2a284d621fe10e2a722fd9b6d17814a2_1X2_AWAY",
@@ -452,7 +486,8 @@
       "result": "2-2",
       "profit": -1.4,
       "profit_str": "-1.40 €",
-      "running_balance": 83.15
+      "running_balance": 83.15,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_2a284d621fe10e2a722fd9b6d17814a2_OVER_25",
@@ -473,7 +508,8 @@
       "result": "2-2",
       "profit": 1.48,
       "profit_str": "+1.48 €",
-      "running_balance": 84.63
+      "running_balance": 84.63,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_e40d0fb4431",
@@ -494,7 +530,8 @@
       "result": "2-1 | 0-1",
       "profit": -1.66,
       "profit_str": "-1.66 €",
-      "running_balance": 84.12
+      "running_balance": 84.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_b9a6e597fd597637efa24b92d51dda62_UNDER_25",
@@ -515,7 +552,8 @@
       "result": "2-1",
       "profit": -5.0,
       "profit_str": "-5.00 €",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d6474326396cdd0e300afd0193c7c93d_1X2_AWAY",
@@ -536,7 +574,8 @@
       "result": "0-1",
       "profit": 5.01,
       "profit_str": "+5.01 €",
-      "running_balance": 85.78
+      "running_balance": 85.78,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_d6474326396",
@@ -557,7 +596,8 @@
       "result": "2-1 | 0-1",
       "profit": -1.0,
       "profit_str": "-1.00 €",
-      "running_balance": 83.12
+      "running_balance": 83.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_4ef67376b662c2859f73bde7f7210388_UNDER_25",
@@ -578,7 +618,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_7f644eca099054612d9a7e7e5d8787da_1X2_AWAY",
@@ -599,7 +640,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d02ff636f652d5b5bb65f6b24330c4fe_OVER_25",
@@ -620,7 +662,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_c7b8233ea02650f1055ae086b169b7a1_UNDER_25",
@@ -641,7 +684,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_c11148f7ed032d5e99313ee1942fd4c2_1X2_AWAY",
@@ -662,7 +706,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_1c490e2c6acab28c33d0021b15d3c93a_1X2_HOME",
@@ -683,7 +728,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_1c490e2c6ac",
@@ -704,7 +750,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_e40d0fb4431",
@@ -725,7 +772,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_4c1106958327b544267f1040c84b4acb_1X2_HOME",
@@ -746,7 +794,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_446a7bee22ecf469e0b162fb28ebdc0f_1X2_HOME",
@@ -767,7 +816,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_b5b058d0a95f9742548f789d1c564a78_1X2_AWAY",
@@ -788,7 +838,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_UNDER_25",
@@ -809,7 +860,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_88519a51012811476c9b4724eafc96c5_1X2_HOME",
@@ -830,7 +882,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_a995ad3266759e67c9f9b0617c184b71_UNDER_25",
@@ -851,7 +904,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_800c8ed0df8c82f1f022eeb29bb69424_UNDER_25",
@@ -872,7 +926,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_6fb54fd5b3d",
@@ -893,7 +948,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_dupla_bet_1c490e2c6ac_bet_6fb54fd5b3d",
@@ -914,7 +970,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_UNDER_25",
@@ -935,7 +992,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_6fb54fd5b3da95e4f4bbef62b7022bd7_1X2_AWAY",
@@ -956,7 +1014,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_65acc2445541a5ed803ef0ce1a270097_1X2_HOME",
@@ -977,7 +1036,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_b63aef4291a066e32644e591c19a235a_1X2_AWAY",
@@ -998,7 +1058,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_f9e4aaa82676652e339be6c9b5ca44fb_1X2_HOME",
@@ -1019,7 +1080,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_b63aef4291a066e32644e591c19a235a_UNDER_25",
@@ -1040,7 +1102,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_784f777f5181e1efdad7a6ecb2cfde15_1X2_AWAY",
@@ -1061,7 +1124,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_a4b92030b5b48bceea0474e4d8066355_1X2_HOME",
@@ -1082,7 +1146,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_f5c978d59b05fab4498d82a55005855f_UNDER_25",
@@ -1103,7 +1168,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_1X2_HOME",
@@ -1124,7 +1190,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_UNDER_25",
@@ -1145,7 +1212,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "acca_tripla_bet_68098e_bet_fd30ca_bet_446a7b",
@@ -1166,7 +1234,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_e5ae4558a97710adb3d9bb4bc6416ba9_1X2_AWAY",
@@ -1187,7 +1256,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_e5ae4558a97710adb3d9bb4bc6416ba9_OVER_25",
@@ -1208,7 +1278,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_1X2_HOME",
@@ -1229,7 +1300,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_UNDER_25",
@@ -1250,7 +1322,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_908d70dec433245627941151e5ab8ecc_1X2_HOME",
@@ -1271,7 +1344,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_908d70dec433245627941151e5ab8ecc_UNDER_25",
@@ -1292,7 +1366,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_02e6c0ccb11bb7ce78989ce49d67110b_1X2_HOME",
@@ -1313,7 +1388,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_380b8f24ec5430fb545a7490c1017285_UNDER_25",
@@ -1334,7 +1410,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_86effab5c6e7bfd58c8e88b1fb7c6ba9_1X2_HOME",
@@ -1355,7 +1432,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_6dbab232dd8d2aed0cb1d6f7978fb7b1_1X2_HOME",
@@ -1376,7 +1454,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     },
     {
       "bet_id": "bet_2b0a946cac613732fcbf57ce931490a1_1X2_AWAY",
@@ -1397,7 +1476,8 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12
+      "running_balance": 78.12,
+      "engine_version": "v1_moments_pinnacle"
     }
   ]
 }
