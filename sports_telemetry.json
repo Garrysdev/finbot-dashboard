@@ -1,30 +1,30 @@
 {
-  "updated_at": "2026-09-17 12:09:17",
+  "updated_at": "2026-09-17 23:30:10",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
     "by_version": {
       "v1_moments_pinnacle": {
-        "settled_bets": 26,
+        "settled_bets": 27,
         "wins": 7,
-        "losses": 19,
-        "win_rate": 26.9,
-        "total_profit": -21.88,
-        "yield_pct": -35.06
+        "losses": 20,
+        "win_rate": 25.9,
+        "total_profit": -22.88,
+        "yield_pct": -36.08
       }
     }
   },
   "kpis": {
     "initial_bankroll": 100.0,
-    "current_balance": 78.12,
-    "total_profit": -21.88,
-    "roi_pct": -21.88,
-    "yield_pct": -35.06,
-    "win_rate": 26.9,
-    "total_bets": 66,
+    "current_balance": 77.12,
+    "total_profit": -22.88,
+    "roi_pct": -22.88,
+    "yield_pct": -36.08,
+    "win_rate": 25.9,
+    "total_bets": 68,
     "today_bets": 7,
-    "pending_bets": 40,
-    "settled_bets": 26
+    "pending_bets": 41,
+    "settled_bets": 27
   },
   "bets": [
     {
@@ -618,7 +618,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -636,11 +636,11 @@
       "model_prob": "20.2%",
       "ev_pct": "+4.9%",
       "stake": "1.00 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 78.12,
+      "status": "PERDIDA",
+      "result": "1-0",
+      "profit": -1.0,
+      "profit_str": "-1.00 €",
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -662,7 +662,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -684,7 +684,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -706,7 +706,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -728,7 +728,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -750,7 +750,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -772,7 +772,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -794,7 +794,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -816,7 +816,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -838,7 +838,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -860,7 +860,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -882,7 +882,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -904,8 +904,30 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
+    },
+    {
+      "bet_id": "bet_800c8ed0df8c82f1f022eeb29bb69424_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Alverca vs Rio Ave FC",
+      "time": "2026-09-19 18:00",
+      "is_today": false,
+      "market": "Vitória Rio Ave FC",
+      "selection": "Vitória Rio Ave FC",
+      "bookmaker": "Pinnacle",
+      "odd": 4.22,
+      "model_prob": "25.6%",
+      "ev_pct": "+8.2%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "bet_800c8ed0df8c82f1f022eeb29bb69424_UNDER_25",
@@ -919,15 +941,15 @@
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
       "odd": 1.83,
-      "model_prob": "57.1%",
-      "ev_pct": "+4.6%",
-      "stake": "1.38 €",
+      "model_prob": "57.8%",
+      "ev_pct": "+5.8%",
+      "stake": "1.75 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
-      "engine_version": "v1_moments_pinnacle"
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "acca_dupla_bet_b9a6e597fd5_bet_6fb54fd5b3d",
@@ -948,7 +970,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -970,7 +992,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -992,7 +1014,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1014,7 +1036,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1036,29 +1058,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
-      "engine_version": "v1_moments_pinnacle"
-    },
-    {
-      "bet_id": "bet_b63aef4291a066e32644e591c19a235a_1X2_AWAY",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "Premier League (Inglaterra)",
-      "match": "Leeds United vs Crystal Palace",
-      "time": "2026-09-20 14:00",
-      "is_today": false,
-      "market": "Vitória Crystal Palace",
-      "selection": "Vitória Crystal Palace",
-      "bookmaker": "Pinnacle",
-      "odd": 3.54,
-      "model_prob": "32.6%",
-      "ev_pct": "+15.4%",
-      "stake": "1.51 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1080,7 +1080,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1102,7 +1102,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1124,8 +1124,30 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
+    },
+    {
+      "bet_id": "bet_b63aef4291a066e32644e591c19a235a_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Leeds United vs Crystal Palace",
+      "time": "2026-09-20 14:00",
+      "is_today": false,
+      "market": "Vitória Crystal Palace",
+      "selection": "Vitória Crystal Palace",
+      "bookmaker": "Pinnacle",
+      "odd": 4.62,
+      "model_prob": "23.7%",
+      "ev_pct": "+9.4%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "bet_a4b92030b5b48bceea0474e4d8066355_1X2_HOME",
@@ -1146,7 +1168,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1161,15 +1183,15 @@
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
       "odd": 1.89,
-      "model_prob": "58.2%",
-      "ev_pct": "+10.0%",
-      "stake": "2.81 €",
+      "model_prob": "56.4%",
+      "ev_pct": "+6.5%",
+      "stake": "1.84 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
-      "engine_version": "v1_moments_pinnacle"
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "bet_68098e30e20a258d5ab0486c5ce437d2_1X2_HOME",
@@ -1190,7 +1212,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1212,7 +1234,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1234,7 +1256,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1256,7 +1278,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1271,15 +1293,37 @@
       "selection": "Mais de 2.5",
       "bookmaker": "Pinnacle",
       "odd": 1.96,
-      "model_prob": "56.7%",
-      "ev_pct": "+11.1%",
-      "stake": "2.90 €",
+      "model_prob": "56.6%",
+      "ev_pct": "+10.9%",
+      "stake": "2.83 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
-      "engine_version": "v1_moments_pinnacle"
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_e5ae4558a97710adb3d9bb4bc6416ba9_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Estoril vs Casa Pia",
+      "time": "2026-09-20 18:00",
+      "is_today": false,
+      "market": "Vitória Estoril",
+      "selection": "Vitória Estoril",
+      "bookmaker": "Pinnacle",
+      "odd": 1.79,
+      "model_prob": "61.3%",
+      "ev_pct": "+9.7%",
+      "stake": "3.07 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "bet_d05fb9feb5722b2f2cedb8bbe7c33a1d_1X2_HOME",
@@ -1300,7 +1344,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1322,29 +1366,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
-      "engine_version": "v1_moments_pinnacle"
-    },
-    {
-      "bet_id": "bet_908d70dec433245627941151e5ab8ecc_1X2_HOME",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "Liga Portugal (Primeira Liga)",
-      "match": "FC Porto vs Benfica",
-      "time": "2026-09-20 20:30",
-      "is_today": false,
-      "market": "Vitória FC Porto",
-      "selection": "Vitória FC Porto",
-      "bookmaker": "Pinnacle",
-      "odd": 2.73,
-      "model_prob": "38.1%",
-      "ev_pct": "+4.0%",
-      "stake": "1.00 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1366,8 +1388,30 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
+    },
+    {
+      "bet_id": "bet_908d70dec433245627941151e5ab8ecc_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "FC Porto vs Benfica",
+      "time": "2026-09-20 20:30",
+      "is_today": false,
+      "market": "Vitória FC Porto",
+      "selection": "Vitória FC Porto",
+      "bookmaker": "Pinnacle",
+      "odd": 2.63,
+      "model_prob": "41.0%",
+      "ev_pct": "+7.8%",
+      "stake": "1.20 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 77.12,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
       "bet_id": "bet_02e6c0ccb11bb7ce78989ce49d67110b_1X2_HOME",
@@ -1388,7 +1432,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1410,7 +1454,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1432,7 +1476,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1454,7 +1498,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1476,7 +1520,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 78.12,
+      "running_balance": 77.12,
       "engine_version": "v1_moments_pinnacle"
     }
   ]
