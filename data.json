@@ -1,22 +1,22 @@
 {
-  "updated_at": "2026-09-20 18:15:53",
+  "updated_at": "2026-09-20 22:15:53",
   "accounts": {
     "5055061775": {
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 989.69,
-      "equity": 992.28,
+      "equity": 992.6,
       "closed_pl": -10.309999999999988,
-      "total_pl": -7.720000000000027,
-      "roi_pct": -0.7720000000000027,
-      "floating_pl": 2.59,
+      "total_pl": -7.399999999999977,
+      "roi_pct": -0.7399999999999977,
+      "floating_pl": 2.91,
       "open_count": 2,
       "trades": [
         {
           "pos_id": 58534201594,
           "time_raw": 1789772065,
-          "time": "2026-09-20 16:54",
+          "time": "2026-09-18 20:54",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "BUY",
@@ -30,8 +30,8 @@
           "status": "FECHADA",
           "ticket": "58156758569",
           "magic": 666151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 989.69,
           "running_equity": 989.69
@@ -39,7 +39,7 @@
         {
           "pos_id": 58525817627,
           "time_raw": 1789745629,
-          "time": "2026-09-20 09:33",
+          "time": "2026-09-18 13:33",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -53,14 +53,14 @@
           "status": "FECHADA",
           "ticket": "58148808288",
           "magic": 555151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 1007.76,
           "running_equity": 1007.76
         },
         {
-          "time": "2026-09-20 09:15",
+          "time": "2026-09-18 13:15",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "SELL",
@@ -69,21 +69,21 @@
           "price_close": null,
           "sl": 66.882,
           "tp": null,
-          "profit": 4.89,
-          "profit_str": "+4.89 EUR",
+          "profit": 4.88,
+          "profit_str": "+4.88 EUR",
           "running_balance": 989.69,
-          "running_equity": 992.28,
+          "running_equity": 992.6,
           "status": "ABERTA",
           "ticket": "58527564859",
           "magic": 666250,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "time_raw": 1789744500
         },
         {
           "pos_id": 58524432216,
           "time_raw": 1789741693,
-          "time": "2026-09-20 08:28",
+          "time": "2026-09-18 12:28",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -97,14 +97,14 @@
           "status": "FECHADA",
           "ticket": "58147308023",
           "magic": 888151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 1002.32,
           "running_equity": 1002.32
         },
         {
-          "time": "2026-09-20 08:00",
+          "time": "2026-09-18 12:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -113,21 +113,21 @@
           "price_close": null,
           "sl": 1.14995,
           "tp": 1.14294,
-          "profit": -2.3,
-          "profit_str": "-2.30 EUR",
+          "profit": -1.97,
+          "profit_str": "-1.97 EUR",
           "running_balance": 989.69,
-          "running_equity": 992.28,
+          "running_equity": 992.6,
           "status": "ABERTA",
           "ticket": "58526051636",
           "magic": 888123,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "time_raw": 1789740000
         },
         {
           "pos_id": 58519936244,
           "time_raw": 1789739107,
-          "time": "2026-09-20 07:45",
+          "time": "2026-09-18 11:45",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -141,8 +141,8 @@
           "status": "FECHADA",
           "ticket": "58146487863",
           "magic": 555300,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 994.91,
           "running_equity": 994.91
@@ -150,7 +150,7 @@
         {
           "pos_id": 58522095829,
           "time_raw": 1789733897,
-          "time": "2026-09-20 06:18",
+          "time": "2026-09-18 10:18",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -164,8 +164,8 @@
           "status": "FECHADA",
           "ticket": "58145167416",
           "magic": 666250,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 998.1,
           "running_equity": 998.1
@@ -173,7 +173,7 @@
         {
           "pos_id": 58522534875,
           "time_raw": 1789728486,
-          "time": "2026-09-20 04:48",
+          "time": "2026-09-18 08:48",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -187,8 +187,8 @@
           "status": "FECHADA",
           "ticket": "58143676124",
           "magic": 888151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 979.94,
           "running_equity": 979.94
@@ -196,7 +196,7 @@
         {
           "pos_id": 58519935970,
           "time_raw": 1789722155,
-          "time": "2026-09-20 03:02",
+          "time": "2026-09-18 07:02",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "BUY",
@@ -210,8 +210,8 @@
           "status": "FECHADA",
           "ticket": "58142096332",
           "magic": 777151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 984.82,
           "running_equity": 984.82
@@ -219,7 +219,7 @@
         {
           "pos_id": 58519935924,
           "time_raw": 1789722037,
-          "time": "2026-09-20 03:00",
+          "time": "2026-09-18 07:00",
           "symbol": "XAGUSD",
           "bot": "ORB XAGUSD M15",
           "type": "BUY",
@@ -233,8 +233,8 @@
           "status": "FECHADA",
           "ticket": "58142026574",
           "magic": 666300,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 964.89,
           "running_equity": 964.89
@@ -242,7 +242,7 @@
         {
           "pos_id": 58519935869,
           "time_raw": 1789721216,
-          "time": "2026-09-20 02:46",
+          "time": "2026-09-18 06:46",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -256,8 +256,8 @@
           "status": "FECHADA",
           "ticket": "58141825236",
           "magic": 666250,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 939.45,
           "running_equity": 939.45
@@ -265,7 +265,7 @@
         {
           "pos_id": 58514160626,
           "time_raw": 1789714840,
-          "time": "2026-09-20 01:00",
+          "time": "2026-09-18 05:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -279,8 +279,8 @@
           "status": "FECHADA",
           "ticket": "58140705561",
           "magic": 888151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "week_key": "2026-W38",
+          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 925.03,
           "running_equity": 925.03
@@ -288,7 +288,7 @@
         {
           "pos_id": 58508978690,
           "time_raw": 1789704096,
-          "time": "2026-09-19 22:01",
+          "time": "2026-09-18 02:01",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -311,7 +311,7 @@
         {
           "pos_id": 58513057212,
           "time_raw": 1789673731,
-          "time": "2026-09-19 13:35",
+          "time": "2026-09-17 17:35",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -334,7 +334,7 @@
         {
           "pos_id": 58507864588,
           "time_raw": 1789658698,
-          "time": "2026-09-19 09:24",
+          "time": "2026-09-17 13:24",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -357,7 +357,7 @@
         {
           "pos_id": 58502091951,
           "time_raw": 1789651115,
-          "time": "2026-09-19 07:18",
+          "time": "2026-09-17 11:18",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -380,7 +380,7 @@
         {
           "pos_id": 58502825751,
           "time_raw": 1789642379,
-          "time": "2026-09-19 04:52",
+          "time": "2026-09-17 08:52",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -403,7 +403,7 @@
         {
           "pos_id": 58497287600,
           "time_raw": 1789640057,
-          "time": "2026-09-19 04:14",
+          "time": "2026-09-17 08:14",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -426,7 +426,7 @@
         {
           "pos_id": 58481837531,
           "time_raw": 1789594230,
-          "time": "2026-09-18 15:30",
+          "time": "2026-09-16 19:30",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -449,7 +449,7 @@
         {
           "pos_id": 58478671435,
           "time_raw": 1789592485,
-          "time": "2026-09-18 15:01",
+          "time": "2026-09-16 19:01",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -472,7 +472,7 @@
         {
           "pos_id": 58489451623,
           "time_raw": 1789592404,
-          "time": "2026-09-18 15:00",
+          "time": "2026-09-16 19:00",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -495,7 +495,7 @@
         {
           "pos_id": 58483943063,
           "time_raw": 1789584443,
-          "time": "2026-09-18 12:47",
+          "time": "2026-09-16 16:47",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -518,7 +518,7 @@
         {
           "pos_id": 58478671436,
           "time_raw": 1789570923,
-          "time": "2026-09-18 09:02",
+          "time": "2026-09-16 13:02",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -541,7 +541,7 @@
         {
           "pos_id": 58480004603,
           "time_raw": 1789568062,
-          "time": "2026-09-18 08:14",
+          "time": "2026-09-16 12:14",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -564,7 +564,7 @@
         {
           "pos_id": 58475943962,
           "time_raw": 1789548736,
-          "time": "2026-09-18 02:52",
+          "time": "2026-09-16 06:52",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -587,7 +587,7 @@
         {
           "pos_id": 58472541418,
           "time_raw": 1789539124,
-          "time": "2026-09-18 00:12",
+          "time": "2026-09-16 04:12",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -610,7 +610,7 @@
         {
           "pos_id": 58468372617,
           "time_raw": 1789533627,
-          "time": "2026-09-17 22:40",
+          "time": "2026-09-16 02:40",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -633,7 +633,7 @@
         {
           "pos_id": 58467726829,
           "time_raw": 1789528312,
-          "time": "2026-09-17 21:11",
+          "time": "2026-09-16 01:11",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -656,7 +656,7 @@
         {
           "pos_id": 58467401291,
           "time_raw": 1789506902,
-          "time": "2026-09-17 15:15",
+          "time": "2026-09-15 19:15",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "SELL",
@@ -679,7 +679,7 @@
         {
           "pos_id": 58461775668,
           "time_raw": 1789506449,
-          "time": "2026-09-17 15:07",
+          "time": "2026-09-15 19:07",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -702,7 +702,7 @@
         {
           "pos_id": 58463037157,
           "time_raw": 1789492911,
-          "time": "2026-09-17 11:21",
+          "time": "2026-09-15 15:21",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -725,7 +725,7 @@
         {
           "pos_id": 58461470376,
           "time_raw": 1789487741,
-          "time": "2026-09-17 09:55",
+          "time": "2026-09-15 13:55",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "BUY",
@@ -748,7 +748,7 @@
         {
           "pos_id": 58460368889,
           "time_raw": 1789486213,
-          "time": "2026-09-17 09:30",
+          "time": "2026-09-15 13:30",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -771,7 +771,7 @@
         {
           "pos_id": 58456644759,
           "time_raw": 1789477889,
-          "time": "2026-09-17 07:11",
+          "time": "2026-09-15 11:11",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "SELL",
@@ -794,7 +794,7 @@
         {
           "pos_id": 58454756975,
           "time_raw": 1789470653,
-          "time": "2026-09-17 05:10",
+          "time": "2026-09-15 09:10",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -817,7 +817,7 @@
         {
           "pos_id": 58454993030,
           "time_raw": 1789464287,
-          "time": "2026-09-17 03:24",
+          "time": "2026-09-15 07:24",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -840,7 +840,7 @@
         {
           "pos_id": 58389295507,
           "time_raw": 1789394700,
-          "time": "2026-09-16 08:05",
+          "time": "2026-09-14 12:05",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -863,7 +863,7 @@
         {
           "pos_id": 58412643244,
           "time_raw": 1789390926,
-          "time": "2026-09-16 07:02",
+          "time": "2026-09-14 11:02",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY H1",
           "type": "SELL",
@@ -886,7 +886,7 @@
         {
           "pos_id": 58409623268,
           "time_raw": 1789140616,
-          "time": "2026-09-13 09:30",
+          "time": "2026-09-11 13:30",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -900,8 +900,8 @@
           "status": "FECHADA",
           "ticket": "58041415699",
           "magic": 555151,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "week_key": "2026-W37",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 872.8,
           "running_equity": 872.8
@@ -909,7 +909,7 @@
         {
           "pos_id": 58408589965,
           "time_raw": 1789133181,
-          "time": "2026-09-13 07:26",
+          "time": "2026-09-11 11:26",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -923,8 +923,8 @@
           "status": "FECHADA",
           "ticket": "58038560316",
           "magic": 888151,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
+          "week_key": "2026-W37",
+          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 868.47,
           "running_equity": 868.47
@@ -932,7 +932,7 @@
         {
           "pos_id": 58398897603,
           "time_raw": 1789078811,
-          "time": "2026-09-12 16:20",
+          "time": "2026-09-10 20:20",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -955,7 +955,7 @@
         {
           "pos_id": 58355858969,
           "time_raw": 1789054525,
-          "time": "2026-09-12 09:35",
+          "time": "2026-09-10 13:35",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "BUY",
@@ -978,7 +978,7 @@
         {
           "pos_id": 58351607142,
           "time_raw": 1789054354,
-          "time": "2026-09-12 09:32",
+          "time": "2026-09-10 13:32",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "BUY",
@@ -1001,7 +1001,7 @@
         {
           "pos_id": 58385535029,
           "time_raw": 1789040562,
-          "time": "2026-09-12 05:42",
+          "time": "2026-09-10 09:42",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -1024,7 +1024,7 @@
         {
           "pos_id": 58349985748,
           "time_raw": 1788976620,
-          "time": "2026-09-11 11:57",
+          "time": "2026-09-09 15:57",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -1047,7 +1047,7 @@
         {
           "pos_id": 58352798233,
           "time_raw": 1788904201,
-          "time": "2026-09-10 15:50",
+          "time": "2026-09-08 19:50",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1070,7 +1070,7 @@
         {
           "pos_id": 58351606688,
           "time_raw": 1788891267,
-          "time": "2026-09-10 12:14",
+          "time": "2026-09-08 16:14",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -1093,7 +1093,7 @@
         {
           "pos_id": 58352361784,
           "time_raw": 1788887662,
-          "time": "2026-09-10 11:14",
+          "time": "2026-09-08 15:14",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -1116,7 +1116,7 @@
         {
           "pos_id": 58315257675,
           "time_raw": 1788882562,
-          "time": "2026-09-10 09:49",
+          "time": "2026-09-08 13:49",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -1139,7 +1139,7 @@
         {
           "pos_id": 58344111918,
           "time_raw": 1788880567,
-          "time": "2026-09-10 09:16",
+          "time": "2026-09-08 13:16",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1162,7 +1162,7 @@
         {
           "pos_id": 58344936745,
           "time_raw": 1788875432,
-          "time": "2026-09-10 07:50",
+          "time": "2026-09-08 11:50",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1185,7 +1185,7 @@
         {
           "pos_id": 58344111808,
           "time_raw": 1788859210,
-          "time": "2026-09-10 03:20",
+          "time": "2026-09-08 07:20",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -1208,7 +1208,7 @@
         {
           "pos_id": 58343808806,
           "time_raw": 1788859204,
-          "time": "2026-09-10 03:20",
+          "time": "2026-09-08 07:20",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -1231,7 +1231,7 @@
         {
           "pos_id": 58330814665,
           "time_raw": 1788803233,
-          "time": "2026-09-09 11:47",
+          "time": "2026-09-07 15:47",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1254,7 +1254,7 @@
         {
           "pos_id": 58317654674,
           "time_raw": 1788779796,
-          "time": "2026-09-09 05:16",
+          "time": "2026-09-07 09:16",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -1277,7 +1277,7 @@
         {
           "pos_id": 58313352383,
           "time_raw": 1788779699,
-          "time": "2026-09-09 05:14",
+          "time": "2026-09-07 09:14",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -1300,7 +1300,7 @@
         {
           "pos_id": 58326035151,
           "time_raw": 1788773763,
-          "time": "2026-09-09 03:36",
+          "time": "2026-09-07 07:36",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -1323,7 +1323,7 @@
         {
           "pos_id": 58324596450,
           "time_raw": 1788771611,
-          "time": "2026-09-09 03:00",
+          "time": "2026-09-07 07:00",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -1346,7 +1346,7 @@
         {
           "pos_id": 58313350615,
           "time_raw": 1788545691,
-          "time": "2026-09-06 12:14",
+          "time": "2026-09-04 16:14",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -1360,8 +1360,8 @@
           "status": "FECHADA",
           "ticket": "57946997592",
           "magic": 777123,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
+          "week_key": "2026-W36",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 837.04,
           "running_equity": 837.04
@@ -1369,7 +1369,7 @@
         {
           "pos_id": 58310530254,
           "time_raw": 1788535802,
-          "time": "2026-09-06 09:30",
+          "time": "2026-09-04 13:30",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -1383,8 +1383,8 @@
           "status": "FECHADA",
           "ticket": "57941460523",
           "magic": 444151,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
+          "week_key": "2026-W36",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 881.75,
           "running_equity": 881.75
@@ -1392,7 +1392,7 @@
         {
           "pos_id": 58306832315,
           "time_raw": 1788523991,
-          "time": "2026-09-06 06:13",
+          "time": "2026-09-04 10:13",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "BUY",
@@ -1406,8 +1406,8 @@
           "status": "FECHADA",
           "ticket": "57938231431",
           "magic": 777151,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
+          "week_key": "2026-W36",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 886.29,
           "running_equity": 886.29
@@ -1415,7 +1415,7 @@
         {
           "pos_id": 58305590653,
           "time_raw": 1788519104,
-          "time": "2026-09-06 04:51",
+          "time": "2026-09-04 08:51",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -1429,8 +1429,8 @@
           "status": "FECHADA",
           "ticket": "57937141341",
           "magic": 888151,
-          "week_key": "2026-W37",
-          "week_label": "Semana 37 (07/Sep - 11/Sep 2026)",
+          "week_key": "2026-W36",
+          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
           "month_key": "2026-09",
           "running_balance": 900.65,
           "running_equity": 900.65
@@ -1438,7 +1438,7 @@
         {
           "pos_id": 58293604827,
           "time_raw": 1788459014,
-          "time": "2026-09-05 12:10",
+          "time": "2026-09-03 16:10",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -1461,7 +1461,7 @@
         {
           "pos_id": 58290798522,
           "time_raw": 1788445108,
-          "time": "2026-09-05 08:18",
+          "time": "2026-09-03 12:18",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1484,7 +1484,7 @@
         {
           "pos_id": 58271433291,
           "time_raw": 1788361658,
-          "time": "2026-09-04 09:07",
+          "time": "2026-09-02 13:07",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -1507,7 +1507,7 @@
         {
           "pos_id": 58269728842,
           "time_raw": 1788359732,
-          "time": "2026-09-04 08:35",
+          "time": "2026-09-02 12:35",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1530,7 +1530,7 @@
         {
           "pos_id": 58269728642,
           "time_raw": 1788355550,
-          "time": "2026-09-04 07:25",
+          "time": "2026-09-02 11:25",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1553,7 +1553,7 @@
         {
           "pos_id": 58244799383,
           "time_raw": 1788335230,
-          "time": "2026-09-04 01:47",
+          "time": "2026-09-02 05:47",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -1576,7 +1576,7 @@
         {
           "pos_id": 58256926201,
           "time_raw": 1788321232,
-          "time": "2026-09-03 21:53",
+          "time": "2026-09-02 01:53",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1599,7 +1599,7 @@
         {
           "pos_id": 58256632253,
           "time_raw": 1788296585,
-          "time": "2026-09-03 15:03",
+          "time": "2026-09-01 19:03",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1622,7 +1622,7 @@
         {
           "pos_id": 58256318296,
           "time_raw": 1788296575,
-          "time": "2026-09-03 15:02",
+          "time": "2026-09-01 19:02",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -1645,7 +1645,7 @@
         {
           "pos_id": 58248657244,
           "time_raw": 1788278746,
-          "time": "2026-09-03 10:05",
+          "time": "2026-09-01 14:05",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1668,7 +1668,7 @@
         {
           "pos_id": 58232754751,
           "time_raw": 1788224400,
-          "time": "2026-09-02 19:00",
+          "time": "2026-08-31 23:00",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1684,14 +1684,14 @@
           "magic": 777151,
           "week_key": "2026-W36",
           "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
-          "month_key": "2026-09",
+          "month_key": "2026-08",
           "running_balance": 892.13,
           "running_equity": 892.13
         },
         {
           "pos_id": 58227045244,
           "time_raw": 1788198397,
-          "time": "2026-09-02 11:46",
+          "time": "2026-08-31 15:46",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1707,14 +1707,14 @@
           "magic": 555151,
           "week_key": "2026-W36",
           "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
-          "month_key": "2026-09",
+          "month_key": "2026-08",
           "running_balance": 910.97,
           "running_equity": 910.97
         },
         {
           "pos_id": 58231434446,
           "time_raw": 1788197890,
-          "time": "2026-09-02 11:38",
+          "time": "2026-08-31 15:38",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -1730,14 +1730,14 @@
           "magic": 444151,
           "week_key": "2026-W36",
           "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
-          "month_key": "2026-09",
+          "month_key": "2026-08",
           "running_balance": 914.9,
           "running_equity": 914.9
         },
         {
           "pos_id": 58224593966,
           "time_raw": 1788171712,
-          "time": "2026-09-02 04:21",
+          "time": "2026-08-31 08:21",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1753,14 +1753,14 @@
           "magic": 888151,
           "week_key": "2026-W36",
           "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
-          "month_key": "2026-09",
+          "month_key": "2026-08",
           "running_balance": 919.24,
           "running_equity": 919.24
         },
         {
           "pos_id": 58202985215,
           "time_raw": 1787936727,
-          "time": "2026-08-30 11:05",
+          "time": "2026-08-28 15:05",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "BUY",
@@ -1774,8 +1774,8 @@
           "status": "FECHADA",
           "ticket": "57841913727",
           "magic": 777123,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 958.47,
           "running_equity": 958.47
@@ -1783,7 +1783,7 @@
         {
           "pos_id": 58206136531,
           "time_raw": 1787936727,
-          "time": "2026-08-30 11:05",
+          "time": "2026-08-28 15:05",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "BUY",
@@ -1797,8 +1797,8 @@
           "status": "FECHADA",
           "ticket": "57841914045",
           "magic": 777123,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 923.51,
           "running_equity": 923.51
@@ -1806,7 +1806,7 @@
         {
           "pos_id": 58198905757,
           "time_raw": 1787936670,
-          "time": "2026-08-30 11:04",
+          "time": "2026-08-28 15:04",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -1820,8 +1820,8 @@
           "status": "FECHADA",
           "ticket": "57841819144",
           "magic": 555123,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 993.55,
           "running_equity": 993.55
@@ -1829,7 +1829,7 @@
         {
           "pos_id": 58196382882,
           "time_raw": 1787936627,
-          "time": "2026-08-30 11:03",
+          "time": "2026-08-28 15:03",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "BUY",
@@ -1843,8 +1843,8 @@
           "status": "FECHADA",
           "ticket": "57841752587",
           "magic": 888123,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 988.27,
           "running_equity": 988.27
@@ -1852,7 +1852,7 @@
         {
           "pos_id": 58206506169,
           "time_raw": 1787936431,
-          "time": "2026-08-30 11:00",
+          "time": "2026-08-28 15:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1866,8 +1866,8 @@
           "status": "FECHADA",
           "ticket": "57841449556",
           "magic": 888151,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 992.72,
           "running_equity": 992.72
@@ -1875,7 +1875,7 @@
         {
           "pos_id": 58204813693,
           "time_raw": 1787935009,
-          "time": "2026-08-30 10:36",
+          "time": "2026-08-28 14:36",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -1889,8 +1889,8 @@
           "status": "FECHADA",
           "ticket": "57840560682",
           "magic": 777151,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 997.35,
           "running_equity": 997.35
@@ -1898,7 +1898,7 @@
         {
           "pos_id": 58205407797,
           "time_raw": 1787932651,
-          "time": "2026-08-30 09:57",
+          "time": "2026-08-28 13:57",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1912,8 +1912,8 @@
           "status": "FECHADA",
           "ticket": "57839628784",
           "magic": 888151,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1009.47,
           "running_equity": 1009.47
@@ -1921,7 +1921,7 @@
         {
           "pos_id": 58200843297,
           "time_raw": 1787931222,
-          "time": "2026-08-30 09:33",
+          "time": "2026-08-28 13:33",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1935,8 +1935,8 @@
           "status": "FECHADA",
           "ticket": "57839094437",
           "magic": 555151,
-          "week_key": "2026-W36",
-          "week_label": "Semana 36 (31/Aug - 04/Sep 2026)",
+          "week_key": "2026-W35",
+          "week_label": "Semana 35 (24/Aug - 28/Aug 2026)",
           "month_key": "2026-08",
           "running_balance": 1014.41,
           "running_equity": 1014.41
@@ -1944,7 +1944,7 @@
         {
           "pos_id": 58181700764,
           "time_raw": 1787828923,
-          "time": "2026-08-29 05:08",
+          "time": "2026-08-27 09:08",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -1967,7 +1967,7 @@
         {
           "pos_id": 58180672074,
           "time_raw": 1787828922,
-          "time": "2026-08-29 05:08",
+          "time": "2026-08-27 09:08",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -1990,7 +1990,7 @@
         {
           "pos_id": 58179979323,
           "time_raw": 1787826487,
-          "time": "2026-08-29 04:28",
+          "time": "2026-08-27 08:28",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -2125,33 +2125,33 @@
         "week": {
           "bots": [
             "Donchian XAGUSD M15",
-            "ORB XAGUSD M15",
-            "FinBot Gold XAUUSD M15",
             "FinBot GBPUSD M15",
-            "FinBot EURUSD M15"
+            "FinBot Gold XAUUSD M15",
+            "ORB XAGUSD M15",
+            "ORB GBPUSD M15"
           ],
           "profits": [
-            32.58,
+            81.32,
+            38.67,
+            27.32,
             25.44,
-            19.93,
-            5.44,
-            -1.78
+            3.3
           ]
         },
         "month": {
           "bots": [
             "Donchian XAGUSD M15",
+            "FinBot Gold XAUUSD M15",
             "FinBot GBPUSD M15",
             "ORB XAGUSD M15",
-            "FinBot Gold XAUUSD M15",
             "FinBot EURUSD M15"
           ],
           "profits": [
             81.32,
-            36.03,
+            41.59,
+            39.96,
             25.44,
-            22.75,
-            8.38
+            12.65
           ]
         },
         "all": {
