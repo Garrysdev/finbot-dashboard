@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-20 22:15:53",
+  "updated_at": "2026-09-21 02:07:02",
   "accounts": {
     "5055061775": {
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 989.69,
-      "equity": 992.6,
-      "closed_pl": -10.309999999999988,
-      "total_pl": -7.399999999999977,
-      "roi_pct": -0.7399999999999977,
-      "floating_pl": 2.91,
-      "open_count": 2,
+      "balance": 971.67,
+      "equity": 970.29,
+      "closed_pl": -28.329999999999988,
+      "total_pl": -29.710000000000036,
+      "roi_pct": -2.9710000000000036,
+      "floating_pl": -1.38,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 58527564859,
+          "time_raw": 1789963574,
+          "time": "2026-09-21 02:06",
+          "symbol": "XAGUSD",
+          "bot": "Donchian XAGUSD M15",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 66.468,
+          "price_close": 66.882,
+          "sl": null,
+          "tp": null,
+          "profit": -18.02,
+          "profit_str": "-18.02 EUR",
+          "status": "FECHADA",
+          "ticket": "58158545760",
+          "magic": 666250,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 971.67,
+          "running_equity": 971.67
+        },
         {
           "pos_id": 58534201594,
           "time_raw": 1789772065,
@@ -60,27 +83,6 @@
           "running_equity": 1007.76
         },
         {
-          "time": "2026-09-18 13:15",
-          "symbol": "XAGUSD",
-          "bot": "Donchian XAGUSD M15",
-          "type": "SELL",
-          "volume": 0.01,
-          "price_open": 66.468,
-          "price_close": null,
-          "sl": 66.882,
-          "tp": null,
-          "profit": 4.88,
-          "profit_str": "+4.88 EUR",
-          "running_balance": 989.69,
-          "running_equity": 992.6,
-          "status": "ABERTA",
-          "ticket": "58527564859",
-          "magic": 666250,
-          "week_key": "2026-W38",
-          "week_label": "Semana 38 (14/Sep - 18/Sep 2026)",
-          "time_raw": 1789744500
-        },
-        {
           "pos_id": 58524432216,
           "time_raw": 1789741693,
           "time": "2026-09-18 12:28",
@@ -113,10 +115,10 @@
           "price_close": null,
           "sl": 1.14995,
           "tp": 1.14294,
-          "profit": -1.97,
-          "profit_str": "-1.97 EUR",
-          "running_balance": 989.69,
-          "running_equity": 992.6,
+          "profit": -1.38,
+          "profit_str": "-1.38 EUR",
+          "running_balance": 971.67,
+          "running_equity": 970.29,
           "status": "ABERTA",
           "ticket": "58526051636",
           "magic": 888123,
@@ -2015,11 +2017,11 @@
         {
           "bot": "Donchian XAGUSD M15",
           "magic": 666250,
-          "trades": 8,
+          "trades": 9,
           "wins": 6,
-          "win_rate": 75.0,
-          "avg_profit": 10.17,
-          "total_profit": 81.32
+          "win_rate": 66.7,
+          "avg_profit": 7.03,
+          "total_profit": 63.3
         },
         {
           "bot": "FinBot GBPUSD M15",
@@ -2124,18 +2126,10 @@
       "top_5": {
         "week": {
           "bots": [
-            "Donchian XAGUSD M15",
-            "FinBot GBPUSD M15",
-            "FinBot Gold XAUUSD M15",
-            "ORB XAGUSD M15",
-            "ORB GBPUSD M15"
+            "Donchian XAGUSD M15"
           ],
           "profits": [
-            81.32,
-            38.67,
-            27.32,
-            25.44,
-            3.3
+            -18.02
           ]
         },
         "month": {
@@ -2147,7 +2141,7 @@
             "FinBot EURUSD M15"
           ],
           "profits": [
-            81.32,
+            63.3,
             41.59,
             39.96,
             25.44,
@@ -2163,7 +2157,7 @@
             "ORB GBPUSD M15"
           ],
           "profits": [
-            81.32,
+            63.3,
             38.67,
             27.32,
             25.44,
