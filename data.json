@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22 22:15:53",
+  "updated_at": "2026-09-22 23:01:17",
   "accounts": {
     "62144409": {
       "login": 62144409,
@@ -461,14 +461,37 @@
       "login": 5055061775,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 975.2,
-      "equity": 969.76,
-      "closed_pl": -24.799999999999986,
-      "total_pl": -30.24000000000001,
-      "roi_pct": -3.024000000000001,
-      "floating_pl": -5.44,
-      "open_count": 2,
+      "balance": 938.33,
+      "equity": 940.33,
+      "closed_pl": -61.66999999999999,
+      "total_pl": -59.66999999999996,
+      "roi_pct": -5.966999999999996,
+      "floating_pl": 2.0,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 58540363834,
+          "time_raw": 1790125205,
+          "time": "2026-09-22 23:00",
+          "symbol": "XAUUSD",
+          "bot": "FinBot Gold XAUUSD H1",
+          "type": "SELL",
+          "volume": 0.01,
+          "price_open": 4355.75,
+          "price_close": 4397.87,
+          "sl": null,
+          "tp": null,
+          "profit": -36.87,
+          "profit_str": "-36.87 EUR",
+          "status": "FECHADA",
+          "ticket": "58199694864",
+          "magic": 777123,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 938.33,
+          "running_equity": 938.33
+        },
         {
           "pos_id": 58526051636,
           "time_raw": 1790103789,
@@ -525,34 +548,13 @@
           "price_close": null,
           "sl": 156.388,
           "tp": 159.044,
-          "profit": 1.99,
-          "profit_str": "+1.99 EUR",
-          "running_balance": 975.2,
-          "running_equity": 969.76,
+          "profit": 2.0,
+          "profit_str": "+2.00 EUR",
+          "running_balance": 938.33,
+          "running_equity": 940.33,
           "status": "ABERTA",
           "ticket": "58540363772",
           "magic": 444123,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
-          "time_raw": 1789977600
-        },
-        {
-          "time": "2026-09-21 06:00",
-          "symbol": "XAUUSD",
-          "bot": "FinBot Gold XAUUSD H1",
-          "type": "SELL",
-          "volume": 0.01,
-          "price_open": 4355.75,
-          "price_close": null,
-          "sl": 4397.87,
-          "tp": 4204.32,
-          "profit": -7.43,
-          "profit_str": "-7.43 EUR",
-          "running_balance": 975.2,
-          "running_equity": 969.76,
-          "status": "ABERTA",
-          "ticket": "58540363834",
-          "magic": 777123,
           "week_key": "2026-W39",
           "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
           "time_raw": 1789977600
@@ -2639,11 +2641,11 @@
         {
           "bot": "FinBot Gold XAUUSD H1",
           "magic": 777123,
-          "trades": 6,
+          "trades": 7,
           "wins": 1,
-          "win_rate": 16.7,
-          "avg_profit": -22.42,
-          "total_profit": -134.52
+          "win_rate": 14.3,
+          "avg_profit": -24.48,
+          "total_profit": -171.39
         }
       ],
       "top_5": {
@@ -2651,12 +2653,14 @@
           "bots": [
             "FinBot EURUSD H1",
             "FinBot GBPUSD M15",
-            "Donchian XAGUSD M15"
+            "Donchian XAGUSD M15",
+            "FinBot Gold XAUUSD H1"
           ],
           "profits": [
             7.71,
             -4.18,
-            -18.02
+            -18.02,
+            -36.87
           ]
         },
         "month": {
