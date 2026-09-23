@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-09-23 05:01:16",
+  "updated_at": "2026-09-23 05:26:01",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 48299.37,
-      "equity": 48251.64,
-      "closed_pl": -1700.63,
-      "total_pl": -1748.3600000000006,
-      "roi_pct": -3.496720000000001,
-      "floating_pl": -47.73,
-      "open_count": 4,
+      "balance": 48048.02,
+      "equity": 47872.94,
+      "closed_pl": -1951.98,
+      "total_pl": -2127.0599999999977,
+      "roi_pct": -4.254119999999995,
+      "floating_pl": -175.08,
+      "open_count": 3,
       "trades": [
+        {
+          "pos_id": 91066953,
+          "time_raw": 1790148356,
+          "time": "2026-09-23 05:25",
+          "symbol": "USDJPY",
+          "bot": "Donchian USDJPY M15",
+          "type": "BUY",
+          "volume": 3.63,
+          "price_open": 157.677,
+          "price_close": 157.557,
+          "sl": null,
+          "tp": null,
+          "profit": -260.79,
+          "profit_str": "-260.79 EUR",
+          "status": "FECHADA",
+          "ticket": "60677042",
+          "magic": 444250,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 48066.35,
+          "running_equity": 48066.35
+        },
         {
           "time": "2026-09-23 05:00",
           "symbol": "USDJPY",
@@ -23,10 +46,10 @@
           "price_close": null,
           "sl": 157.403,
           "tp": 157.826,
-          "profit": -14.12,
-          "profit_str": "-14.12 EUR",
-          "running_balance": 48299.37,
-          "running_equity": 48251.64,
+          "profit": -106.84,
+          "profit_str": "-106.84 EUR",
+          "running_balance": 48048.02,
+          "running_equity": 47872.94,
           "status": "ABERTA",
           "ticket": "91066975",
           "magic": 444300,
@@ -44,10 +67,10 @@
           "price_close": null,
           "sl": 1.14449,
           "tp": 1.1418300000000001,
-          "profit": -1.37,
-          "profit_str": "-1.37 EUR",
-          "running_balance": 48299.37,
-          "running_equity": 48251.64,
+          "profit": -20.47,
+          "profit_str": "-20.47 EUR",
+          "running_balance": 48048.02,
+          "running_equity": 47872.94,
           "status": "ABERTA",
           "ticket": "91066976",
           "magic": 888300,
@@ -65,34 +88,13 @@
           "price_close": null,
           "sl": 1.14343,
           "tp": null,
-          "profit": 0.0,
-          "profit_str": "+0.00 EUR",
-          "running_balance": 48299.37,
-          "running_equity": 48251.64,
+          "profit": -47.77,
+          "profit_str": "-47.77 EUR",
+          "running_balance": 48048.02,
+          "running_equity": 47872.94,
           "status": "ABERTA",
           "ticket": "91066910",
           "magic": 888250,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
-          "time_raw": 1790146800
-        },
-        {
-          "time": "2026-09-23 05:00",
-          "symbol": "USDJPY",
-          "bot": "Donchian USDJPY M15",
-          "type": "BUY",
-          "volume": 3.63,
-          "price_open": 157.677,
-          "price_close": null,
-          "sl": 157.557,
-          "tp": null,
-          "profit": -32.24,
-          "profit_str": "-32.24 EUR",
-          "running_balance": 48299.37,
-          "running_equity": 48251.64,
-          "status": "ABERTA",
-          "ticket": "91066953",
-          "magic": 444250,
           "week_key": "2026-W39",
           "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
           "time_raw": 1790146800
@@ -483,11 +485,11 @@
         {
           "bot": "Donchian USDJPY M15",
           "magic": 444250,
-          "trades": 4,
+          "trades": 5,
           "wins": 1,
-          "win_rate": 25.0,
-          "avg_profit": -149.38,
-          "total_profit": -597.52
+          "win_rate": 20.0,
+          "avg_profit": -171.66,
+          "total_profit": -858.31
         }
       ],
       "top_5": {
@@ -504,7 +506,7 @@
             -257.81,
             -261.36,
             -301.9,
-            -597.52
+            -858.31
           ]
         },
         "month": {
@@ -520,7 +522,7 @@
             -257.81,
             -261.36,
             -301.9,
-            -597.52
+            -858.31
           ]
         },
         "all": {
@@ -536,7 +538,7 @@
             -257.81,
             -261.36,
             -301.9,
-            -597.52
+            -858.31
           ]
         }
       }
@@ -546,11 +548,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 938.33,
-      "equity": 941.88,
+      "equity": 941.31,
       "closed_pl": -61.66999999999999,
-      "total_pl": -58.120000000000005,
-      "roi_pct": -5.812,
-      "floating_pl": 3.55,
+      "total_pl": -58.690000000000055,
+      "roi_pct": -5.869000000000005,
+      "floating_pl": 2.98,
       "open_count": 1,
       "trades": [
         {
@@ -632,10 +634,10 @@
           "price_close": null,
           "sl": 156.388,
           "tp": 159.044,
-          "profit": 3.55,
-          "profit_str": "+3.55 EUR",
+          "profit": 2.98,
+          "profit_str": "+2.98 EUR",
           "running_balance": 938.33,
-          "running_equity": 941.88,
+          "running_equity": 941.31,
           "status": "ABERTA",
           "ticket": "58540363772",
           "magic": 444123,
