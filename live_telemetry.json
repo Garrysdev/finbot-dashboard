@@ -1,18 +1,62 @@
 {
-  "updated_at": "2026-09-25 10:15:54",
+  "updated_at": "2026-09-25 14:16:00",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 49104.48,
-      "equity": 49054.64,
-      "closed_pl": -895.5199999999999,
-      "total_pl": -945.3600000000006,
-      "roi_pct": -1.8907200000000013,
-      "floating_pl": -49.84,
+      "balance": 48877.08,
+      "equity": 48845.74,
+      "closed_pl": -1122.9199999999998,
+      "total_pl": -1154.260000000002,
+      "roi_pct": -2.308520000000004,
+      "floating_pl": -31.34,
       "open_count": 1,
       "trades": [
+        {
+          "time": "2026-09-25 14:15",
+          "symbol": "USDJPY",
+          "bot": "Donchian USDJPY M15",
+          "type": "SELL",
+          "volume": 1.25,
+          "price_open": 157.333,
+          "price_close": null,
+          "sl": 157.682,
+          "tp": null,
+          "profit": -31.34,
+          "profit_str": "-31.34 EUR",
+          "running_balance": 48877.08,
+          "running_equity": 48845.74,
+          "status": "ABERTA",
+          "ticket": "91830608",
+          "magic": 444250,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "time_raw": 1790352900
+        },
+        {
+          "pos_id": 91226894,
+          "time_raw": 1790344535,
+          "time": "2026-09-25 11:55",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.12,
+          "price_open": 4287.88,
+          "price_close": 4310.47,
+          "sl": null,
+          "tp": null,
+          "profit": -224.46,
+          "profit_str": "-224.46 EUR",
+          "status": "FECHADA",
+          "ticket": "61075710",
+          "magic": 777250,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 48880.33,
+          "running_equity": 48880.33
+        },
         {
           "pos_id": 91209456,
           "time_raw": 1790195258,
@@ -58,27 +102,6 @@
           "month_key": "2026-09",
           "running_balance": 48778.53,
           "running_equity": 48778.53
-        },
-        {
-          "time": "2026-09-23 15:42",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "SELL",
-          "volume": 0.12,
-          "price_open": 4287.88,
-          "price_close": null,
-          "sl": 4310.47,
-          "tp": null,
-          "profit": -49.84,
-          "profit_str": "-49.84 EUR",
-          "running_balance": 49104.48,
-          "running_equity": 49054.64,
-          "status": "ABERTA",
-          "ticket": "91226894",
-          "magic": 777250,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
-          "time_raw": 1790185330
         },
         {
           "pos_id": 91113183,
@@ -639,6 +662,15 @@
           "total_profit": -147.89
         },
         {
+          "bot": "Donchian Gold XAUUSD M15",
+          "magic": 777250,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -224.46,
+          "total_profit": -224.46
+        },
+        {
           "bot": "ORB GBPUSD M15",
           "magic": 555300,
           "trades": 1,
@@ -663,15 +695,15 @@
             "Donchian EURUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15",
-            "Donchian USDJPY M15"
+            "Donchian Gold XAUUSD M15",
+            "ORB GBPUSD M15"
           ],
           "profits": [
             110.33,
             -131.15,
             -147.89,
-            -257.81,
-            -468.69
+            -224.46,
+            -257.81
           ]
         },
         "month": {
@@ -679,15 +711,15 @@
             "Donchian EURUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15",
-            "Donchian USDJPY M15"
+            "Donchian Gold XAUUSD M15",
+            "ORB GBPUSD M15"
           ],
           "profits": [
             110.33,
             -131.15,
             -147.89,
-            -257.81,
-            -468.69
+            -224.46,
+            -257.81
           ]
         },
         "all": {
@@ -695,15 +727,15 @@
             "Donchian EURUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15",
-            "Donchian USDJPY M15"
+            "Donchian Gold XAUUSD M15",
+            "ORB GBPUSD M15"
           ],
           "profits": [
             110.33,
             -131.15,
             -147.89,
-            -257.81,
-            -468.69
+            -224.46,
+            -257.81
           ]
         }
       }
