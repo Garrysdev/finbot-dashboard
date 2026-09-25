@@ -1,18 +1,62 @@
 {
-  "updated_at": "2026-09-25 15:15:07",
+  "updated_at": "2026-09-25 16:30:04",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 49260.28,
-      "equity": 49380.24,
-      "closed_pl": -739.7199999999999,
-      "total_pl": -619.760000000002,
-      "roi_pct": -1.239520000000004,
-      "floating_pl": 119.96,
+      "balance": 49027.66,
+      "equity": 48754.83,
+      "closed_pl": -972.3399999999999,
+      "total_pl": -1245.1699999999983,
+      "roi_pct": -2.4903399999999962,
+      "floating_pl": -272.83,
       "open_count": 4,
       "trades": [
+        {
+          "time": "2026-09-25 16:30",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD M15",
+          "type": "SELL",
+          "volume": 1.57,
+          "price_open": 1.32405,
+          "price_close": null,
+          "sl": 1.32583,
+          "tp": 1.32049,
+          "profit": -1.38,
+          "profit_str": "-1.38 EUR",
+          "running_balance": 49027.66,
+          "running_equity": 48754.83,
+          "status": "ABERTA",
+          "ticket": "91865715",
+          "magic": 555151,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "time_raw": 1790361000
+        },
+        {
+          "pos_id": 91841258,
+          "time_raw": 1790359481,
+          "time": "2026-09-25 16:04",
+          "symbol": "XAGUSD",
+          "bot": "FinBot XAGUSD M15",
+          "type": "SELL",
+          "volume": 0.1,
+          "price_open": 63.811,
+          "price_close": 64.332,
+          "sl": null,
+          "tp": null,
+          "profit": -228.54,
+          "profit_str": "-228.54 EUR",
+          "status": "FECHADA",
+          "ticket": "61116924",
+          "magic": 666151,
+          "week_key": "2026-W39",
+          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
+          "month_key": "2026-09",
+          "running_balance": 49032.24,
+          "running_equity": 49032.24
+        },
         {
           "time": "2026-09-25 15:15",
           "symbol": "XAUUSD",
@@ -23,10 +67,10 @@
           "price_close": null,
           "sl": 4288.4,
           "tp": null,
-          "profit": 1.37,
-          "profit_str": "+1.37 EUR",
-          "running_balance": 49260.28,
-          "running_equity": 49380.24,
+          "profit": -138.02,
+          "profit_str": "-138.02 EUR",
+          "running_balance": 49027.66,
+          "running_equity": 48754.83,
           "status": "ABERTA",
           "ticket": "91850057",
           "magic": 777250,
@@ -81,27 +125,6 @@
           "running_equity": 49058.1
         },
         {
-          "time": "2026-09-25 14:47",
-          "symbol": "XAGUSD",
-          "bot": "FinBot XAGUSD M15",
-          "type": "SELL",
-          "volume": 0.1,
-          "price_open": 63.811,
-          "price_close": null,
-          "sl": 64.332,
-          "tp": 62.639,
-          "profit": 7.45,
-          "profit_str": "+7.45 EUR",
-          "running_balance": 49260.28,
-          "running_equity": 49380.24,
-          "status": "ABERTA",
-          "ticket": "91841258",
-          "magic": 666151,
-          "week_key": "2026-W39",
-          "week_label": "Semana 39 (21/Sep - 25/Sep 2026)",
-          "time_raw": 1790354856
-        },
-        {
           "time": "2026-09-25 14:45",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
@@ -111,10 +134,10 @@
           "price_close": null,
           "sl": 4301.64,
           "tp": 4233.72,
-          "profit": 62.03,
-          "profit_str": "+62.03 EUR",
-          "running_balance": 49260.28,
-          "running_equity": 49380.24,
+          "profit": -2.26,
+          "profit_str": "-2.26 EUR",
+          "running_balance": 49027.66,
+          "running_equity": 48754.83,
           "status": "ABERTA",
           "ticket": "91840435",
           "magic": 777151,
@@ -132,10 +155,10 @@
           "price_close": null,
           "sl": 64.427,
           "tp": null,
-          "profit": 49.11,
-          "profit_str": "+49.11 EUR",
-          "running_balance": 49260.28,
-          "running_equity": 49380.24,
+          "profit": -131.17,
+          "profit_str": "-131.17 EUR",
+          "running_balance": 49027.66,
+          "running_equity": 48754.83,
           "status": "ABERTA",
           "ticket": "91840436",
           "magic": 666250,
@@ -780,6 +803,15 @@
           "total_profit": -147.89
         },
         {
+          "bot": "FinBot XAGUSD M15",
+          "magic": 666151,
+          "trades": 1,
+          "wins": 0,
+          "win_rate": 0.0,
+          "avg_profit": -228.54,
+          "total_profit": -228.54
+        },
+        {
           "bot": "ORB GBPUSD M15",
           "magic": 555300,
           "trades": 1,
@@ -805,14 +837,14 @@
             "Donchian Gold XAUUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15"
+            "FinBot XAGUSD M15"
           ],
           "profits": [
             110.33,
             -21.78,
             -131.15,
             -147.89,
-            -257.81
+            -228.54
           ]
         },
         "month": {
@@ -821,14 +853,14 @@
             "Donchian Gold XAUUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15"
+            "FinBot XAGUSD M15"
           ],
           "profits": [
             110.33,
             -21.78,
             -131.15,
             -147.89,
-            -257.81
+            -228.54
           ]
         },
         "all": {
@@ -837,14 +869,14 @@
             "Donchian Gold XAUUSD M15",
             "ORB USDJPY M15",
             "ORB EURUSD M15",
-            "ORB GBPUSD M15"
+            "FinBot XAGUSD M15"
           ],
           "profits": [
             110.33,
             -21.78,
             -131.15,
             -147.89,
-            -257.81
+            -228.54
           ]
         }
       }
