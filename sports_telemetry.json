@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25 23:30:20",
+  "updated_at": "2026-09-27 02:17:44",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
@@ -1630,10 +1630,10 @@
       "market": "Vitória Sporting Lisbon",
       "selection": "Vitória Sporting Lisbon",
       "bookmaker": "Pinnacle",
-      "odd": 2.16,
+      "odd": 2.21,
       "model_prob": "50.3%",
-      "ev_pct": "+8.6%",
-      "stake": "1.86 €",
+      "ev_pct": "+11.1%",
+      "stake": "2.30 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
