@@ -514,6 +514,7 @@
             <button class="nav-btn" onclick="switchTab('tab-demo-100k', this)">🔵 Pepperstone (50.000 €)</button>
             <button class="nav-btn" onclick="switchTab('tab-backtests', this)">🧪 Histórico Backtests (Excel)</button>
             <button class="nav-btn" onclick="switchTab('tab-sports', this)">⚽ FinBot Sports (Value Betting)</button>
+            <button class="nav-btn" onclick="switchTab('tab-odds-pt', this)">💱 Odds PT (Betano vs Betclic)</button>
         </div>
     </div>
 
@@ -1091,6 +1092,72 @@
                 </table>
             </div>
             <div id="sports-pagination" style="display: flex; justify-content: center; align-items: center; gap: 0.5rem; padding: 1rem;"></div>
+        </div>
+    </div>
+
+    <!-- TAB 9: ODDS PT (BETANO vs BETCLIC, DINHEIRO REAL) -->
+    <div id="tab-odds-pt" class="tab-section">
+        <div class="header" style="border:none; margin-bottom: 1.5rem; padding-bottom: 0;">
+            <div class="title-group">
+                <h2>💱 Odds PT — Comparador Betano vs Betclic (Dinheiro Real)</h2>
+                <p>Pinnacle como referência de valor justo, execução nas casas licenciadas em Portugal. Diferente do FinBot Sports (paper betting) — isto é para apostar a sério.</p>
+            </div>
+        </div>
+
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-title">Betano.pt</div>
+                <div class="metric-value" style="color: var(--accent-green);">✅ Ativo</div>
+                <div class="metric-sub">Odds reais via OddsPapi, validado</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Betclic.pt</div>
+                <div class="metric-value" style="color: var(--accent-gold);">🚧 Em construção</div>
+                <div class="metric-sub">Sem API grátis fiável — scraping direto do site em preparação</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Pinnacle (referência)</div>
+                <div class="metric-value" style="color: var(--accent-green);">✅ Ativo</div>
+                <div class="metric-sub">Fonte da probabilidade justa (de-vig)</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-title">Alertas</div>
+                <div class="metric-value" id="odds-pt-alert-status" style="color: var(--accent-blue);">📲 Telegram dedicado</div>
+                <div class="metric-sub">Bot separado do FinBot Sports — só para valor/surebets reais</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">🎯 Oportunidades Detetadas</span>
+                    <span class="status-pill status-blue" id="odds-pt-count">—</span>
+                </div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem; line-height: 1.5;">
+                Duas fontes de valor: <b>Pinnacle vs Betano.pt</b> (já a funcionar) e <b>Betano vs Betclic diretamente</b>
+                (surebet, quando a Betclic estiver ligada). Cada aposta aqui é para executares tu mesmo, manualmente, nas
+                casas reais — confirma sempre a odd antes de apostar (pode ter mudado desde a deteção).
+            </p>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Limite de Entrada</th>
+                            <th>Jogo</th>
+                            <th>Mercado</th>
+                            <th>Odd Betano</th>
+                            <th>Odd Betclic</th>
+                            <th>Justa (Pinnacle)</th>
+                            <th>Tipo</th>
+                            <th>EV / Lucro Garantido</th>
+                        </tr>
+                    </thead>
+                    <tbody id="odds-pt-tbody">
+                        <tr><td colspan="8" style="text-align:center; color: var(--text-muted);">Ainda sem oportunidades registadas — a pipeline Betano vs Betclic está em construção.</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
