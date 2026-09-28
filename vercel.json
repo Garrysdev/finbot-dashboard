@@ -15,6 +15,14 @@
       "dest": "/sports_telemetry.json"
     },
     {
+      "src": "/manifest.webmanifest",
+      "dest": "/manifest.webmanifest"
+    },
+    {
+      "src": "/icons/(.*)",
+      "dest": "/icons/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
