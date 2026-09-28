@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 17:27:15",
+  "updated_at": "2026-09-28 17:28:18",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
