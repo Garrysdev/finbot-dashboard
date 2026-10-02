@@ -880,7 +880,7 @@
             <p style="padding: 0 1.25rem 1rem; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
                 Lista de referência dos 30 EAs que devem estar sempre anexados nas duas corretoras (mesma estratégia, mesmo magic number nas duas — só muda o símbolo do gráfico).
                 Serve de backup: se algum bot desaparecer de um gráfico depois de um reinício do MT5 (como aconteceu na IC Markets a 30/09/2026), é esta lista que diz o que lá deve estar.
-                As colunas "Hoje" e "Última Negociação" são calculadas em tempo real a partir da telemetria — se um bot está anexado mas o mercado não gerou sinal, aparece normal; se está sem negociar há muitos dias sem razão aparente, vale a pena verificar o gráfico.
+                "P/L Acumulado" e "Última Negociação" são calculados em tempo real a partir da telemetria. Amostras pequenas (menos de 20 negociações) estão marcadas como tal — resultado com poucos trades é facilmente sorte, não serve para decidir se um bot é bom ou mau. Se um bot está anexado mas sem negociar há muitos dias sem razão aparente de mercado, vale a pena verificar o gráfico.
             </p>
             <div class="table-container">
                 <table>
@@ -890,9 +890,9 @@
                             <th>Símbolo</th>
                             <th>Estratégia</th>
                             <th>Magic</th>
-                            <th>🟢 IC Markets — Hoje</th>
+                            <th>🟢 IC Markets — P/L Acumulado</th>
                             <th>IC Markets — Última Neg.</th>
-                            <th>🔵 Pepperstone — Hoje</th>
+                            <th>🔵 Pepperstone — P/L Acumulado</th>
                             <th>Pepperstone — Última Neg.</th>
                         </tr>
                     </thead>
@@ -1361,15 +1361,17 @@
             }
         }
 
-        // Última negociação (qualquer status) e contagem de hoje para um magic
-        // number, dentro dos trades carregados de uma conta.
+        // Estado de um bot (por magic number) numa conta: última negociação
+        // (qualquer status, para detetar bots desanexados) e P/L acumulado +
+        // contagem só das negociações FECHADAS (realizado, não flutuante).
+        const FLEET_MIN_SAMPLE = 20;
         function fleetBotStats(accountKey, magic) {
             const trades = (tradesData[accountKey] || []).filter(t => Number(t.magic) === magic);
-            if (trades.length === 0) return { today: 0, lastTime: null };
-            const todayStr = new Date().toISOString().substring(0, 10);
-            const today = trades.filter(t => (t.time || '').substring(0, 10) === todayStr).length;
+            if (trades.length === 0) return { lastTime: null, pl: 0, closedCount: 0 };
             const lastTime = trades.reduce((max, t) => (t.time || '') > max ? (t.time || '') : max, '');
-            return { today, lastTime: lastTime || null };
+            const closed = trades.filter(t => t.status === 'FECHADA');
+            const pl = closed.reduce((sum, t) => sum + Number(t.profit || 0), 0);
+            return { lastTime: lastTime || null, pl, closedCount: closed.length };
         }
 
         function fleetAgoLabel(timeStr) {
@@ -1380,6 +1382,22 @@
             if (diffH <= 24) return { text: label, cls: 'status-pill status-pass' };
             if (diffH <= 24 * 4) return { text: label, cls: 'status-pill status-warn' };
             return { text: label, cls: 'status-pill status-fail' };
+        }
+
+        // Célula de P/L acumulado: valor colorido + contagem de trades, com
+        // aviso "amostra pequena" abaixo do limiar FLEET_MIN_SAMPLE.
+        function fleetPLCell(stats) {
+            if (stats.closedCount === 0) {
+                return `<span style="color: var(--text-muted);">—</span>`;
+            }
+            const color = stats.pl >= 0 ? 'var(--accent-green)' : '#f87171';
+            const sign = stats.pl >= 0 ? '+' : '';
+            let html = `<span style="font-family:'JetBrains Mono',monospace; font-weight:700; color:${color};">${sign}${stats.pl.toFixed(2)} €</span>`;
+            html += ` <span style="color: var(--text-muted); font-size: 0.78rem;">(${stats.closedCount})</span>`;
+            if (stats.closedCount < FLEET_MIN_SAMPLE) {
+                html += `<br><span class="status-pill status-blue" style="margin-top:0.2rem; font-size:0.7rem;">amostra pequena</span>`;
+            }
+            return html;
         }
 
         function renderFleetTable() {
@@ -1397,9 +1415,9 @@
                     <td style="color:var(--accent-gold); font-weight:600;">${bot.symbol}</td>
                     <td>${bot.strategy}</td>
                     <td style="font-family:'JetBrains Mono',monospace; color:var(--text-muted);">${bot.magic}</td>
-                    <td style="font-family:'JetBrains Mono',monospace; font-weight:700;">${ic.today}</td>
+                    <td>${fleetPLCell(ic)}</td>
                     <td><span class="${icAgo.cls}">${icAgo.text}</span></td>
-                    <td style="font-family:'JetBrains Mono',monospace; font-weight:700;">${pep.today}</td>
+                    <td>${fleetPLCell(pep)}</td>
                     <td><span class="${pepAgo.cls}">${pepAgo.text}</span></td>
                 `;
                 tbody.appendChild(tr);
