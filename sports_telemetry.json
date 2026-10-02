@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01 00:23:12",
+  "updated_at": "2026-10-01 23:30:11",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
@@ -2004,9 +2004,9 @@
       "market": "Vitória Nottingham Forest",
       "selection": "Vitória Nottingham Forest",
       "bookmaker": "Pinnacle",
-      "odd": 2.66,
+      "odd": 2.65,
       "model_prob": "40.1%",
-      "ev_pct": "+6.6%",
+      "ev_pct": "+6.2%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
