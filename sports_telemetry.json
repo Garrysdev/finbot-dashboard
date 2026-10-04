@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02 23:30:12",
+  "updated_at": "2026-10-03 23:30:12",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
@@ -29,9 +29,9 @@
     "roi_pct": 25.83,
     "yield_pct": 16.66,
     "win_rate": 46.2,
-    "total_bets": 108,
+    "total_bets": 109,
     "today_bets": 20,
-    "pending_bets": 43,
+    "pending_bets": 44,
     "settled_bets": 65
   },
   "bets": [
@@ -1576,6 +1576,28 @@
       "engine_version": "v1_moments_pinnacle"
     },
     {
+      "bet_id": "bet_0956c06cd173899e11422bece0fbf94f_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Liga Portugal (Primeira Liga)",
+      "match": "Moreirense FC vs Gil Vicente",
+      "time": "2026-10-09 18:45",
+      "is_today": false,
+      "market": "Vitória Moreirense FC",
+      "selection": "Vitória Moreirense FC",
+      "bookmaker": "Pinnacle",
+      "odd": 3.6,
+      "model_prob": "33.7%",
+      "ev_pct": "+21.3%",
+      "stake": "2.05 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 125.83,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
       "bet_id": "bet_17694e68f399fdf9c5030021ec9bb595_1X2_HOME",
       "sport": "Futebol",
       "sport_emoji": "⚽",
@@ -1630,10 +1652,10 @@
       "market": "Vitória Sporting Lisbon",
       "selection": "Vitória Sporting Lisbon",
       "bookmaker": "Pinnacle",
-      "odd": 2.21,
+      "odd": 2.14,
       "model_prob": "50.3%",
-      "ev_pct": "+11.1%",
-      "stake": "2.30 €",
+      "ev_pct": "+7.6%",
+      "stake": "1.67 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
