@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-05 05:30:01",
+  "updated_at": "2026-10-05 05:33:16",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
       "balance": 46616.93,
-      "equity": 46746.27,
+      "equity": 46742.26,
       "closed_pl": -3383.0699999999997,
-      "total_pl": -3253.730000000003,
-      "roi_pct": -6.507460000000006,
-      "floating_pl": 129.34,
+      "total_pl": -3257.739999999998,
+      "roi_pct": -6.515479999999996,
+      "floating_pl": 125.33,
       "open_count": 3,
       "trades": [
         {
@@ -23,10 +23,10 @@
           "price_close": null,
           "sl": 4159.85,
           "tp": 4106.81,
-          "profit": -1.07,
-          "profit_str": "-1.07 EUR",
+          "profit": -2.13,
+          "profit_str": "-2.13 EUR",
           "running_balance": 46616.93,
-          "running_equity": 46746.27,
+          "running_equity": 46742.26,
           "status": "ABERTA",
           "ticket": "93184988",
           "magic": 777300,
@@ -44,10 +44,10 @@
           "price_close": null,
           "sl": 4149.89,
           "tp": null,
-          "profit": 128.5,
-          "profit_str": "+128.50 EUR",
+          "profit": 125.85,
+          "profit_str": "+125.85 EUR",
           "running_balance": 46616.93,
-          "running_equity": 46746.27,
+          "running_equity": 46742.26,
           "status": "ABERTA",
           "ticket": "93183123",
           "magic": 777250,
@@ -180,10 +180,10 @@
           "price_close": null,
           "sl": 4185.5,
           "tp": 3918.38,
-          "profit": 1.91,
-          "profit_str": "+1.91 EUR",
+          "profit": 1.61,
+          "profit_str": "+1.61 EUR",
           "running_balance": 46616.93,
-          "running_equity": 46746.27,
+          "running_equity": 46742.26,
           "status": "ABERTA",
           "ticket": "93090662",
           "magic": 777123,
@@ -3528,14 +3528,37 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 53833.39,
-      "equity": 54513.62,
-      "closed_pl": 3633.3900000000003,
-      "total_pl": 4313.620000000003,
-      "roi_pct": 8.59286852589642,
-      "floating_pl": 680.23,
-      "open_count": 4,
+      "balance": 54147.53,
+      "equity": 54395.01,
+      "closed_pl": 3947.53,
+      "total_pl": 4195.010000000002,
+      "roi_pct": 8.35659362549801,
+      "floating_pl": 247.48,
+      "open_count": 3,
       "trades": [
+        {
+          "pos_id": 1984794953,
+          "time_raw": 1791185541,
+          "time": "2026-10-05 05:32",
+          "symbol": "BTCUSD",
+          "bot": "VolSqueeze Gold XAUUSD M15",
+          "type": "BUY",
+          "volume": 0.94,
+          "price_open": 85230.36,
+          "price_close": 85603.65,
+          "sl": null,
+          "tp": null,
+          "profit": 314.14,
+          "profit_str": "+314.14 EUR",
+          "status": "FECHADA",
+          "ticket": "1596356402",
+          "magic": 777350,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 54148.67,
+          "running_equity": 54148.67
+        },
         {
           "time": "2026-10-05 05:15",
           "symbol": "XAUUSD",
@@ -3546,10 +3569,10 @@
           "price_close": null,
           "sl": 4160.2,
           "tp": 4117.03,
-          "profit": 91.35,
-          "profit_str": "+91.35 EUR",
-          "running_balance": 53833.39,
-          "running_equity": 54513.62,
+          "profit": 89.27,
+          "profit_str": "+89.27 EUR",
+          "running_balance": 54147.53,
+          "running_equity": 54395.01,
           "status": "ABERTA",
           "ticket": "1985825157",
           "magic": 777300,
@@ -3567,10 +3590,10 @@
           "price_close": null,
           "sl": 4149.36,
           "tp": null,
-          "profit": 159.86,
-          "profit_str": "+159.86 EUR",
-          "running_balance": 53833.39,
-          "running_equity": 54513.62,
+          "profit": 156.22,
+          "profit_str": "+156.22 EUR",
+          "running_balance": 54147.53,
+          "running_equity": 54395.01,
           "status": "ABERTA",
           "ticket": "1985825161",
           "magic": 777250,
@@ -3623,27 +3646,6 @@
           "month_key": "2026-10",
           "running_balance": 53654.56,
           "running_equity": 53654.56
-        },
-        {
-          "time": "2026-10-04 11:00",
-          "symbol": "BTCUSD",
-          "bot": "VolSqueeze Gold XAUUSD M15",
-          "type": "BUY",
-          "volume": 0.94,
-          "price_open": 85230.36,
-          "price_close": null,
-          "sl": 85592.12,
-          "tp": null,
-          "profit": 426.69,
-          "profit_str": "+426.69 EUR",
-          "running_balance": 53833.39,
-          "running_equity": 54513.62,
-          "status": "ABERTA",
-          "ticket": "1984794953",
-          "magic": 777350,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791118800
         },
         {
           "pos_id": 1983372683,
@@ -3724,10 +3726,10 @@
           "price_close": null,
           "sl": 4185.27,
           "tp": 3919.08,
-          "profit": 2.33,
-          "profit_str": "+2.33 EUR",
-          "running_balance": 53833.39,
-          "running_equity": 54513.62,
+          "profit": 1.99,
+          "profit_str": "+1.99 EUR",
+          "running_balance": 54147.53,
+          "running_equity": 54395.01,
           "status": "ABERTA",
           "ticket": "1983889685",
           "magic": 777123,
@@ -4987,6 +4989,15 @@
           "total_profit": 179.97
         },
         {
+          "bot": "VolSqueeze Gold XAUUSD M15",
+          "magic": 777350,
+          "trades": 2,
+          "wins": 1,
+          "win_rate": 50.0,
+          "avg_profit": 77.03,
+          "total_profit": 154.06
+        },
+        {
           "bot": "FinBot Gold XAUUSD H1",
           "magic": 777123,
           "trades": 2,
@@ -5021,15 +5032,6 @@
           "win_rate": 0.0,
           "avg_profit": -105.71,
           "total_profit": -105.71
-        },
-        {
-          "bot": "VolSqueeze Gold XAUUSD M15",
-          "magic": 777350,
-          "trades": 1,
-          "wins": 0,
-          "win_rate": 0.0,
-          "avg_profit": -160.08,
-          "total_profit": -160.08
         },
         {
           "bot": "Donchian Gold XAUUSD M15",
@@ -5071,10 +5073,12 @@
       "top_5": {
         "week": {
           "bots": [
+            "VolSqueeze Gold XAUUSD M15",
             "FinBot EURUSD H1",
             "FinBot USDJPY M15"
           ],
           "profits": [
+            314.14,
             244.94,
             179.97
           ]
@@ -5085,14 +5089,14 @@
             "VolSqueeze EURUSD M15",
             "FinBot EURUSD H1",
             "ORB GBPUSD M15",
-            "ORB EURUSD M15"
+            "VolSqueeze Gold XAUUSD M15"
           ],
           "profits": [
             896.97,
             500.38,
             421.75,
             314.44,
-            303.57
+            314.14
           ]
         },
         "all": {
