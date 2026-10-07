@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-10-07 10:33:04",
+  "updated_at": "2026-10-07 11:38:04",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 47632.08,
-      "equity": 47962.52,
-      "closed_pl": -2367.9199999999996,
-      "total_pl": -2037.4800000000032,
-      "roi_pct": -4.074960000000007,
-      "floating_pl": 330.44,
-      "open_count": 4,
+      "balance": 47864.4,
+      "equity": 47997.74,
+      "closed_pl": -2135.6,
+      "total_pl": -2002.260000000002,
+      "roi_pct": -4.004520000000004,
+      "floating_pl": 133.34,
+      "open_count": 3,
       "trades": [
+        {
+          "pos_id": 93611232,
+          "time_raw": 1791380241,
+          "time": "2026-10-07 11:37",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.2,
+          "price_open": 4126.28,
+          "price_close": 4113.25,
+          "sl": null,
+          "tp": null,
+          "profit": 231.8,
+          "profit_str": "+231.80 EUR",
+          "status": "FECHADA",
+          "ticket": "62432214",
+          "magic": 777250,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 47871.31,
+          "running_equity": 47871.31
+        },
         {
           "pos_id": 93457809,
           "time_raw": 1791376323,
@@ -83,27 +106,6 @@
           "running_equity": 46775.68
         },
         {
-          "time": "2026-10-07 09:30",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "SELL",
-          "volume": 0.2,
-          "price_open": 4126.28,
-          "price_close": null,
-          "sl": 4139.21,
-          "tp": null,
-          "profit": 100.11,
-          "profit_str": "+100.11 EUR",
-          "running_balance": 47632.08,
-          "running_equity": 47962.52,
-          "status": "ABERTA",
-          "ticket": "93611232",
-          "magic": 777250,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791372600
-        },
-        {
           "time": "2026-10-07 09:00",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
@@ -113,10 +115,10 @@
           "price_close": null,
           "sl": 1.1205,
           "tp": null,
-          "profit": 32.85,
-          "profit_str": "+32.85 EUR",
-          "running_balance": 47632.08,
-          "running_equity": 47962.52,
+          "profit": -65.66,
+          "profit_str": "-65.66 EUR",
+          "running_balance": 47864.4,
+          "running_equity": 47997.74,
           "status": "ABERTA",
           "ticket": "93605310",
           "magic": 888250,
@@ -226,10 +228,10 @@
           "price_close": null,
           "sl": 1.32809,
           "tp": 1.31773,
-          "profit": 183.76,
-          "profit_str": "+183.76 EUR",
-          "running_balance": 47632.08,
-          "running_equity": 47962.52,
+          "profit": 174.91,
+          "profit_str": "+174.91 EUR",
+          "running_balance": 47864.4,
+          "running_equity": 47997.74,
           "status": "ABERTA",
           "ticket": "93593777",
           "magic": 555123,
@@ -1052,10 +1054,10 @@
           "price_close": null,
           "sl": 4185.5,
           "tp": 3918.38,
-          "profit": 13.72,
-          "profit_str": "+13.72 EUR",
-          "running_balance": 47632.08,
-          "running_equity": 47962.52,
+          "profit": 24.09,
+          "profit_str": "+24.09 EUR",
+          "running_balance": 47864.4,
+          "running_equity": 47997.74,
           "status": "ABERTA",
           "ticket": "93090662",
           "magic": 777123,
@@ -4207,6 +4209,15 @@
           "total_profit": 535.62
         },
         {
+          "bot": "Donchian Gold XAUUSD M15",
+          "magic": 777250,
+          "trades": 25,
+          "wins": 14,
+          "win_rate": 56.0,
+          "avg_profit": 18.75,
+          "total_profit": 468.65
+        },
+        {
           "bot": "VolSqueeze EURUSD M15",
           "magic": 888350,
           "trades": 2,
@@ -4214,15 +4225,6 @@
           "win_rate": 50.0,
           "avg_profit": 182.5,
           "total_profit": 365.0
-        },
-        {
-          "bot": "Donchian Gold XAUUSD M15",
-          "magic": 777250,
-          "trades": 24,
-          "wins": 13,
-          "win_rate": 54.2,
-          "avg_profit": 9.87,
-          "total_profit": 236.85
         },
         {
           "bot": "FinBot GBPUSD H1",
@@ -4373,16 +4375,16 @@
         "week": {
           "bots": [
             "MeanRev GBPUSD H1",
+            "Donchian Gold XAUUSD M15",
             "FinBot EURUSD M15",
             "FinBot EURUSD H1",
-            "Donchian Gold XAUUSD M15",
             "FinBot Gold XAUUSD M15"
           ],
           "profits": [
             775.38,
+            474.25,
             410.97,
             367.02,
-            242.45,
             214.63
           ]
         },
@@ -4390,16 +4392,16 @@
           "bots": [
             "Donchian EURUSD M15",
             "MeanRev GBPUSD H1",
+            "Donchian Gold XAUUSD M15",
             "FinBot EURUSD M15",
-            "FinBot EURUSD H1",
-            "Donchian Gold XAUUSD M15"
+            "FinBot EURUSD H1"
           ],
           "profits": [
             836.17,
             775.38,
+            759.05,
             655.47,
-            541.6,
-            527.25
+            541.6
           ]
         },
         "all": {
@@ -4408,14 +4410,14 @@
             "MeanRev GBPUSD H1",
             "FinBot EURUSD H1",
             "Donchian EURUSD M15",
-            "VolSqueeze EURUSD M15"
+            "Donchian Gold XAUUSD M15"
           ],
           "profits": [
             1277.34,
             775.38,
             736.95,
             535.62,
-            365.0
+            468.65
           ]
         }
       }
@@ -4424,14 +4426,37 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 55087.49,
-      "equity": 55473.17,
-      "closed_pl": 4887.490000000001,
-      "total_pl": 5273.169999999998,
-      "roi_pct": 10.504322709163343,
-      "floating_pl": 385.68,
-      "open_count": 4,
+      "balance": 55360.97,
+      "equity": 55521.89,
+      "closed_pl": 5160.97,
+      "total_pl": 5321.889999999999,
+      "roi_pct": 10.60137450199203,
+      "floating_pl": 160.92,
+      "open_count": 3,
       "trades": [
+        {
+          "pos_id": 1992440423,
+          "time_raw": 1791380241,
+          "time": "2026-10-07 11:37",
+          "symbol": "XAUUSD",
+          "bot": "Donchian Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.24,
+          "price_open": 4126.12,
+          "price_close": 4113.33,
+          "sl": null,
+          "tp": null,
+          "profit": 272.7,
+          "profit_str": "+272.70 EUR",
+          "status": "FECHADA",
+          "ticket": "1601533641",
+          "magic": 777250,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 55371.22,
+          "running_equity": 55371.22
+        },
         {
           "pos_id": 1990272299,
           "time_raw": 1791376323,
@@ -4479,27 +4504,6 @@
           "running_equity": 54156.56
         },
         {
-          "time": "2026-10-07 09:30",
-          "symbol": "XAUUSD",
-          "bot": "Donchian Gold XAUUSD M15",
-          "type": "SELL",
-          "volume": 0.24,
-          "price_open": 4126.12,
-          "price_close": null,
-          "sl": 4138.78,
-          "tp": null,
-          "profit": 114.12,
-          "profit_str": "+114.12 EUR",
-          "running_balance": 55087.49,
-          "running_equity": 55473.17,
-          "status": "ABERTA",
-          "ticket": "1992440423",
-          "magic": 777250,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791372600
-        },
-        {
           "pos_id": 1991950579,
           "time_raw": 1791372326,
           "time": "2026-10-07 09:25",
@@ -4532,10 +4536,10 @@
           "price_close": null,
           "sl": 1.12049,
           "tp": null,
-          "profit": 40.51,
-          "profit_str": "+40.51 EUR",
-          "running_balance": 55087.49,
-          "running_equity": 55473.17,
+          "profit": -69.93,
+          "profit_str": "-69.93 EUR",
+          "running_balance": 55360.97,
+          "running_equity": 55521.89,
           "status": "ABERTA",
           "ticket": "1992353856",
           "magic": 888250,
@@ -4645,10 +4649,10 @@
           "price_close": null,
           "sl": 1.32795,
           "tp": 1.31795,
-          "profit": 217.1,
-          "profit_str": "+217.10 EUR",
-          "running_balance": 55087.49,
-          "running_equity": 55473.17,
+          "profit": 206.47,
+          "profit_str": "+206.47 EUR",
+          "running_balance": 55360.97,
+          "running_equity": 55521.89,
           "status": "ABERTA",
           "ticket": "1992194761",
           "magic": 555123,
@@ -5517,10 +5521,10 @@
           "price_close": null,
           "sl": 4185.27,
           "tp": 3919.08,
-          "profit": 13.95,
-          "profit_str": "+13.95 EUR",
-          "running_balance": 55087.49,
-          "running_equity": 55473.17,
+          "profit": 24.38,
+          "profit_str": "+24.38 EUR",
+          "running_balance": 55360.97,
+          "running_equity": 55521.89,
           "status": "ABERTA",
           "ticket": "1983889685",
           "magic": 777123,
@@ -6753,6 +6757,15 @@
           "total_profit": 292.43
         },
         {
+          "bot": "Donchian Gold XAUUSD M15",
+          "magic": 777250,
+          "trades": 17,
+          "wins": 10,
+          "win_rate": 58.8,
+          "avg_profit": 16.06,
+          "total_profit": 272.98
+        },
+        {
           "bot": "ORB XAGUSD M15",
           "magic": 666300,
           "trades": 2,
@@ -6805,15 +6818,6 @@
           "win_rate": 66.7,
           "avg_profit": 8.46,
           "total_profit": 25.38
-        },
-        {
-          "bot": "Donchian Gold XAUUSD M15",
-          "magic": 777250,
-          "trades": 16,
-          "wins": 9,
-          "win_rate": 56.2,
-          "avg_profit": 0.02,
-          "total_profit": 0.28
         },
         {
           "bot": "FinBot GBPUSD M15",
@@ -6893,16 +6897,16 @@
           "bots": [
             "MeanRev GBPUSD H1",
             "FinBot EURUSD M15",
+            "Donchian Gold XAUUSD M15",
             "FinBot EURUSD H1",
-            "VolSqueeze Gold XAUUSD M15",
-            "FinBot USDJPY M15"
+            "VolSqueeze Gold XAUUSD M15"
           ],
           "profits": [
             941.96,
             609.35,
+            486.47,
             433.19,
-            314.14,
-            292.43
+            314.14
           ]
         },
         "month": {
@@ -6944,11 +6948,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 1002.0,
-      "equity": 1002.59,
+      "equity": 1000.98,
       "closed_pl": 1.9999999999999987,
-      "total_pl": 2.590000000000032,
-      "roi_pct": 0.25900000000000317,
-      "floating_pl": 0.59,
+      "total_pl": 0.9800000000000182,
+      "roi_pct": 0.09800000000000182,
+      "floating_pl": -1.02,
       "open_count": 1,
       "trades": [
         {
@@ -6961,10 +6965,10 @@
           "price_close": null,
           "sl": 1.12049,
           "tp": null,
-          "profit": 0.59,
-          "profit_str": "+0.59 EUR",
+          "profit": -1.02,
+          "profit_str": "-1.02 EUR",
           "running_balance": 1002.0,
-          "running_equity": 1002.59,
+          "running_equity": 1000.98,
           "status": "ABERTA",
           "ticket": "1992353893",
           "magic": 888250,
