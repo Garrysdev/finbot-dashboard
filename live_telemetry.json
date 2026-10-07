@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-10-07 13:32:01",
+  "updated_at": "2026-10-07 13:33:01",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 48758.63,
-      "equity": 49067.44,
-      "closed_pl": -1241.37,
-      "total_pl": -932.5599999999977,
-      "roi_pct": -1.8651199999999954,
-      "floating_pl": 308.81,
-      "open_count": 3,
+      "balance": 49058.01,
+      "equity": 49037.99,
+      "closed_pl": -941.9899999999998,
+      "total_pl": -962.010000000002,
+      "roi_pct": -1.924020000000004,
+      "floating_pl": -20.02,
+      "open_count": 2,
       "trades": [
+        {
+          "pos_id": 93605310,
+          "time_raw": 1791387141,
+          "time": "2026-10-07 13:32",
+          "symbol": "EURUSD",
+          "bot": "Donchian EURUSD M15",
+          "type": "SELL",
+          "volume": 1.75,
+          "price_open": 1.11899,
+          "price_close": 1.11705,
+          "sl": null,
+          "tp": null,
+          "profit": 294.83,
+          "profit_str": "+294.83 EUR",
+          "status": "FECHADA",
+          "ticket": "62452368",
+          "magic": 888250,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 49062.9,
+          "running_equity": 49062.9
+        },
         {
           "pos_id": 93630684,
           "time_raw": 1791387085,
@@ -69,10 +92,10 @@
           "price_close": null,
           "sl": 158.101,
           "tp": 158.845,
-          "profit": -88.39,
-          "profit_str": "-88.39 EUR",
-          "running_balance": 48758.63,
-          "running_equity": 49067.44,
+          "profit": -93.64,
+          "profit_str": "-93.64 EUR",
+          "running_balance": 49058.01,
+          "running_equity": 49037.99,
           "status": "ABERTA",
           "ticket": "93630685",
           "magic": 444151,
@@ -171,27 +194,6 @@
           "month_key": "2026-10",
           "running_balance": 46775.68,
           "running_equity": 46775.68
-        },
-        {
-          "time": "2026-10-07 09:00",
-          "symbol": "EURUSD",
-          "bot": "Donchian EURUSD M15",
-          "type": "SELL",
-          "volume": 1.75,
-          "price_open": 1.11899,
-          "price_close": null,
-          "sl": 1.11705,
-          "tp": null,
-          "profit": 318.05,
-          "profit_str": "+318.05 EUR",
-          "running_balance": 48758.63,
-          "running_equity": 49067.44,
-          "status": "ABERTA",
-          "ticket": "93605310",
-          "magic": 888250,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791370800
         },
         {
           "pos_id": 93599707,
@@ -1100,10 +1102,10 @@
           "price_close": null,
           "sl": 4185.5,
           "tp": 3918.38,
-          "profit": 79.15,
-          "profit_str": "+79.15 EUR",
-          "running_balance": 48758.63,
-          "running_equity": 49067.44,
+          "profit": 73.62,
+          "profit_str": "+73.62 EUR",
+          "running_balance": 49058.01,
+          "running_equity": 49037.99,
           "status": "ABERTA",
           "ticket": "93090662",
           "magic": 777123,
@@ -4237,6 +4239,15 @@
           "total_profit": 1134.65
         },
         {
+          "bot": "Donchian EURUSD M15",
+          "magic": 888250,
+          "trades": 43,
+          "wins": 24,
+          "win_rate": 55.8,
+          "avg_profit": 19.31,
+          "total_profit": 830.45
+        },
+        {
           "bot": "MeanRev GBPUSD H1",
           "magic": 555200,
           "trades": 1,
@@ -4253,15 +4264,6 @@
           "win_rate": 80.0,
           "avg_profit": 147.39,
           "total_profit": 736.95
-        },
-        {
-          "bot": "Donchian EURUSD M15",
-          "magic": 888250,
-          "trades": 42,
-          "wins": 23,
-          "win_rate": 54.8,
-          "avg_profit": 12.75,
-          "total_profit": 535.62
         },
         {
           "bot": "FinBot GBPUSD H1",
@@ -4424,14 +4426,14 @@
             "MeanRev GBPUSD H1",
             "FinBot EURUSD M15",
             "FinBot EURUSD H1",
-            "FinBot GBPUSD H1"
+            "Donchian EURUSD M15"
           ],
           "profits": [
             1140.25,
             775.38,
             410.97,
             367.02,
-            230.76
+            341.92
           ]
         },
         "month": {
@@ -4444,7 +4446,7 @@
           ],
           "profits": [
             1425.05,
-            836.17,
+            1131.0,
             775.38,
             655.47,
             541.6
@@ -4454,16 +4456,16 @@
           "bots": [
             "FinBot EURUSD M15",
             "Donchian Gold XAUUSD M15",
+            "Donchian EURUSD M15",
             "MeanRev GBPUSD H1",
-            "FinBot EURUSD H1",
-            "Donchian EURUSD M15"
+            "FinBot EURUSD H1"
           ],
           "profits": [
             1277.34,
             1134.65,
+            830.45,
             775.38,
-            736.95,
-            535.62
+            736.95
           ]
         }
       }
@@ -4473,11 +4475,11 @@
       "currency": "EUR",
       "initial_deposit": 50200.0,
       "balance": 56575.39,
-      "equity": 56631.79,
+      "equity": 56587.82,
       "closed_pl": 6375.39,
-      "total_pl": 6431.790000000001,
-      "roi_pct": 12.81233067729084,
-      "floating_pl": 56.4,
+      "total_pl": 6387.82,
+      "roi_pct": 12.724741035856574,
+      "floating_pl": 12.43,
       "open_count": 3,
       "trades": [
         {
@@ -4513,10 +4515,10 @@
           "price_close": null,
           "sl": 1.11902,
           "tp": null,
-          "profit": 84.16,
-          "profit_str": "+84.16 EUR",
+          "profit": 51.92,
+          "profit_str": "+51.92 EUR",
           "running_balance": 56575.39,
-          "running_equity": 56631.79,
+          "running_equity": 56587.82,
           "status": "ABERTA",
           "ticket": "1992982967",
           "magic": 888250,
@@ -4580,10 +4582,10 @@
           "price_close": null,
           "sl": 158.112,
           "tp": 158.827,
-          "profit": -107.72,
-          "profit_str": "-107.72 EUR",
+          "profit": -112.77,
+          "profit_str": "-112.77 EUR",
           "running_balance": 56575.39,
-          "running_equity": 56631.79,
+          "running_equity": 56587.82,
           "status": "ABERTA",
           "ticket": "1992776937",
           "magic": 444151,
@@ -5636,10 +5638,10 @@
           "price_close": null,
           "sl": 4185.27,
           "tp": 3919.08,
-          "profit": 79.96,
-          "profit_str": "+79.96 EUR",
+          "profit": 73.28,
+          "profit_str": "+73.28 EUR",
           "running_balance": 56575.39,
-          "running_equity": 56631.79,
+          "running_equity": 56587.82,
           "status": "ABERTA",
           "ticket": "1983889685",
           "magic": 777123,
@@ -7063,11 +7065,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 1004.19,
-      "equity": 1003.53,
+      "equity": 1002.96,
       "closed_pl": 4.189999999999999,
-      "total_pl": 3.5299999999999727,
-      "roi_pct": 0.35299999999999726,
-      "floating_pl": -0.66,
+      "total_pl": 2.9600000000000364,
+      "roi_pct": 0.29600000000000365,
+      "floating_pl": -1.23,
       "open_count": 2,
       "trades": [
         {
@@ -7080,10 +7082,10 @@
           "price_close": null,
           "sl": 1.11902,
           "tp": null,
-          "profit": 1.26,
-          "profit_str": "+1.26 EUR",
+          "profit": 0.78,
+          "profit_str": "+0.78 EUR",
           "running_balance": 1004.19,
-          "running_equity": 1003.53,
+          "running_equity": 1002.96,
           "status": "ABERTA",
           "ticket": "1992982966",
           "magic": 888250,
@@ -7124,10 +7126,10 @@
           "price_close": null,
           "sl": 158.112,
           "tp": 158.827,
-          "profit": -1.92,
-          "profit_str": "-1.92 EUR",
+          "profit": -2.01,
+          "profit_str": "-2.01 EUR",
           "running_balance": 1004.19,
-          "running_equity": 1003.53,
+          "running_equity": 1002.96,
           "status": "ABERTA",
           "ticket": "1992776822",
           "magic": 444151,
