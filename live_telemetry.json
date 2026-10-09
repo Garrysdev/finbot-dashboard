@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-10-09 02:48:02",
+  "updated_at": "2026-10-09 03:54:05",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 45695.57,
-      "equity": 45459.37,
-      "closed_pl": -4304.43,
-      "total_pl": -4540.629999999997,
-      "roi_pct": -9.081259999999995,
-      "floating_pl": -236.2,
-      "open_count": 2,
+      "balance": 45465.85,
+      "equity": 45379.74,
+      "closed_pl": -4534.15,
+      "total_pl": -4620.260000000002,
+      "roi_pct": -9.240520000000004,
+      "floating_pl": -86.11,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 93891631,
+          "time_raw": 1791525184,
+          "time": "2026-10-09 03:53",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.2,
+          "price_open": 80958.94,
+          "price_close": 82252.96,
+          "sl": null,
+          "tp": null,
+          "profit": -229.72,
+          "profit_str": "-229.72 EUR",
+          "status": "FECHADA",
+          "ticket": "62721567",
+          "magic": 111260,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 45465.9,
+          "running_equity": 45465.9
+        },
         {
           "pos_id": 93891633,
           "time_raw": 1791520988,
@@ -196,27 +219,6 @@
           "month_key": "2026-10",
           "running_balance": 46547.78,
           "running_equity": 46547.78
-        },
-        {
-          "time": "2026-10-08 17:00",
-          "symbol": "BTCUSD",
-          "bot": "Donchian Slow BTCUSD H1",
-          "type": "SELL",
-          "volume": 0.2,
-          "price_open": 80958.94,
-          "price_close": null,
-          "sl": 82252.96,
-          "tp": null,
-          "profit": -157.29,
-          "profit_str": "-157.29 EUR",
-          "running_balance": 45695.57,
-          "running_equity": 45459.37,
-          "status": "ABERTA",
-          "ticket": "93891631",
-          "magic": 111260,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791486000
         },
         {
           "pos_id": 93871629,
@@ -1769,10 +1771,10 @@
           "price_close": null,
           "sl": 4185.5,
           "tp": 3918.38,
-          "profit": -78.91,
-          "profit_str": "-78.91 EUR",
-          "running_balance": 45695.57,
-          "running_equity": 45459.37,
+          "profit": -86.11,
+          "profit_str": "-86.11 EUR",
+          "running_balance": 45465.85,
+          "running_equity": 45379.74,
           "status": "ABERTA",
           "ticket": "93090662",
           "magic": 777123,
@@ -4960,15 +4962,6 @@
           "total_profit": 197.18
         },
         {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 1,
-          "wins": 1,
-          "win_rate": 100.0,
-          "avg_profit": 189.24,
-          "total_profit": 189.24
-        },
-        {
           "bot": "ORB XAGUSD M15",
           "magic": 666300,
           "trades": 2,
@@ -5012,6 +5005,15 @@
           "win_rate": 50.0,
           "avg_profit": -15.66,
           "total_profit": -31.31
+        },
+        {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 2,
+          "wins": 1,
+          "win_rate": 50.0,
+          "avg_profit": -20.24,
+          "total_profit": -40.48
         },
         {
           "bot": "ORB Gold XAUUSD M15",
@@ -5204,14 +5206,37 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 53250.78,
-      "equity": 52996.46,
-      "closed_pl": 3050.7800000000007,
-      "total_pl": 2796.459999999999,
-      "roi_pct": 5.570637450199201,
-      "floating_pl": -254.32,
-      "open_count": 2,
+      "balance": 52988.25,
+      "equity": 52903.26,
+      "closed_pl": 2788.250000000001,
+      "total_pl": 2703.260000000002,
+      "roi_pct": 5.384980079681279,
+      "floating_pl": -84.99,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 1996888301,
+          "time_raw": 1791525203,
+          "time": "2026-10-09 03:53",
+          "symbol": "BTCUSD",
+          "bot": "VolSqueeze Gold XAUUSD M15",
+          "type": "SELL",
+          "volume": 0.23,
+          "price_open": 80977.85,
+          "price_close": 82259.23,
+          "sl": null,
+          "tp": null,
+          "profit": -262.53,
+          "profit_str": "-262.53 EUR",
+          "status": "FECHADA",
+          "ticket": "1605681854",
+          "magic": 777350,
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 52988.32,
+          "running_equity": 52988.32
+        },
         {
           "pos_id": 1995161462,
           "time_raw": 1791521275,
@@ -5349,27 +5374,6 @@
           "month_key": "2026-10",
           "running_balance": 54301.03,
           "running_equity": 54301.03
-        },
-        {
-          "time": "2026-10-08 17:00",
-          "symbol": "BTCUSD",
-          "bot": "VolSqueeze Gold XAUUSD M15",
-          "type": "SELL",
-          "volume": 0.23,
-          "price_open": 80977.85,
-          "price_close": null,
-          "sl": 82262.96,
-          "tp": null,
-          "profit": -176.06,
-          "profit_str": "-176.06 EUR",
-          "running_balance": 53250.78,
-          "running_equity": 52996.46,
-          "status": "ABERTA",
-          "ticket": "1996888301",
-          "magic": 777350,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
-          "time_raw": 1791486000
         },
         {
           "pos_id": 1996636335,
@@ -6738,10 +6742,10 @@
           "price_close": null,
           "sl": 4185.27,
           "tp": 3919.08,
-          "profit": -78.26,
-          "profit_str": "-78.26 EUR",
-          "running_balance": 53250.78,
-          "running_equity": 52996.46,
+          "profit": -84.99,
+          "profit_str": "-84.99 EUR",
+          "running_balance": 52988.25,
+          "running_equity": 52903.26,
           "status": "ABERTA",
           "ticket": "1983889685",
           "magic": 777123,
@@ -7992,15 +7996,6 @@
           "total_profit": 213.11
         },
         {
-          "bot": "VolSqueeze Gold XAUUSD M15",
-          "magic": 777350,
-          "trades": 2,
-          "wins": 1,
-          "win_rate": 50.0,
-          "avg_profit": 77.03,
-          "total_profit": 154.06
-        },
-        {
           "bot": "FinBot Gold XAUUSD H1",
           "magic": 777123,
           "trades": 2,
@@ -8053,6 +8048,15 @@
           "win_rate": 0.0,
           "avg_profit": -31.57,
           "total_profit": -31.57
+        },
+        {
+          "bot": "VolSqueeze Gold XAUUSD M15",
+          "magic": 777350,
+          "trades": 3,
+          "wins": 1,
+          "win_rate": 33.3,
+          "avg_profit": -36.16,
+          "total_profit": -108.47
         },
         {
           "bot": "Donchian EURUSD M15",
@@ -8133,15 +8137,15 @@
             "MeanRev GBPUSD H1",
             "FinBot EURUSD H1",
             "Donchian Gold XAUUSD M15",
-            "VolSqueeze Gold XAUUSD M15",
-            "FinBot EURUSD M15"
+            "FinBot EURUSD M15",
+            "ORB XAGUSD M15"
           ],
           "profits": [
             941.96,
             433.19,
             433.14,
-            314.14,
-            303.86
+            303.86,
+            108.27
           ]
         },
         "month": {
@@ -8150,14 +8154,14 @@
             "FinBot EURUSD H1",
             "FinBot EURUSD M15",
             "VolSqueeze EURUSD M15",
-            "VolSqueeze Gold XAUUSD M15"
+            "ORB GBPUSD M15"
           ],
           "profits": [
             941.96,
             610.0,
             590.69,
             500.38,
-            314.14
+            308.05
           ]
         },
         "all": {
