@@ -1,18 +1,39 @@
 {
-  "updated_at": "2026-10-11 13:25:05",
+  "updated_at": "2026-10-11 14:00:02",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 45727.54,
-      "equity": 45787.22,
-      "closed_pl": -4272.46,
-      "total_pl": -4212.779999999999,
-      "roi_pct": -8.425559999999997,
-      "floating_pl": 59.68,
-      "open_count": 5,
+      "balance": 45726.46,
+      "equity": 45762.71,
+      "closed_pl": -4273.54,
+      "total_pl": -4237.290000000001,
+      "roi_pct": -8.474580000000003,
+      "floating_pl": 36.25,
+      "open_count": 6,
       "trades": [
+        {
+          "time": "2026-10-13 06:00",
+          "symbol": "WTOIL-PERP",
+          "bot": "Donchian Oil H1",
+          "type": "BUY",
+          "volume": 0.88,
+          "price_open": 91.767,
+          "price_close": null,
+          "sl": 91.557,
+          "tp": null,
+          "profit": -3.45,
+          "profit_str": "-3.45 EUR",
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
+          "status": "ABERTA",
+          "ticket": "94134289",
+          "magic": 333250,
+          "week_key": "2026-W42",
+          "week_label": "Semana 42 (12/Oct - 16/Oct 2026)",
+          "time_raw": 1791734400
+        },
         {
           "pos_id": 94128143,
           "time_raw": 1791732277,
@@ -69,10 +90,10 @@
           "price_close": null,
           "sl": 82658.76,
           "tp": null,
-          "profit": 66.62,
-          "profit_str": "+66.62 EUR",
-          "running_balance": 45727.54,
-          "running_equity": 45787.22,
+          "profit": 46.64,
+          "profit_str": "+46.64 EUR",
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
           "status": "ABERTA",
           "ticket": "94126574",
           "magic": 111250,
@@ -161,8 +182,8 @@
           "tp": 1.31193,
           "profit": -59.05,
           "profit_str": "-59.05 EUR",
-          "running_balance": 45727.54,
-          "running_equity": 45787.22,
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
           "status": "ABERTA",
           "ticket": "94066685",
           "magic": 555123,
@@ -182,8 +203,8 @@
           "tp": 4228.71,
           "profit": 15.68,
           "profit_str": "+15.68 EUR",
-          "running_balance": 45727.54,
-          "running_equity": 45787.22,
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
           "status": "ABERTA",
           "ticket": "94066695",
           "magic": 777151,
@@ -272,8 +293,8 @@
           "tp": 1.1139000000000001,
           "profit": -26.74,
           "profit_str": "-26.74 EUR",
-          "running_balance": 45727.54,
-          "running_equity": 45787.22,
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
           "status": "ABERTA",
           "ticket": "94050056",
           "magic": 888123,
@@ -500,8 +521,8 @@
           "tp": 159.798,
           "profit": 63.17,
           "profit_str": "+63.17 EUR",
-          "running_balance": 45727.54,
-          "running_equity": 45787.22,
+          "running_balance": 45726.46,
+          "running_equity": 45762.71,
           "status": "ABERTA",
           "ticket": "93994593",
           "magic": 444123,
@@ -5797,15 +5818,15 @@
       "currency": "EUR",
       "initial_deposit": 50200.0,
       "balance": 53563.35,
-      "equity": 53733.77,
+      "equity": 53723.72,
       "closed_pl": 3363.350000000001,
-      "total_pl": 3533.769999999997,
-      "roi_pct": 7.039382470119515,
-      "floating_pl": 170.42,
+      "total_pl": 3523.720000000001,
+      "roi_pct": 7.019362549800799,
+      "floating_pl": 160.37,
       "open_count": 5,
       "trades": [
         {
-          "time": "2026-10-11 18:00",
+          "time": "2026-10-11 19:00",
           "symbol": "BTCUSD",
           "bot": "VolSqueeze Gold XAUUSD M15",
           "type": "BUY",
@@ -5814,10 +5835,10 @@
           "price_close": null,
           "sl": 82571.72,
           "tp": null,
-          "profit": 169.47,
-          "profit_str": "+169.47 EUR",
+          "profit": 159.42,
+          "profit_str": "+159.42 EUR",
           "running_balance": 53563.35,
-          "running_equity": 53733.77,
+          "running_equity": 53723.72,
           "status": "ABERTA",
           "ticket": "2000043448",
           "magic": 777350,
@@ -5828,7 +5849,7 @@
         {
           "pos_id": 1999308610,
           "time_raw": 1791582467,
-          "time": "2026-10-11 10:47",
+          "time": "2026-10-11 11:47",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -5849,7 +5870,7 @@
           "running_equity": 53572.03
         },
         {
-          "time": "2026-10-11 06:00",
+          "time": "2026-10-11 07:00",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -5861,7 +5882,7 @@
           "profit": -67.08,
           "profit_str": "-67.08 EUR",
           "running_balance": 53563.35,
-          "running_equity": 53733.77,
+          "running_equity": 53723.72,
           "status": "ABERTA",
           "ticket": "1999360142",
           "magic": 555123,
@@ -5870,7 +5891,7 @@
           "time_raw": 1791565201
         },
         {
-          "time": "2026-10-11 06:00",
+          "time": "2026-10-11 07:00",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "BUY",
@@ -5882,7 +5903,7 @@
           "profit": 27.14,
           "profit_str": "+27.14 EUR",
           "running_balance": 53563.35,
-          "running_equity": 53733.77,
+          "running_equity": 53723.72,
           "status": "ABERTA",
           "ticket": "1999359699",
           "magic": 777151,
@@ -5893,7 +5914,7 @@
         {
           "pos_id": 1998891375,
           "time_raw": 1791564102,
-          "time": "2026-10-11 05:41",
+          "time": "2026-10-11 06:41",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "BUY",
@@ -5914,7 +5935,7 @@
           "running_equity": 53859.92
         },
         {
-          "time": "2026-10-11 05:00",
+          "time": "2026-10-11 06:00",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -5926,7 +5947,7 @@
           "profit": -28.36,
           "profit_str": "-28.36 EUR",
           "running_balance": 53563.35,
-          "running_equity": 53733.77,
+          "running_equity": 53723.72,
           "status": "ABERTA",
           "ticket": "1999139829",
           "magic": 888123,
@@ -5937,7 +5958,7 @@
         {
           "pos_id": 1998861887,
           "time_raw": 1791561533,
-          "time": "2026-10-11 04:58",
+          "time": "2026-10-11 05:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -5960,7 +5981,7 @@
         {
           "pos_id": 1998791506,
           "time_raw": 1791559844,
-          "time": "2026-10-11 04:30",
+          "time": "2026-10-11 05:30",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -5983,7 +6004,7 @@
         {
           "pos_id": 1998629473,
           "time_raw": 1791554603,
-          "time": "2026-10-11 03:03",
+          "time": "2026-10-11 04:03",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6006,7 +6027,7 @@
         {
           "pos_id": 1998261545,
           "time_raw": 1791554275,
-          "time": "2026-10-11 02:57",
+          "time": "2026-10-11 03:57",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -6029,7 +6050,7 @@
         {
           "pos_id": 1998467100,
           "time_raw": 1791554086,
-          "time": "2026-10-11 02:54",
+          "time": "2026-10-11 03:54",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -6052,7 +6073,7 @@
         {
           "pos_id": 1998298076,
           "time_raw": 1791542373,
-          "time": "2026-10-10 23:39",
+          "time": "2026-10-11 00:39",
           "symbol": "USDJPY",
           "bot": "ORB USDJPY M15",
           "type": "BUY",
@@ -6066,8 +6087,8 @@
           "status": "FECHADA",
           "ticket": "1606089468",
           "magic": 444300,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "week_key": "2026-W42",
+          "week_label": "Semana 42 (12/Oct - 16/Oct 2026)",
           "month_key": "2026-10",
           "running_balance": 53732.68,
           "running_equity": 53732.68
@@ -6075,7 +6096,7 @@
         {
           "pos_id": 1998261408,
           "time_raw": 1791537208,
-          "time": "2026-10-10 22:13",
+          "time": "2026-10-10 23:13",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -6096,7 +6117,7 @@
           "running_equity": 53596.36
         },
         {
-          "time": "2026-10-10 22:00",
+          "time": "2026-10-10 23:00",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY H1",
           "type": "BUY",
@@ -6108,7 +6129,7 @@
           "profit": 69.25,
           "profit_str": "+69.25 EUR",
           "running_balance": 53563.35,
-          "running_equity": 53733.77,
+          "running_equity": 53723.72,
           "status": "ABERTA",
           "ticket": "1998298073",
           "magic": 444123,
@@ -6119,7 +6140,7 @@
         {
           "pos_id": 1998146367,
           "time_raw": 1791535503,
-          "time": "2026-10-10 21:45",
+          "time": "2026-10-10 22:45",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -6142,7 +6163,7 @@
         {
           "pos_id": 1998099514,
           "time_raw": 1791535148,
-          "time": "2026-10-10 21:39",
+          "time": "2026-10-10 22:39",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -6165,7 +6186,7 @@
         {
           "pos_id": 1998146363,
           "time_raw": 1791534673,
-          "time": "2026-10-10 21:31",
+          "time": "2026-10-10 22:31",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "BUY",
@@ -6188,7 +6209,7 @@
         {
           "pos_id": 1983889685,
           "time_raw": 1791531305,
-          "time": "2026-10-10 20:35",
+          "time": "2026-10-10 21:35",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -6211,7 +6232,7 @@
         {
           "pos_id": 1996888301,
           "time_raw": 1791525203,
-          "time": "2026-10-10 18:53",
+          "time": "2026-10-10 19:53",
           "symbol": "BTCUSD",
           "bot": "VolSqueeze Gold XAUUSD M15",
           "type": "SELL",
@@ -6234,7 +6255,7 @@
         {
           "pos_id": 1995161462,
           "time_raw": 1791521275,
-          "time": "2026-10-10 17:47",
+          "time": "2026-10-10 18:47",
           "symbol": "XAGUSD",
           "bot": "VolSqueeze XAGUSD M15",
           "type": "SELL",
@@ -6257,7 +6278,7 @@
         {
           "pos_id": 1996820581,
           "time_raw": 1791490700,
-          "time": "2026-10-10 09:18",
+          "time": "2026-10-10 10:18",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "SELL",
@@ -6280,7 +6301,7 @@
         {
           "pos_id": 1996780446,
           "time_raw": 1791490672,
-          "time": "2026-10-10 09:17",
+          "time": "2026-10-10 10:17",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -6303,7 +6324,7 @@
         {
           "pos_id": 1995367989,
           "time_raw": 1791490623,
-          "time": "2026-10-10 09:17",
+          "time": "2026-10-10 10:17",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY H1",
           "type": "BUY",
@@ -6326,7 +6347,7 @@
         {
           "pos_id": 1996820579,
           "time_raw": 1791487055,
-          "time": "2026-10-10 08:17",
+          "time": "2026-10-10 09:17",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -6349,7 +6370,7 @@
         {
           "pos_id": 1996889198,
           "time_raw": 1791487054,
-          "time": "2026-10-10 08:17",
+          "time": "2026-10-10 09:17",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -6372,7 +6393,7 @@
         {
           "pos_id": 1996636335,
           "time_raw": 1791482840,
-          "time": "2026-10-10 07:07",
+          "time": "2026-10-10 08:07",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -6395,7 +6416,7 @@
         {
           "pos_id": 1996585164,
           "time_raw": 1791480998,
-          "time": "2026-10-10 06:36",
+          "time": "2026-10-10 07:36",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -6418,7 +6439,7 @@
         {
           "pos_id": 1995398049,
           "time_raw": 1791480853,
-          "time": "2026-10-10 06:34",
+          "time": "2026-10-10 07:34",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -6441,7 +6462,7 @@
         {
           "pos_id": 1995866718,
           "time_raw": 1791473344,
-          "time": "2026-10-10 04:29",
+          "time": "2026-10-10 05:29",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6464,7 +6485,7 @@
         {
           "pos_id": 1995531403,
           "time_raw": 1791459006,
-          "time": "2026-10-10 00:30",
+          "time": "2026-10-10 01:30",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6487,7 +6508,7 @@
         {
           "pos_id": 1995367986,
           "time_raw": 1791451403,
-          "time": "2026-10-09 22:23",
+          "time": "2026-10-09 23:23",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -6510,7 +6531,7 @@
         {
           "pos_id": 1995367987,
           "time_raw": 1791451403,
-          "time": "2026-10-09 22:23",
+          "time": "2026-10-09 23:23",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6533,7 +6554,7 @@
         {
           "pos_id": 1995322368,
           "time_raw": 1791450075,
-          "time": "2026-10-09 22:01",
+          "time": "2026-10-09 23:01",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -6556,7 +6577,7 @@
         {
           "pos_id": 1992982967,
           "time_raw": 1791394805,
-          "time": "2026-10-09 06:40",
+          "time": "2026-10-09 07:40",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6579,7 +6600,7 @@
         {
           "pos_id": 1992776937,
           "time_raw": 1791392444,
-          "time": "2026-10-09 06:00",
+          "time": "2026-10-09 07:00",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -6602,7 +6623,7 @@
         {
           "pos_id": 1993186677,
           "time_raw": 1791388836,
-          "time": "2026-10-09 05:00",
+          "time": "2026-10-09 06:00",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -6625,7 +6646,7 @@
         {
           "pos_id": 1992776746,
           "time_raw": 1791387085,
-          "time": "2026-10-09 04:31",
+          "time": "2026-10-09 05:31",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -6648,7 +6669,7 @@
         {
           "pos_id": 1992353856,
           "time_raw": 1791384472,
-          "time": "2026-10-09 03:47",
+          "time": "2026-10-09 04:47",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6671,7 +6692,7 @@
         {
           "pos_id": 1992194761,
           "time_raw": 1791381084,
-          "time": "2026-10-09 02:51",
+          "time": "2026-10-09 03:51",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -6694,7 +6715,7 @@
         {
           "pos_id": 1992440423,
           "time_raw": 1791380241,
-          "time": "2026-10-09 02:37",
+          "time": "2026-10-09 03:37",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -6717,7 +6738,7 @@
         {
           "pos_id": 1990272299,
           "time_raw": 1791376323,
-          "time": "2026-10-09 01:32",
+          "time": "2026-10-09 02:32",
           "symbol": "GBPUSD",
           "bot": "MeanRev GBPUSD H1",
           "type": "SELL",
@@ -6740,7 +6761,7 @@
         {
           "pos_id": 1992079926,
           "time_raw": 1791374785,
-          "time": "2026-10-09 01:06",
+          "time": "2026-10-09 02:06",
           "symbol": "XAGUSD",
           "bot": "ORB XAGUSD M15",
           "type": "SELL",
@@ -6763,7 +6784,7 @@
         {
           "pos_id": 1991950579,
           "time_raw": 1791372326,
-          "time": "2026-10-09 00:25",
+          "time": "2026-10-09 01:25",
           "symbol": "XAUUSD",
           "bot": "ORB Gold XAUUSD M15",
           "type": "SELL",
@@ -6786,7 +6807,7 @@
         {
           "pos_id": 1992266183,
           "time_raw": 1791370705,
-          "time": "2026-10-08 23:58",
+          "time": "2026-10-09 00:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6809,7 +6830,7 @@
         {
           "pos_id": 1991973254,
           "time_raw": 1791370597,
-          "time": "2026-10-08 23:56",
+          "time": "2026-10-09 00:56",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -6832,7 +6853,7 @@
         {
           "pos_id": 1991688691,
           "time_raw": 1791370537,
-          "time": "2026-10-08 23:55",
+          "time": "2026-10-09 00:55",
           "symbol": "USDJPY",
           "bot": "VolSqueeze USDJPY M15",
           "type": "BUY",
@@ -6855,7 +6876,7 @@
         {
           "pos_id": 1991927949,
           "time_raw": 1791370392,
-          "time": "2026-10-08 23:53",
+          "time": "2026-10-09 00:53",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -6878,7 +6899,7 @@
         {
           "pos_id": 1992141747,
           "time_raw": 1791365662,
-          "time": "2026-10-08 22:34",
+          "time": "2026-10-08 23:34",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6901,7 +6922,7 @@
         {
           "pos_id": 1991927954,
           "time_raw": 1791365376,
-          "time": "2026-10-08 22:29",
+          "time": "2026-10-08 23:29",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -6924,7 +6945,7 @@
         {
           "pos_id": 1991950530,
           "time_raw": 1791363899,
-          "time": "2026-10-08 22:04",
+          "time": "2026-10-08 23:04",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -6947,7 +6968,7 @@
         {
           "pos_id": 1990873387,
           "time_raw": 1791341146,
-          "time": "2026-10-08 15:45",
+          "time": "2026-10-08 16:45",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -6970,7 +6991,7 @@
         {
           "pos_id": 1990737945,
           "time_raw": 1791324060,
-          "time": "2026-10-08 11:01",
+          "time": "2026-10-08 12:01",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "BUY",
@@ -6993,7 +7014,7 @@
         {
           "pos_id": 1990805021,
           "time_raw": 1791324055,
-          "time": "2026-10-08 11:00",
+          "time": "2026-10-08 12:00",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "BUY",
@@ -7016,7 +7037,7 @@
         {
           "pos_id": 1990596758,
           "time_raw": 1791309997,
-          "time": "2026-10-08 07:06",
+          "time": "2026-10-08 08:06",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "SELL",
@@ -7039,7 +7060,7 @@
         {
           "pos_id": 1990596762,
           "time_raw": 1791309775,
-          "time": "2026-10-08 07:02",
+          "time": "2026-10-08 08:02",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -7062,7 +7083,7 @@
         {
           "pos_id": 1988995054,
           "time_raw": 1791309600,
-          "time": "2026-10-08 07:00",
+          "time": "2026-10-08 08:00",
           "symbol": "USDJPY",
           "bot": "ORB USDJPY M15",
           "type": "BUY",
@@ -7085,7 +7106,7 @@
         {
           "pos_id": 1990052668,
           "time_raw": 1791304714,
-          "time": "2026-10-08 05:38",
+          "time": "2026-10-08 06:38",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -7108,7 +7129,7 @@
         {
           "pos_id": 1990002763,
           "time_raw": 1791299836,
-          "time": "2026-10-08 04:17",
+          "time": "2026-10-08 05:17",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -7131,7 +7152,7 @@
         {
           "pos_id": 1989462068,
           "time_raw": 1791297387,
-          "time": "2026-10-08 03:36",
+          "time": "2026-10-08 04:36",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -7154,7 +7175,7 @@
         {
           "pos_id": 1985927507,
           "time_raw": 1791296533,
-          "time": "2026-10-08 03:22",
+          "time": "2026-10-08 04:22",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -7177,7 +7198,7 @@
         {
           "pos_id": 1989462066,
           "time_raw": 1791296133,
-          "time": "2026-10-08 03:15",
+          "time": "2026-10-08 04:15",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -7200,7 +7221,7 @@
         {
           "pos_id": 1989579765,
           "time_raw": 1791295530,
-          "time": "2026-10-08 03:05",
+          "time": "2026-10-08 04:05",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -7223,7 +7244,7 @@
         {
           "pos_id": 1989319599,
           "time_raw": 1791284279,
-          "time": "2026-10-07 23:57",
+          "time": "2026-10-08 00:57",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -7246,7 +7267,7 @@
         {
           "pos_id": 1989215051,
           "time_raw": 1791283216,
-          "time": "2026-10-07 23:40",
+          "time": "2026-10-08 00:40",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "SELL",
@@ -7269,7 +7290,7 @@
         {
           "pos_id": 1989215079,
           "time_raw": 1791281730,
-          "time": "2026-10-07 23:15",
+          "time": "2026-10-08 00:15",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -7292,7 +7313,7 @@
         {
           "pos_id": 1989215104,
           "time_raw": 1791280727,
-          "time": "2026-10-07 22:58",
+          "time": "2026-10-07 23:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -7315,7 +7336,7 @@
         {
           "pos_id": 1989086357,
           "time_raw": 1791277873,
-          "time": "2026-10-07 22:11",
+          "time": "2026-10-07 23:11",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -7338,7 +7359,7 @@
         {
           "pos_id": 1987301247,
           "time_raw": 1791264960,
-          "time": "2026-10-07 18:36",
+          "time": "2026-10-07 19:36",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -7361,7 +7382,7 @@
         {
           "pos_id": 1987190392,
           "time_raw": 1791231314,
-          "time": "2026-10-07 09:15",
+          "time": "2026-10-07 10:15",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -7384,7 +7405,7 @@
         {
           "pos_id": 1987301763,
           "time_raw": 1791223449,
-          "time": "2026-10-07 07:04",
+          "time": "2026-10-07 08:04",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -7407,7 +7428,7 @@
         {
           "pos_id": 1987373250,
           "time_raw": 1791222973,
-          "time": "2026-10-07 06:56",
+          "time": "2026-10-07 07:56",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -7430,7 +7451,7 @@
         {
           "pos_id": 1986533369,
           "time_raw": 1791218741,
-          "time": "2026-10-07 05:45",
+          "time": "2026-10-07 06:45",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -7453,7 +7474,7 @@
         {
           "pos_id": 1986395545,
           "time_raw": 1791218372,
-          "time": "2026-10-07 05:39",
+          "time": "2026-10-07 06:39",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -7476,7 +7497,7 @@
         {
           "pos_id": 1986346603,
           "time_raw": 1791216868,
-          "time": "2026-10-07 05:14",
+          "time": "2026-10-07 06:14",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -7499,7 +7520,7 @@
         {
           "pos_id": 1986674258,
           "time_raw": 1791210012,
-          "time": "2026-10-07 03:20",
+          "time": "2026-10-07 04:20",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -7522,7 +7543,7 @@
         {
           "pos_id": 1986188851,
           "time_raw": 1791200882,
-          "time": "2026-10-07 00:48",
+          "time": "2026-10-07 01:48",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -7545,7 +7566,7 @@
         {
           "pos_id": 1985825157,
           "time_raw": 1791197102,
-          "time": "2026-10-06 23:45",
+          "time": "2026-10-07 00:45",
           "symbol": "XAUUSD",
           "bot": "ORB Gold XAUUSD M15",
           "type": "SELL",
@@ -7568,7 +7589,7 @@
         {
           "pos_id": 1985825161,
           "time_raw": 1791191530,
-          "time": "2026-10-06 22:12",
+          "time": "2026-10-06 23:12",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -7591,7 +7612,7 @@
         {
           "pos_id": 1984794953,
           "time_raw": 1791185541,
-          "time": "2026-10-06 20:32",
+          "time": "2026-10-06 21:32",
           "symbol": "BTCUSD",
           "bot": "VolSqueeze Gold XAUUSD M15",
           "type": "BUY",
@@ -7614,7 +7635,7 @@
         {
           "pos_id": 1983727211,
           "time_raw": 1791184049,
-          "time": "2026-10-06 20:07",
+          "time": "2026-10-06 21:07",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -7637,7 +7658,7 @@
         {
           "pos_id": 1984258528,
           "time_raw": 1791179451,
-          "time": "2026-10-06 18:50",
+          "time": "2026-10-06 19:50",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -7660,7 +7681,7 @@
         {
           "pos_id": 1983372683,
           "time_raw": 1790978084,
-          "time": "2026-10-04 10:54",
+          "time": "2026-10-04 11:54",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -7683,7 +7704,7 @@
         {
           "pos_id": 1982939567,
           "time_raw": 1790978083,
-          "time": "2026-10-04 10:54",
+          "time": "2026-10-04 11:54",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -7706,7 +7727,7 @@
         {
           "pos_id": 1983653538,
           "time_raw": 1790968621,
-          "time": "2026-10-04 08:17",
+          "time": "2026-10-04 09:17",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -7729,7 +7750,7 @@
         {
           "pos_id": 1977259575,
           "time_raw": 1790960283,
-          "time": "2026-10-04 05:58",
+          "time": "2026-10-04 06:58",
           "symbol": "EURUSD",
           "bot": "VolSqueeze EURUSD M15",
           "type": "SELL",
@@ -7752,7 +7773,7 @@
         {
           "pos_id": 1982939514,
           "time_raw": 1790957985,
-          "time": "2026-10-04 05:19",
+          "time": "2026-10-04 06:19",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -7775,7 +7796,7 @@
         {
           "pos_id": 1981586140,
           "time_raw": 1790955015,
-          "time": "2026-10-04 04:30",
+          "time": "2026-10-04 05:30",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -7798,7 +7819,7 @@
         {
           "pos_id": 1982535995,
           "time_raw": 1790955015,
-          "time": "2026-10-04 04:30",
+          "time": "2026-10-04 05:30",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -7821,7 +7842,7 @@
         {
           "pos_id": 1981609216,
           "time_raw": 1790955013,
-          "time": "2026-10-04 04:30",
+          "time": "2026-10-04 05:30",
           "symbol": "XAGUSD",
           "bot": "ORB XAGUSD M15",
           "type": "BUY",
@@ -7844,7 +7865,7 @@
         {
           "pos_id": 1976914501,
           "time_raw": 1790955007,
-          "time": "2026-10-04 04:30",
+          "time": "2026-10-04 05:30",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -7867,7 +7888,7 @@
         {
           "pos_id": 1982434465,
           "time_raw": 1790955007,
-          "time": "2026-10-04 04:30",
+          "time": "2026-10-04 05:30",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -7890,7 +7911,7 @@
         {
           "pos_id": 1982435007,
           "time_raw": 1790954480,
-          "time": "2026-10-04 04:21",
+          "time": "2026-10-04 05:21",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -7913,7 +7934,7 @@
         {
           "pos_id": 1982347403,
           "time_raw": 1790947408,
-          "time": "2026-10-04 02:23",
+          "time": "2026-10-04 03:23",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -7936,7 +7957,7 @@
         {
           "pos_id": 1981586104,
           "time_raw": 1790947284,
-          "time": "2026-10-04 02:21",
+          "time": "2026-10-04 03:21",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -7959,7 +7980,7 @@
         {
           "pos_id": 1981824668,
           "time_raw": 1790941473,
-          "time": "2026-10-04 00:44",
+          "time": "2026-10-04 01:44",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -7982,7 +8003,7 @@
         {
           "pos_id": 1981609208,
           "time_raw": 1790936021,
-          "time": "2026-10-03 23:13",
+          "time": "2026-10-04 00:13",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "BUY",
@@ -7996,8 +8017,8 @@
           "status": "FECHADA",
           "ticket": "1593240815",
           "magic": 888300,
-          "week_key": "2026-W40",
-          "week_label": "Semana 40 (28/Sep - 02/Oct 2026)",
+          "week_key": "2026-W41",
+          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
           "month_key": "2026-10",
           "running_balance": 53677.52,
           "running_equity": 53677.52
@@ -8005,7 +8026,7 @@
         {
           "pos_id": 1980140132,
           "time_raw": 1790915746,
-          "time": "2026-10-03 17:35",
+          "time": "2026-10-03 18:35",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8028,7 +8049,7 @@
         {
           "pos_id": 1980006263,
           "time_raw": 1790886642,
-          "time": "2026-10-03 09:30",
+          "time": "2026-10-03 10:30",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD M15",
           "type": "SELL",
@@ -8051,7 +8072,7 @@
         {
           "pos_id": 1979647379,
           "time_raw": 1790886641,
-          "time": "2026-10-03 09:30",
+          "time": "2026-10-03 10:30",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -8074,7 +8095,7 @@
         {
           "pos_id": 1980006261,
           "time_raw": 1790879784,
-          "time": "2026-10-03 07:36",
+          "time": "2026-10-03 08:36",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8097,7 +8118,7 @@
         {
           "pos_id": 1977959508,
           "time_raw": 1790877600,
-          "time": "2026-10-03 07:00",
+          "time": "2026-10-03 08:00",
           "symbol": "XAUUSD",
           "bot": "ORB Gold XAUUSD M15",
           "type": "BUY",
@@ -8120,7 +8141,7 @@
         {
           "pos_id": 1978616512,
           "time_raw": 1790866023,
-          "time": "2026-10-03 03:47",
+          "time": "2026-10-03 04:47",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD M15",
           "type": "SELL",
@@ -8143,7 +8164,7 @@
         {
           "pos_id": 1978938225,
           "time_raw": 1790863189,
-          "time": "2026-10-03 02:59",
+          "time": "2026-10-03 03:59",
           "symbol": "XAGUSD",
           "bot": "FinBot XAGUSD H1",
           "type": "SELL",
@@ -8166,7 +8187,7 @@
         {
           "pos_id": 1978759103,
           "time_raw": 1790861458,
-          "time": "2026-10-03 02:30",
+          "time": "2026-10-03 03:30",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -8189,7 +8210,7 @@
         {
           "pos_id": 1978665902,
           "time_raw": 1790860057,
-          "time": "2026-10-03 02:07",
+          "time": "2026-10-03 03:07",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8212,7 +8233,7 @@
         {
           "pos_id": 1978083841,
           "time_raw": 1790856221,
-          "time": "2026-10-03 01:03",
+          "time": "2026-10-03 02:03",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
@@ -8235,7 +8256,7 @@
         {
           "pos_id": 1978514136,
           "time_raw": 1790856217,
-          "time": "2026-10-03 01:03",
+          "time": "2026-10-03 02:03",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "SELL",
@@ -8258,7 +8279,7 @@
         {
           "pos_id": 1977049304,
           "time_raw": 1790852671,
-          "time": "2026-10-03 00:04",
+          "time": "2026-10-03 01:04",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -8281,7 +8302,7 @@
         {
           "pos_id": 1978349831,
           "time_raw": 1790850731,
-          "time": "2026-10-02 23:32",
+          "time": "2026-10-03 00:32",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8304,7 +8325,7 @@
         {
           "pos_id": 1978120304,
           "time_raw": 1790850685,
-          "time": "2026-10-02 23:31",
+          "time": "2026-10-03 00:31",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -8327,7 +8348,7 @@
         {
           "pos_id": 1978436795,
           "time_raw": 1790850225,
-          "time": "2026-10-02 23:23",
+          "time": "2026-10-03 00:23",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -8350,7 +8371,7 @@
         {
           "pos_id": 1978026079,
           "time_raw": 1790847774,
-          "time": "2026-10-02 22:42",
+          "time": "2026-10-02 23:42",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8373,7 +8394,7 @@
         {
           "pos_id": 1978026080,
           "time_raw": 1790847652,
-          "time": "2026-10-02 22:40",
+          "time": "2026-10-02 23:40",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "SELL",
@@ -8396,7 +8417,7 @@
         {
           "pos_id": 1977958214,
           "time_raw": 1790844020,
-          "time": "2026-10-02 21:40",
+          "time": "2026-10-02 22:40",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "BUY",
@@ -8419,7 +8440,7 @@
         {
           "pos_id": 1976690859,
           "time_raw": 1790824871,
-          "time": "2026-10-02 16:21",
+          "time": "2026-10-02 17:21",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "SELL",
@@ -8442,7 +8463,7 @@
         {
           "pos_id": 1976645525,
           "time_raw": 1790821363,
-          "time": "2026-10-02 15:22",
+          "time": "2026-10-02 16:22",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -8465,7 +8486,7 @@
         {
           "pos_id": 1976778918,
           "time_raw": 1790806886,
-          "time": "2026-10-02 11:21",
+          "time": "2026-10-02 12:21",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8488,7 +8509,7 @@
         {
           "pos_id": 1976740676,
           "time_raw": 1790806884,
-          "time": "2026-10-02 11:21",
+          "time": "2026-10-02 12:21",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -8511,7 +8532,7 @@
         {
           "pos_id": 1967146041,
           "time_raw": 1790711884,
-          "time": "2026-10-01 08:58",
+          "time": "2026-10-01 09:58",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD H1",
           "type": "SELL",
@@ -8534,7 +8555,7 @@
         {
           "pos_id": 1970934074,
           "time_raw": 1790680877,
-          "time": "2026-10-01 00:21",
+          "time": "2026-10-01 01:21",
           "symbol": "BTCUSD",
           "bot": "VolSqueeze Gold XAUUSD M15",
           "type": "SELL",
@@ -8557,7 +8578,7 @@
         {
           "pos_id": 1968861525,
           "time_raw": 1790623604,
-          "time": "2026-09-30 08:26",
+          "time": "2026-09-30 09:26",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8580,7 +8601,7 @@
         {
           "pos_id": 1968573052,
           "time_raw": 1790607945,
-          "time": "2026-09-30 04:05",
+          "time": "2026-09-30 05:05",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -8603,7 +8624,7 @@
         {
           "pos_id": 1968329428,
           "time_raw": 1790607850,
-          "time": "2026-09-30 04:04",
+          "time": "2026-09-30 05:04",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "SELL",
@@ -8626,7 +8647,7 @@
         {
           "pos_id": 1967086031,
           "time_raw": 1790600465,
-          "time": "2026-09-30 02:01",
+          "time": "2026-09-30 03:01",
           "symbol": "XAUUSD",
           "bot": "FinBot Gold XAUUSD H1",
           "type": "SELL",
@@ -8649,7 +8670,7 @@
         {
           "pos_id": 1968518862,
           "time_raw": 1790598540,
-          "time": "2026-09-30 01:29",
+          "time": "2026-09-30 02:29",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
@@ -8672,7 +8693,7 @@
         {
           "pos_id": 1968279004,
           "time_raw": 1790594784,
-          "time": "2026-09-30 00:26",
+          "time": "2026-09-30 01:26",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -8695,7 +8716,7 @@
         {
           "pos_id": 1968468527,
           "time_raw": 1790593317,
-          "time": "2026-09-30 00:01",
+          "time": "2026-09-30 01:01",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
@@ -8718,7 +8739,7 @@
         {
           "pos_id": 1968374938,
           "time_raw": 1790592800,
-          "time": "2026-09-29 23:53",
+          "time": "2026-09-30 00:53",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -8741,7 +8762,7 @@
         {
           "pos_id": 1968148860,
           "time_raw": 1790592601,
-          "time": "2026-09-29 23:50",
+          "time": "2026-09-30 00:50",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -8764,7 +8785,7 @@
         {
           "pos_id": 1968010099,
           "time_raw": 1790589874,
-          "time": "2026-09-29 23:04",
+          "time": "2026-09-30 00:04",
           "symbol": "XAGUSD",
           "bot": "Donchian XAGUSD M15",
           "type": "SELL",
@@ -8787,7 +8808,7 @@
         {
           "pos_id": 1968061839,
           "time_raw": 1790589683,
-          "time": "2026-09-29 23:01",
+          "time": "2026-09-30 00:01",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -8810,7 +8831,7 @@
         {
           "pos_id": 1968148861,
           "time_raw": 1790589324,
-          "time": "2026-09-29 22:55",
+          "time": "2026-09-29 23:55",
           "symbol": "USDJPY",
           "bot": "Donchian USDJPY M15",
           "type": "SELL",
@@ -8833,7 +8854,7 @@
         {
           "pos_id": 1968062088,
           "time_raw": 1790588000,
-          "time": "2026-09-29 22:33",
+          "time": "2026-09-29 23:33",
           "symbol": "XAUUSD",
           "bot": "Donchian Gold XAUUSD M15",
           "type": "SELL",
@@ -8856,7 +8877,7 @@
         {
           "pos_id": 1966686462,
           "time_raw": 1790539629,
-          "time": "2026-09-29 09:07",
+          "time": "2026-09-29 10:07",
           "symbol": "BTCUSD",
           "bot": "MeanRev Gold XAUUSD H1",
           "type": "SELL",
@@ -9108,17 +9129,17 @@
         "week": {
           "bots": [
             "FinBot XAGUSD M15",
+            "ORB USDJPY M15",
             "Donchian EURUSD M15",
             "Donchian Gold XAUUSD M15",
-            "ORB GBPUSD M15",
-            "FinBot GBPUSD M15"
+            "ORB GBPUSD M15"
           ],
           "profits": [
             604.55,
+            136.32,
             89.63,
             -275.1,
-            -288.23,
-            -291.5
+            -288.23
           ]
         },
         "month": {
@@ -9170,7 +9191,7 @@
         {
           "pos_id": 1999308621,
           "time_raw": 1791582467,
-          "time": "2026-10-11 10:47",
+          "time": "2026-10-11 11:47",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9193,7 +9214,7 @@
         {
           "pos_id": 1998861953,
           "time_raw": 1791561533,
-          "time": "2026-10-11 04:58",
+          "time": "2026-10-11 05:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9216,7 +9237,7 @@
         {
           "pos_id": 1998629510,
           "time_raw": 1791554603,
-          "time": "2026-10-11 03:03",
+          "time": "2026-10-11 04:03",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9239,7 +9260,7 @@
         {
           "pos_id": 1998261529,
           "time_raw": 1791554275,
-          "time": "2026-10-11 02:57",
+          "time": "2026-10-11 03:57",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "BUY",
@@ -9262,7 +9283,7 @@
         {
           "pos_id": 1998467101,
           "time_raw": 1791554086,
-          "time": "2026-10-11 02:54",
+          "time": "2026-10-11 03:54",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -9285,7 +9306,7 @@
         {
           "pos_id": 1998297093,
           "time_raw": 1791542373,
-          "time": "2026-10-10 23:39",
+          "time": "2026-10-11 00:39",
           "symbol": "USDJPY",
           "bot": "ORB USDJPY M15",
           "type": "BUY",
@@ -9299,8 +9320,8 @@
           "status": "FECHADA",
           "ticket": "1606089473",
           "magic": 444300,
-          "week_key": "2026-W41",
-          "week_label": "Semana 41 (05/Oct - 09/Oct 2026)",
+          "week_key": "2026-W42",
+          "week_label": "Semana 42 (12/Oct - 16/Oct 2026)",
           "month_key": "2026-10",
           "running_balance": 988.23,
           "running_equity": 988.23
@@ -9308,7 +9329,7 @@
         {
           "pos_id": 1998145977,
           "time_raw": 1791535503,
-          "time": "2026-10-10 21:45",
+          "time": "2026-10-10 22:45",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -9331,7 +9352,7 @@
         {
           "pos_id": 1998145988,
           "time_raw": 1791534673,
-          "time": "2026-10-10 21:31",
+          "time": "2026-10-10 22:31",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "BUY",
@@ -9354,7 +9375,7 @@
         {
           "pos_id": 1996820372,
           "time_raw": 1791487055,
-          "time": "2026-10-10 08:17",
+          "time": "2026-10-10 09:17",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -9377,7 +9398,7 @@
         {
           "pos_id": 1996585156,
           "time_raw": 1791480998,
-          "time": "2026-10-10 06:36",
+          "time": "2026-10-10 07:36",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -9400,7 +9421,7 @@
         {
           "pos_id": 1995866682,
           "time_raw": 1791473344,
-          "time": "2026-10-10 04:29",
+          "time": "2026-10-10 05:29",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9423,7 +9444,7 @@
         {
           "pos_id": 1995531387,
           "time_raw": 1791459006,
-          "time": "2026-10-10 00:30",
+          "time": "2026-10-10 01:30",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9446,7 +9467,7 @@
         {
           "pos_id": 1995367142,
           "time_raw": 1791451403,
-          "time": "2026-10-09 22:23",
+          "time": "2026-10-09 23:23",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9469,7 +9490,7 @@
         {
           "pos_id": 1995367144,
           "time_raw": 1791451403,
-          "time": "2026-10-09 22:23",
+          "time": "2026-10-09 23:23",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -9492,7 +9513,7 @@
         {
           "pos_id": 1995322324,
           "time_raw": 1791450075,
-          "time": "2026-10-09 22:01",
+          "time": "2026-10-09 23:01",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -9515,7 +9536,7 @@
         {
           "pos_id": 1992982966,
           "time_raw": 1791394805,
-          "time": "2026-10-09 06:40",
+          "time": "2026-10-09 07:40",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9538,7 +9559,7 @@
         {
           "pos_id": 1992776822,
           "time_raw": 1791392444,
-          "time": "2026-10-09 06:00",
+          "time": "2026-10-09 07:00",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -9561,7 +9582,7 @@
         {
           "pos_id": 1992353893,
           "time_raw": 1791384472,
-          "time": "2026-10-09 03:47",
+          "time": "2026-10-09 04:47",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9584,7 +9605,7 @@
         {
           "pos_id": 1992266103,
           "time_raw": 1791370705,
-          "time": "2026-10-08 23:58",
+          "time": "2026-10-09 00:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9607,7 +9628,7 @@
         {
           "pos_id": 1991927852,
           "time_raw": 1791370392,
-          "time": "2026-10-08 23:53",
+          "time": "2026-10-09 00:53",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -9630,7 +9651,7 @@
         {
           "pos_id": 1992141713,
           "time_raw": 1791365662,
-          "time": "2026-10-08 22:34",
+          "time": "2026-10-08 23:34",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9653,7 +9674,7 @@
         {
           "pos_id": 1991927872,
           "time_raw": 1791365376,
-          "time": "2026-10-08 22:29",
+          "time": "2026-10-08 23:29",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9676,7 +9697,7 @@
         {
           "pos_id": 1990873322,
           "time_raw": 1791341146,
-          "time": "2026-10-08 15:45",
+          "time": "2026-10-08 16:45",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -9699,7 +9720,7 @@
         {
           "pos_id": 1988995043,
           "time_raw": 1791309600,
-          "time": "2026-10-08 07:00",
+          "time": "2026-10-08 08:00",
           "symbol": "USDJPY",
           "bot": "ORB USDJPY M15",
           "type": "BUY",
@@ -9722,7 +9743,7 @@
         {
           "pos_id": 1990052653,
           "time_raw": 1791304714,
-          "time": "2026-10-08 05:38",
+          "time": "2026-10-08 06:38",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -9745,7 +9766,7 @@
         {
           "pos_id": 1989462063,
           "time_raw": 1791297387,
-          "time": "2026-10-08 03:36",
+          "time": "2026-10-08 04:36",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -9768,7 +9789,7 @@
         {
           "pos_id": 1989462059,
           "time_raw": 1791296133,
-          "time": "2026-10-08 03:15",
+          "time": "2026-10-08 04:15",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "BUY",
@@ -9791,7 +9812,7 @@
         {
           "pos_id": 1989215035,
           "time_raw": 1791283216,
-          "time": "2026-10-07 23:40",
+          "time": "2026-10-08 00:40",
           "symbol": "EURUSD",
           "bot": "ORB EURUSD M15",
           "type": "SELL",
@@ -9814,7 +9835,7 @@
         {
           "pos_id": 1989215032,
           "time_raw": 1791281730,
-          "time": "2026-10-07 23:15",
+          "time": "2026-10-08 00:15",
           "symbol": "GBPUSD",
           "bot": "ORB GBPUSD M15",
           "type": "SELL",
@@ -9837,7 +9858,7 @@
         {
           "pos_id": 1989215038,
           "time_raw": 1791280727,
-          "time": "2026-10-07 22:58",
+          "time": "2026-10-07 23:58",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9860,7 +9881,7 @@
         {
           "pos_id": 1989086374,
           "time_raw": 1791277873,
-          "time": "2026-10-07 22:11",
+          "time": "2026-10-07 23:11",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -9883,7 +9904,7 @@
         {
           "pos_id": 1987301725,
           "time_raw": 1791223449,
-          "time": "2026-10-07 07:04",
+          "time": "2026-10-07 08:04",
           "symbol": "EURUSD",
           "bot": "FinBot EURUSD M15",
           "type": "SELL",
@@ -9906,7 +9927,7 @@
         {
           "pos_id": 1987373208,
           "time_raw": 1791222973,
-          "time": "2026-10-07 06:56",
+          "time": "2026-10-07 07:56",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "SELL",
@@ -9929,7 +9950,7 @@
         {
           "pos_id": 1986533341,
           "time_raw": 1791218741,
-          "time": "2026-10-07 05:45",
+          "time": "2026-10-07 06:45",
           "symbol": "EURUSD",
           "bot": "Donchian EURUSD M15",
           "type": "BUY",
@@ -9952,7 +9973,7 @@
         {
           "pos_id": 1986346606,
           "time_raw": 1791216868,
-          "time": "2026-10-07 05:14",
+          "time": "2026-10-07 06:14",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD M15",
           "type": "BUY",
@@ -9975,7 +9996,7 @@
         {
           "pos_id": 1986674268,
           "time_raw": 1791210012,
-          "time": "2026-10-07 03:20",
+          "time": "2026-10-07 04:20",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "BUY",
@@ -9998,7 +10019,7 @@
         {
           "pos_id": 1986188853,
           "time_raw": 1791200882,
-          "time": "2026-10-07 00:48",
+          "time": "2026-10-07 01:48",
           "symbol": "USDJPY",
           "bot": "FinBot USDJPY M15",
           "type": "SELL",
@@ -10087,11 +10108,13 @@
       "top_5": {
         "week": {
           "bots": [
+            "ORB USDJPY M15",
             "Donchian EURUSD M15",
             "ORB GBPUSD M15",
             "FinBot GBPUSD M15"
           ],
           "profits": [
+            1.79,
             0.79,
             -3.96,
             -5.18
