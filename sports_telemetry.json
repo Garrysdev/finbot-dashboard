@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-12 23:30:20",
+  "updated_at": "2026-10-13 23:30:10",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
     "by_version": {
       "v1_moments_pinnacle": {
-        "settled_bets": 52,
-        "wins": 23,
+        "settled_bets": 53,
+        "wins": 24,
         "losses": 29,
-        "win_rate": 44.2,
-        "total_profit": 7.85,
-        "yield_pct": 6.53
+        "win_rate": 45.3,
+        "total_profit": 10.89,
+        "yield_pct": 8.92
       },
       "v2_mle_pinnacle_2026-09-17": {
         "settled_bets": 49,
@@ -24,15 +24,15 @@
   },
   "kpis": {
     "initial_bankroll": 100.0,
-    "current_balance": 104.96,
-    "total_profit": 4.96,
-    "roi_pct": 4.96,
-    "yield_pct": 2.03,
-    "win_rate": 42.6,
-    "total_bets": 135,
+    "current_balance": 108.0,
+    "total_profit": 8.0,
+    "roi_pct": 8.0,
+    "yield_pct": 3.25,
+    "win_rate": 43.1,
+    "total_bets": 139,
     "today_bets": 31,
-    "pending_bets": 34,
-    "settled_bets": 101
+    "pending_bets": 37,
+    "settled_bets": 102
   },
   "bets": [
     {
@@ -1154,7 +1154,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1286,7 +1286,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1308,7 +1308,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1484,7 +1484,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1726,7 +1726,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -1902,7 +1902,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2374,7 +2374,7 @@
       "league": "Serie A (Itália)",
       "match": "Atalanta BC vs Venezia",
       "time": "2026-10-12 17:30",
-      "is_today": true,
+      "is_today": false,
       "market": "Vitória Atalanta BC",
       "selection": "Vitória Atalanta BC",
       "bookmaker": "Pinnacle",
@@ -2396,7 +2396,7 @@
       "league": "UEFA Champions League",
       "match": "RC Lens vs Sporting Lisbon",
       "time": "2026-10-13 17:45",
-      "is_today": false,
+      "is_today": true,
       "market": "Vitória Sporting Lisbon",
       "selection": "Vitória Sporting Lisbon",
       "bookmaker": "Pinnacle",
@@ -2404,11 +2404,11 @@
       "model_prob": "41.2%",
       "ev_pct": "+12.2%",
       "stake": "1.77 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 104.96,
+      "status": "GANHA",
+      "result": "0-2",
+      "profit": 3.04,
+      "profit_str": "+3.04 €",
+      "running_balance": 108.0,
       "engine_version": "v1_moments_pinnacle"
     },
     {
@@ -2430,7 +2430,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2452,7 +2452,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2474,7 +2474,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2496,7 +2496,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2518,7 +2518,29 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_f00cd1ea41fa39149729d14ebc07aa6c_OVER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Valencia vs Athletic Bilbao",
+      "time": "2026-10-17 20:00",
+      "is_today": false,
+      "market": "Mais de 2.5 Golos",
+      "selection": "Mais de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 2.08,
+      "model_prob": "50.5%",
+      "ev_pct": "+5.1%",
+      "stake": "1.17 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2540,7 +2562,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2562,7 +2584,29 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_dfd5d6648be46426e418801584d46a68_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "Premier League (Inglaterra)",
+      "match": "Bournemouth vs Sunderland",
+      "time": "2026-10-18 14:00",
+      "is_today": false,
+      "market": "Vitória Bournemouth",
+      "selection": "Vitória Bournemouth",
+      "bookmaker": "Pinnacle",
+      "odd": 2.06,
+      "model_prob": "50.8%",
+      "ev_pct": "+4.8%",
+      "stake": "1.12 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2576,15 +2620,15 @@
       "market": "Menos de 2.5 Golos",
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
-      "odd": 2.04,
+      "odd": 2.05,
       "model_prob": "53.2%",
-      "ev_pct": "+8.6%",
-      "stake": "2.06 €",
+      "ev_pct": "+9.1%",
+      "stake": "2.17 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2598,15 +2642,15 @@
       "market": "Vitória Crystal Palace",
       "selection": "Vitória Crystal Palace",
       "bookmaker": "Pinnacle",
-      "odd": 5.26,
+      "odd": 5.36,
       "model_prob": "20.4%",
-      "ev_pct": "+7.5%",
+      "ev_pct": "+9.5%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2620,15 +2664,15 @@
       "market": "Vitória Manchester United",
       "selection": "Vitória Manchester United",
       "bookmaker": "Pinnacle",
-      "odd": 2.68,
+      "odd": 2.82,
       "model_prob": "41.1%",
-      "ev_pct": "+10.2%",
-      "stake": "1.52 €",
+      "ev_pct": "+16.0%",
+      "stake": "2.20 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2642,15 +2686,15 @@
       "market": "Vitória Celta Vigo",
       "selection": "Vitória Celta Vigo",
       "bookmaker": "Pinnacle",
-      "odd": 2.04,
+      "odd": 2.05,
       "model_prob": "57.7%",
-      "ev_pct": "+17.7%",
-      "stake": "4.26 €",
+      "ev_pct": "+18.3%",
+      "stake": "4.36 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2672,7 +2716,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2686,15 +2730,15 @@
       "market": "Menos de 2.5 Golos",
       "selection": "Menos de 2.5",
       "bookmaker": "Pinnacle",
-      "odd": 1.94,
+      "odd": 1.95,
       "model_prob": "58.8%",
-      "ev_pct": "+14.1%",
-      "stake": "3.75 €",
+      "ev_pct": "+14.7%",
+      "stake": "3.87 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2716,7 +2760,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2738,7 +2782,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2760,7 +2804,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2782,7 +2826,29 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_a362cccad837f1ffae61ff43a3536688_OVER_25",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Levante vs Athletic Bilbao",
+      "time": "2026-10-21 19:00",
+      "is_today": false,
+      "market": "Mais de 2.5 Golos",
+      "selection": "Mais de 2.5",
+      "bookmaker": "Pinnacle",
+      "odd": 2.0,
+      "model_prob": "53.1%",
+      "ev_pct": "+6.3%",
+      "stake": "1.57 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2796,37 +2862,15 @@
       "market": "Vitória Aston Villa",
       "selection": "Vitória Aston Villa",
       "bookmaker": "Pinnacle",
-      "odd": 4.72,
+      "odd": 4.71,
       "model_prob": "23.9%",
-      "ev_pct": "+12.7%",
+      "ev_pct": "+12.5%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
-      "engine_version": "v2_mle_pinnacle_2026-09-17"
-    },
-    {
-      "bet_id": "bet_734ad601156f5f4e6bc42317e5141516_1X2_AWAY",
-      "sport": "Futebol",
-      "sport_emoji": "⚽",
-      "league": "La Liga (Espanha)",
-      "match": "Rayo Vallecano vs Elche CF",
-      "time": "2026-10-24 13:00",
-      "is_today": false,
-      "market": "Vitória Elche CF",
-      "selection": "Vitória Elche CF",
-      "bookmaker": "Pinnacle",
-      "odd": 4.46,
-      "model_prob": "23.8%",
-      "ev_pct": "+6.3%",
-      "stake": "1.00 €",
-      "status": "PENDENTE",
-      "result": "—",
-      "profit": 0.0,
-      "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2848,7 +2892,29 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_734ad601156f5f4e6bc42317e5141516_1X2_AWAY",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Rayo Vallecano vs Elche CF",
+      "time": "2026-10-24 13:00",
+      "is_today": false,
+      "market": "Vitória Elche CF",
+      "selection": "Vitória Elche CF",
+      "bookmaker": "Pinnacle",
+      "odd": 4.46,
+      "model_prob": "23.8%",
+      "ev_pct": "+6.3%",
+      "stake": "1.00 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2870,7 +2936,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2892,7 +2958,29 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
+      "engine_version": "v2_mle_pinnacle_2026-09-17"
+    },
+    {
+      "bet_id": "bet_0dae715cc56fe201f9e667917c126691_1X2_HOME",
+      "sport": "Futebol",
+      "sport_emoji": "⚽",
+      "league": "La Liga (Espanha)",
+      "match": "Valencia vs Villarreal",
+      "time": "2026-10-24 17:30",
+      "is_today": false,
+      "market": "Vitória Valencia",
+      "selection": "Vitória Valencia",
+      "bookmaker": "Pinnacle",
+      "odd": 3.35,
+      "model_prob": "35.9%",
+      "ev_pct": "+20.3%",
+      "stake": "2.16 €",
+      "status": "PENDENTE",
+      "result": "—",
+      "profit": 0.0,
+      "profit_str": "—",
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2914,7 +3002,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2936,7 +3024,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2958,7 +3046,7 @@
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2972,15 +3060,15 @@
       "market": "Vitória Levante",
       "selection": "Vitória Levante",
       "bookmaker": "Pinnacle",
-      "odd": 4.53,
+      "odd": 4.28,
       "model_prob": "24.9%",
-      "ev_pct": "+12.9%",
+      "ev_pct": "+6.7%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     },
     {
@@ -2994,15 +3082,15 @@
       "market": "Vitória Real Madrid",
       "selection": "Vitória Real Madrid",
       "bookmaker": "Pinnacle",
-      "odd": 4.72,
+      "odd": 4.92,
       "model_prob": "22.6%",
-      "ev_pct": "+6.4%",
+      "ev_pct": "+10.9%",
       "stake": "1.00 €",
       "status": "PENDENTE",
       "result": "—",
       "profit": 0.0,
       "profit_str": "—",
-      "running_balance": 104.96,
+      "running_balance": 108.0,
       "engine_version": "v2_mle_pinnacle_2026-09-17"
     }
   ]
