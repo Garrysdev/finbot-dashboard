@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-15 18:15:53",
+  "updated_at": "2026-10-15 20:44:00",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
       "balance": 44439.19,
-      "equity": 44457.05,
+      "equity": 44577.99,
       "closed_pl": -5560.8099999999995,
-      "total_pl": -5542.949999999997,
-      "roi_pct": -11.085899999999995,
-      "floating_pl": 17.86,
+      "total_pl": -5422.010000000002,
+      "roi_pct": -10.844020000000004,
+      "floating_pl": 138.8,
       "open_count": 5,
       "trades": [
         {
@@ -23,10 +23,10 @@
           "price_close": null,
           "sl": 95.733,
           "tp": null,
-          "profit": -44.76,
-          "profit_str": "-44.76 EUR",
+          "profit": -54.05,
+          "profit_str": "-54.05 EUR",
           "running_balance": 44439.19,
-          "running_equity": 44457.05,
+          "running_equity": 44577.99,
           "status": "ABERTA",
           "ticket": "95122579",
           "magic": 333250,
@@ -67,10 +67,10 @@
           "price_close": null,
           "sl": 157.97,
           "tp": null,
-          "profit": -75.09,
-          "profit_str": "-75.09 EUR",
+          "profit": -91.49,
+          "profit_str": "-91.49 EUR",
           "running_balance": 44439.19,
-          "running_equity": 44457.05,
+          "running_equity": 44577.99,
           "status": "ABERTA",
           "ticket": "95115355",
           "magic": 444250,
@@ -88,10 +88,10 @@
           "price_close": null,
           "sl": 81067.28,
           "tp": null,
-          "profit": -7.66,
-          "profit_str": "-7.66 EUR",
+          "profit": -3.16,
+          "profit_str": "-3.16 EUR",
           "running_balance": 44439.19,
-          "running_equity": 44457.05,
+          "running_equity": 44577.99,
           "status": "ABERTA",
           "ticket": "95111425",
           "magic": 111250,
@@ -109,10 +109,10 @@
           "price_close": null,
           "sl": 94.48,
           "tp": null,
-          "profit": 228.51,
-          "profit_str": "+228.51 EUR",
+          "profit": 218.64,
+          "profit_str": "+218.64 EUR",
           "running_balance": 44439.19,
-          "running_equity": 44457.05,
+          "running_equity": 44577.99,
           "status": "ABERTA",
           "ticket": "95098169",
           "magic": 333260,
@@ -130,10 +130,10 @@
           "price_close": null,
           "sl": 56.553,
           "tp": null,
-          "profit": -83.14,
-          "profit_str": "-83.14 EUR",
+          "profit": 68.86,
+          "profit_str": "+68.86 EUR",
           "running_balance": 44439.19,
-          "running_equity": 44457.05,
+          "running_equity": 44577.99,
           "status": "ABERTA",
           "ticket": "95098244",
           "magic": 666270,
@@ -8030,6 +8030,56 @@
             775.38
           ]
         }
+      },
+      "bottom_5": {
+        "week": {
+          "bots": [
+            "Donchian USDJPY M15",
+            "FinBot USDJPY M15",
+            "Donchian Gold XAUUSD M15",
+            "Donchian Slow Oil H1",
+            "FinBot GBPUSD M15"
+          ],
+          "profits": [
+            -1055.3,
+            -985.41,
+            -501.49,
+            -398.32,
+            -255.97
+          ]
+        },
+        "month": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "Donchian USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian Slow Oil H1",
+            "Donchian Oil H1"
+          ],
+          "profits": [
+            -1299.85,
+            -1055.3,
+            -716.53,
+            -429.63,
+            -405.9
+          ]
+        },
+        "all": {
+          "bots": [
+            "Donchian USDJPY M15",
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian XAGUSD M15",
+            "FinBot USDJPY H1"
+          ],
+          "profits": [
+            -2264.66,
+            -2260.91,
+            -1470.69,
+            -1280.93,
+            -712.24
+          ]
+        }
       }
     },
     "53060439": {
@@ -8037,11 +8087,11 @@
       "currency": "EUR",
       "initial_deposit": 50200.0,
       "balance": 53979.37,
-      "equity": 54000.63,
+      "equity": 54164.9,
       "closed_pl": 3779.370000000001,
-      "total_pl": 3800.6299999999974,
-      "roi_pct": 7.570976095617525,
-      "floating_pl": 21.26,
+      "total_pl": 3964.9000000000015,
+      "roi_pct": 7.898207171314745,
+      "floating_pl": 185.53,
       "open_count": 5,
       "trades": [
         {
@@ -8054,10 +8104,10 @@
           "price_close": null,
           "sl": 96.626,
           "tp": null,
-          "profit": -53.76,
-          "profit_str": "-53.76 EUR",
+          "profit": -60.76,
+          "profit_str": "-60.76 EUR",
           "running_balance": 53979.37,
-          "running_equity": 54000.63,
+          "running_equity": 54164.9,
           "status": "ABERTA",
           "ticket": "2012514666",
           "magic": 333250,
@@ -8098,10 +8148,10 @@
           "price_close": null,
           "sl": 157.976,
           "tp": null,
-          "profit": -93.25,
-          "profit_str": "-93.25 EUR",
+          "profit": -113.61,
+          "profit_str": "-113.61 EUR",
           "running_balance": 53979.37,
-          "running_equity": 54000.63,
+          "running_equity": 54164.9,
           "status": "ABERTA",
           "ticket": "2012426537",
           "magic": 444250,
@@ -8119,10 +8169,10 @@
           "price_close": null,
           "sl": 81060.0,
           "tp": null,
-          "profit": -8.8,
-          "profit_str": "-8.80 EUR",
+          "profit": -5.98,
+          "profit_str": "-5.98 EUR",
           "running_balance": 53979.37,
-          "running_equity": 54000.63,
+          "running_equity": 54164.9,
           "status": "ABERTA",
           "ticket": "2012388699",
           "magic": 111250,
@@ -8140,10 +8190,10 @@
           "price_close": null,
           "sl": 95.371,
           "tp": null,
-          "profit": 269.85,
-          "profit_str": "+269.85 EUR",
+          "profit": 262.45,
+          "profit_str": "+262.45 EUR",
           "running_balance": 53979.37,
-          "running_equity": 54000.63,
+          "running_equity": 54164.9,
           "status": "ABERTA",
           "ticket": "2012221062",
           "magic": 333260,
@@ -8161,10 +8211,10 @@
           "price_close": null,
           "sl": 56.546,
           "tp": null,
-          "profit": -92.78,
-          "profit_str": "-92.78 EUR",
+          "profit": 103.43,
+          "profit_str": "+103.43 EUR",
           "running_balance": 53979.37,
-          "running_equity": 54000.63,
+          "running_equity": 54164.9,
           "status": "ABERTA",
           "ticket": "2012221067",
           "magic": 666270,
@@ -13687,6 +13737,56 @@
             810.83
           ]
         }
+      },
+      "bottom_5": {
+        "week": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian NatGas H1",
+            "Donchian USDJPY M15",
+            "FinBot EURUSD M15"
+          ],
+          "profits": [
+            -885.81,
+            -795.42,
+            -779.58,
+            -698.94,
+            -488.04
+          ]
+        },
+        "month": {
+          "bots": [
+            "FinBot GBPUSD M15",
+            "FinBot USDJPY M15",
+            "Donchian NatGas H1",
+            "Donchian USDJPY M15",
+            "FinBot Gold XAUUSD M15"
+          ],
+          "profits": [
+            -1398.93,
+            -1199.62,
+            -779.58,
+            -698.94,
+            -612.84
+          ]
+        },
+        "all": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian NatGas H1",
+            "FinBot Gold XAUUSD M15",
+            "Donchian USDJPY M15"
+          ],
+          "profits": [
+            -1199.62,
+            -1089.09,
+            -779.58,
+            -612.84,
+            -406.15
+          ]
+        }
       }
     },
     "53081018": {
@@ -13694,11 +13794,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 908.84,
-      "equity": 910.48,
+      "equity": 909.94,
       "closed_pl": -91.16,
-      "total_pl": -89.51999999999998,
-      "roi_pct": -8.951999999999998,
-      "floating_pl": 1.6400000000000001,
+      "total_pl": -90.05999999999995,
+      "roi_pct": -9.005999999999995,
+      "floating_pl": 1.1,
       "open_count": 3,
       "trades": [
         {
@@ -13711,10 +13811,10 @@
           "price_close": null,
           "sl": 96.626,
           "tp": null,
-          "profit": -0.82,
-          "profit_str": "-0.82 EUR",
+          "profit": -0.93,
+          "profit_str": "-0.93 EUR",
           "running_balance": 908.84,
-          "running_equity": 910.48,
+          "running_equity": 909.94,
           "status": "ABERTA",
           "ticket": "2012514586",
           "magic": 333250,
@@ -13755,10 +13855,10 @@
           "price_close": null,
           "sl": 157.977,
           "tp": null,
-          "profit": -1.47,
-          "profit_str": "-1.47 EUR",
+          "profit": -1.79,
+          "profit_str": "-1.79 EUR",
           "running_balance": 908.84,
-          "running_equity": 910.48,
+          "running_equity": 909.94,
           "status": "ABERTA",
           "ticket": "2012425571",
           "magic": 444250,
@@ -13776,10 +13876,10 @@
           "price_close": null,
           "sl": 95.371,
           "tp": null,
-          "profit": 3.93,
-          "profit_str": "+3.93 EUR",
+          "profit": 3.82,
+          "profit_str": "+3.82 EUR",
           "running_balance": 908.84,
-          "running_equity": 910.48,
+          "running_equity": 909.94,
           "status": "ABERTA",
           "ticket": "2012221135",
           "magic": 333260,
@@ -15629,6 +15729,56 @@
             -3.15,
             -3.43,
             -4.43
+          ]
+        }
+      },
+      "bottom_5": {
+        "week": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian USDJPY M15",
+            "FinBot EURUSD M15",
+            "Donchian EURUSD M15"
+          ],
+          "profits": [
+            -18.42,
+            -13.31,
+            -12.93,
+            -12.68,
+            -5.16
+          ]
+        },
+        "month": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian USDJPY M15",
+            "FinBot EURUSD M15",
+            "Donchian EURUSD M15"
+          ],
+          "profits": [
+            -27.26,
+            -22.89,
+            -12.93,
+            -7.36,
+            -5.65
+          ]
+        },
+        "all": {
+          "bots": [
+            "FinBot USDJPY M15",
+            "FinBot GBPUSD M15",
+            "Donchian USDJPY M15",
+            "FinBot EURUSD M15",
+            "Donchian EURUSD M15"
+          ],
+          "profits": [
+            -27.26,
+            -22.89,
+            -12.93,
+            -7.36,
+            -5.65
           ]
         }
       }
