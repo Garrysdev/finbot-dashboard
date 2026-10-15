@@ -796,6 +796,62 @@
             </div>
         </div>
 
+        <div class="card" style="margin-top: 1.5rem;">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">🏆 Ranking de Performance por Robô (IC Markets · 1.000€)</span>
+                    <span class="status-pill status-blue">Métricas Acumuladas</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                    <select id="ranking-period-icmini" class="col-filter" onchange="renderBotRanking('accicmini','ranking-tbody-icmini')">
+                        <option value="all" selected>🏆 Todo o Histórico</option>
+                        <option value="week">📅 Esta Semana</option>
+                        <option value="month">🗓️ Este Mês</option>
+                        <option value="year">📆 Este Ano</option>
+                    </select>
+                    <select id="ranking-pagesize-icmini" class="col-filter" onchange="renderBotRanking('accicmini','ranking-tbody-icmini')">
+                        <option value="20" selected>20 linhas</option>
+                        <option value="50">50 linhas</option>
+                        <option value="100">100 linhas</option>
+                        <option value="all">Todas as Linhas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Robô</th>
+                            <th>Trades</th>
+                            <th>Taxa Acerto %</th>
+                            <th>Lucro Médio / Trade</th>
+                            <th>Lucro Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-tbody-icmini"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- GRÁFICO TOP 5 ROBÔS CONTA ICMINI -->
+        <div class="card" style="margin-top: 1.5rem;">
+            <div class="card-header">
+                <div>
+                    <span class="card-title">🏆 Top 5 Melhores Robôs por Lucro (IC Markets · 1.000€)</span>
+                    <span class="status-pill status-blue">📊 Gráfico de Barras Horizontal</span>
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                    <button class="btn btn-blue" id="btn-chart-week-icmini" onclick="switchTop5Period('accicmini', 'week')">📅 Esta Semana</button>
+                    <button class="btn" id="btn-chart-month-icmini" onclick="switchTop5Period('accicmini', 'month')">🗓️ Este Mês</button>
+                    <button class="btn" id="btn-chart-all-icmini" onclick="switchTop5Period('accicmini', 'all')">🏆 Histórico Total</button>
+                </div>
+            </div>
+            <div style="padding: 1rem; height: 320px; position: relative;">
+                <canvas id="chart-top5-icmini"></canvas>
+            </div>
+        </div>
+
         <!-- GRÁFICO EVOLUÇÃO SEMANAL CONTA ICMINI -->
         <div class="card" style="margin-top: 1.5rem;">
             <div class="card-header">
@@ -1384,12 +1440,14 @@
 
         let rankingData = {
             acc1k: [{"bot": "FinBot EURUSD H1", "magic": 888123, "trades": 6, "wins": 5, "win_rate": 83.3, "avg_profit": 224.43, "total_profit": 1346.55}, {"bot": "FinBot EURUSD M15", "magic": 888151, "trades": 7, "wins": 5, "win_rate": 71.4, "avg_profit": 182.02, "total_profit": 1274.14}, {"bot": "VolSqueeze XAGUSD M15", "magic": 666350, "trades": 2, "wins": 1, "win_rate": 50.0, "avg_profit": 536.3, "total_profit": 1072.61}, {"bot": "MeanRev GBPUSD H1", "magic": 555200, "trades": 1, "wins": 1, "win_rate": 100.0, "avg_profit": 941.96, "total_profit": 941.96}, {"bot": "Donchian XAGUSD M15", "magic": 666250, "trades": 13, "wins": 10, "win_rate": 76.9, "avg_profit": 62.37, "total_profit": 810.83}, {"bot": "Donchian H1 XAGUSD", "magic": 666270, "trades": 6, "wins": 5, "win_rate": 83.3, "avg_profit": 122.45, "total_profit": 734.72}, {"bot": "Donchian Slow BTCUSD H1", "magic": 111260, "trades": 5, "wins": 4, "win_rate": 80.0, "avg_profit": 106.39, "total_profit": 531.94}, {"bot": "VolSqueeze EURUSD M15", "magic": 888350, "trades": 1, "wins": 1, "win_rate": 100.0, "avg_profit": 500.38, "total_profit": 500.38}, {"bot": "Donchian Gold XAUUSD M15", "magic": 777250, "trades": 32, "wins": 17, "win_rate": 53.1, "avg_profit": 13.34, "total_profit": 426.83}, {"bot": "MeanRev Gold XAUUSD H1", "magic": 777200, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": 97.22, "total_profit": 291.66}, {"bot": "Donchian EURUSD M15", "magic": 888250, "trades": 41, "wins": 21, "win_rate": 51.2, "avg_profit": 7.09, "total_profit": 290.78}, {"bot": "FinBot XAGUSD H1", "magic": 666123, "trades": 3, "wins": 2, "win_rate": 66.7, "avg_profit": 81.18, "total_profit": 243.54}, {"bot": "ORB XAGUSD M15", "magic": 666300, "trades": 4, "wins": 3, "win_rate": 75.0, "avg_profit": 54.82, "total_profit": 219.28}, {"bot": "ORB EURUSD M15", "magic": 888300, "trades": 5, "wins": 4, "win_rate": 80.0, "avg_profit": 43.25, "total_profit": 216.26}, {"bot": "FinBot Gold XAUUSD H1", "magic": 777123, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": 37.12, "total_profit": 185.61}, {"bot": "Donchian BTCUSD H1", "magic": 111250, "trades": 4, "wins": 2, "win_rate": 50.0, "avg_profit": 44.44, "total_profit": 177.76}, {"bot": "ORB GBPUSD M15", "magic": 555300, "trades": 7, "wins": 5, "win_rate": 71.4, "avg_profit": 15.47, "total_profit": 108.29}, {"bot": "VolSqueeze Gold XAUUSD M15", "magic": 777350, "trades": 4, "wins": 2, "win_rate": 50.0, "avg_profit": 16.29, "total_profit": 65.16}, {"bot": "Donchian Slow NatGas H1", "magic": 222260, "trades": 2, "wins": 1, "win_rate": 50.0, "avg_profit": 31.33, "total_profit": 62.66}, {"bot": "Donchian Slow Oil H1", "magic": 333260, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -6.31, "total_profit": -18.93}, {"bot": "FinBot GBPUSD H1", "magic": 555123, "trades": 4, "wins": 2, "win_rate": 50.0, "avg_profit": -5.81, "total_profit": -23.23}, {"bot": "FinBot XAGUSD M15", "magic": 666151, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": -5.55, "total_profit": -27.73}, {"bot": "Donchian USDJPY M15", "magic": 444250, "trades": 7, "wins": 4, "win_rate": 57.1, "avg_profit": -16.39, "total_profit": -114.76}, {"bot": "ORB USDJPY M15", "magic": 444300, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -54.09, "total_profit": -162.27}, {"bot": "ORB Gold XAUUSD M15", "magic": 777300, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": -52.53, "total_profit": -262.66}, {"bot": "FinBot USDJPY H1", "magic": 444123, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -95.67, "total_profit": -287.02}, {"bot": "VolSqueeze USDJPY M15", "magic": 444350, "trades": 1, "wins": 0, "win_rate": 0.0, "avg_profit": -293.58, "total_profit": -293.58}, {"bot": "Donchian Oil H1", "magic": 333250, "trades": 5, "wins": 1, "win_rate": 20.0, "avg_profit": -108.42, "total_profit": -542.09}, {"bot": "FinBot Gold XAUUSD M15", "magic": 777151, "trades": 9, "wins": 3, "win_rate": 33.3, "avg_profit": -68.09, "total_profit": -612.84}, {"bot": "FinBot USDJPY M15", "magic": 444151, "trades": 7, "wins": 3, "win_rate": 42.9, "avg_profit": -88.66, "total_profit": -620.65}, {"bot": "Donchian NatGas H1", "magic": 222250, "trades": 7, "wins": 2, "win_rate": 28.6, "avg_profit": -111.37, "total_profit": -779.58}, {"bot": "FinBot GBPUSD M15", "magic": 555151, "trades": 9, "wins": 3, "win_rate": 33.3, "avg_profit": -121.01, "total_profit": -1089.09}],
-            acc100k: [{"bot": "FinBot EURUSD M15", "magic": 888151, "trades": 8, "wins": 6, "win_rate": 75.0, "avg_profit": 159.67, "total_profit": 1277.34}, {"bot": "FinBot EURUSD H1", "magic": 888123, "trades": 6, "wins": 5, "win_rate": 83.3, "avg_profit": 164.46, "total_profit": 986.74}, {"bot": "Donchian NatGas H1", "magic": 222250, "trades": 12, "wins": 8, "win_rate": 66.7, "avg_profit": 66.84, "total_profit": 802.13}, {"bot": "MeanRev GBPUSD H1", "magic": 555200, "trades": 1, "wins": 1, "win_rate": 100.0, "avg_profit": 775.38, "total_profit": 775.38}, {"bot": "Donchian H1 XAGUSD", "magic": 666270, "trades": 5, "wins": 5, "win_rate": 100.0, "avg_profit": 124.4, "total_profit": 621.98}, {"bot": "Donchian BTCUSD H1", "magic": 111250, "trades": 8, "wins": 5, "win_rate": 62.5, "avg_profit": 53.02, "total_profit": 424.15}, {"bot": "VolSqueeze EURUSD M15", "magic": 888350, "trades": 2, "wins": 1, "win_rate": 50.0, "avg_profit": 182.5, "total_profit": 365.0}, {"bot": "FinBot GBPUSD H1", "magic": 555123, "trades": 3, "wins": 2, "win_rate": 66.7, "avg_profit": 70.67, "total_profit": 212.01}, {"bot": "ORB GBPUSD M15", "magic": 555300, "trades": 10, "wins": 7, "win_rate": 70.0, "avg_profit": 11.92, "total_profit": 119.24}, {"bot": "ORB XAGUSD M15", "magic": 666300, "trades": 4, "wins": 3, "win_rate": 75.0, "avg_profit": 29.43, "total_profit": 117.73}, {"bot": "Donchian Gold XAUUSD M15", "magic": 777250, "trades": 39, "wins": 19, "win_rate": 48.7, "avg_profit": 0.84, "total_profit": 32.74}, {"bot": "Donchian EURUSD M15", "magic": 888250, "trades": 63, "wins": 33, "win_rate": 52.4, "avg_profit": -0.32, "total_profit": -20.16}, {"bot": "FinBot Gold XAUUSD H1", "magic": 777123, "trades": 4, "wins": 1, "win_rate": 25.0, "avg_profit": -5.79, "total_profit": -23.18}, {"bot": "VolSqueeze XAGUSD M15", "magic": 666350, "trades": 1, "wins": 0, "win_rate": 0.0, "avg_profit": -28.37, "total_profit": -28.37}, {"bot": "FinBot Gold XAUUSD M15", "magic": 777151, "trades": 13, "wins": 6, "win_rate": 46.2, "avg_profit": -3.04, "total_profit": -39.5}, {"bot": "Donchian Slow BTCUSD H1", "magic": 111260, "trades": 7, "wins": 4, "win_rate": 57.1, "avg_profit": -7.96, "total_profit": -55.72}, {"bot": "ORB Gold XAUUSD M15", "magic": 777300, "trades": 6, "wins": 3, "win_rate": 50.0, "avg_profit": -11.62, "total_profit": -69.74}, {"bot": "Donchian Slow NatGas H1", "magic": 222260, "trades": 4, "wins": 2, "win_rate": 50.0, "avg_profit": -28.38, "total_profit": -113.51}, {"bot": "ORB EURUSD M15", "magic": 888300, "trades": 8, "wins": 5, "win_rate": 62.5, "avg_profit": -17.97, "total_profit": -143.78}, {"bot": "FinBot XAGUSD H1", "magic": 666123, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -51.85, "total_profit": -155.56}, {"bot": "VolSqueeze USDJPY M15", "magic": 444350, "trades": 1, "wins": 0, "win_rate": 0.0, "avg_profit": -238.51, "total_profit": -238.51}, {"bot": "ORB USDJPY M15", "magic": 444300, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": -51.11, "total_profit": -255.54}, {"bot": "Donchian Slow Oil H1", "magic": 333260, "trades": 7, "wins": 3, "win_rate": 42.9, "avg_profit": -61.38, "total_profit": -429.63}, {"bot": "FinBot XAGUSD M15", "magic": 666151, "trades": 10, "wins": 3, "win_rate": 30.0, "avg_profit": -61.62, "total_profit": -616.2}, {"bot": "FinBot USDJPY H1", "magic": 444123, "trades": 5, "wins": 1, "win_rate": 20.0, "avg_profit": -142.45, "total_profit": -712.24}, {"bot": "Donchian Oil H1", "magic": 333250, "trades": 18, "wins": 7, "win_rate": 38.9, "avg_profit": -45.27, "total_profit": -814.77}, {"bot": "Donchian XAGUSD M15", "magic": 666250, "trades": 18, "wins": 7, "win_rate": 38.9, "avg_profit": -79.22, "total_profit": -1425.98}, {"bot": "FinBot GBPUSD M15", "magic": 555151, "trades": 15, "wins": 4, "win_rate": 26.7, "avg_profit": -98.05, "total_profit": -1470.69}, {"bot": "FinBot USDJPY M15", "magic": 444151, "trades": 12, "wins": 3, "win_rate": 25.0, "avg_profit": -149.03, "total_profit": -1788.33}, {"bot": "Donchian USDJPY M15", "magic": 444250, "trades": 22, "wins": 7, "win_rate": 31.8, "avg_profit": -92.44, "total_profit": -2033.61}]
+            acc100k: [{"bot": "FinBot EURUSD M15", "magic": 888151, "trades": 8, "wins": 6, "win_rate": 75.0, "avg_profit": 159.67, "total_profit": 1277.34}, {"bot": "FinBot EURUSD H1", "magic": 888123, "trades": 6, "wins": 5, "win_rate": 83.3, "avg_profit": 164.46, "total_profit": 986.74}, {"bot": "Donchian NatGas H1", "magic": 222250, "trades": 12, "wins": 8, "win_rate": 66.7, "avg_profit": 66.84, "total_profit": 802.13}, {"bot": "MeanRev GBPUSD H1", "magic": 555200, "trades": 1, "wins": 1, "win_rate": 100.0, "avg_profit": 775.38, "total_profit": 775.38}, {"bot": "Donchian H1 XAGUSD", "magic": 666270, "trades": 5, "wins": 5, "win_rate": 100.0, "avg_profit": 124.4, "total_profit": 621.98}, {"bot": "Donchian BTCUSD H1", "magic": 111250, "trades": 8, "wins": 5, "win_rate": 62.5, "avg_profit": 53.02, "total_profit": 424.15}, {"bot": "VolSqueeze EURUSD M15", "magic": 888350, "trades": 2, "wins": 1, "win_rate": 50.0, "avg_profit": 182.5, "total_profit": 365.0}, {"bot": "FinBot GBPUSD H1", "magic": 555123, "trades": 3, "wins": 2, "win_rate": 66.7, "avg_profit": 70.67, "total_profit": 212.01}, {"bot": "ORB GBPUSD M15", "magic": 555300, "trades": 10, "wins": 7, "win_rate": 70.0, "avg_profit": 11.92, "total_profit": 119.24}, {"bot": "ORB XAGUSD M15", "magic": 666300, "trades": 4, "wins": 3, "win_rate": 75.0, "avg_profit": 29.43, "total_profit": 117.73}, {"bot": "Donchian Gold XAUUSD M15", "magic": 777250, "trades": 39, "wins": 19, "win_rate": 48.7, "avg_profit": 0.84, "total_profit": 32.74}, {"bot": "Donchian EURUSD M15", "magic": 888250, "trades": 63, "wins": 33, "win_rate": 52.4, "avg_profit": -0.32, "total_profit": -20.16}, {"bot": "FinBot Gold XAUUSD H1", "magic": 777123, "trades": 4, "wins": 1, "win_rate": 25.0, "avg_profit": -5.79, "total_profit": -23.18}, {"bot": "VolSqueeze XAGUSD M15", "magic": 666350, "trades": 1, "wins": 0, "win_rate": 0.0, "avg_profit": -28.37, "total_profit": -28.37}, {"bot": "FinBot Gold XAUUSD M15", "magic": 777151, "trades": 13, "wins": 6, "win_rate": 46.2, "avg_profit": -3.04, "total_profit": -39.5}, {"bot": "Donchian Slow BTCUSD H1", "magic": 111260, "trades": 7, "wins": 4, "win_rate": 57.1, "avg_profit": -7.96, "total_profit": -55.72}, {"bot": "ORB Gold XAUUSD M15", "magic": 777300, "trades": 6, "wins": 3, "win_rate": 50.0, "avg_profit": -11.62, "total_profit": -69.74}, {"bot": "Donchian Slow NatGas H1", "magic": 222260, "trades": 4, "wins": 2, "win_rate": 50.0, "avg_profit": -28.38, "total_profit": -113.51}, {"bot": "ORB EURUSD M15", "magic": 888300, "trades": 8, "wins": 5, "win_rate": 62.5, "avg_profit": -17.97, "total_profit": -143.78}, {"bot": "FinBot XAGUSD H1", "magic": 666123, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -51.85, "total_profit": -155.56}, {"bot": "VolSqueeze USDJPY M15", "magic": 444350, "trades": 1, "wins": 0, "win_rate": 0.0, "avg_profit": -238.51, "total_profit": -238.51}, {"bot": "ORB USDJPY M15", "magic": 444300, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": -51.11, "total_profit": -255.54}, {"bot": "Donchian Slow Oil H1", "magic": 333260, "trades": 7, "wins": 3, "win_rate": 42.9, "avg_profit": -61.38, "total_profit": -429.63}, {"bot": "FinBot XAGUSD M15", "magic": 666151, "trades": 10, "wins": 3, "win_rate": 30.0, "avg_profit": -61.62, "total_profit": -616.2}, {"bot": "FinBot USDJPY H1", "magic": 444123, "trades": 5, "wins": 1, "win_rate": 20.0, "avg_profit": -142.45, "total_profit": -712.24}, {"bot": "Donchian Oil H1", "magic": 333250, "trades": 18, "wins": 7, "win_rate": 38.9, "avg_profit": -45.27, "total_profit": -814.77}, {"bot": "Donchian XAGUSD M15", "magic": 666250, "trades": 18, "wins": 7, "win_rate": 38.9, "avg_profit": -79.22, "total_profit": -1425.98}, {"bot": "FinBot GBPUSD M15", "magic": 555151, "trades": 15, "wins": 4, "win_rate": 26.7, "avg_profit": -98.05, "total_profit": -1470.69}, {"bot": "FinBot USDJPY M15", "magic": 444151, "trades": 12, "wins": 3, "win_rate": 25.0, "avg_profit": -149.03, "total_profit": -1788.33}, {"bot": "Donchian USDJPY M15", "magic": 444250, "trades": 22, "wins": 7, "win_rate": 31.8, "avg_profit": -92.44, "total_profit": -2033.61}],
+            accicmini: [{"bot": "FinBot EURUSD M15", "magic": 888151, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": 0.02, "total_profit": 0.08}, {"bot": "ORB USDJPY M15", "magic": 444300, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -0.59, "total_profit": -1.76}, {"bot": "ORB EURUSD M15", "magic": 888300, "trades": 3, "wins": 2, "win_rate": 66.7, "avg_profit": -0.73, "total_profit": -2.2}, {"bot": "ORB GBPUSD M15", "magic": 555300, "trades": 5, "wins": 3, "win_rate": 60.0, "avg_profit": -0.69, "total_profit": -3.43}, {"bot": "Donchian Slow Oil H1", "magic": 333260, "trades": 3, "wins": 1, "win_rate": 33.3, "avg_profit": -1.48, "total_profit": -4.43}, {"bot": "Donchian EURUSD M15", "magic": 888250, "trades": 30, "wins": 14, "win_rate": 46.7, "avg_profit": -0.19, "total_profit": -5.65}, {"bot": "Donchian USDJPY M15", "magic": 444250, "trades": 5, "wins": 2, "win_rate": 40.0, "avg_profit": -1.69, "total_profit": -8.44}, {"bot": "Donchian Oil H1", "magic": 333250, "trades": 5, "wins": 1, "win_rate": 20.0, "avg_profit": -1.99, "total_profit": -9.97}, {"bot": "FinBot USDJPY M15", "magic": 444151, "trades": 7, "wins": 2, "win_rate": 28.6, "avg_profit": -2.77, "total_profit": -19.36}, {"bot": "FinBot GBPUSD M15", "magic": 555151, "trades": 4, "wins": 0, "win_rate": 0.0, "avg_profit": -5.72, "total_profit": -22.89}]
         };
 
         let top5Data = {
             acc1k: {"week": {"bots": ["VolSqueeze XAGUSD M15", "Donchian XAGUSD M15", "Donchian H1 XAGUSD", "Donchian Slow BTCUSD H1", "FinBot XAGUSD H1"], "profits": [1104.18, 778.98, 734.72, 531.94, 500.01]}, "month": {"bots": ["VolSqueeze XAGUSD M15", "MeanRev GBPUSD H1", "FinBot EURUSD H1", "Donchian XAGUSD M15", "Donchian H1 XAGUSD"], "profits": [1072.61, 941.96, 908.3, 866.63, 734.72]}, "all": {"bots": ["FinBot EURUSD H1", "FinBot EURUSD M15", "VolSqueeze XAGUSD M15", "MeanRev GBPUSD H1", "Donchian XAGUSD M15"], "profits": [1346.55, 1274.14, 1072.61, 941.96, 810.83]}},
-            acc100k: {"week": {"bots": ["Donchian H1 XAGUSD", "Donchian NatGas H1", "Donchian Slow NatGas H1", "Donchian BTCUSD H1", "FinBot Gold XAUUSD M15"], "profits": [621.98, 474.48, 364.18, 339.75, 293.43]}, "month": {"bots": ["Donchian NatGas H1", "FinBot EURUSD H1", "MeanRev GBPUSD H1", "FinBot EURUSD M15", "Donchian H1 XAGUSD"], "profits": [802.13, 791.39, 775.38, 655.47, 621.98]}, "all": {"bots": ["FinBot EURUSD M15", "FinBot EURUSD H1", "Donchian NatGas H1", "MeanRev GBPUSD H1", "Donchian H1 XAGUSD"], "profits": [1277.34, 986.74, 802.13, 775.38, 621.98]}}
+            acc100k: {"week": {"bots": ["Donchian H1 XAGUSD", "Donchian NatGas H1", "Donchian Slow NatGas H1", "Donchian BTCUSD H1", "FinBot Gold XAUUSD M15"], "profits": [621.98, 474.48, 364.18, 339.75, 293.43]}, "month": {"bots": ["Donchian NatGas H1", "FinBot EURUSD H1", "MeanRev GBPUSD H1", "FinBot EURUSD M15", "Donchian H1 XAGUSD"], "profits": [802.13, 791.39, 775.38, 655.47, 621.98]}, "all": {"bots": ["FinBot EURUSD M15", "FinBot EURUSD H1", "Donchian NatGas H1", "MeanRev GBPUSD H1", "Donchian H1 XAGUSD"], "profits": [1277.34, 986.74, 802.13, 775.38, 621.98]}},
+            accicmini: {"week": {"bots": ["ORB GBPUSD M15", "ORB EURUSD M15", "ORB USDJPY M15", "Donchian Slow Oil H1", "Donchian EURUSD M15"], "profits": [1.27, 1.22, -3.35, -4.43, -5.16]}, "month": {"bots": ["FinBot EURUSD M15", "ORB USDJPY M15", "ORB EURUSD M15", "ORB GBPUSD M15", "Donchian Slow Oil H1"], "profits": [0.08, -1.76, -2.2, -3.43, -4.43]}, "all": {"bots": ["FinBot EURUSD M15", "ORB USDJPY M15", "ORB EURUSD M15", "ORB GBPUSD M15", "Donchian Slow Oil H1"], "profits": [0.08, -1.76, -2.2, -3.43, -4.43]}}
         };
 
         let metaData = {
@@ -1410,7 +1468,8 @@
 
         let chartInstances = {
             acc1k: null,
-            acc100k: null
+            acc100k: null,
+            accicmini: null
         };
 
         let weeklyChartInstances = {
@@ -1434,7 +1493,8 @@
 
         let top5PeriodState = {
             acc1k: 'week',
-            acc100k: 'week'
+            acc100k: 'week',
+            accicmini: 'week'
         };
 
         let sportsChartInstances = { winloss: null, strategy: null, balance: null };
@@ -1478,6 +1538,7 @@
                 setTimeout(() => renderTop5Chart('acc100k'), 60);
                 setTimeout(() => renderWeeklyChart('acc100k'), 60);
             } else if (tabId === 'tab-demo-icmini') {
+                setTimeout(() => renderTop5Chart('accicmini'), 60);
                 setTimeout(() => renderWeeklyChart('accicmini'), 60);
             } else if (tabId === 'tab-sports') {
                 setTimeout(() => renderSportsCharts(), 60);
@@ -2958,8 +3019,10 @@
             renderTradesTable('accicmini', 'trades-tbody-icmini');
             renderBotRanking('acc1k', 'ranking-tbody-1k');
             renderBotRanking('acc100k', 'ranking-tbody-100k');
+            renderBotRanking('accicmini', 'ranking-tbody-icmini');
             renderTop5Chart('acc1k');
             renderTop5Chart('acc100k');
+            renderTop5Chart('accicmini');
             renderWeeklyChart('acc1k');
             renderWeeklyChart('acc100k');
             renderWeeklyChart('accicmini');
@@ -2997,6 +3060,8 @@
                         }
                         if (aIcMini) {
                             if (aIcMini.trades && aIcMini.trades.length > 0) tradesData.accicmini = aIcMini.trades;
+                            if (aIcMini.ranking) rankingData.accicmini = aIcMini.ranking;
+                            if (aIcMini.top_5) top5Data.accicmini = aIcMini.top_5;
                             metaData.accicmini = aIcMini;
                         }
                     }
