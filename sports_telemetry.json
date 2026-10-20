@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 22:16:25",
+  "updated_at": "2026-10-20 02:16:07",
   "checkpoint": {
     "current_version": "v2_mle_pinnacle_2026-09-17",
     "note": "Marco 17/09/2026: modelo Dixon-Coles corrigido (MLE via penaltyblog, decaimento temporal real, rho estimado por liga). Execução mantém-se só na Pinnacle.",
@@ -30,7 +30,7 @@
     "yield_pct": 3.25,
     "win_rate": 43.1,
     "total_bets": 142,
-    "today_bets": 32,
+    "today_bets": 30,
     "pending_bets": 40,
     "settled_bets": 102
   },
@@ -2792,7 +2792,7 @@
       "league": "Serie A (Itália)",
       "match": "Parma vs Torino",
       "time": "2026-10-19 19:45",
-      "is_today": true,
+      "is_today": false,
       "market": "Vitória Parma",
       "selection": "Vitória Parma",
       "bookmaker": "Pinnacle",
@@ -2814,7 +2814,7 @@
       "league": "La Liga (Espanha)",
       "match": "Getafe vs Rayo Vallecano",
       "time": "2026-10-19 20:00",
-      "is_today": true,
+      "is_today": false,
       "market": "Vitória Getafe",
       "selection": "Vitória Getafe",
       "bookmaker": "Pinnacle",
