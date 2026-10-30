@@ -1,38 +1,105 @@
 {
-  "updated_at": "2026-10-29 21:15:53",
+  "updated_at": "2026-10-30 01:15:54",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 38710.72,
-      "equity": 38804.65,
-      "closed_pl": -11289.279999999999,
-      "total_pl": -11195.349999999999,
-      "roi_pct": -22.390699999999995,
-      "floating_pl": 93.93,
+      "balance": 38682.34,
+      "equity": 39292.53,
+      "closed_pl": -11317.66,
+      "total_pl": -10707.470000000001,
+      "roi_pct": -21.41494,
+      "floating_pl": 610.19,
       "open_count": 5,
       "trades": [
         {
-          "time": "2026-10-29 21:08",
+          "time": "2026-10-30 01:00",
+          "symbol": "XAGUSD",
+          "bot": "Donchian H1 XAGUSD",
+          "type": "SELL",
+          "volume": 0.07,
+          "price_open": 51.794,
+          "price_close": null,
+          "sl": 51.341,
+          "tp": null,
+          "profit": 173.59,
+          "profit_str": "+173.59 EUR",
+          "running_balance": 38682.34,
+          "running_equity": 39292.53,
+          "status": "ABERTA",
+          "ticket": "97447224",
+          "magic": 666270,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "time_raw": 1793332800
+        },
+        {
+          "time": "2026-10-30 01:00",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.12,
+          "price_open": 77068.32,
+          "price_close": null,
+          "sl": 78814.51,
+          "tp": null,
+          "profit": 1.62,
+          "profit_str": "+1.62 EUR",
+          "running_balance": 38682.34,
+          "running_equity": 39292.53,
+          "status": "ABERTA",
+          "ticket": "97447252",
+          "magic": 111260,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "time_raw": 1793332800
+        },
+        {
+          "pos_id": 97426288,
+          "time_raw": 1793329421,
+          "time": "2026-10-30 00:03",
           "symbol": "BTCUSD",
           "bot": "Donchian Slow BTCUSD H1",
           "type": "SELL",
           "volume": 0.17,
           "price_open": 79054.08,
-          "price_close": null,
-          "sl": 80316.84,
+          "price_close": 77949.92,
+          "sl": null,
           "tp": null,
-          "profit": -15.24,
-          "profit_str": "-15.24 EUR",
-          "running_balance": 38710.72,
-          "running_equity": 38804.65,
-          "status": "ABERTA",
-          "ticket": "97426288",
+          "profit": 167.85,
+          "profit_str": "+167.85 EUR",
+          "status": "FECHADA",
+          "ticket": "65279928",
           "magic": 111260,
           "week_key": "2026-W44",
           "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
-          "time_raw": 1793318921
+          "month_key": "2026-10",
+          "running_balance": 38683.92,
+          "running_equity": 38683.92
+        },
+        {
+          "pos_id": 97278546,
+          "time_raw": 1793322917,
+          "time": "2026-10-29 22:15",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD H1",
+          "type": "SELL",
+          "volume": 0.51,
+          "price_open": 1.11435,
+          "price_close": 1.11864,
+          "sl": null,
+          "tp": null,
+          "profit": -197.56,
+          "profit_str": "-197.56 EUR",
+          "status": "FECHADA",
+          "ticket": "65271516",
+          "magic": 888123,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 38516.07,
+          "running_equity": 38516.07
         },
         {
           "pos_id": 97363212,
@@ -111,12 +178,12 @@
           "volume": 0.59,
           "price_open": 1.33749,
           "price_close": null,
-          "sl": 1.33384,
+          "sl": 1.3341,
           "tp": null,
-          "profit": -10.64,
-          "profit_str": "-10.64 EUR",
-          "running_balance": 38710.72,
-          "running_equity": 38804.65,
+          "profit": 145.18,
+          "profit_str": "+145.18 EUR",
+          "running_balance": 38682.34,
+          "running_equity": 39292.53,
           "status": "ABERTA",
           "ticket": "97363209",
           "magic": 555350,
@@ -180,10 +247,10 @@
           "price_close": null,
           "sl": 2.612,
           "tp": null,
-          "profit": 254.98,
-          "profit_str": "+254.98 EUR",
-          "running_balance": 38710.72,
-          "running_equity": 38804.65,
+          "profit": 220.24,
+          "profit_str": "+220.24 EUR",
+          "running_balance": 38682.34,
+          "running_equity": 39292.53,
           "status": "ABERTA",
           "ticket": "97309587",
           "magic": 222260,
@@ -261,27 +328,6 @@
           "running_equity": 39354.39
         },
         {
-          "time": "2026-10-29 10:30",
-          "symbol": "EURUSD",
-          "bot": "FinBot EURUSD H1",
-          "type": "SELL",
-          "volume": 0.51,
-          "price_open": 1.11435,
-          "price_close": null,
-          "sl": 1.11864,
-          "tp": 1.107,
-          "profit": -164.9,
-          "profit_str": "-164.90 EUR",
-          "running_balance": 38710.72,
-          "running_equity": 38804.65,
-          "status": "ABERTA",
-          "ticket": "97278546",
-          "magic": 888123,
-          "week_key": "2026-W44",
-          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
-          "time_raw": 1793280601
-        },
-        {
           "pos_id": 97220922,
           "time_raw": 1793268499,
           "time": "2026-10-29 07:08",
@@ -337,10 +383,10 @@
           "price_close": null,
           "sl": 4087.49,
           "tp": 3859.88,
-          "profit": 29.73,
-          "profit_str": "+29.73 EUR",
-          "running_balance": 38710.72,
-          "running_equity": 38804.65,
+          "profit": 69.56,
+          "profit_str": "+69.56 EUR",
+          "running_balance": 38682.34,
+          "running_equity": 39292.53,
           "status": "ABERTA",
           "ticket": "97207771",
           "magic": 777123,
@@ -12090,15 +12136,6 @@
           "total_profit": 814.31
         },
         {
-          "bot": "FinBot EURUSD H1",
-          "magic": 888123,
-          "trades": 9,
-          "wins": 6,
-          "win_rate": 66.7,
-          "avg_profit": 82.08,
-          "total_profit": 738.75
-        },
-        {
           "bot": "MeanRev GBPUSD H1",
           "magic": 555200,
           "trades": 3,
@@ -12106,6 +12143,15 @@
           "win_rate": 33.3,
           "avg_profit": 185.99,
           "total_profit": 557.96
+        },
+        {
+          "bot": "FinBot EURUSD H1",
+          "magic": 888123,
+          "trades": 10,
+          "wins": 6,
+          "win_rate": 60.0,
+          "avg_profit": 54.12,
+          "total_profit": 541.19
         },
         {
           "bot": "FinBot EURUSD M15",
@@ -12279,6 +12325,15 @@
           "total_profit": -352.32
         },
         {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 21,
+          "wins": 11,
+          "win_rate": 52.4,
+          "avg_profit": -17.36,
+          "total_profit": -364.54
+        },
+        {
           "bot": "FinBot XAGUSD H1",
           "magic": 666123,
           "trades": 7,
@@ -12286,15 +12341,6 @@
           "win_rate": 28.6,
           "avg_profit": -74.43,
           "total_profit": -521.01
-        },
-        {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 20,
-          "wins": 10,
-          "win_rate": 50.0,
-          "avg_profit": -26.62,
-          "total_profit": -532.39
         },
         {
           "bot": "Donchian BTCUSD H1",
@@ -12385,44 +12431,44 @@
             "VolSqueeze Gold XAUUSD M15",
             "ORB XAGUSD M15",
             "ORB GBPUSD M15",
-            "FinBot EURUSD H1"
+            "Donchian EURUSD M15"
           ],
           "profits": [
             737.36,
             692.17,
             264.68,
             238.0,
-            182.04
+            79.44
           ]
         },
         "month": {
           "bots": [
             "VolSqueeze GBPUSD M15",
             "MeanRev GBPUSD H1",
-            "FinBot EURUSD H1",
             "VolSqueeze Gold XAUUSD M15",
-            "ORB GBPUSD M15"
+            "ORB GBPUSD M15",
+            "FinBot EURUSD H1"
           ],
           "profits": [
             814.31,
             557.96,
-            543.4,
             467.64,
-            421.08
+            421.08,
+            345.84
           ]
         },
         "all": {
           "bots": [
             "VolSqueeze GBPUSD M15",
-            "FinBot EURUSD H1",
             "MeanRev GBPUSD H1",
+            "FinBot EURUSD H1",
             "FinBot EURUSD M15",
             "VolSqueeze Gold XAUUSD M15"
           ],
           "profits": [
             814.31,
-            738.75,
             557.96,
+            541.19,
             491.95,
             467.64
           ]
@@ -12433,16 +12479,16 @@
           "bots": [
             "Donchian NatGas H1",
             "Donchian H1 XAGUSD",
-            "Donchian Slow BTCUSD H1",
             "Donchian Slow Oil H1",
-            "FinBot Gold XAUUSD H1"
+            "FinBot Gold XAUUSD H1",
+            "Donchian Slow BTCUSD H1"
           ],
           "profits": [
             -672.0,
             -477.21,
-            -415.95,
             -381.43,
-            -337.88
+            -337.88,
+            -248.1
           ]
         },
         "month": {
@@ -12483,34 +12529,124 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 45552.57,
-      "equity": 45668.09,
-      "closed_pl": -4647.429999999999,
-      "total_pl": -4531.9100000000035,
-      "roi_pct": -9.02770916334662,
-      "floating_pl": 115.52,
+      "balance": 45296.96,
+      "equity": 46029.93,
+      "closed_pl": -4903.039999999999,
+      "total_pl": -4170.07,
+      "roi_pct": -8.306912350597608,
+      "floating_pl": 732.97,
       "open_count": 5,
       "trades": [
         {
-          "time": "2026-10-29 21:08",
+          "time": "2026-10-30 01:00",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.14,
+          "price_open": 77067.63,
+          "price_close": null,
+          "sl": 78837.56,
+          "tp": null,
+          "profit": 1.06,
+          "profit_str": "+1.06 EUR",
+          "running_balance": 45296.96,
+          "running_equity": 46029.93,
+          "status": "ABERTA",
+          "ticket": "2047317435",
+          "magic": 111260,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "time_raw": 1793332800
+        },
+        {
+          "pos_id": 2047140623,
+          "time_raw": 1793330426,
+          "time": "2026-10-30 00:20",
+          "symbol": "BTCUSD",
+          "bot": "MeanRev Gold XAUUSD H1",
+          "type": "BUY",
+          "volume": 0.34,
+          "price_open": 77788.79,
+          "price_close": 77075.31,
+          "sl": null,
+          "tp": null,
+          "profit": -216.89,
+          "profit_str": "-216.89 EUR",
+          "status": "FECHADA",
+          "ticket": "1645485915",
+          "magic": 777200,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 45300.61,
+          "running_equity": 45300.61
+        },
+        {
+          "pos_id": 2046890415,
+          "time_raw": 1793329440,
+          "time": "2026-10-30 00:04",
           "symbol": "BTCUSD",
           "bot": "Donchian Slow BTCUSD H1",
           "type": "SELL",
           "volume": 0.2,
           "price_open": 79051.98,
-          "price_close": null,
-          "sl": 80294.1,
+          "price_close": 77975.62,
+          "sl": null,
           "tp": null,
-          "profit": -19.71,
-          "profit_str": "-19.71 EUR",
-          "running_balance": 45552.57,
-          "running_equity": 45668.09,
-          "status": "ABERTA",
-          "ticket": "2046890415",
+          "profit": 192.5,
+          "profit_str": "+192.50 EUR",
+          "status": "FECHADA",
+          "ticket": "1645448616",
           "magic": 111260,
           "week_key": "2026-W44",
           "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
-          "time_raw": 1793318921
+          "month_key": "2026-10",
+          "running_balance": 45517.5,
+          "running_equity": 45517.5
+        },
+        {
+          "time": "2026-10-30 00:00",
+          "symbol": "XAGUSD",
+          "bot": "Donchian H1 XAGUSD",
+          "type": "SELL",
+          "volume": 0.4,
+          "price_open": 51.938,
+          "price_close": null,
+          "sl": 51.34,
+          "tp": null,
+          "profit": 254.41,
+          "profit_str": "+254.41 EUR",
+          "running_balance": 45296.96,
+          "running_equity": 46029.93,
+          "status": "ABERTA",
+          "ticket": "2047140527",
+          "magic": 666270,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "time_raw": 1793329200
+        },
+        {
+          "pos_id": 2045060989,
+          "time_raw": 1793324860,
+          "time": "2026-10-29 22:47",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD H1",
+          "type": "SELL",
+          "volume": 0.57,
+          "price_open": 1.11436,
+          "price_close": 1.11885,
+          "sl": null,
+          "tp": null,
+          "profit": -231.77,
+          "profit_str": "-231.77 EUR",
+          "status": "FECHADA",
+          "ticket": "1645334167",
+          "magic": 888123,
+          "week_key": "2026-W44",
+          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
+          "month_key": "2026-10",
+          "running_balance": 45325.0,
+          "running_equity": 45325.0
         },
         {
           "pos_id": 2046216353,
@@ -12589,12 +12725,12 @@
           "volume": 0.7,
           "price_open": 1.3375,
           "price_close": null,
-          "sl": 1.33389,
+          "sl": 1.33411,
           "tp": null,
-          "profit": 0.1,
-          "profit_str": "+0.10 EUR",
-          "running_balance": 45552.57,
-          "running_equity": 45668.09,
+          "profit": 171.81,
+          "profit_str": "+171.81 EUR",
+          "running_balance": 45296.96,
+          "running_equity": 46029.93,
           "status": "ABERTA",
           "ticket": "2046216354",
           "magic": 555350,
@@ -12658,37 +12794,16 @@
           "price_close": null,
           "sl": 2.6767,
           "tp": null,
-          "profit": 280.9,
-          "profit_str": "+280.90 EUR",
-          "running_balance": 45552.57,
-          "running_equity": 45668.09,
+          "profit": 234.78,
+          "profit_str": "+234.78 EUR",
+          "running_balance": 45296.96,
+          "running_equity": 46029.93,
           "status": "ABERTA",
           "ticket": "2045522296",
           "magic": 222260,
           "week_key": "2026-W44",
           "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
           "time_raw": 1793290124
-        },
-        {
-          "time": "2026-10-29 10:30",
-          "symbol": "EURUSD",
-          "bot": "FinBot EURUSD H1",
-          "type": "SELL",
-          "volume": 0.57,
-          "price_open": 1.11436,
-          "price_close": null,
-          "sl": 1.11885,
-          "tp": 1.10667,
-          "profit": -178.3,
-          "profit_str": "-178.30 EUR",
-          "running_balance": 45552.57,
-          "running_equity": 45668.09,
-          "status": "ABERTA",
-          "ticket": "2045060989",
-          "magic": 888123,
-          "week_key": "2026-W44",
-          "week_label": "Semana 44 (26/Oct - 30/Oct 2026)",
-          "time_raw": 1793280602
         },
         {
           "pos_id": 2044943652,
@@ -12792,10 +12907,10 @@
           "price_close": null,
           "sl": 4087.52,
           "tp": 3860.36,
-          "profit": 31.03,
-          "profit_str": "+31.03 EUR",
-          "running_balance": 45552.57,
-          "running_equity": 45668.09,
+          "profit": 70.91,
+          "profit_str": "+70.91 EUR",
+          "running_balance": 45296.96,
+          "running_equity": 46029.93,
           "status": "ABERTA",
           "ticket": "2044254110",
           "magic": 777123,
@@ -21808,15 +21923,6 @@
           "total_profit": 1072.61
         },
         {
-          "bot": "FinBot EURUSD H1",
-          "magic": 888123,
-          "trades": 9,
-          "wins": 6,
-          "win_rate": 66.7,
-          "avg_profit": 116.07,
-          "total_profit": 1044.65
-        },
-        {
           "bot": "VolSqueeze GBPUSD M15",
           "magic": 555350,
           "trades": 3,
@@ -21824,6 +21930,15 @@
           "win_rate": 66.7,
           "avg_profit": 337.51,
           "total_profit": 1012.54
+        },
+        {
+          "bot": "FinBot EURUSD H1",
+          "magic": 888123,
+          "trades": 10,
+          "wins": 6,
+          "win_rate": 60.0,
+          "avg_profit": 81.29,
+          "total_profit": 812.88
         },
         {
           "bot": "Donchian EURUSD M15",
@@ -21862,15 +21977,6 @@
           "total_profit": 377.04
         },
         {
-          "bot": "MeanRev Gold XAUUSD H1",
-          "magic": 777200,
-          "trades": 4,
-          "wins": 1,
-          "win_rate": 25.0,
-          "avg_profit": 56.53,
-          "total_profit": 226.13
-        },
-        {
           "bot": "ORB XAGUSD M15",
           "magic": 666300,
           "trades": 7,
@@ -21887,6 +21993,15 @@
           "win_rate": 33.3,
           "avg_profit": 72.55,
           "total_profit": 217.65
+        },
+        {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 17,
+          "wins": 10,
+          "win_rate": 58.8,
+          "avg_profit": 12.0,
+          "total_profit": 203.99
         },
         {
           "bot": "ORB EURUSD M15",
@@ -21925,13 +22040,13 @@
           "total_profit": 17.31
         },
         {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 16,
-          "wins": 9,
-          "win_rate": 56.2,
-          "avg_profit": 0.72,
-          "total_profit": 11.49
+          "bot": "MeanRev Gold XAUUSD H1",
+          "magic": 777200,
+          "trades": 5,
+          "wins": 1,
+          "win_rate": 20.0,
+          "avg_profit": 1.85,
+          "total_profit": 9.24
         },
         {
           "bot": "Donchian H1 XAGUSD",
@@ -22103,14 +22218,14 @@
             "VolSqueeze Gold XAUUSD M15",
             "Donchian Slow NatGas H1",
             "ORB GBPUSD M15",
-            "FinBot EURUSD H1"
+            "ORB XAGUSD M15"
           ],
           "profits": [
             873.87,
             868.07,
             289.15,
             260.6,
-            210.27
+            153.26
           ]
         },
         "month": {
@@ -22119,28 +22234,28 @@
             "VolSqueeze XAGUSD M15",
             "VolSqueeze GBPUSD M15",
             "VolSqueeze Gold XAUUSD M15",
-            "FinBot EURUSD H1"
+            "ORB GBPUSD M15"
           ],
           "profits": [
             1092.16,
             1072.61,
             1012.54,
             824.99,
-            606.4
+            468.43
           ]
         },
         "all": {
           "bots": [
             "VolSqueeze XAGUSD M15",
-            "FinBot EURUSD H1",
             "VolSqueeze GBPUSD M15",
+            "FinBot EURUSD H1",
             "Donchian EURUSD M15",
             "VolSqueeze Gold XAUUSD M15"
           ],
           "profits": [
             1072.61,
-            1044.65,
             1012.54,
+            812.88,
             710.97,
             664.91
           ]
@@ -22152,15 +22267,15 @@
             "Donchian Slow Oil H1",
             "Donchian NatGas H1",
             "Donchian H1 XAGUSD",
-            "Donchian Slow BTCUSD H1",
-            "FinBot Gold XAUUSD H1"
+            "FinBot Gold XAUUSD H1",
+            "Donchian Slow BTCUSD H1"
           ],
           "profits": [
             -707.14,
             -663.81,
             -561.48,
-            -484.12,
-            -426.51
+            -426.51,
+            -291.62
           ]
         },
         "month": {
