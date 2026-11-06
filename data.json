@@ -1,18 +1,41 @@
 {
-  "updated_at": "2026-11-06 13:15:54",
+  "updated_at": "2026-11-06 17:15:54",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 39195.58,
-      "equity": 39184.56,
-      "closed_pl": -10804.42,
-      "total_pl": -10815.440000000002,
-      "roi_pct": -21.630880000000005,
-      "floating_pl": -11.02,
-      "open_count": 1,
+      "balance": 39302.07,
+      "equity": 39302.07,
+      "closed_pl": -10697.93,
+      "total_pl": -10697.93,
+      "roi_pct": -21.39586,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 98628565,
+          "time_raw": 1793984773,
+          "time": "2026-11-06 15:06",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.16,
+          "price_open": 75713.18,
+          "price_close": 74975.15,
+          "sl": null,
+          "tp": null,
+          "profit": 106.49,
+          "profit_str": "+106.49 EUR",
+          "status": "FECHADA",
+          "ticket": "66395264",
+          "magic": 111260,
+          "week_key": "2026-W45",
+          "week_label": "Semana 45 (02/Nov - 06/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 39302.07,
+          "running_equity": 39302.07
+        },
         {
           "pos_id": 98760343,
           "time_raw": 1793960030,
@@ -81,27 +104,6 @@
           "month_key": "2026-11",
           "running_balance": 39283.22,
           "running_equity": 39283.22
-        },
-        {
-          "time": "2026-11-05 16:08",
-          "symbol": "BTCUSD",
-          "bot": "Donchian Slow BTCUSD H1",
-          "type": "SELL",
-          "volume": 0.16,
-          "price_open": 75713.18,
-          "price_close": null,
-          "sl": 77019.25,
-          "tp": null,
-          "profit": -11.02,
-          "profit_str": "-11.02 EUR",
-          "running_balance": 39195.58,
-          "running_equity": 39184.56,
-          "status": "ABERTA",
-          "ticket": "98628565",
-          "magic": 111260,
-          "week_key": "2026-W45",
-          "week_label": "Semana 45 (02/Nov - 06/Nov 2026)",
-          "time_raw": 1793902122
         },
         {
           "pos_id": 98302386,
@@ -13329,6 +13331,15 @@
           "total_profit": 271.22
         },
         {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 30,
+          "wins": 18,
+          "win_rate": 60.0,
+          "avg_profit": 1.93,
+          "total_profit": 57.98
+        },
+        {
           "bot": "VolSqueeze EURUSD M15",
           "magic": 888350,
           "trades": 4,
@@ -13354,15 +13365,6 @@
           "win_rate": 0.0,
           "avg_profit": -28.37,
           "total_profit": -28.37
-        },
-        {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 29,
-          "wins": 17,
-          "win_rate": 58.6,
-          "avg_profit": -1.67,
-          "total_profit": -48.51
         },
         {
           "bot": "FinBot Gold XAUUSD H1",
@@ -13566,7 +13568,7 @@
           "profits": [
             544.03,
             371.78,
-            249.02,
+            355.51,
             219.12,
             132.04
           ]
@@ -13582,7 +13584,7 @@
           "profits": [
             544.03,
             371.78,
-            249.02,
+            355.51,
             219.12,
             132.04
           ]
@@ -13659,14 +13661,37 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 45705.05,
-      "equity": 45971.45,
-      "closed_pl": -4494.949999999999,
-      "total_pl": -4228.550000000003,
-      "roi_pct": -8.423406374501997,
-      "floating_pl": 266.4,
-      "open_count": 2,
+      "balance": 45824.2,
+      "equity": 46223.54,
+      "closed_pl": -4375.799999999999,
+      "total_pl": -3976.459999999999,
+      "roi_pct": -7.921235059760955,
+      "floating_pl": 399.34,
+      "open_count": 1,
       "trades": [
+        {
+          "pos_id": 2065516200,
+          "time_raw": 1793984788,
+          "time": "2026-11-06 15:06",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.2,
+          "price_open": 75685.53,
+          "price_close": 75021.18,
+          "sl": null,
+          "tp": null,
+          "profit": 119.15,
+          "profit_str": "+119.15 EUR",
+          "status": "FECHADA",
+          "ticket": "1663860417",
+          "magic": 111260,
+          "week_key": "2026-W45",
+          "week_label": "Semana 45 (02/Nov - 06/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 45827.19,
+          "running_equity": 45827.19
+        },
         {
           "pos_id": 2067260128,
           "time_raw": 1793960138,
@@ -13698,12 +13723,12 @@
           "volume": 0.92,
           "price_open": 1.11988,
           "price_close": null,
-          "sl": 1.12045,
+          "sl": 1.11831,
           "tp": null,
-          "profit": 285.95,
-          "profit_str": "+285.95 EUR",
-          "running_balance": 45705.05,
-          "running_equity": 45971.45,
+          "profit": 399.34,
+          "profit_str": "+399.34 EUR",
+          "running_balance": 45824.2,
+          "running_equity": 46223.54,
           "status": "ABERTA",
           "ticket": "2067422271",
           "magic": 888350,
@@ -13756,27 +13781,6 @@
           "month_key": "2026-11",
           "running_balance": 45813.96,
           "running_equity": 45813.96
-        },
-        {
-          "time": "2026-11-05 16:08",
-          "symbol": "BTCUSD",
-          "bot": "Donchian Slow BTCUSD H1",
-          "type": "SELL",
-          "volume": 0.2,
-          "price_open": 75685.53,
-          "price_close": null,
-          "sl": 76960.97,
-          "tp": null,
-          "profit": -19.55,
-          "profit_str": "-19.55 EUR",
-          "running_balance": 45705.05,
-          "running_equity": 45971.45,
-          "status": "ABERTA",
-          "ticket": "2065516200",
-          "magic": 111260,
-          "week_key": "2026-W45",
-          "week_label": "Semana 45 (02/Nov - 06/Nov 2026)",
-          "time_raw": 1793902122
         },
         {
           "pos_id": 2060695616,
@@ -24171,6 +24175,15 @@
           "total_profit": 614.25
         },
         {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 21,
+          "wins": 13,
+          "win_rate": 61.9,
+          "avg_profit": 14.87,
+          "total_profit": 312.32
+        },
+        {
           "bot": "ORB XAGUSD M15",
           "magic": 666300,
           "trades": 7,
@@ -24187,15 +24200,6 @@
           "win_rate": 33.3,
           "avg_profit": 72.55,
           "total_profit": 217.65
-        },
-        {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 20,
-          "wins": 12,
-          "win_rate": 60.0,
-          "avg_profit": 9.66,
-          "total_profit": 193.17
         },
         {
           "bot": "Donchian EURUSD M15",
@@ -24529,11 +24533,11 @@
       "currency": "EUR",
       "initial_deposit": 1000.0,
       "balance": 848.59,
-      "equity": 851.7,
+      "equity": 852.93,
       "closed_pl": -151.41,
-      "total_pl": -148.29999999999995,
-      "roi_pct": -14.829999999999997,
-      "floating_pl": 3.11,
+      "total_pl": -147.07000000000005,
+      "roi_pct": -14.707000000000006,
+      "floating_pl": 4.34,
       "open_count": 1,
       "trades": [
         {
@@ -24544,12 +24548,12 @@
           "volume": 0.01,
           "price_open": 1.11988,
           "price_close": null,
-          "sl": 1.12045,
+          "sl": 1.11831,
           "tp": null,
-          "profit": 3.11,
-          "profit_str": "+3.11 EUR",
+          "profit": 4.34,
+          "profit_str": "+4.34 EUR",
           "running_balance": 848.59,
-          "running_equity": 851.7,
+          "running_equity": 852.93,
           "status": "ABERTA",
           "ticket": "2067422546",
           "magic": 888350,
