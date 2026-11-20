@@ -1,18 +1,85 @@
 {
-  "updated_at": "2026-11-20 09:15:54",
+  "updated_at": "2026-11-20 13:15:54",
   "accounts": {
     "62144409": {
       "login": 62144409,
       "currency": "EUR",
       "initial_deposit": 50000.0,
-      "balance": 39952.54,
-      "equity": 42948.68,
-      "closed_pl": -10047.46,
-      "total_pl": -7051.32,
-      "roi_pct": -14.10264,
-      "floating_pl": 2996.14,
-      "open_count": 6,
+      "balance": 39835.8,
+      "equity": 43128.57,
+      "closed_pl": -10164.199999999999,
+      "total_pl": -6871.43,
+      "roi_pct": -13.74286,
+      "floating_pl": 3292.77,
+      "open_count": 5,
       "trades": [
+        {
+          "pos_id": 101765739,
+          "time_raw": 1795187001,
+          "time": "2026-11-20 13:03",
+          "symbol": "GBPUSD",
+          "bot": "ORB GBPUSD M15",
+          "type": "BUY",
+          "volume": 0.83,
+          "price_open": 1.31129,
+          "price_close": 1.3124799999999999,
+          "sl": null,
+          "tp": null,
+          "profit": 85.56,
+          "profit_str": "+85.56 EUR",
+          "status": "FECHADA",
+          "ticket": "68269071",
+          "magic": 555300,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 39840.95,
+          "running_equity": 39840.95
+        },
+        {
+          "pos_id": 101795748,
+          "time_raw": 1795186807,
+          "time": "2026-11-20 13:00",
+          "symbol": "NatGas",
+          "bot": "Donchian Slow NatGas H1",
+          "type": "SELL",
+          "volume": 0.58,
+          "price_open": 3.093,
+          "price_close": 3.1310000000000002,
+          "sl": null,
+          "tp": null,
+          "profit": -200.69,
+          "profit_str": "-200.69 EUR",
+          "status": "FECHADA",
+          "ticket": "68268149",
+          "magic": 222260,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 39755.39,
+          "running_equity": 39755.39
+        },
+        {
+          "time": "2026-11-20 13:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "BUY",
+          "volume": 1.45,
+          "price_open": 1.09821,
+          "price_close": null,
+          "sl": 1.0967,
+          "tp": 1.1008499999999999,
+          "profit": 130.59,
+          "profit_str": "+130.59 EUR",
+          "running_balance": 39835.8,
+          "running_equity": 43128.57,
+          "status": "ABERTA",
+          "ticket": "101835334",
+          "magic": 888151,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "time_raw": 1795186800
+        },
         {
           "pos_id": 101754235,
           "time_raw": 1795172787,
@@ -35,27 +102,6 @@
           "month_key": "2026-11",
           "running_balance": 39956.08,
           "running_equity": 39956.08
-        },
-        {
-          "time": "2026-11-20 09:00",
-          "symbol": "NatGas",
-          "bot": "Donchian Slow NatGas H1",
-          "type": "SELL",
-          "volume": 0.58,
-          "price_open": 3.093,
-          "price_close": null,
-          "sl": 3.1310000000000002,
-          "tp": null,
-          "profit": -5.29,
-          "profit_str": "-5.29 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
-          "status": "ABERTA",
-          "ticket": "101795748",
-          "magic": 222260,
-          "week_key": "2026-W47",
-          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
-          "time_raw": 1795172400
         },
         {
           "pos_id": 101784470,
@@ -81,27 +127,6 @@
           "running_equity": 40162.12
         },
         {
-          "time": "2026-11-20 06:15",
-          "symbol": "GBPUSD",
-          "bot": "ORB GBPUSD M15",
-          "type": "BUY",
-          "volume": 0.83,
-          "price_open": 1.31129,
-          "price_close": null,
-          "sl": 1.30864,
-          "tp": 1.3124799999999999,
-          "profit": -92.34,
-          "profit_str": "-92.34 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
-          "status": "ABERTA",
-          "ticket": "101765739",
-          "magic": 555300,
-          "week_key": "2026-W47",
-          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
-          "time_raw": 1795162500
-        },
-        {
           "time": "2026-11-19 22:01",
           "symbol": "BTCUSD",
           "bot": "Donchian Slow BTCUSD H1",
@@ -111,10 +136,10 @@
           "price_close": null,
           "sl": 62732.1,
           "tp": null,
-          "profit": -39.89,
-          "profit_str": "-39.89 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
+          "profit": -3.34,
+          "profit_str": "-3.34 EUR",
+          "running_balance": 39835.8,
+          "running_equity": 43128.57,
           "status": "ABERTA",
           "ticket": "101682562",
           "magic": 111260,
@@ -178,10 +203,10 @@
           "price_close": null,
           "sl": 1.10213,
           "tp": 1.08978,
-          "profit": 40.91,
-          "profit_str": "+40.91 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
+          "profit": -68.65,
+          "profit_str": "-68.65 EUR",
+          "running_balance": 39835.8,
+          "running_equity": 43128.57,
           "status": "ABERTA",
           "ticket": "101673546",
           "magic": 888123,
@@ -636,10 +661,10 @@
           "price_close": null,
           "sl": 3633.78,
           "tp": null,
-          "profit": 1582.71,
-          "profit_str": "+1582.71 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
+          "profit": 1618.47,
+          "profit_str": "+1618.47 EUR",
+          "running_balance": 39835.8,
+          "running_equity": 43128.57,
           "status": "ABERTA",
           "ticket": "100619312",
           "magic": 777350,
@@ -910,10 +935,10 @@
           "price_close": null,
           "sl": 43.757,
           "tp": null,
-          "profit": 1510.04,
-          "profit_str": "+1510.04 EUR",
-          "running_balance": 39952.54,
-          "running_equity": 42948.68,
+          "profit": 1615.7,
+          "profit_str": "+1615.70 EUR",
+          "running_balance": 39835.8,
+          "running_equity": 43128.57,
           "status": "ABERTA",
           "ticket": "100215138",
           "magic": 666350,
@@ -15027,13 +15052,13 @@
           "total_profit": 822.6
         },
         {
-          "bot": "Donchian Slow NatGas H1",
-          "magic": 222260,
-          "trades": 33,
-          "wins": 19,
-          "win_rate": 57.6,
-          "avg_profit": 24.36,
-          "total_profit": 803.75
+          "bot": "ORB GBPUSD M15",
+          "magic": 555300,
+          "trades": 22,
+          "wins": 17,
+          "win_rate": 77.3,
+          "avg_profit": 34.41,
+          "total_profit": 756.97
         },
         {
           "bot": "VolSqueeze GBPUSD M15",
@@ -15045,15 +15070,6 @@
           "total_profit": 681.58
         },
         {
-          "bot": "ORB GBPUSD M15",
-          "magic": 555300,
-          "trades": 21,
-          "wins": 16,
-          "win_rate": 76.2,
-          "avg_profit": 31.97,
-          "total_profit": 671.41
-        },
-        {
           "bot": "Donchian Slow BTCUSD H1",
           "magic": 111260,
           "trades": 43,
@@ -15061,6 +15077,15 @@
           "win_rate": 62.8,
           "avg_profit": 14.22,
           "total_profit": 611.42
+        },
+        {
+          "bot": "Donchian Slow NatGas H1",
+          "magic": 222260,
+          "trades": 34,
+          "wins": 19,
+          "win_rate": 55.9,
+          "avg_profit": 17.74,
+          "total_profit": 603.06
         },
         {
           "bot": "ORB XAGUSD M15",
@@ -15319,16 +15344,16 @@
         "week": {
           "bots": [
             "FinBot GBPUSD H1",
-            "Donchian Slow NatGas H1",
             "Donchian H1 XAGUSD",
             "FinBot EURUSD H1",
+            "Donchian Slow NatGas H1",
             "ORB XAGUSD M15"
           ],
           "profits": [
             360.21,
-            231.05,
             222.23,
             149.37,
+            30.36,
             -11.13
           ]
         },
@@ -15336,16 +15361,16 @@
           "bots": [
             "FinBot GBPUSD H1",
             "Donchian Slow BTCUSD H1",
-            "Donchian Slow NatGas H1",
             "VolSqueeze Gold XAUUSD M15",
-            "FinBot EURUSD H1"
+            "Donchian Slow NatGas H1",
+            "ORB GBPUSD M15"
           ],
           "profits": [
             1068.64,
             908.95,
-            543.43,
             371.78,
-            281.41
+            342.74,
+            311.93
           ]
         },
         "all": {
@@ -15353,14 +15378,14 @@
             "FinBot GBPUSD H1",
             "VolSqueeze Gold XAUUSD M15",
             "FinBot EURUSD H1",
-            "Donchian Slow NatGas H1",
+            "ORB GBPUSD M15",
             "VolSqueeze GBPUSD M15"
           ],
           "profits": [
             1280.65,
             839.42,
             822.6,
-            803.75,
+            756.97,
             681.58
           ]
         }
@@ -15420,34 +15445,103 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 46848.62,
-      "equity": 50811.61,
-      "closed_pl": -3351.3799999999987,
-      "total_pl": 611.6100000000006,
-      "roi_pct": 1.2183466135458179,
-      "floating_pl": 3962.99,
-      "open_count": 5,
+      "balance": 46859.66,
+      "equity": 50949.76,
+      "closed_pl": -3340.339999999999,
+      "total_pl": 749.760000000002,
+      "roi_pct": 1.4935458167330717,
+      "floating_pl": 4090.1,
+      "open_count": 4,
       "trades": [
         {
-          "time": "2026-11-20 08:00",
+          "pos_id": 2106703944,
+          "time_raw": 1795186997,
+          "time": "2026-11-20 13:03",
+          "symbol": "GBPUSD",
+          "bot": "ORB GBPUSD M15",
+          "type": "BUY",
+          "volume": 0.96,
+          "price_open": 1.3113000000000001,
+          "price_close": 1.31242,
+          "sl": null,
+          "tp": null,
+          "profit": 91.61,
+          "profit_str": "+91.61 EUR",
+          "status": "FECHADA",
+          "ticket": "1695003453",
+          "magic": 555300,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 46868.43,
+          "running_equity": 46868.43
+        },
+        {
+          "time": "2026-11-20 13:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "BUY",
+          "volume": 1.73,
+          "price_open": 1.09826,
+          "price_close": null,
+          "sl": 1.09674,
+          "tp": 1.10082,
+          "profit": 151.09,
+          "profit_str": "+151.09 EUR",
+          "running_balance": 46859.66,
+          "running_equity": 50949.76,
+          "status": "ABERTA",
+          "ticket": "2107785823",
+          "magic": 888151,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "time_raw": 1795186800
+        },
+        {
+          "pos_id": 2107624172,
+          "time_raw": 1795185379,
+          "time": "2026-11-20 12:36",
+          "symbol": "EURUSD",
+          "bot": "VolSqueeze EURUSD M15",
+          "type": "SELL",
+          "volume": 1.28,
+          "price_open": 1.09582,
+          "price_close": 1.09782,
+          "sl": null,
+          "tp": null,
+          "profit": -241.51,
+          "profit_str": "-241.51 EUR",
+          "status": "FECHADA",
+          "ticket": "1694936520",
+          "magic": 888350,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 46776.82,
+          "running_equity": 46776.82
+        },
+        {
+          "pos_id": 2107029839,
+          "time_raw": 1795175418,
+          "time": "2026-11-20 09:50",
           "symbol": "XNGUSD",
           "bot": "Donchian Slow NatGas H1",
           "type": "SELL",
           "volume": 0.69,
           "price_open": 3.209,
-          "price_close": null,
-          "sl": 3.2462,
+          "price_close": 3.183,
+          "sl": null,
           "tp": null,
-          "profit": 176.18,
-          "profit_str": "+176.18 EUR",
-          "running_balance": 46848.62,
-          "running_equity": 50811.61,
-          "status": "ABERTA",
-          "ticket": "2107029839",
+          "profit": 163.44,
+          "profit_str": "+163.44 EUR",
+          "status": "FECHADA",
+          "ticket": "1694594366",
           "magic": 222260,
           "week_key": "2026-W47",
           "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
-          "time_raw": 1795168800
+          "month_key": "2026-11",
+          "running_balance": 47018.33,
+          "running_equity": 47018.33
         },
         {
           "pos_id": 2106410214,
@@ -15471,27 +15565,6 @@
           "month_key": "2026-11",
           "running_balance": 46854.89,
           "running_equity": 46854.89
-        },
-        {
-          "time": "2026-11-20 06:15",
-          "symbol": "GBPUSD",
-          "bot": "ORB GBPUSD M15",
-          "type": "BUY",
-          "volume": 0.96,
-          "price_open": 1.3113000000000001,
-          "price_close": null,
-          "sl": 1.30866,
-          "tp": 1.31242,
-          "profit": -105.93,
-          "profit_str": "-105.93 EUR",
-          "running_balance": 46848.62,
-          "running_equity": 50811.61,
-          "status": "ABERTA",
-          "ticket": "2106703944",
-          "magic": 555300,
-          "week_key": "2026-W47",
-          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
-          "time_raw": 1795162500
         },
         {
           "pos_id": 2103813433,
@@ -15549,10 +15622,10 @@
           "price_close": null,
           "sl": 1.10204,
           "tp": 1.08996,
-          "profit": 50.54,
-          "profit_str": "+50.54 EUR",
-          "running_balance": 46848.62,
-          "running_equity": 50811.61,
+          "profit": -84.4,
+          "profit_str": "-84.40 EUR",
+          "running_balance": 46859.66,
+          "running_equity": 50949.76,
           "status": "ABERTA",
           "ticket": "2104916268",
           "magic": 888123,
@@ -15984,10 +16057,10 @@
           "price_close": null,
           "sl": 3633.49,
           "tp": null,
-          "profit": 1848.01,
-          "profit_str": "+1848.01 EUR",
-          "running_balance": 46848.62,
-          "running_equity": 50811.61,
+          "profit": 1889.86,
+          "profit_str": "+1889.86 EUR",
+          "running_balance": 46859.66,
+          "running_equity": 50949.76,
           "status": "ABERTA",
           "ticket": "2092989784",
           "magic": 777350,
@@ -16235,10 +16308,10 @@
           "price_close": null,
           "sl": 43.732,
           "tp": null,
-          "profit": 1994.19,
-          "profit_str": "+1994.19 EUR",
-          "running_balance": 46848.62,
-          "running_equity": 50811.61,
+          "profit": 2133.55,
+          "profit_str": "+2133.55 EUR",
+          "running_balance": 46859.66,
+          "running_equity": 50949.76,
           "status": "ABERTA",
           "ticket": "2088417966",
           "magic": 666350,
@@ -27583,6 +27656,15 @@
           "total_profit": 1180.43
         },
         {
+          "bot": "Donchian Slow NatGas H1",
+          "magic": 222260,
+          "trades": 28,
+          "wins": 18,
+          "win_rate": 64.3,
+          "avg_profit": 41.47,
+          "total_profit": 1161.23
+        },
+        {
           "bot": "FinBot EURUSD H1",
           "magic": 888123,
           "trades": 13,
@@ -27610,15 +27692,6 @@
           "total_profit": 1072.61
         },
         {
-          "bot": "Donchian Slow NatGas H1",
-          "magic": 222260,
-          "trades": 27,
-          "wins": 17,
-          "win_rate": 63.0,
-          "avg_profit": 36.96,
-          "total_profit": 997.79
-        },
-        {
           "bot": "Donchian Slow BTCUSD H1",
           "magic": 111260,
           "trades": 34,
@@ -27639,11 +27712,11 @@
         {
           "bot": "ORB GBPUSD M15",
           "magic": 555300,
-          "trades": 17,
-          "wins": 13,
-          "win_rate": 76.5,
-          "avg_profit": 35.77,
-          "total_profit": 608.12
+          "trades": 18,
+          "wins": 14,
+          "win_rate": 77.8,
+          "avg_profit": 38.87,
+          "total_profit": 699.73
         },
         {
           "bot": "ORB XAGUSD M15",
@@ -27700,15 +27773,6 @@
           "total_profit": -46.24
         },
         {
-          "bot": "VolSqueeze EURUSD M15",
-          "magic": 888350,
-          "trades": 6,
-          "wins": 2,
-          "win_rate": 33.3,
-          "avg_profit": -15.15,
-          "total_profit": -90.9
-        },
-        {
           "bot": "MeanRev GBPUSD H1",
           "magic": 555200,
           "trades": 5,
@@ -27752,6 +27816,15 @@
           "win_rate": 33.3,
           "avg_profit": -95.67,
           "total_profit": -287.02
+        },
+        {
+          "bot": "VolSqueeze EURUSD M15",
+          "magic": 888350,
+          "trades": 7,
+          "wins": 2,
+          "win_rate": 28.6,
+          "avg_profit": -47.49,
+          "total_profit": -332.41
         },
         {
           "bot": "VolSqueeze USDJPY M15",
@@ -27884,15 +27957,15 @@
         "week": {
           "bots": [
             "FinBot GBPUSD H1",
-            "FinBot EURUSD H1",
             "Donchian Slow NatGas H1",
+            "FinBot EURUSD H1",
             "ORB XAGUSD M15",
             "FinBot Gold XAUUSD H1"
           ],
           "profits": [
             382.25,
+            234.78,
             169.54,
-            71.34,
             -33.74,
             -91.8
           ]
@@ -27900,15 +27973,15 @@
         "month": {
           "bots": [
             "FinBot GBPUSD H1",
-            "Donchian Slow BTCUSD H1",
             "Donchian Slow NatGas H1",
+            "Donchian Slow BTCUSD H1",
             "VolSqueeze Gold XAUUSD M15",
             "Donchian H1 XAGUSD"
           ],
           "profits": [
             1203.66,
+            783.37,
             735.34,
-            619.93,
             435.69,
             394.61
           ]
@@ -27917,16 +27990,16 @@
           "bots": [
             "Donchian H1 XAGUSD",
             "FinBot GBPUSD H1",
+            "Donchian Slow NatGas H1",
             "FinBot EURUSD H1",
-            "VolSqueeze Gold XAUUSD M15",
-            "VolSqueeze XAGUSD M15"
+            "VolSqueeze Gold XAUUSD M15"
           ],
           "profits": [
             1194.47,
             1180.43,
+            1161.23,
             1141.9,
-            1100.6,
-            1072.61
+            1100.6
           ]
         }
       },
@@ -27935,32 +28008,32 @@
           "bots": [
             "VolSqueeze EURUSD M15",
             "FinBot EURUSD M15",
-            "ORB GBPUSD M15",
             "Donchian Slow BTCUSD H1",
+            "ORB GBPUSD M15",
             "ORB EURUSD M15"
           ],
           "profits": [
-            -489.77,
+            -731.28,
             -356.09,
-            -346.91,
             -335.08,
+            -255.3,
             -253.8
           ]
         },
         "month": {
           "bots": [
             "FinBot EURUSD M15",
+            "VolSqueeze EURUSD M15",
             "MeanRev EURUSD H1",
             "MeanRev GBPUSD H1",
-            "FinBot Gold XAUUSD H1",
-            "VolSqueeze EURUSD M15"
+            "FinBot Gold XAUUSD H1"
           ],
           "profits": [
             -731.84,
+            -550.06,
             -495.83,
             -491.17,
-            -369.25,
-            -308.55
+            -369.25
           ]
         },
         "all": {
@@ -27985,14 +28058,60 @@
       "login": 53081018,
       "currency": "EUR",
       "initial_deposit": 1000.0,
-      "balance": 843.31,
-      "equity": 842.21,
-      "closed_pl": -156.69,
-      "total_pl": -157.78999999999996,
-      "roi_pct": -15.778999999999996,
-      "floating_pl": -1.1,
-      "open_count": 1,
+      "balance": 840.52,
+      "equity": 840.52,
+      "closed_pl": -159.48,
+      "total_pl": -159.48000000000002,
+      "roi_pct": -15.948,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 2106703922,
+          "time_raw": 1795186997,
+          "time": "2026-11-20 13:03",
+          "symbol": "GBPUSD",
+          "bot": "ORB GBPUSD M15",
+          "type": "BUY",
+          "volume": 0.01,
+          "price_open": 1.3113000000000001,
+          "price_close": 1.31242,
+          "sl": null,
+          "tp": null,
+          "profit": 0.96,
+          "profit_str": "+0.96 EUR",
+          "status": "FECHADA",
+          "ticket": "1695003456",
+          "magic": 555300,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 840.52,
+          "running_equity": 840.52
+        },
+        {
+          "pos_id": 2107624251,
+          "time_raw": 1795185379,
+          "time": "2026-11-20 12:36",
+          "symbol": "EURUSD",
+          "bot": "VolSqueeze EURUSD M15",
+          "type": "SELL",
+          "volume": 0.02,
+          "price_open": 1.09582,
+          "price_close": 1.09782,
+          "sl": null,
+          "tp": null,
+          "profit": -3.78,
+          "profit_str": "-3.78 EUR",
+          "status": "FECHADA",
+          "ticket": "1694936523",
+          "magic": 888350,
+          "week_key": "2026-W47",
+          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 839.56,
+          "running_equity": 839.56
+        },
         {
           "pos_id": 2106410238,
           "time_raw": 1795168125,
@@ -28015,27 +28134,6 @@
           "month_key": "2026-11",
           "running_balance": 843.34,
           "running_equity": 843.34
-        },
-        {
-          "time": "2026-11-20 06:15",
-          "symbol": "GBPUSD",
-          "bot": "ORB GBPUSD M15",
-          "type": "BUY",
-          "volume": 0.01,
-          "price_open": 1.3113000000000001,
-          "price_close": null,
-          "sl": 1.30866,
-          "tp": 1.31242,
-          "profit": -1.1,
-          "profit_str": "-1.10 EUR",
-          "running_balance": 843.31,
-          "running_equity": 842.21,
-          "status": "ABERTA",
-          "ticket": "2106703922",
-          "magic": 555300,
-          "week_key": "2026-W47",
-          "week_label": "Semana 47 (16/Nov - 20/Nov 2026)",
-          "time_raw": 1795162500
         },
         {
           "pos_id": 2102158212,
@@ -31952,11 +32050,11 @@
         {
           "bot": "ORB GBPUSD M15",
           "magic": 555300,
-          "trades": 15,
-          "wins": 11,
-          "win_rate": 73.3,
-          "avg_profit": 0.38,
-          "total_profit": 5.75
+          "trades": 16,
+          "wins": 12,
+          "win_rate": 75.0,
+          "avg_profit": 0.42,
+          "total_profit": 6.71
         },
         {
           "bot": "ORB EURUSD M15",
@@ -31986,15 +32084,6 @@
           "total_profit": -10.08
         },
         {
-          "bot": "VolSqueeze EURUSD M15",
-          "magic": 888350,
-          "trades": 5,
-          "wins": 1,
-          "win_rate": 20.0,
-          "avg_profit": -2.18,
-          "total_profit": -10.92
-        },
-        {
           "bot": "Donchian Slow Oil H1",
           "magic": 333260,
           "trades": 13,
@@ -32002,6 +32091,15 @@
           "win_rate": 30.8,
           "avg_profit": -0.95,
           "total_profit": -12.29
+        },
+        {
+          "bot": "VolSqueeze EURUSD M15",
+          "magic": 888350,
+          "trades": 6,
+          "wins": 1,
+          "win_rate": 16.7,
+          "avg_profit": -2.45,
+          "total_profit": -14.7
         },
         {
           "bot": "Donchian EURUSD M15",
@@ -32057,9 +32155,9 @@
             "VolSqueeze EURUSD M15"
           ],
           "profits": [
-            -4.64,
+            -3.68,
             -4.74,
-            -7.84
+            -11.62
           ]
         },
         "month": {
@@ -32069,9 +32167,9 @@
             "VolSqueeze EURUSD M15"
           ],
           "profits": [
-            2.79,
+            3.75,
             -1.31,
-            -5.87
+            -9.65
           ]
         },
         "all": {
@@ -32080,14 +32178,14 @@
             "ORB EURUSD M15",
             "ORB USDJPY M15",
             "Donchian Oil H1",
-            "VolSqueeze EURUSD M15"
+            "Donchian Slow Oil H1"
           ],
           "profits": [
-            5.75,
+            6.71,
             -1.29,
             -2.72,
             -10.08,
-            -10.92
+            -12.29
           ]
         }
       },
@@ -32099,9 +32197,9 @@
             "ORB GBPUSD M15"
           ],
           "profits": [
-            -7.84,
+            -11.62,
             -4.74,
-            -4.64
+            -3.68
           ]
         },
         "month": {
@@ -32111,9 +32209,9 @@
             "ORB GBPUSD M15"
           ],
           "profits": [
-            -5.87,
+            -9.65,
             -1.31,
-            2.79
+            3.75
           ]
         },
         "all": {
