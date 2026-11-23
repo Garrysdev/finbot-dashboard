@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23 13:15:53",
+  "updated_at": "2026-11-23 17:15:53",
   "accounts": {
     "62144409": {
       "login": 62144409,
@@ -15616,34 +15616,126 @@
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 51152.09,
-      "equity": 51112.47,
-      "closed_pl": 952.0900000000009,
-      "total_pl": 912.4700000000012,
-      "roi_pct": 1.8176693227091656,
-      "floating_pl": -39.62,
-      "open_count": 3,
+      "balance": 51531.4,
+      "equity": 51297.39,
+      "closed_pl": 1331.400000000001,
+      "total_pl": 1097.3899999999994,
+      "roi_pct": 2.186035856573704,
+      "floating_pl": -234.01,
+      "open_count": 1,
       "trades": [
         {
-          "time": "2026-11-23 13:08",
+          "pos_id": 2113221121,
+          "time_raw": 1795457329,
+          "time": "2026-11-23 16:08",
           "symbol": "GBPUSD",
           "bot": "FinBot GBPUSD H1",
           "type": "SELL",
           "volume": 0.55,
           "price_open": 1.30778,
-          "price_close": null,
-          "sl": 1.3127900000000001,
-          "tp": 1.29486,
-          "profit": 33.69,
-          "profit_str": "+33.69 EUR",
-          "running_balance": 51152.09,
-          "running_equity": 51112.47,
-          "status": "ABERTA",
-          "ticket": "2113221121",
+          "price_close": 1.3026,
+          "sl": null,
+          "tp": null,
+          "profit": 257.78,
+          "profit_str": "+257.78 EUR",
+          "status": "FECHADA",
+          "ticket": "1700309504",
           "magic": 555123,
           "week_key": "2026-W48",
           "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795446525
+          "month_key": "2026-11",
+          "running_balance": 51531.4,
+          "running_equity": 51531.4
+        },
+        {
+          "pos_id": 2113486895,
+          "time_raw": 1795457050,
+          "time": "2026-11-23 16:04",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "BUY",
+          "volume": 0.2,
+          "price_open": 63791.02,
+          "price_close": 62417.17,
+          "sl": null,
+          "tp": null,
+          "profit": -252.06,
+          "profit_str": "-252.06 EUR",
+          "status": "FECHADA",
+          "ticket": "1700296558",
+          "magic": 111260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51273.62,
+          "running_equity": 51273.62
+        },
+        {
+          "time": "2026-11-23 16:00",
+          "symbol": "XNGUSD",
+          "bot": "Donchian Slow NatGas H1",
+          "type": "SELL",
+          "volume": 0.49,
+          "price_open": 3.104,
+          "price_close": null,
+          "sl": 3.1612,
+          "tp": null,
+          "profit": -234.01,
+          "profit_str": "-234.01 EUR",
+          "running_balance": 51531.4,
+          "running_equity": 51297.39,
+          "status": "ABERTA",
+          "ticket": "2114165152",
+          "magic": 222260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "time_raw": 1795456802
+        },
+        {
+          "pos_id": 2112613571,
+          "time_raw": 1795455432,
+          "time": "2026-11-23 15:37",
+          "symbol": "XNGUSD",
+          "bot": "Donchian Slow NatGas H1",
+          "type": "SELL",
+          "volume": 0.47,
+          "price_open": 3.141,
+          "price_close": 3.103,
+          "sl": null,
+          "tp": null,
+          "profit": 163.62,
+          "profit_str": "+163.62 EUR",
+          "status": "FECHADA",
+          "ticket": "1700213757",
+          "magic": 222260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51525.68,
+          "running_equity": 51525.68
+        },
+        {
+          "pos_id": 2110541582,
+          "time_raw": 1795449402,
+          "time": "2026-11-23 13:56",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "BUY",
+          "volume": 0.23,
+          "price_open": 61102.36,
+          "price_close": 62092.06,
+          "sl": null,
+          "tp": null,
+          "profit": 208.18,
+          "profit_str": "+208.18 EUR",
+          "status": "FECHADA",
+          "ticket": "1699700045",
+          "magic": 111260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51362.06,
+          "running_equity": 51362.06
         },
         {
           "pos_id": 2104916268,
@@ -15690,27 +15782,6 @@
           "month_key": "2026-11",
           "running_balance": 50946.21,
           "running_equity": 50946.21
-        },
-        {
-          "time": "2026-11-23 09:00",
-          "symbol": "XNGUSD",
-          "bot": "Donchian Slow NatGas H1",
-          "type": "SELL",
-          "volume": 0.47,
-          "price_open": 3.141,
-          "price_close": null,
-          "sl": 3.1989,
-          "tp": null,
-          "profit": -90.24,
-          "profit_str": "-90.24 EUR",
-          "running_balance": 51152.09,
-          "running_equity": 51112.47,
-          "status": "ABERTA",
-          "ticket": "2112613571",
-          "magic": 222260,
-          "week_key": "2026-W48",
-          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795431600
         },
         {
           "pos_id": 2088417966,
@@ -15780,27 +15851,6 @@
           "month_key": "2026-11",
           "running_balance": 48725.14,
           "running_equity": 48725.14
-        },
-        {
-          "time": "2026-11-22 10:08",
-          "symbol": "BTCUSD",
-          "bot": "Donchian Slow BTCUSD H1",
-          "type": "BUY",
-          "volume": 0.23,
-          "price_open": 61102.36,
-          "price_close": null,
-          "sl": 60003.32,
-          "tp": null,
-          "profit": 16.94,
-          "profit_str": "+16.94 EUR",
-          "running_balance": 51152.09,
-          "running_equity": 51112.47,
-          "status": "ABERTA",
-          "ticket": "2110541582",
-          "magic": 111260,
-          "week_key": "2026-W48",
-          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795349321
         },
         {
           "pos_id": 2109737843,
@@ -28013,6 +28063,15 @@
           "total_profit": 2797.94
         },
         {
+          "bot": "FinBot GBPUSD H1",
+          "magic": 555123,
+          "trades": 10,
+          "wins": 8,
+          "win_rate": 80.0,
+          "avg_profit": 143.82,
+          "total_profit": 1438.21
+        },
+        {
           "bot": "FinBot EURUSD H1",
           "magic": 888123,
           "trades": 14,
@@ -28022,13 +28081,22 @@
           "total_profit": 1349.57
         },
         {
+          "bot": "Donchian Slow NatGas H1",
+          "magic": 222260,
+          "trades": 29,
+          "wins": 19,
+          "win_rate": 65.5,
+          "avg_profit": 45.68,
+          "total_profit": 1324.85
+        },
+        {
           "bot": "Donchian Slow BTCUSD H1",
           "magic": 111260,
-          "trades": 37,
-          "wins": 25,
-          "win_rate": 67.6,
-          "avg_profit": 36.39,
-          "total_profit": 1346.55
+          "trades": 39,
+          "wins": 26,
+          "win_rate": 66.7,
+          "avg_profit": 33.4,
+          "total_profit": 1302.67
         },
         {
           "bot": "Donchian H1 XAGUSD",
@@ -28038,24 +28106,6 @@
           "win_rate": 60.0,
           "avg_profit": 26.54,
           "total_profit": 1194.47
-        },
-        {
-          "bot": "FinBot GBPUSD H1",
-          "magic": 555123,
-          "trades": 9,
-          "wins": 7,
-          "win_rate": 77.8,
-          "avg_profit": 131.16,
-          "total_profit": 1180.43
-        },
-        {
-          "bot": "Donchian Slow NatGas H1",
-          "magic": 222260,
-          "trades": 28,
-          "wins": 18,
-          "win_rate": 64.3,
-          "avg_profit": 41.47,
-          "total_profit": 1161.23
         },
         {
           "bot": "VolSqueeze GBPUSD M15",
@@ -28316,15 +28366,15 @@
             "VolSqueeze XAGUSD M15",
             "VolSqueeze Gold XAUUSD M15",
             "FinBot EURUSD M15",
-            "FinBot EURUSD H1",
-            "ORB EURUSD M15"
+            "FinBot GBPUSD H1",
+            "FinBot EURUSD H1"
           ],
           "profits": [
             1853.47,
             1697.34,
             268.12,
-            207.67,
-            99.48
+            257.78,
+            207.67
           ]
         },
         "month": {
@@ -28338,43 +28388,43 @@
           "profits": [
             2133.03,
             1853.47,
-            1203.66,
-            1142.56,
-            783.37
+            1461.44,
+            1098.68,
+            946.99
           ]
         },
         "all": {
           "bots": [
             "VolSqueeze XAGUSD M15",
             "VolSqueeze Gold XAUUSD M15",
+            "FinBot GBPUSD H1",
             "FinBot EURUSD H1",
-            "Donchian Slow BTCUSD H1",
-            "Donchian H1 XAGUSD"
+            "Donchian Slow NatGas H1"
           ],
           "profits": [
             2926.08,
             2797.94,
+            1438.21,
             1349.57,
-            1346.55,
-            1194.47
+            1324.85
           ]
         }
       },
       "bottom_5": {
         "week": {
           "bots": [
+            "Donchian Slow BTCUSD H1",
             "ORB EURUSD M15",
+            "Donchian Slow NatGas H1",
             "FinBot EURUSD H1",
-            "FinBot EURUSD M15",
-            "VolSqueeze Gold XAUUSD M15",
-            "VolSqueeze XAGUSD M15"
+            "FinBot GBPUSD H1"
           ],
           "profits": [
+            -43.88,
             99.48,
+            163.62,
             207.67,
-            268.12,
-            1697.34,
-            1853.47
+            257.78
           ]
         },
         "month": {
