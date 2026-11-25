@@ -1,18 +1,110 @@
 {
-  "updated_at": "2026-11-25 13:15:53",
+  "updated_at": "2026-11-25 17:15:54",
   "accounts": {
     "53060439": {
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 51709.26,
-      "equity": 51653.4,
-      "closed_pl": 1509.2600000000011,
-      "total_pl": 1453.4000000000015,
-      "roi_pct": 2.8952191235059788,
-      "floating_pl": -55.86,
-      "open_count": 2,
+      "balance": 51380.0,
+      "equity": 51380.0,
+      "closed_pl": 1180.0000000000011,
+      "total_pl": 1180.0,
+      "roi_pct": 2.350597609561753,
+      "floating_pl": 0.0,
+      "open_count": 0,
       "trades": [
+        {
+          "pos_id": 2121531193,
+          "time_raw": 1795633663,
+          "time": "2026-11-25 17:07",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.25,
+          "price_open": 57987.32,
+          "price_close": 59108.94,
+          "sl": null,
+          "tp": null,
+          "profit": -255.34,
+          "profit_str": "-255.34 EUR",
+          "status": "FECHADA",
+          "ticket": "1707128447",
+          "magic": 111260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51380.0,
+          "running_equity": 51380.0
+        },
+        {
+          "pos_id": 2122187640,
+          "time_raw": 1795633205,
+          "time": "2026-11-25 17:00",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD M15",
+          "type": "BUY",
+          "volume": 1.52,
+          "price_open": 1.09485,
+          "price_close": 1.0981,
+          "sl": null,
+          "tp": null,
+          "profit": 439.99,
+          "profit_str": "+439.99 EUR",
+          "status": "FECHADA",
+          "ticket": "1707088421",
+          "magic": 888151,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51635.34,
+          "running_equity": 51635.34
+        },
+        {
+          "pos_id": 2120330649,
+          "time_raw": 1795633105,
+          "time": "2026-11-25 16:58",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD H1",
+          "type": "SELL",
+          "volume": 0.88,
+          "price_open": 1.30687,
+          "price_close": 1.31005,
+          "sl": null,
+          "tp": null,
+          "profit": -260.73,
+          "profit_str": "-260.73 EUR",
+          "status": "FECHADA",
+          "ticket": "1707079480",
+          "magic": 555123,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51195.35,
+          "running_equity": 51195.35
+        },
+        {
+          "pos_id": 2120250272,
+          "time_raw": 1795632097,
+          "time": "2026-11-25 16:41",
+          "symbol": "EURUSD",
+          "bot": "FinBot EURUSD H1",
+          "type": "SELL",
+          "volume": 1.12,
+          "price_open": 1.09357,
+          "price_close": 1.09604,
+          "sl": null,
+          "tp": null,
+          "profit": -259.68,
+          "profit_str": "-259.68 EUR",
+          "status": "FECHADA",
+          "ticket": "1707024968",
+          "magic": 888123,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51456.08,
+          "running_equity": 51456.08
+        },
         {
           "pos_id": 2121109402,
           "time_raw": 1795619392,
@@ -129,27 +221,6 @@
           "running_equity": 51939.66
         },
         {
-          "time": "2026-11-25 08:00",
-          "symbol": "GBPUSD",
-          "bot": "FinBot GBPUSD H1",
-          "type": "SELL",
-          "volume": 0.88,
-          "price_open": 1.30687,
-          "price_close": null,
-          "sl": 1.31005,
-          "tp": 1.29863,
-          "profit": 11.26,
-          "profit_str": "+11.26 EUR",
-          "running_balance": 51709.26,
-          "running_equity": 51653.4,
-          "status": "ABERTA",
-          "ticket": "2120330649",
-          "magic": 555123,
-          "week_key": "2026-W48",
-          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795600801
-        },
-        {
           "pos_id": 2116618492,
           "time_raw": 1795599997,
           "time": "2026-11-25 07:46",
@@ -194,27 +265,6 @@
           "month_key": "2026-11",
           "running_balance": 51778.56,
           "running_equity": 51778.56
-        },
-        {
-          "time": "2026-11-25 07:30",
-          "symbol": "EURUSD",
-          "bot": "FinBot EURUSD H1",
-          "type": "SELL",
-          "volume": 1.12,
-          "price_open": 1.09357,
-          "price_close": null,
-          "sl": 1.09604,
-          "tp": 1.08922,
-          "profit": -61.42,
-          "profit_str": "-61.42 EUR",
-          "running_balance": 51709.26,
-          "running_equity": 51653.4,
-          "status": "ABERTA",
-          "ticket": "2120250272",
-          "magic": 888123,
-          "week_key": "2026-W48",
-          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795599001
         },
         {
           "pos_id": 2119976276,
@@ -12797,29 +12847,11 @@
         {
           "bot": "Donchian Slow BTCUSD H1",
           "magic": 111260,
-          "trades": 41,
+          "trades": 42,
           "wins": 28,
-          "win_rate": 68.3,
-          "avg_profit": 36.61,
-          "total_profit": 1500.91
-        },
-        {
-          "bot": "FinBot GBPUSD H1",
-          "magic": 555123,
-          "trades": 10,
-          "wins": 8,
-          "win_rate": 80.0,
-          "avg_profit": 143.82,
-          "total_profit": 1438.21
-        },
-        {
-          "bot": "FinBot EURUSD H1",
-          "magic": 888123,
-          "trades": 14,
-          "wins": 9,
-          "win_rate": 64.3,
-          "avg_profit": 96.4,
-          "total_profit": 1349.57
+          "win_rate": 66.7,
+          "avg_profit": 29.66,
+          "total_profit": 1245.57
         },
         {
           "bot": "Donchian H1 XAGUSD",
@@ -12829,6 +12861,24 @@
           "win_rate": 60.0,
           "avg_profit": 26.54,
           "total_profit": 1194.47
+        },
+        {
+          "bot": "FinBot GBPUSD H1",
+          "magic": 555123,
+          "trades": 11,
+          "wins": 8,
+          "win_rate": 72.7,
+          "avg_profit": 107.04,
+          "total_profit": 1177.48
+        },
+        {
+          "bot": "FinBot EURUSD H1",
+          "magic": 888123,
+          "trades": 15,
+          "wins": 9,
+          "win_rate": 60.0,
+          "avg_profit": 72.66,
+          "total_profit": 1089.89
         },
         {
           "bot": "VolSqueeze GBPUSD M15",
@@ -13056,6 +13106,15 @@
           "total_profit": -1125.88
         },
         {
+          "bot": "FinBot EURUSD M15",
+          "magic": 888151,
+          "trades": 28,
+          "wins": 11,
+          "win_rate": 39.3,
+          "avg_profit": -43.57,
+          "total_profit": -1220.0
+        },
+        {
           "bot": "FinBot USDJPY M15",
           "magic": 444151,
           "trades": 11,
@@ -13081,15 +13140,6 @@
           "win_rate": 37.5,
           "avg_profit": -62.86,
           "total_profit": -1508.63
-        },
-        {
-          "bot": "FinBot EURUSD M15",
-          "magic": 888151,
-          "trades": 27,
-          "wins": 10,
-          "win_rate": 37.0,
-          "avg_profit": -61.48,
-          "total_profit": -1659.99
         }
       ],
       "top_5": {
@@ -13099,14 +13149,14 @@
             "VolSqueeze Gold XAUUSD M15",
             "FinBot XAGUSD H1",
             "FinBot Gold XAUUSD H1",
-            "FinBot GBPUSD H1"
+            "ORB EURUSD M15"
           ],
           "profits": [
             1853.47,
             1697.34,
             400.82,
             320.66,
-            257.78
+            230.19
           ]
         },
         "month": {
@@ -13120,8 +13170,8 @@
           "profits": [
             2133.03,
             1853.47,
-            1461.44,
-            1296.92,
+            1200.71,
+            1041.58,
             611.71
           ]
         },
@@ -13130,33 +13180,33 @@
             "VolSqueeze XAGUSD M15",
             "VolSqueeze Gold XAUUSD M15",
             "Donchian Slow BTCUSD H1",
-            "FinBot GBPUSD H1",
-            "FinBot EURUSD H1"
+            "Donchian H1 XAGUSD",
+            "FinBot GBPUSD H1"
           ],
           "profits": [
             2926.08,
             2797.94,
-            1500.91,
-            1438.21,
-            1349.57
+            1245.57,
+            1194.47,
+            1177.48
           ]
         }
       },
       "bottom_5": {
         "week": {
           "bots": [
-            "FinBot EURUSD M15",
             "Donchian Slow NatGas H1",
-            "ORB GBPUSD M15",
+            "FinBot EURUSD M15",
             "Donchian Slow BTCUSD H1",
-            "ORB XAGUSD M15"
+            "FinBot EURUSD H1",
+            "FinBot GBPUSD H1"
           ],
           "profits": [
-            -576.08,
             -353.63,
-            126.7,
-            154.36,
-            161.1
+            -136.09,
+            -100.98,
+            -52.01,
+            -2.95
           ]
         },
         "month": {
@@ -13168,7 +13218,7 @@
             "MeanRev XAGUSD H1"
           ],
           "profits": [
-            -1555.77,
+            -1115.78,
             -550.06,
             -495.83,
             -491.17,
@@ -13177,17 +13227,17 @@
         },
         "all": {
           "bots": [
-            "FinBot EURUSD M15",
             "Donchian NatGas H1",
             "FinBot GBPUSD M15",
             "FinBot USDJPY M15",
+            "FinBot EURUSD M15",
             "Donchian USDJPY M15"
           ],
           "profits": [
-            -1659.99,
             -1508.63,
             -1349.82,
             -1338.15,
+            -1220.0,
             -1125.88
           ]
         }
