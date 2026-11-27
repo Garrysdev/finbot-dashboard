@@ -1,38 +1,105 @@
 {
-  "updated_at": "2026-11-27 13:15:54",
+  "updated_at": "2026-11-27 17:15:55",
   "accounts": {
     "53060439": {
       "login": 53060439,
       "currency": "EUR",
       "initial_deposit": 50200.0,
-      "balance": 51123.25,
-      "equity": 51570.42,
-      "closed_pl": 923.2500000000011,
-      "total_pl": 1370.4199999999983,
-      "roi_pct": 2.7299203187250964,
-      "floating_pl": 447.17,
-      "open_count": 1,
+      "balance": 51321.78,
+      "equity": 51187.83,
+      "closed_pl": 1121.780000000001,
+      "total_pl": 987.8300000000017,
+      "roi_pct": 1.9677888446215173,
+      "floating_pl": -133.95,
+      "open_count": 2,
       "trades": [
         {
-          "time": "2026-11-27 12:00",
+          "time": "2026-11-27 17:00",
+          "symbol": "GBPUSD",
+          "bot": "FinBot GBPUSD H1",
+          "type": "SELL",
+          "volume": 0.62,
+          "price_open": 1.31016,
+          "price_close": null,
+          "sl": 1.3146900000000001,
+          "tp": 1.29851,
+          "profit": 2.83,
+          "profit_str": "+2.83 EUR",
+          "running_balance": 51321.78,
+          "running_equity": 51187.83,
+          "status": "ABERTA",
+          "ticket": "2129005338",
+          "magic": 555123,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "time_raw": 1795806000
+        },
+        {
+          "pos_id": 2128624165,
+          "time_raw": 1795804425,
+          "time": "2026-11-27 16:33",
+          "symbol": "BTCUSD",
+          "bot": "Donchian Slow BTCUSD H1",
+          "type": "SELL",
+          "volume": 0.24,
+          "price_open": 59148.65,
+          "price_close": 60377.75,
+          "sl": null,
+          "tp": null,
+          "profit": -269.69,
+          "profit_str": "-269.69 EUR",
+          "status": "FECHADA",
+          "ticket": "1712345142",
+          "magic": 111260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "month_key": "2026-11",
+          "running_balance": 51323.8,
+          "running_equity": 51323.8
+        },
+        {
+          "time": "2026-11-27 14:00",
+          "symbol": "XNGUSD",
+          "bot": "Donchian Slow NatGas H1",
+          "type": "SELL",
+          "volume": 0.68,
+          "price_open": 3.186,
+          "price_close": null,
+          "sl": 3.2275,
+          "tp": null,
+          "profit": -136.78,
+          "profit_str": "-136.78 EUR",
+          "running_balance": 51321.78,
+          "running_equity": 51187.83,
+          "status": "ABERTA",
+          "ticket": "2128362078",
+          "magic": 222260,
+          "week_key": "2026-W48",
+          "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
+          "time_raw": 1795795201
+        },
+        {
+          "pos_id": 2128022923,
+          "time_raw": 1795793773,
+          "time": "2026-11-27 13:36",
           "symbol": "XNGUSD",
           "bot": "Donchian Slow NatGas H1",
           "type": "SELL",
           "volume": 0.83,
           "price_open": 3.24,
-          "price_close": null,
-          "sl": 3.1888,
+          "price_close": 3.178,
+          "sl": null,
           "tp": null,
-          "profit": 447.17,
-          "profit_str": "+447.17 EUR",
-          "running_balance": 51123.25,
-          "running_equity": 51570.42,
-          "status": "ABERTA",
-          "ticket": "2128022923",
+          "profit": 470.24,
+          "profit_str": "+470.24 EUR",
+          "status": "FECHADA",
+          "ticket": "1711807513",
           "magic": 222260,
           "week_key": "2026-W48",
           "week_label": "Semana 48 (23/Nov - 27/Nov 2026)",
-          "time_raw": 1795788001
+          "month_key": "2026-11",
+          "running_balance": 51593.49,
+          "running_equity": 51593.49
         },
         {
           "pos_id": 2126949971,
@@ -12889,13 +12956,13 @@
           "total_profit": 2797.94
         },
         {
-          "bot": "Donchian Slow BTCUSD H1",
-          "magic": 111260,
-          "trades": 42,
-          "wins": 28,
-          "win_rate": 66.7,
-          "avg_profit": 29.66,
-          "total_profit": 1245.57
+          "bot": "Donchian Slow NatGas H1",
+          "magic": 222260,
+          "trades": 32,
+          "wins": 20,
+          "win_rate": 62.5,
+          "avg_profit": 39.93,
+          "total_profit": 1277.84
         },
         {
           "bot": "Donchian H1 XAGUSD",
@@ -12925,6 +12992,15 @@
           "total_profit": 1089.89
         },
         {
+          "bot": "Donchian Slow BTCUSD H1",
+          "magic": 111260,
+          "trades": 43,
+          "wins": 28,
+          "win_rate": 65.1,
+          "avg_profit": 22.69,
+          "total_profit": 975.88
+        },
+        {
           "bot": "VolSqueeze GBPUSD M15",
           "magic": 555350,
           "trades": 5,
@@ -12941,15 +13017,6 @@
           "win_rate": 78.9,
           "avg_profit": 43.5,
           "total_profit": 826.43
-        },
-        {
-          "bot": "Donchian Slow NatGas H1",
-          "magic": 222260,
-          "trades": 31,
-          "wins": 19,
-          "win_rate": 61.3,
-          "avg_profit": 26.05,
-          "total_profit": 807.6
         },
         {
           "bot": "ORB XAGUSD M15",
@@ -13208,29 +13275,29 @@
             "VolSqueeze Gold XAUUSD M15",
             "VolSqueeze XAGUSD M15",
             "FinBot GBPUSD H1",
-            "Donchian Slow BTCUSD H1",
-            "FinBot XAGUSD H1"
+            "Donchian Slow NatGas H1",
+            "Donchian Slow BTCUSD H1"
           ],
           "profits": [
             2133.03,
             1853.47,
             1200.71,
-            1041.58,
-            611.71
+            899.98,
+            771.89
           ]
         },
         "all": {
           "bots": [
             "VolSqueeze XAGUSD M15",
             "VolSqueeze Gold XAUUSD M15",
-            "Donchian Slow BTCUSD H1",
+            "Donchian Slow NatGas H1",
             "Donchian H1 XAGUSD",
             "FinBot GBPUSD H1"
           ],
           "profits": [
             2926.08,
             2797.94,
-            1245.57,
+            1277.84,
             1194.47,
             1177.48
           ]
@@ -13239,18 +13306,18 @@
       "bottom_5": {
         "week": {
           "bots": [
-            "Donchian Slow NatGas H1",
+            "Donchian Slow BTCUSD H1",
             "MeanRev XAGUSD H1",
             "FinBot EURUSD M15",
-            "Donchian Slow BTCUSD H1",
-            "FinBot EURUSD H1"
+            "FinBot EURUSD H1",
+            "FinBot GBPUSD H1"
           ],
           "profits": [
-            -353.63,
+            -370.67,
             -256.75,
             -136.09,
-            -100.98,
-            -52.01
+            -52.01,
+            -2.95
           ]
         },
         "month": {
